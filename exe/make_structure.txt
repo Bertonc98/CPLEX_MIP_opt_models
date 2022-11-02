@@ -1,0 +1,122 @@
+#-------------------------------------------------------------------
+#This is the name of the final executable. Change it at your will.
+#-------------------------------------------------------------------
+
+EXE = EXENAME
+EXE_B = vbpbend
+#-------------------------------------------------------------------
+#This is the path to the source directory. Adjust it as needed
+#-------------------------------------------------------------------
+SRC      = ../src
+
+#-------------------------------------------------------------------
+#Names of the object files. Adjust them as needed
+#-------------------------------------------------------------------
+         
+
+
+#OBJS     = $(SRC)/main.o \
+#           $(SRC)/common.o \
+#           $(SRC)/results.o \
+#           $(SRC)/VBPGraph.o
+
+#OBJS_B     = $(SRC)/benders.o \
+#           $(SRC)/common.o \
+#           $(SRC)/results.o \
+#           $(SRC)/VBPGraph.o
+
+OBJS     = $(SRC)/OBJECT
+OBJS_B   = $(SRC)/OBJECT
+
+#-------------------------------------------------------------------
+#Important CPLEX stuff
+#-------------------------------------------------------------------
+SYSTEM     = x86-64_linux
+LIBFORMAT  = static_pic
+
+#------------------------------------------------------------
+#
+# When you adapt this makefile to compile your CPLEX programs
+# please copy this makefile and set CPLEXDIR and CONCERTDIR to
+# the directories where CPLEX and CONCERT are installed.
+# CPXHOME is an environment variable pointing to CPLEX base directory
+#------------------------------------------------------------
+
+CPLEXDIR      = $(CPXHOME)/cplex
+CONCERTDIR    = $(CPXHOME)/concert
+
+
+# ---------------------------------------------------------------------
+# Compiler
+# ---------------------------------------------------------------------
+
+CCC = g++
+DBG = -g -Wall
+OPT = -O3 -g
+STD = --std=c++17
+# ---------------------------------------------------------------------
+# Compiler options
+# ---------------------------------------------------------------------
+
+CCDBG = -m64 $(DBG) $(STD) -fno-strict-aliasing -fexceptions -DIL_STD -w
+
+CCOPT = -m64 $(OPT) $(STD) -fno-strict-aliasing -fexceptions -DNDEBUG -DIL_STD -w
+
+
+# ---------------------------------------------------------------------
+# Link options and libraries
+# ---------------------------------------------------------------------
+
+
+CPLEXLIBDIR   = $(CPLEXDIR)/lib/$(SYSTEM)/$(LIBFORMAT)
+CONCERTLIBDIR = $(CONCERTDIR)/lib/$(SYSTEM)/$(LIBFORMAT)
+
+CCLNDIRS  = -L$(CPLEXLIBDIR) -L$(CONCERTLIBDIR)
+
+CCLNFLAGS = -lconcert -lilocplex -lcplex -lm -lpthread -ldl -lstdc++fs
+
+all:
+	make program
+
+CONCERTINCDIR = $(CONCERTDIR)/include
+CPLEXINCDIR   = $(CPLEXDIR)/include
+
+
+
+CCFLAGS = $(CCOPT) -I$(CPLEXINCDIR) -I$(CONCERTINCDIR) -I$(SRC)/include
+
+
+#------------------------------------------------------------
+#  make all      : to compile the examples.
+#  make execute  : to compile and execute the examples.
+#------------------------------------------------------------
+
+
+
+program: $(EXE)
+
+benders: $(EXE_B)
+
+# ------------------------------------------------------------
+
+clean :
+	/bin/rm -rf $(OBJS) $(OBJS_B) *~ *.class
+	/bin/rm -rf *.lp *.ord *.sos *.sav *.net *.msg *.log *.clp *.dot *.stats *.sol
+	/bin/rm -rf $(EXE) $(EXE_B)
+
+$(EXE): $(OBJS)
+	$(CCC) $(CCLNDIRS) -o $@ $(OBJS) $(CCLNFLAGS)
+
+$(EXE_B): $(OBJS_B)
+	$(CCC) $(CCLNDIRS) -o $@ $(OBJS_B) $(CCLNFLAGS)
+
+$(OBJS): Makefile
+
+
+.cpp.o:
+	$(CCC) -c $(CCFLAGS) $< -o $@
+
+
+# Local Variables:
+# mode: makefile
+# End:

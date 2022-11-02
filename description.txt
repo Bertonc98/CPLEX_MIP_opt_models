@@ -1,0 +1,105 @@
+---------------------------------
+GENERAL INSTANCE DESCRIPTION
+---------------------------------
+
+The instances contained in this directory are quite small ("toy" instances). 
+· They have k=30 points in the dataset and d=9 features to determine (+1 feature for the intercept).
+· They have 20% of outliers, randomly chosen, and obtained by corrupting the response value
+· The authentic hyperplane (i.e., the model used to generate the responses) is: 1 1 1 1 1 0 ... 0 and the intercept is randomly chosen
+· There are 10 repetitions to average computational results
+   
+Given the reduced size, you should be able to solve them to optimality without wasting too many computational resources.
+However, for the thesis we will move to larger instances.
+
+---------------------------------
+INSTANCE FORMAT
+---------------------------------
+
+Each instance is a set of input-output pairs (x,y)
+
+The first part of the instance represents the inputs and it is a matrix with k rows and d columns.
+Each row of the matrix is a sequence of comma-separated values between brackets.
+The matrix itself is a sequence of comma-separated rows between brackets
+
+The final part represents the outputs and it is a single row (comma-separated values between brackets) with k columns.
+It does not belong to the matrix.
+
+Example:
+
+Imagine we have 3 input-out pairs with x being 2-dimensional (y is always a scalar).
+Suppose the pairs are the following:
+
+Input	Output
+(1,-1)	2
+(-1,3)	5
+(4,-3)	-1
+
+Then the file will look as follows:
+
+[[1,-1],
+[-1,3],
+[4,-3]]
+[2,5,-1]
+
+Note that only a newline separates the matrix from the output row.
+The advantage of this format is that it is possible to store it into IloArrays by using the >> operator (see provided example)
+
+---------------------------------
+OPTIMAL SOLUTIONS
+---------------------------------
+In the sub-directory "optimal solutions" I have included the optimal solution of each instance using all combinations of the following values in the MILP:
+
+d0 = 4, 8
+k0 = 3 (i.e., 10%), 9 (30%)
+
+Each solution consists of 2 files:
+*_<d0>_<k0_in_fraction>Result.dat : the coefficients of the fitted hyperplane (the 1st entry is the intercept)
+*_<d0>_<k0_in_fraction>Outlier.csv: a 0/1 vector with 1 iff the corresponding point is an outlier
+
+There is also an additional file "performance.csv". It is not important at this stage.
+It contains the performance of the solver on the tested instances (e.g., how much time it employed to solve them).
+
+For example for d0=4 and k0=3 the output file will look like *_4.000000_0.100000Result.dat
+
+---------------------------------
+BIG-M VALUES
+---------------------------------
+To implement the MILPs provided in the corresponding directory, you should use "big-M" values, i.e., values for R^U, W^L and W^U.
+They can be computed from the optimal solutions: 
+· R^U_i is obtained by evaluating the optimal hyperplane on the i-th point and making the difference with the corresponding response
+· W^L_j and W^U_j is any pair of lower- and upper-bound on the j-th entry of the optimal hyperplane (without counting the intercept)
+· To mimic a more realistic situation, increase a bit  the above values (e.g., multiplying by 2)
+
+Example:
+Suppose that we have solved an instance name "instance.dat" with d0=1, k0=0.
+Suppose that the content of instance.dat is:
+[[0,1,2],
+ [-1,2,3],
+ [-1,5,1]]
+[3,4,5] 
+
+Suppose also that the content of the solution "instance_*_1.000000_0.000000Result.dat is
+-0.5 0.7 -0.1 0
+so that the optimal hyperplane is: y = 0.7 x1 - 0.1 x2 - 0.5
+Then you can use:
+
+W^L_1 = 0 (it is a lower bound on 0.7)
+W^U_1 = 1.4 (it is an upper bound on 0.7)
+
+W^L_2 = -0.2 (it is a lower bound on -0.1)
+W^U_2 = 0 (it is an upper bound on -0.1)
+
+W^L_3 = -1 (it is a lower bound on 0)
+W^U_3 = 1 (it is an upper bound on 0)
+
+[Note that we do not require bounds on the intercept.]
+
+Moreover, you can use:
+
+R^U_1 = 7.2 (i.e., 3.6 * 2 ; here 3.6 is |3 - 0.7*0 + 0.1*1 + 0.5| that is |y^1_1 - 0.7*x^1_1 + 0.1*x^1_2 - 0*x^1_3 + 0.5|)
+R^U_2 = 10.8 (i.e., 5.4 * 2 ; here 5.4 is |4 + 0.7*1 + 0.1*2 + 0.5| that is |y^2_1 - 0.7*x^2_1 + 0.1*x^2_2 - 0*x^2_3 + 0.5|)
+R^U_3 =  12.4 (i.e., 6.2*2; here 6.2 is |5 + 0.7*1 + 0.1*5 + 0.5| that is |y^3_1 - 0.7*x^3_1 + 0.1*x^3_2 - 0*x^3_3 + 0.5|)
+
+[Note that you need to compute R^U_i on **all** points, **also** those that are labeled as outliers in the optimal solution]
+
+N.B. Any upper- and lower-bound on the optimal coefficients and on the optimal prediction error can be used. The above ones are just examples.
