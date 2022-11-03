@@ -1,18 +1,15 @@
+#include "../src/utils.hpp"
 #include <sstream>
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <cstdlib>
 #include <ilcplex/ilocplex.h>
+
+
 ILOSTLBEGIN
 
-static void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_factor);
-
-static float_t dot_product(IloNumArray x, IloNumArray wu);
-
-static void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r);
-
-static void debug(int i);
+using namespace std;
 
 int main(int argc, char **argv){
 	cout << "Creating envirnment..." << endl;
@@ -48,7 +45,7 @@ int main(int argc, char **argv){
 	IloNumArray y(env);
 	ifile >> x >> y;
 	
-	int percentage = ((float_t)k_0 / (float_t)x.getSize())*10;
+	int percentage = ((float_t)k_0 / (float_t)x.getSize())*10.0;
 		
 	string sol = path + "optimal_solutions/minError_toy_30_10_02_2_0_5_-10_" + instance + 
 				 "_l1_LinMgr_indicator_L0Mgr_sos1_" + to_string(d_0) +
@@ -113,8 +110,8 @@ int main(int argc, char **argv){
 		model.add((q[i] + y[i] - IloScalProd(a, x[i]) - z - t[i]) >= 0); // (2)
 		model.add((-q[i] + y[i] - IloScalProd(a, x[i]) - z - t[i]) <= 0); // (3)
 		
-		model.add(t[i] >= (-(1-s[i]) * (r[i]*2) )); // (4)
-		model.add(t[i] <= ((1-s[i]) * (r[i]*2) )); // (5)
+		model.add(t[i] >= (-(1-s[i]) * (r[i]*10) )); // (4)
+		model.add(t[i] <= ((1-s[i]) * (r[i]*10) )); // (5)
 		
 	}
 	
@@ -137,7 +134,7 @@ int main(int argc, char **argv){
 	
 	//~ Output result 
 	for( int i = 0; i < 50 ; i++) cout << "=";
-	cout << endl << k_0 << endl;
+	cout << endl << "k_0 : " << k_0 << endl;
 	
 	string compare = path + "optimal_solutions/minError_toy_30_10_02_2_0_5_-10_" + instance + 
 				 "_l1_LinMgr_indicator_L0Mgr_sos1_" + to_string(d_0) +
@@ -151,7 +148,7 @@ int main(int argc, char **argv){
 		return 1;
 	}
 	
-	
+	int errors = 0;
 	cout << "Pnt, Out | Out model " << endl;
 	string tmp;
 	int result, pos;
@@ -159,9 +156,12 @@ int main(int argc, char **argv){
 		getline(cfile, tmp);
 		result = 1-int(abs(cplex.getValue(s[i])));
 		pos = tmp.find(",");
-		if( result != stoi(tmp.substr(pos+1, 1)) )
+		if( result != stoi(tmp.substr(pos+1, 1)) ){
 			cout << tmp << " | " << 1-int(abs(cplex.getValue(s[i]))) << endl;
+			errors++;
+		}
 	}
+	cout << "MISMATCHED RESULTS: " << errors << endl << endl << endl;
 	cout << "Obj value: " << cplex.getValue(obj) << endl;
 	
 	env.end();
@@ -170,51 +170,4 @@ int main(int argc, char **argv){
 	return 0;
 }
 
-static void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_factor){
-	int len = solution.getSize()-1;
-	//~ Computing bounds
-	for( int i = 1; i < len; i++ ){
-		//~ Positive case: lower the half, upper the double
-		if( solution[i] > 0 ){
-			wl[i-1] = (float_t)solution[i]/scale_factor;
-			wu[i-1] = (float_t)solution[i]*scale_factor;
-		}
-		//~ Negative case: lower the double, upper the half
-		else if( solution[i] < 0 ){
-			wl[i-1] = (float_t)solution[i]*scale_factor;
-			wu[i-1] = (float_t)solution[i]/scale_factor;
-		}
-		else{
-			wl[i-1] = -scale_factor;
-			wu[i-1] = scale_factor;
-		}
-	}
-	
-}
 
-static float_t dot_product(IloNumArray x, IloNumArray solution){
-	//The intercept is added previously
-	float_t res = solution[0];
-	
-	//~ if( x.getSize() != solution.getSize() )
-		//~ std::length_error("Point features must be one less than the solution!");
-
-	//~ Dot product x * solution cohefficients
-	for( int i = 0; i < x.getSize(); i++ ){
-		res += x[i] * solution[i+1];
-	}
-
-	return res;
-}
-
-static void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r){
-	int solution_size =  x.getSize();
-	
-	for( int i = 0; i < solution_size; i++ ){
-		r[i] = abs( y[i] - dot_product(x[i], solution) );		
-	}
-}
-
-static void debug(int i){
-	cout << "HERE: " << i << endl << endl;
-}
