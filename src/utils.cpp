@@ -7,7 +7,7 @@
 #include <ilcplex/ilocplex.h>
 
 void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_factor){
-	int len = solution.getSize()-1;
+	int len = solution.getSize();
 	//~ Computing bounds
 	for( int i = 1; i < len; i++ ){
 		//~ Positive case: lower the half, upper the double

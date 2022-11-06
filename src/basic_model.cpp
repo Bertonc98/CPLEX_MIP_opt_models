@@ -130,7 +130,8 @@ int main(int argc, char **argv){
 	IloCplex cplex(env);
 	cplex.extract(model);
 	
-	
+	cplex.exportModel("basic_model.lp");
+
 	std::cout.setstate(std::ios::failbit);
  
 	cplex.solve();
@@ -176,10 +177,9 @@ int main(int argc, char **argv){
 		create_file<<"";
 		create_file.close();
 		dest_file.open(res_name, fstream::app);
-		dest_file << "Instance;d_0;k_0;MismatchedOutliers;OurObj;YourObj"<<endl;
+		dest_file << "Instance;d_0;k_0;MismatchedOutliers;OurObj;YourObj" << endl;
 	}
-	
-	
+		
 	string line = filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(errors) + ";" + to_string(cplex.getValue(obj));
 	
 	dest_file<<line<<endl;
