@@ -8,6 +8,20 @@ In order to compile the two models:
   
 The basic model output comprehend the comparison between the provided results and the computed ones on the bash
 The strong model does not solve any instance (infeasible)
+
+=====================================0
+06/11/2022 Update
+Run the models over each instance and compared the obj value results with the provided ones
+
+Basic model:
+The differences seems to be small, but for some instances there are mismatched results
+
+Stronger model:
+For some instances the resolution of the problem seems to be unfeasible, we tried to check the model code
+
+The results are in the folder ./exe/basic_result.csv and ./exe/strong_result.csv
+The code for the two models are in the ./src folder
+
 Footer
 © 2022 GitHub, Inc.
 Footer navigation

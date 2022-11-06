@@ -110,8 +110,8 @@ int main(int argc, char **argv){
 		model.add((q[i] + y[i] - IloScalProd(a, x[i]) - z - t[i]) >= 0); // (2)
 		model.add((-q[i] + y[i] - IloScalProd(a, x[i]) - z - t[i]) <= 0); // (3)
 		
-		model.add(t[i] >= (-(1-s[i]) * (r[i]*10) )); // (4)
-		model.add(t[i] <= ((1-s[i]) * (r[i]*10) )); // (5)
+		model.add(t[i] >= (-(1-s[i]) * (r[i]*2) )); // (4)
+		model.add(t[i] <= ((1-s[i]) * (r[i]*2) )); // (5)
 		
 	}
 	
@@ -130,7 +130,12 @@ int main(int argc, char **argv){
 	IloCplex cplex(env);
 	cplex.extract(model);
 	
+	
+	std::cout.setstate(std::ios::failbit);
+ 
 	cplex.solve();
+	
+	std::cout.clear();
 	
 	//~ Output result 
 	for( int i = 0; i < 50 ; i++) cout << "=";
@@ -149,7 +154,7 @@ int main(int argc, char **argv){
 	}
 	
 	int errors = 0;
-	cout << "Pnt, Out | Out model " << endl;
+	//~ cout << "Pnt, Out | Out model " << endl;
 	string tmp;
 	int result, pos;
 	for (int i = 0; i < k ; i++){
@@ -157,11 +162,29 @@ int main(int argc, char **argv){
 		result = 1-int(abs(cplex.getValue(s[i])));
 		pos = tmp.find(",");
 		if( result != stoi(tmp.substr(pos+1, 1)) ){
-			cout << tmp << " | " << 1-int(abs(cplex.getValue(s[i]))) << endl;
+			//~ cout << tmp << " | " << 1-int(abs(cplex.getValue(s[i]))) << endl;
 			errors++;
 		}
 	}
-	cout << "MISMATCHED RESULTS: " << errors << endl << endl << endl;
+	
+	fstream dest_file;
+	string res_name = "basic_results.csv";
+	dest_file.open(res_name, fstream::app);
+	if(dest_file.fail()){
+	//~ cout<<"Destination file not exists: creating..."<<endl;
+		ofstream create_file(res_name);
+		create_file<<"";
+		create_file.close();
+		dest_file.open(res_name, fstream::app);
+		dest_file << "Instance;d_0;k_0;MismatchedOutliers;OurObj;YourObj"<<endl;
+	}
+	
+	
+	string line = filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(errors) + ";" + to_string(cplex.getValue(obj));
+	
+	dest_file<<line<<endl;
+	
+	cout << "MISMATCHED RESULTS: " << errors << endl << endl;
 	cout << "Obj value: " << cplex.getValue(obj) << endl;
 	
 	env.end();

@@ -32,9 +32,6 @@ float_t dot_product(IloNumArray x, IloNumArray solution){
 	//The intercept is added previously
 	float_t res = solution[0];
 	
-	//~ if( x.getSize() != solution.getSize() )
-		//~ std::length_error("Point features must be one less than the solution!");
-
 	//~ Dot product x * solution cohefficients
 	for( int i = 0; i < x.getSize(); i++ ){
 		res += x[i] * solution[i+1];

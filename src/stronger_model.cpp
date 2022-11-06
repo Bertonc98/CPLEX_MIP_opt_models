@@ -1,8 +1,10 @@
+#include "../src/utils.hpp"
 #include <sstream>
+#include <iostream>
+#include <fstream>
 #include <string>
 #include <cstdlib>
 #include <ilcplex/ilocplex.h>
-#include "utils.h"
 ILOSTLBEGIN
 
 int main(int argc, char **argv){
@@ -64,7 +66,7 @@ int main(int argc, char **argv){
 	compute_W(solution, wl, wu, 10);
 	
 	int k = x.getSize();
-	IloNumArray r(env, k);
+	IloNumArray r(env, k, -IloInfinity, IloInfinity);
 	
 	compute_R(solution, x, y, r);
 	
@@ -80,19 +82,12 @@ int main(int argc, char **argv){
 	z.setName("z");
 	IloNumVarArray f(env, d, 0, 1, ILOINT); // (27)
 	f.setNames("f");
-	IloNumVarArray p(env, k, -IloInfinity, IloInfinity); // (28)
+	IloNumVarArray p(env, k, 0.0, IloInfinity); // (28)
 	p.setNames("p");
 	IloNumVarArray t(env, k, -IloInfinity, IloInfinity); // (29)
 	t.setNames("t");
 	IloNumVarArray s(env, k, 0, 1, ILOINT); // (30)
 	s.setNames("s");
-	
-	//~ IloNumArray mones(env, k);
-	//~ IloNumArray ones(env, k);
-	//~ for (int i=0; i< k; i++){
-		 //~ mones[i] = -1;
-		 //~ ones[i] = 1;
-	//~ }
 	
 	//~ Objective Function 
 	//~ IloObjective obj = IloAdd(model, IloMinimize(env, IloSum(p - IloScalProd( IloScalProd(mones, s) + ones, r) ) ) );
@@ -117,8 +112,8 @@ int main(int argc, char **argv){
 	//~ Constraints over k
 	for( int i = 0; i < k; i++){
 		//~ Referring to the pdf description of the problem
-		model.add(p[i] >= ((1-s[i]) * r[i])); // (17)
-		model.add(p[i] <= r[i]*2); // (18) Increased bound from r[i]
+		model.add(p[i] >= ((1-s[i]) * (r[i]/10) )); // (17)
+		model.add(p[i] <= r[i]*10); // (18) Increased bound from r[i]
 		
 		model.add((p[i] + y[i] - IloScalProd(a, x[i]) - z) >= 0); // (19)
 		model.add((-p[i] + y[i] - IloScalProd(a, x[i]) - z) <= 0); // (20)
@@ -140,9 +135,8 @@ int main(int argc, char **argv){
 	//~ cplex.add(obj_expr);
 	
 	cplex.extract(model);
-	cplex.exportModel("model.lp");
+	//~ cplex.exportModel("model.lp");
 	cplex.solve();
-	cplex.exportModel("model_solved.lp");
 	
 	IloAlgorithm::Status st = cplex.getStatus();
 	cout <<"Status: " <<  st <<endl;
@@ -164,12 +158,39 @@ int main(int argc, char **argv){
 	}
 	
 	
-	cout << "Pnt, Out | Out model " << endl;
+	//~ Mismatching count 
+	int errors = 0;
+	//~ cout << "Pnt, Out | Out model " << endl;
 	string tmp;
+	int result, pos;
 	for (int i = 0; i < k ; i++){
 		getline(cfile, tmp);
-		cout << tmp << " | " << 1-int(abs(cplex.getValue(s[i]))) << endl;
+		result = 1-int(abs(cplex.getValue(s[i])));
+		pos = tmp.find(",");
+		if( result != stoi(tmp.substr(pos+1, 1)) ){
+			//~ cout << tmp << " | " << 1-int(abs(cplex.getValue(s[i]))) << endl;
+			errors++;
+		}
 	}
+	
+	//~ Saving results
+	fstream dest_file;
+	string res_name = "strong_results.csv";
+	dest_file.open(res_name, fstream::app);
+	if(dest_file.fail()){
+	//~ cout<<"Destination file not exists: creating..."<<endl;
+		ofstream create_file(res_name);
+		create_file<<"";
+		create_file.close();
+		dest_file.open(res_name, fstream::app);
+		dest_file << "Instance;d_0;k_0;MismatchedOutliers;OurObj;YourObj"<<endl;
+	}
+	
+	string line = filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(errors) + ";" + to_string(cplex.getObjValue());
+
+	dest_file<<line<<endl;
+	
+	
 	cout << "Obj value: " << cplex.getObjValue() << endl;
 	
 	env.end();
