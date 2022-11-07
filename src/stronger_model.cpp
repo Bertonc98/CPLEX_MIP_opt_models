@@ -135,7 +135,7 @@ int main(int argc, char **argv){
 	//~ cplex.add(obj_expr);
 	
 	cplex.extract(model);
-	cplex.exportModel("strong_model.lp");
+	cplex.exportModel("../src/data/strong_model.lp");
 	
 	//Suppress the outpt
 	std::cout.setstate(std::ios::failbit);
@@ -181,7 +181,7 @@ int main(int argc, char **argv){
 	
 	//~ Saving results
 	fstream dest_file;
-	string res_name = "strong_results.csv";
+	string res_name = "../src/data/strong_results.csv";
 	dest_file.open(res_name, fstream::app);
 	if(dest_file.fail()){
 	//~ cout<<"Destination file not exists: creating..."<<endl;

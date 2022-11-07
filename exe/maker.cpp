@@ -9,7 +9,7 @@ int main(int argc, char** argv){
       cout << "Incorrect number of arguments"<<endl;
       exit(1);
    }
-   string make_structure = "make_structure.txt";
+   string make_structure = "make_structure_c.txt";
    fstream source_file;
    source_file.open(make_structure);
    

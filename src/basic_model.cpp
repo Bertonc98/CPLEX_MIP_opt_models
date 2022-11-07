@@ -130,7 +130,7 @@ int main(int argc, char **argv){
 	IloCplex cplex(env);
 	cplex.extract(model);
 	
-	cplex.exportModel("basic_model.lp");
+	cplex.exportModel("../src/data/basic_model.lp");
 
 	std::cout.setstate(std::ios::failbit);
  
@@ -169,7 +169,7 @@ int main(int argc, char **argv){
 	}
 	
 	fstream dest_file;
-	string res_name = "basic_results.csv";
+	string res_name = "../src/data/basic_results.csv";
 	dest_file.open(res_name, fstream::app);
 	if(dest_file.fail()){
 	//~ cout<<"Destination file not exists: creating..."<<endl;

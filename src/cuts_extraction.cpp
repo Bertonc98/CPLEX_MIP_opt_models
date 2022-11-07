@@ -7,18 +7,33 @@
 #include <ilcplex/ilocplex.h>
 ILOSTLBEGIN
 
+// getLBs
+// getUBs
+
+
 ILOBRANCHCALLBACK0(BrCallback) {
 		//~ Salvataggio lp del nodo
-		IloEnv env;
+		//~ CPXLPptr  nodelp;
+		//~ IloEnv env = getEnv();
+		//~ CPXENVptr cpxenv; 
+		//~ cpxenv = (CPXENVptr) &(env);
+		//~ void       *cbdata;
+		
+		//~ CPXgetcallbacknodelp (cpxenv, cbdata, CPX_CALLBACK_MIP_BRANCH, &nodelp);
+	 
+		//~ CPXwriteprob (cpxenv, nodelp, "cuts.lp", NULL);
 		
 		IloModel nodelp = getModel();
 		
-		IloCplex cplex(env);
-	
+		cout << "CULO" << endl;
+		
+		IloCplex cplex(getEnv());
+		
 		cplex.extract(nodelp);
+		
 		cplex.exportModel("cuts.lp");
 		
-		cout << "CULO" << endl;
+		
 		prune();
 	}
 
