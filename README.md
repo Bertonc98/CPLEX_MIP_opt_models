@@ -29,6 +29,14 @@ The code for the two models are in the ./src folder
 Exploited the .c file to extract cuts from the branch and cut resolution. 
 The cuts are saved into src/data/ as node0.lp file, the file contains the whole problem with new constraint in the "bounds" section 
 
+The file for the cut_extraction is in the exe directory.
+In order to compile this .c file there is bash script into exe/blueptint directory
+This is used by the maker program.
+In order to compile the cut_extraction file the maker can be called by: ./maker cut 1
+
+In order to compile a model file: ./maker $name_of_the_model 0
+
+
 Footer
 © 2022 GitHub, Inc.
 Footer navigation
