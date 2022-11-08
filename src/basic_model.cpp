@@ -90,12 +90,18 @@ int main(int argc, char **argv){
 	
 	//~ Variable Definition
 	IloNumVarArray q(env, k, 0.0, IloInfinity);
+	q.setNames("q");
 	IloNumVarArray t(env, k, -IloInfinity, IloInfinity);
+	t.setNames("t");
 	IloNumVarArray s(env, k, 0, 1, ILOINT);
+	s.setNames("s");
 	IloNumVar z(env, -IloInfinity, IloInfinity);
+	z.setName("z");
 	
 	IloNumVarArray a(env, d, -IloInfinity, IloInfinity);
+	a.setNames("a");
 	IloNumVarArray f(env, d, 0, 1, ILOINT);
+	f.setNames("f");
 	
 	//~ Objective Function 
 	IloObjective obj = IloAdd(model, IloMinimize(env, IloSum(q)));
