@@ -2,7 +2,7 @@
 In order to compile the two models:
 
 - Move to exe directory
-- Execute "./maker basic_model/strong_model", this will compile the model file
+- Execute "./maker basic_model/strong_model 0", this will compile the model file
 - Execute the model as: "basicmodel/strong_model instance d k"
   Where instance is the toy instance number, d and k as defined in the model
   
@@ -35,6 +35,7 @@ This is used by the maker program.
 In order to compile the cut_extraction file the maker can be called by: ./maker cut 1
 
 In order to compile a model file: ./maker $name_of_the_model 0
+The program will save the model of the problem into the src/data directory with the same neame of the problem
 
 
 Footer
