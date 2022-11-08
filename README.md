@@ -25,7 +25,7 @@ The code for the two models are in the ./src folder
 
 =====================================
 
-07/11/2022 update
+## 07/11/2022 update
 Exploited the .c file to extract cuts from the branch and cut resolution. 
 The cuts are saved into src/data/ as node0.lp file, the file contains the whole problem with new constraint in the "bounds" section 
 
