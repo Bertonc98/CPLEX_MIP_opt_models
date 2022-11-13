@@ -31,8 +31,8 @@ This is used by the maker program.\\
 In order to compile the cut_extraction file the maker can be called by: ./maker cut 1
 
 The executable program must be called as:\\
-./cut_extraction model_name.lp 0 0\\
-Where 0 0 indicates that the cuts are saved only from the root node
+./cut_extraction model_name.lp 1 1\\
+Where 1 1 indicates that the cuts are saved only from the root node
 
 In order to compile a model file: ./maker $name_of_the_model 0\\
 The program will save the model of the problem into the src/data directory with the same neame of the problem
