@@ -31,6 +31,8 @@
 /* Include declarations for functions in this program */
 
 #ifndef  CPX_PROTOTYPE_MIN
+//~ #define  CPXPARAM_MIP_Cuts_Implied 2;
+//~ #define CPXPARAM_MIP_Cuts_LocalImplied 3;
 
 static int CPXPUBLIC 
    usersolve       (CPXCENVptr env, void *cbdata, int wherefrom,
@@ -85,6 +87,11 @@ int           cur_numcols;
 char          *prmfile = NULL;
 NODERANGE     nodeswritten;
 
+	
+	
+	//~ CPXPARAM_MIP_Cuts_LocalImplied = 3;
+	//~ CPXPARAM_MIP_Cuts_Implied = 2;
+
    nodeswritten.startnode = -1;
    nodeswritten.endnode   = 2100000000;
    strcpy(nodeswritten.name, "");
@@ -136,6 +143,10 @@ NODERANGE     nodeswritten;
      fprintf (stderr, "%s", errmsg);
      goto TERMINATE;
    }
+   
+   status = CPXsetintparam (env, CPXPARAM_MIP_Cuts_LocalImplied, 3);
+	
+   CPXsetintparam (env, CPXPARAM_MIP_Cuts_Implied, 2);
 
    /* Turn on output to the screen */
 
@@ -209,6 +220,9 @@ NODERANGE     nodeswritten;
    printf ("Node files written starting with node %d,", 
 	   nodeswritten.startnode);
    printf (" ending with node %d\n", nodeswritten.endnode);
+   
+   //Set aggressive cut generation
+   
 
    /* Optimize the problem and obtain solution. */
 
@@ -376,7 +390,7 @@ NODERANGE *nodeswritten;
       status = CPXgetcallbacknodelp (env, cbdata, wherefrom, &nodelp);
       if ( status )  goto TERMINATE;
 
-      sprintf (filename, "../src/data/node%d", count);
+      sprintf (filename, "../src/data/node_aggressive%d", count);
       //~ strcat (filename, nodeswritten->name);
       strcat (filename, ".lp");
  
