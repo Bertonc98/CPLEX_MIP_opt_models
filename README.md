@@ -31,12 +31,29 @@ This is used by the maker program.\\
 In order to compile the cut_extraction file the maker can be called by: ./maker cut 1
 
 The executable program must be called as:\\
-./cut_extraction model_name.lp 1 1\\
+./cut_extraction model_name.lp 1 1 *parameter_file\\
 Where 1 1 indicates that the cuts are saved only from the root node
+*parameter_file optional
 
 In order to compile a model file: ./maker $name_of_the_model 0\\
 The program will save the model of the problem into the src/data directory with the same neame of the problem
 
+## 13/11/2022 add
+Tower problem
+
+## 14/11/2022 update
+In order to generate more cuts a "parameters" folder has been created in src/
+The files in this folder can be passed o the "cut_extraction" program, as third parameter, to
+set the value for the generation of the cuts (in all.txt) there are all the parameters with the higher possible value (aggressive/very aggressive)
+
+It is possible create different configuration files, with even different parameters other than the cut generation ones.
+
+The values of the cuts parameters are:
+- -1: no generation
+- 0: default generation (auto adapt the number)
+- 1: moderate generation
+- 2: aggressive generation
+- 3: very aggressive generation (onlt for CPXPARAM_MIP_Cuts_LocalImplied, CPXPARAM_MIP_Cuts_Cliques, CPXPARAM_MIP_Cuts_Covers, CPXPARAM_MIP_Cuts_Disjunctive, CPXPARAM_MIP_Cuts_LiftProj)
 
 Footer
 © 2022 GitHub, Inc.

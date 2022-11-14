@@ -143,10 +143,6 @@ NODERANGE     nodeswritten;
      fprintf (stderr, "%s", errmsg);
      goto TERMINATE;
    }
-   
-   status = CPXsetintparam (env, CPXPARAM_MIP_Cuts_LocalImplied, 3);
-	
-   CPXsetintparam (env, CPXPARAM_MIP_Cuts_Implied, 2);
 
    /* Turn on output to the screen */
 
