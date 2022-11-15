@@ -10,14 +10,14 @@ The basic model output comprehend the comparison between the provided results an
 The strong model does not solve any instance (infeasible)
 
 # Project structure
-CPLEX_MIP_opt_models__
-├── exe__
-│   └── blueprint \\
-└── src \\
-    ├── data \\
-    ├── instance_set \\
-    │   └── optimal_solutions \\
-    └── parameters \\
+CPLEX_MIP_opt_models <br />
+├── exe <br />
+│   └── blueprint <br />
+└── src <br />
+    ├── data <br />
+    ├── instance_set <br />
+    │   └── optimal_solutions <br />
+    └── parameters <br />
 
 
 ## 06/11/2022 Update
