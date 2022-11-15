@@ -9,6 +9,17 @@ In order to compile the two models:
 The basic model output comprehend the comparison between the provided results and the computed ones on the bash\\
 The strong model does not solve any instance (infeasible)
 
+# Project structure
+CPLEX_MIP_opt_models/
+├── exe
+│   └── blueprint
+└── src
+    ├── data
+    ├── instance_set
+    │   └── optimal_solutions
+    └── parameters
+
+
 ## 06/11/2022 Update
 Run the models over each instance and compared the obj value results with the provided ones
 
