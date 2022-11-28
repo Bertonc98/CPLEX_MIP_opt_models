@@ -78,6 +78,11 @@ A file "run_extraction.sh" has been added to run all the tests and save the outp
 To save new results an example:
 bash run_extraction_result.sh cut_extraction > ../src/data/basic_models/results.txt
 
+TODO: 
+- Obtain the results for each SINGLE cut generation parameter
+- Complete gap_search.py in order to obtain the best gap obtained in a run
+- 
+
 
 Footer
 © 2022 GitHub, Inc.
