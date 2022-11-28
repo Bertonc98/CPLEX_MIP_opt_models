@@ -15,6 +15,7 @@ CPLEX_MIP_opt_models <br />
 │   └── blueprint <br />
 └── src <br />
     ├── data <br />
+    │   └── basic_models <br />
     ├── instance_set <br />
     │   └── optimal_solutions <br />
     └── parameters <br />
@@ -65,6 +66,10 @@ The values of the cuts parameters are:
 - 1: moderate generation
 - 2: aggressive generation
 - 3: very aggressive generation (onlt for CPXPARAM_MIP_Cuts_LocalImplied, CPXPARAM_MIP_Cuts_Cliques, CPXPARAM_MIP_Cuts_Covers, CPXPARAM_MIP_Cuts_Disjunctive, CPXPARAM_MIP_Cuts_LiftProj)
+
+## 28/11/2022 update
+Created new fodler to save basic_model lp for each different instance
+The model will be exported with the instance number, d and k parameters in the name
 
 Footer
 © 2022 GitHub, Inc.

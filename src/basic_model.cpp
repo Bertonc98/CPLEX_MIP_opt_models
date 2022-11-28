@@ -136,14 +136,15 @@ int main(int argc, char **argv){
 	IloCplex cplex(env);
 	cplex.extract(model);
 	
-	cplex.exportModel("../src/data/basic_model.lp");
-	//h
+	string export_file = "../src/data/basic_models/basic_model"+ instance + "_" + to_string(d_0) + "_" + to_string(k_0) + ".lp"; 
+	cplex.exportModel(export_file.c_str());
+	
 
-	std::cout.setstate(std::ios::failbit);
+	//std::cout.setstate(std::ios::failbit);
  
 	cplex.solve();
 	
-	std::cout.clear();
+	//std::cout.clear();
 	
 	//~ Output result 
 	for( int i = 0; i < 50 ; i++) cout << "=";
