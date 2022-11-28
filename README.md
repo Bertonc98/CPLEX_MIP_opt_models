@@ -70,6 +70,14 @@ The values of the cuts parameters are:
 ## 28/11/2022 update
 Created new fodler to save basic_model lp for each different instance
 The model will be exported with the instance number, d and k parameters in the name
+The whole results of the runs are saved into a "results.txt" in the same folder
+A file "gap_search.py" has been added in order to extract the informations about the 
+cuts and the relatives informations.
+
+A file "run_extraction.sh" has been added to run all the tests and save the output into "results.txt"
+To save new results an example:
+bash run_extraction_result.sh cut_extraction > ../src/data/basic_models/results.txt
+
 
 Footer
 © 2022 GitHub, Inc.

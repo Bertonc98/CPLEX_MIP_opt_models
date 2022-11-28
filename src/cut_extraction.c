@@ -1,4 +1,4 @@
-
+//./cut_extraction ../src/data/basic_models/basic_model1_4_3.lp 1 1 ../src/parameters/all.txt
 /* wrtnode.c - Using the node, branch and solve callbacks
                 for optimizing a MIP problem.  This example
                 is a modification of Example mipex2.c   */
@@ -75,6 +75,7 @@ char  *argv[];
    store the optimization results including the status, objective value,
    and variable values. */
 
+printf("===START===");
 int      solstat;
 double   objval;
 double   *x = NULL;
@@ -301,7 +302,8 @@ TERMINATE:
          fprintf (stderr, "%s", errmsg);
       }
    }
-     
+    
+ 
    return (status);
 
 }  /* END main */
