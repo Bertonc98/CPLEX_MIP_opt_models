@@ -68,7 +68,7 @@ The values of the cuts parameters are:
 - 3: very aggressive generation (onlt for CPXPARAM_MIP_Cuts_LocalImplied, CPXPARAM_MIP_Cuts_Cliques, CPXPARAM_MIP_Cuts_Covers, CPXPARAM_MIP_Cuts_Disjunctive, CPXPARAM_MIP_Cuts_LiftProj)
 
 ## 28/11/2022 update
-Created new fodler to save basic_model lp for each different instance
+Created new folder to save basic_model lp for each different instance
 The model will be exported with the instance number, d and k parameters in the name
 The whole results of the runs are saved into a "results.txt" in the same folder
 A file "gap_search.py" has been added in order to extract the informations about the 
@@ -81,12 +81,20 @@ bash run_extraction_result.sh cut_extraction > ../src/data/basic_models/results.
 ## 29/11/2022
 Created search_gap.py that parse the results obtained from the cut_extraction in order to have formatted data saved as
 "formatted_results.txt"
-The pameter_geenration.py creates all the possible combination of parameters for cut generation with only one active
+The parameter_geenration.py creates all the possible combination of parameters for cut generation with only one active
 Modified run_extraction.sh in order to apply for each instance the whole set of possible parameters file (genereted by the previous py file)
 Some minor modifies in the codes in order to better parse the output
+Added split_results.py to divide the output of the overall extraction
+
+The flow will be:
+- bash run_tests_models.sh basic_model -> save all the models on the different instances
+- bash run_extraction_results.sh cut_extraction >> ../src/data/basic_models/results.txt -> obtain the results of each model and each instance with every single parameter active  
+- split_results.py -> divide results.txt from the previous point in different files according to the parameter that generated them
+- gap_search.py -> must obtain the formatted results and search for best gap (and save number of cuts)
 
 TODO: 
-- Obtain the results for each SINGLE cut generation parameter
+- Obtain the results for each SINGLE cut generation parameter (complete gap_search.py)
+- Generalize the py files in order to work not only with basic_model
 
 
 
