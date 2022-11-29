@@ -78,10 +78,16 @@ A file "run_extraction.sh" has been added to run all the tests and save the outp
 To save new results an example:
 bash run_extraction_result.sh cut_extraction > ../src/data/basic_models/results.txt
 
+## 29/11/2022
+Created search_gap.py that parse the results obtained from the cut_extraction in order to have formatted data saved as
+"formatted_results.txt"
+The pameter_geenration.py creates all the possible combination of parameters for cut generation with only one active
+Modified run_extraction.sh in order to apply for each instance the whole set of possible parameters file (genereted by the previous py file)
+Some minor modifies in the codes in order to better parse the output
+
 TODO: 
 - Obtain the results for each SINGLE cut generation parameter
-- Complete gap_search.py in order to obtain the best gap obtained in a run
-- 
+
 
 
 Footer

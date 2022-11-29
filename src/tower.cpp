@@ -43,15 +43,15 @@ int main(int argc, char **argv){
 
 		cplex.exportModel("../src/data/tower_model.lp");
 
-		//~ std::cout.setstate(std::ios::failbit);
+		std::cout.setstate(std::ios::failbit);
 
-		cplex.solve();
+		IloBool res = cplex.solve();
 
-		//~ std::cout.clear();
+		std::cout.clear();
 		
 		//~ IloNumVarArray cb = cplex.getVariables();
 		
-		
+		cout << res << endl;
 		
 		cplex.getValues(cb, values); 
 	

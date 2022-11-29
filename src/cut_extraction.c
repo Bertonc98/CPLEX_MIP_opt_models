@@ -74,8 +74,6 @@ char  *argv[];
 /* Declare and allocate space for the variables and arrays where we will
    store the optimization results including the status, objective value,
    and variable values. */
-
-printf("===START===");
 int      solstat;
 double   objval;
 double   *x = NULL;
@@ -167,6 +165,7 @@ NODERANGE     nodeswritten;
 	 fprintf (stderr, "Failed to read PRM file, error %d\n", status);
 	 goto TERMINATE;
       }
+      printf("%s\n", prmfile);
    }
 
    /*  status = CPXsetintparam (env, CPX_PARAM_BRDIR, -1);
