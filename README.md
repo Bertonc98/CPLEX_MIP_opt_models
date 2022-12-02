@@ -71,7 +71,7 @@ The values of the cuts parameters are:
 Created new folder to save basic_model lp for each different instance
 The model will be exported with the instance number, d and k parameters in the name
 The whole results of the runs are saved into a "results.txt" in the same folder
-A file "gap_search.py" has been added in order to extract the informations about the 
+A file "format_result.py" has been added in order to extract the informations about the 
 cuts and the relatives informations.
 
 A file "run_extraction.sh" has been added to run all the tests and save the output into "results.txt"
@@ -90,10 +90,11 @@ The flow will be:
 - bash run_tests_models.sh basic_model -> save all the models on the different instances
 - bash run_extraction_results.sh cut_extraction >> ../src/data/basic_models/results.txt -> obtain the results of each model and each instance with every single parameter active  
 - split_results.py -> divide results.txt from the previous point in different files according to the parameter that generated them
-- gap_search.py -> must obtain the formatted results and search for best gap (and save number of cuts)
+- format_result.py -> must obtain the formatted results and search for best gap (and save number of cuts)
+- gap_extraction.sh -> retrieve a single file for each cut containing the gaps and the number of cuts applied in each instance
 
 TODO: 
-- Obtain the results for each SINGLE cut generation parameter (complete gap_search.py)
+- REFACTOR OF EXTRACTION FILES
 - Generalize the py files in order to work not only with basic_model
 
 
