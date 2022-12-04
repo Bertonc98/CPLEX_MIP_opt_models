@@ -153,7 +153,6 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 39.8313 10 40.6803 LiftProj:6 514 2.09%
 0 0 39.8878 8 40.6803 LiftProj:12 531 1.95%
 0 0 39.8878 9 40.6803 LiftProj:6 534 1.95%
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 40.6803 39.8878 nan 1.95%
 0 0 39.9869 4 40.6803 39.9869 615 1.70%
 0 0 39.9869 5 40.6803 LiftProj:23 622 1.70%
@@ -195,7 +194,6 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 6.8230 6.6852 nan 2.02%
 0 0 6.6853 10 6.8230 LiftProj:1 389 2.02%
 0+ 0 nan nan 6.8230 6.6853 nan 2.02%
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 6.8230 6.6853 nan 2.02%
 0 0 6.8095 2 6.8230 6.8095 439 0.20%
 0 0 6.8095 2 6.8230 LiftProj:4 448 0.20%
@@ -383,7 +381,6 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 48.4600 13 50.4437 LiftProj:14 740 3.93%
 0 0 48.4781 13 50.4437 LiftProj:6 749 3.90%
 0+ 0 nan nan 49.3365 48.4781 nan 1.74%
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 49.3365 48.4781 nan 1.74%
 0 0 49.0562 4 49.3365 49.0562 828 0.57%
 0 0 49.2291 2 49.3365 LiftProj:1 856 0.22%
@@ -612,7 +609,6 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 60.4512 13 61.6319 LiftProj:14 563 1.92%
 0 0 60.4512 13 61.6319 LiftProj:3 565 1.92%
 0 0 60.4644 13 61.6319 LiftProj:3 570 1.89%
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 61.6319 60.4644 nan 1.89%
 0 0 60.8708 4 61.6319 60.8708 655 1.23%
 0 0 61.1389 4 61.6319 LiftProj:12 666 0.80%
@@ -1055,7 +1051,6 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 57.2613 55.1435 nan 3.70%
 0 2 55.2781 13 57.2613 55.2840 536 3.45%
 CPXPARAM_MIP_Cuts_LiftProj 26
-CPXPARAM_MIP_Cuts_LiftProj 30
 19
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 109.2984 0.0000 nan 100.00%
@@ -1106,50 +1101,10 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 14.2144 19 15.6608 LiftProj:12 717 9.24%
 0 0 14.3196 19 15.6608 LiftProj:11 734 8.56%
 0 0 14.3197 19 15.6608 LiftProj:18 739 8.56%
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 15.6608 14.3197 nan 8.56%
 0 0 15.6596 5 15.6608 15.6596 804 0.01%
-Root node nan nan processing (before nan b&c):
-Real time = 0.36 sec. (176.08 ticks)
-Sequential b&c:
-Real time = 0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) = 0.36 sec. (176.08 ticks)
-Solution status 102.
-Node files written starting with node 1, ending
-Version identifier:22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques -1
-CPXPARAM_MIP_Cuts_Covers -1
-CPXPARAM_MIP_Cuts_FlowCovers -1
-CPXPARAM_MIP_Cuts_Implied -1
-CPXPARAM_MIP_Cuts_GUBCovers -1
-CPXPARAM_MIP_Cuts_Gomory -1
-CPXPARAM_MIP_Cuts_PathCut -1
-CPXPARAM_MIP_Cuts_MIRCut -1
-CPXPARAM_MIP_Cuts_Disjunctive -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut -1
-CPXPARAM_MIP_Cuts_MCFCut -1
-CPXPARAM_MIP_Cuts_LiftProj 3
-CPXPARAM_MIP_Cuts_LocalImplied -1
-CPXPARAM_MIP_Cuts_BQP -1
-CPXPARAM_MIP_Cuts_RLT -1
-Legacy callback S
-Warning:Control callbacks may disable some MIP features.
-Found incumbent of value 93.379247 after 0.00 sec.
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and
-Reduced MIP has 39 binaries, 0 generals, 0
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and
-Reduced MIP has 39 binaries, 0 generals, 0
-Presolve time = 0.00 sec. (0.35 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis:balance nan nan optimality and nan feasibility.
-MIP search method:traditional branch-and-cut.
-Parallel mode:none, nan nan using 1 nan thread.
-Root relaxation solution time = 0.00 sec. (1.54
+CPXPARAM_MIP_Cuts_LiftProj 30
+20
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 93.3792 0.0000 nan 100.00%
 0+ 0 nan nan 84.6822 0.0000 nan 100.00%
@@ -1212,7 +1167,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 31.2602 14 34.4861 LiftProj:10 974 9.35%
 0 2 31.3900 11 34.4861 31.4025 974 8.94%
 CPXPARAM_MIP_Cuts_LiftProj 31
-20
+21
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 93.3792 0.0000 nan 100.00%
 0+ 0 nan nan 84.6822 0.0000 nan 100.00%
@@ -1275,7 +1230,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 6.3787 25 9.1778 LiftProj:5 984 30.50%
 0 2 6.8399 16 9.1778 6.8468 984 25.40%
 CPXPARAM_MIP_Cuts_LiftProj 40
-21
+22
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 93.3792 0.0000 nan 100.00%
 0+ 0 nan nan 79.5308 0.0000 nan 100.00%
@@ -1314,14 +1269,13 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 28.1460 7 28.6581 LiftProj:3 695 1.79%
 0 0 28.1533 8 28.6581 LiftProj:13 705 1.76%
 0+ 0 nan nan 28.6581 28.1533 nan 1.76%
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 28.6581 28.1533 nan 1.76%
 0 0 28.5197 2 28.6581 28.5197 772 0.48%
 0+ 0 nan nan 28.5540 28.5197 nan 0.12%
 0 0 28.5197 2 28.5540 LiftProj:9 778 0.12%
 0 1 28.5197 3 28.5540 28.5197 782 0.12%
 CPXPARAM_MIP_Cuts_LiftProj 7
-22
+23
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 93.3792 0.0000 nan 100.00%
 0+ 0 nan nan 78.2544 0.0000 nan 100.00%
@@ -1365,7 +1319,6 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 3.8739 10 4.0841 LiftProj:4 544 5.15%
 0 0 3.8813 10 4.0841 LiftProj:5 553 4.96%
 0 0 3.8815 10 4.0841 LiftProj:3 557 4.96%
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 4.0841 3.8815 nan 4.96%
 0 0 3.9669 5 4.0841 3.9669 622 2.87%
 0 0 3.9670 8 4.0841 LiftProj:10 631 2.87%
@@ -1384,7 +1337,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 4.0459 6 4.0841 LiftProj:2 697 0.94%
 0 1 4.0814 2 4.0841 4.0819 697 0.05%
 CPXPARAM_MIP_Cuts_LiftProj 14
-23
+24
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 94.5045 0.0000 nan 100.00%
 0+ 0 nan nan 83.7373 0.0000 nan 100.00%
@@ -1443,7 +1396,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 36.8890 15 38.6714 LiftProj:11 867 4.61%
 0 2 36.9042 14 38.6714 36.9258 867 4.51%
 CPXPARAM_MIP_Cuts_LiftProj 30
-24
+25
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 94.5045 0.0000 nan 100.00%
 0+ 0 nan nan 83.9802 0.0000 nan 100.00%
@@ -1515,7 +1468,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 4.9734 23 7.5597 LiftProj:7 1030 34.21%
 0 2 5.3893 15 7.5597 5.3975 1030 28.60%
 CPXPARAM_MIP_Cuts_LiftProj 35
-25
+26
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 94.5045 0.0000 nan 100.00%
 0+ 0 nan nan 80.2086 0.0000 nan 100.00%
@@ -1554,12 +1507,11 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 36.4539 11 37.0857 LiftProj:3 677 1.70%
 0+ 0 nan nan 37.0024 36.4539 nan 1.48%
 0+ 0 nan nan 36.9975 36.4539 nan 1.47%
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 36.9975 36.4539 nan 1.47%
 0 0 36.8144 1 36.9975 36.8144 741 0.49%
 0 2 36.9332 3 36.9975 36.9332 760 0.17%
 CPXPARAM_MIP_Cuts_LiftProj 6
-26
+27
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 94.5045 0.0000 nan 100.00%
 0+ 0 nan nan 84.6207 0.0000 nan 100.00%
@@ -1597,12 +1549,11 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 4.4711 10 4.5517 LiftProj:21 504 1.77%
 0 0 4.4711 14 4.5517 LiftProj:2 508 1.77%
 0 0 4.4721 10 4.5517 LiftProj:23 523 1.75%
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 4.5517 4.4721 nan 1.75%
 0 0 4.5146 2 4.5517 4.5146 575 0.81%
 0 2 4.5146 2 4.5517 4.5146 575 0.81%
 CPXPARAM_MIP_Cuts_LiftProj 7
-27
+28
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 133.7092 0.0000 nan 100.00%
 0+ 0 nan nan 130.8863 0.0000 nan 100.00%
@@ -1659,7 +1610,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 70.0214 17 74.1734 LiftProj:16 767 5.60%
 0 2 70.0214 17 74.1734 70.0407 767 5.57%
 CPXPARAM_MIP_Cuts_LiftProj 25
-28
+29
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 133.7092 0.0000 nan 100.00%
 0+ 0 nan nan 129.6212 0.0000 nan 100.00%
@@ -1724,7 +1675,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 11.2337 21 16.1240 LiftProj:8 817 30.33%
 0 2 12.1075 11 16.1240 12.1113 817 24.89%
 CPXPARAM_MIP_Cuts_LiftProj 34
-29
+30
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 133.7092 0.0000 nan 100.00%
 0+ 0 nan nan 115.4430 0.0000 nan 100.00%
@@ -1771,7 +1722,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 67.8050 13 70.0054 LiftProj:6 739 3.14%
 0 2 67.8050 13 70.0054 67.8051 739 3.14%
 CPXPARAM_MIP_Cuts_LiftProj 22
-30
+31
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 133.7092 0.0000 nan 100.00%
 0+ 0 nan nan 114.7297 0.0000 nan 100.00%
@@ -1798,13 +1749,12 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 7.5018 16 8.0784 LiftProj:10 313 7.14%
 0 0 7.5658 15 8.0784 LiftProj:5 328 6.35%
 0 0 7.6262 16 8.0784 LiftProj:7 340 5.60%
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 8.0784 8.0158 nan 0.77%
 0 0 8.0158 2 8.0784 8.0158 424 0.77%
 0 0 8.0159 4 8.0784 LiftProj:1 430 0.77%
 0 0 cutoff 8.0784 439 0.00% 0 0
 CPXPARAM_MIP_Cuts_LiftProj 7
-31
+32
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 110.7059 0.0000 nan 100.00%
 0+ 0 nan nan 93.8685 0.0000 nan 100.00%
@@ -1864,7 +1814,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 43.4049 19 49.3482 LiftProj:4 791 12.04%
 0 2 43.4332 16 49.3482 43.4356 791 11.98%
 CPXPARAM_MIP_Cuts_LiftProj 36
-32
+33
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 110.7059 0.0000 nan 100.00%
 0+ 0 nan nan 93.8685 0.0000 nan 100.00%
@@ -1925,7 +1875,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 10.6051 25 11.6909 LiftProj:9 822 9.29%
 0 2 11.1643 8 11.6909 11.1647 822 4.50%
 CPXPARAM_MIP_Cuts_LiftProj 35
-33
+34
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 110.7059 0.0000 nan 100.00%
 0+ 0 nan nan 76.3517 0.0000 nan 100.00%
@@ -1968,7 +1918,6 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 40.8557 15 45.1708 LiftProj:10 601 9.55%
 0 0 40.8585 15 45.1708 LiftProj:12 607 9.55%
 0+ 0 nan nan 42.1412 40.8585 nan 3.04%
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 42.1412 40.8585 nan 3.04%
 0 0 41.4568 6 42.1412 41.4568 687 1.62%
 0+ 0 nan nan 42.1052 41.4568 nan 1.54%
@@ -1985,7 +1934,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 41.9256 41.7712 nan 0.37%
 0 2 41.8989 2 41.9256 41.8989 725 0.06%
 CPXPARAM_MIP_Cuts_LiftProj 11
-34
+35
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 110.7059 0.0000 nan 100.00%
 0+ 0 nan nan 91.5929 0.0000 nan 100.00%
@@ -2037,7 +1986,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 10.5475 16 11.0334 LiftProj:10 553 4.40%
 0 2 10.6941 7 11.0334 10.6962 553 3.06%
 CPXPARAM_MIP_Cuts_LiftProj 21
-35
+36
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 123.7135 0.0000 nan 100.00%
 0+ 0 nan nan 108.6148 0.0000 nan 100.00%
@@ -2100,7 +2049,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 52.9256 47.9655 nan 9.37%
 0 2 47.9655 16 52.9256 47.9776 925 9.35%
 CPXPARAM_MIP_Cuts_LiftProj 30
-36
+37
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 123.7135 0.0000 nan 100.00%
 0+ 0 nan nan 108.8244 0.0000 nan 100.00%
@@ -2161,7 +2110,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 7.4193 22 10.0449 LiftProj:5 806 26.14%
 0 2 8.2418 11 10.0449 8.2435 806 17.93%
 CPXPARAM_MIP_Cuts_LiftProj 35
-37
+38
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 123.7135 0.0000 nan 100.00%
 0+ 0 nan nan 93.6483 0.0000 nan 100.00%
@@ -2212,7 +2161,7 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 48.4424 47.0224 nan 2.93%
 0 2 47.0228 11 48.4424 47.0604 731 2.85%
 CPXPARAM_MIP_Cuts_LiftProj 24
-38
+39
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 123.7135 0.0000 nan 100.00%
 0+ 0 nan nan 89.8836 0.0000 nan 100.00%
@@ -2255,7 +2204,6 @@ Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0 0 6.9648 12 7.2790 LiftProj:9 587 4.32%
 0 0 6.9889 6 7.2790 LiftProj:10 598 3.99%
 0 0 6.9902 7 7.2790 LiftProj:3 601 3.97%
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
 0+ 0 nan nan 7.2790 6.9902 nan 3.97%
 0 0 7.0417 5 7.2790 7.0417 672 3.26%
 0 0 7.0629 7 7.2790 LiftProj:12 688 2.97%

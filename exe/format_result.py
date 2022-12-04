@@ -32,16 +32,23 @@ for cut in thresholds.keys():
 	results = [[]]
 	add = False
 	check = False
+	header = True
 	pos = 0
 	# ~ c = 0
 	for row in res:
+		if "Elapsed" in row:
+			continue
+		if "Detecting" in row:
+			check = True
+			continue
 		if check and row.strip() == "":
 			add = False
 			check = False
 		if "Nodes" in row:
 			add = True
-		if "Elapsed" in row:
+		if "cuts applied:" in row:
 			add = False
+			header = True
 			pos += 1
 			results.append([])
 		if "cuts " in row:
@@ -49,12 +56,15 @@ for cut in thresholds.keys():
 			# ~ print(f"{c}: {row}")
 			# ~ c += 1
 			continue
-		if "Detecting" in row:
-			check = True
-			continue
 		if add:
-			if len(row.strip()) > 0:
+			if "Objective" in row:
+				if header:
+					results[pos].append(row)
+					header = False
+			elif len(row.strip()) > 0:
 				results[pos].append(row)
+				
+			
 	
 	for i in range(len(results[:-1])):
 		formatted_text = ""
