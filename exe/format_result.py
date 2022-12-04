@@ -1,31 +1,15 @@
 import sys
+import subprocess as sp
 
 if len(sys.argv) != 2:
 	print("Use as python3 gap_search model_name\n\n")
 	exit()
 
 model_name = sys.argv[1]
+out = sp.run("ls ../src/parameters/".split(), capture_output = True, text = True)
+params = [fl.split(".")[0] for fl in out.stdout.strip().split("\n")]
 
-thresholds = {
-"CPXPARAM_MIP_Cuts_LocalImplied": 3,
-"CPXPARAM_MIP_Cuts_Cliques":	3,
-"CPXPARAM_MIP_Cuts_Covers":	3,
-"CPXPARAM_MIP_Cuts_Disjunctive":	3,
-"CPXPARAM_MIP_Cuts_LiftProj":	3,
-"CPXPARAM_MIP_Cuts_Implied":	2,
-"CPXPARAM_MIP_Cuts_BQP":		2,
-"CPXPARAM_MIP_Cuts_FlowCovers":	2,
-"CPXPARAM_MIP_Cuts_PathCut":	2,
-"CPXPARAM_MIP_Cuts_Gomory":	2,
-"CPXPARAM_MIP_Cuts_GUBCovers":	2,
-"CPXPARAM_MIP_Cuts_MIRCut":	2,
-"CPXPARAM_MIP_Cuts_RLT":		2,
-"CPXPARAM_MIP_Cuts_ZeroHalfCut":	2,
-"CPXPARAM_MIP_Cuts_MCFCut":	2
-}
-
-
-for cut in thresholds.keys():
+for cut in params:
 	with open("../src/data/"+model_name+"s/results_"+cut+".txt") as f:
 		res = f.readlines()
 
@@ -34,7 +18,6 @@ for cut in thresholds.keys():
 	check = False
 	header = True
 	pos = 0
-	# ~ c = 0
 	for row in res:
 		if "Elapsed" in row:
 			continue
@@ -53,8 +36,6 @@ for cut in thresholds.keys():
 			results.append([])
 		if "cuts " in row:
 			results[pos-1].append(row)
-			# ~ print(f"{c}: {row}")
-			# ~ c += 1
 			continue
 		if add:
 			if "Objective" in row:
@@ -72,9 +53,7 @@ for cut in thresholds.keys():
 		for row in results[i]:
 			if "Cuts/" not in row:
 				if "cuts " in row:
-					# ~ print(f"{i}: {row}")
 					pattern = row.replace(" ", "")
-					# ~ print(pattern)
 					pattern = pattern.split(":")[1]
 					formatted_text = formatted_text + cut + " " + pattern
 				else:

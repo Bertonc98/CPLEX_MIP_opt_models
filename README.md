@@ -93,10 +93,11 @@ The flow will be:
 - format_result.py -> must obtain the formatted results and search for best gap (and save number of cuts)
 - gap_extraction.sh -> retrieve a single file for each cut containing the gaps and the number of cuts applied in each instance
 
-TODO: 
-- REFACTOR OF EXTRACTION FILES
-- Generalize the py files in order to work not only with basic_model
+## 04/12/2022 
+Improved the generality of the script for each model and provided a single script to run the whole process "gap_pipeline.sh"
+must be called passing the name of the model that is under analysis and retrieve the results in the src/data/model_names/ folder
 
+TODO:
 
 
 Footer
