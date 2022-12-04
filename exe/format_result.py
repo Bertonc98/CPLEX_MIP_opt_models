@@ -49,7 +49,8 @@ for cut in params:
 			elif len(row.strip()) > 0:
 				results[pos].append(row)
 				
-			
+	if "BQP" in cut:
+		print(results)
 	# ~ print(active_params)
 	for i in range(0, len(results[:-1]), n_active_params):
 		formatted_text = ""
