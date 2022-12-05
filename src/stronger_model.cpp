@@ -135,14 +135,17 @@ int main(int argc, char **argv){
 	//~ cplex.add(obj_expr);
 	
 	cplex.extract(model);
-	cplex.exportModel("../src/data/strong_model.lp");
+	//cplex.exportModel("../src/data/strong_model.lp");
+	
+	string export_file = "../src/data/stronger_models/stronger_model"+ instance + "_" + to_string(d_0) + "_" + to_string(k_0) + ".lp"; 
+	cplex.exportModel(export_file.c_str());
 	
 	//Suppress the outpt
-	std::cout.setstate(std::ios::failbit);
+	//std::cout.setstate(std::ios::failbit);
  
 	cplex.solve();
 	
-	std::cout.clear();
+	//std::cout.clear();
 	
 	IloAlgorithm::Status st = cplex.getStatus();
 	cout <<"Status: " <<  st <<endl;
