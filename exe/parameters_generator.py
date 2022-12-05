@@ -40,6 +40,9 @@ for sub in subsets:
 			text += f"{k} {thresholds[k]}\n"
 		else:
 			text += f"{k} -1\n"
-	with open(f"../src/parameters/{model_name}/CPXPARAM_MIP_Cuts_{sub}.txt", "w+") as f:
+	
+	name = "-".join([c.split("_")[-1] for c in active_params])
+	
+	with open(f"../src/parameters/{model_name}/CPXPARAM_MIP_Cuts_{name}.txt", "w+") as f:
 		f.writelines(text)
 	f.close()
