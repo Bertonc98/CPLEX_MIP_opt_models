@@ -21,7 +21,7 @@ Found incumbent of value 136.472330 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
 Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.01 sec. (0.27 ticks)
+Presolve time = 0.00 sec. (0.27 ticks)
 Probing time = 0.00 sec. (0.04 ticks)
 Tried aggregator 1 time.
 Detecting symmetries...
@@ -32,7 +32,7 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (1.57 ticks)
+Root relaxation solution time = 0.00 sec. (1.57 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -93,7 +93,7 @@ Detecting symmetries...
 0     0       48.2006    16       57.0532  LiftProj: 10      718   15.52%
 Detecting symmetries...
 0     2       48.2006    16       57.0532       48.2095      718   15.50%                        0             0
-Elapsed time = 0.82 sec. (509.45 ticks, tree = 0.01 MB, solutions = 6)
+Elapsed time = 0.81 sec. (509.45 ticks, tree = 0.01 MB, solutions = 6)
 
 GUB cover cuts applied:  0
 Clique cuts applied:  0
@@ -110,11 +110,11 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.82 sec. (509.46 ticks)
+Real time             =    0.81 sec. (509.46 ticks)
 Sequential b&c:
-Real time             =    0.01 sec. (0.02 ticks)
+Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.83 sec. (509.48 ticks)
+Total (root+branch&cut) =    0.81 sec. (509.48 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -496,7 +496,7 @@ Real time             =    0.23 sec. (157.87 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.21 ticks)
 ------------
-Total (root+branch&cut) =    0.24 sec. (158.08 ticks)
+Total (root+branch&cut) =    0.23 sec. (158.08 ticks)
 Solution status 101.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -860,7 +860,7 @@ Real time             =    0.43 sec. (278.22 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.44 sec. (278.24 ticks)
+Total (root+branch&cut) =    0.43 sec. (278.24 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1827,7 +1827,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0       45.5600     4       45.7476      Cuts: 13      629    0.41%
 Detecting symmetries...
 0     2       45.6218     2       45.7476       45.6253      629    0.27%                        0             0
-Elapsed time = 0.34 sec. (234.69 ticks, tree = 0.01 MB, solutions = 6)
+Elapsed time = 0.35 sec. (234.69 ticks, tree = 0.01 MB, solutions = 6)
 
 GUB cover cuts applied:  0
 Clique cuts applied:  0
@@ -1844,7 +1844,7 @@ Disjunctive cuts applied:  4
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.34 sec. (234.69 ticks)
+Real time             =    0.35 sec. (234.69 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
@@ -2289,7 +2289,7 @@ Detecting symmetries...
 0     0       55.2596    16       58.1959  LiftProj: 10      624    5.05%
 Detecting symmetries...
 0     2       55.2603    15       58.1959       55.2608      624    5.04%                        0             0
-Elapsed time = 0.41 sec. (249.38 ticks, tree = 0.01 MB, solutions = 9)
+Elapsed time = 0.42 sec. (249.38 ticks, tree = 0.01 MB, solutions = 9)
 
 GUB cover cuts applied:  0
 Clique cuts applied:  0
@@ -2306,7 +2306,7 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.41 sec. (249.39 ticks)
+Real time             =    0.42 sec. (249.39 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
@@ -3934,7 +3934,7 @@ Real time             =    0.24 sec. (169.18 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.25 sec. (169.19 ticks)
+Total (root+branch&cut) =    0.24 sec. (169.19 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -4530,7 +4530,7 @@ Detecting symmetries...
 *     0+    0                           52.9256       47.7685             9.74%
 Detecting symmetries...
 0     2       47.7685    16       52.9256       47.7702     1060    9.74%                        0             0
-Elapsed time = 0.76 sec. (499.84 ticks, tree = 0.01 MB, solutions = 15)
+Elapsed time = 0.77 sec. (499.84 ticks, tree = 0.01 MB, solutions = 15)
 
 GUB cover cuts applied:  0
 Clique cuts applied:  0
@@ -4547,11 +4547,11 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.76 sec. (499.85 ticks)
+Real time             =    0.77 sec. (499.85 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.76 sec. (499.87 ticks)
+Total (root+branch&cut) =    0.77 sec. (499.87 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -4666,7 +4666,7 @@ Real time             =    0.78 sec. (544.53 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.78 sec. (544.54 ticks)
+Total (root+branch&cut) =    0.79 sec. (544.54 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
