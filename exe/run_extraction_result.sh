@@ -1,9 +1,9 @@
 #!/bin/bash
-#Call by specifying the model name as first parameter
+#Call by specifying the cut_extraction as first parameter and the model name as second parameter
 for i in {1..10}
 	do for j in 4 8
 		do for k in 3 9
-			do for f in ../src/parameters/*
+			do for f in ../src/parameters/$2/*
 				do 
 				name=$(awk -F "/" '{print $4}' <<< $f)
 				name=$(awk -F "." '{print $1}' <<< $name)

@@ -10,10 +10,10 @@ model_name = sys.argv[1]
 with open("../src/data/" + model_name + "s/results.txt") as f:
 	res = f.readlines()
 	
-out = sp.run("ls ../src/parameters/".split(), capture_output = True, text = True)
+out = sp.run(("ls ../src/parameters/"+model_name+"/").split(), capture_output = True, text = True)
 keys = [fl.split(".")[0] for fl in out.stdout.strip().split("\n")]
 
-results = {"../src/parameters/"+k+".txt" : [] for k in keys}
+results = {"../src/parameters/"+model_name+"/"+k+".txt" : [] for k in keys}
 
 for line in res:
 	l = line.strip()
