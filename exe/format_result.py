@@ -6,9 +6,11 @@ if len(sys.argv) != 2:
 	exit()
 
 model_name = sys.argv[1]
-command = "ls ../src/parameters/"+model_name+"/"
-out = sp.run(command.split(), capture_output = True, text = True)
+#command = "ls ../src/parameters/"+model_name+"/"
+out = sp.run(("ls ../src/parameters/"+model_name+"/").split(), capture_output = True, text = True)
+#out = sp.run(command.split(), capture_output = True, text = True)
 params = [fl.split(".")[0] for fl in out.stdout.strip().split("\n")]
+print(params, sep = "\n")
 
 for cut in params:
 	active_params = cut.split("/")[-1].split("_")[-1].split(".")[0].split("-")
