@@ -16,9 +16,12 @@ CPLEX_MIP_opt_models <br />
 └── src <br />
     ├── data <br />
     │   └── basic_models <br />
+    │   └── stronger_models <br />
     ├── instance_set <br />
     │   └── optimal_solutions <br />
     └── parameters <br />
+         └── basic_model <br />
+         └── stronger_model <br />
 
 
 ## 06/11/2022 Update
@@ -97,7 +100,11 @@ The flow will be:
 Improved the generality of the script for each model and provided a single script to run the whole process "gap_pipeline.sh"
 must be called passing the name of the model that is under analysis and retrieve the results in the src/data/model_names/ folder
 
-TODO:
+## 05/12/2022
+gap_pipeline compelted, even on stronger_model results.
+New directory to divide basic/stronger files (see dir tree)
+
+TODO: extract dual
 
 
 Footer
