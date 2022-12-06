@@ -70,6 +70,8 @@ int main(int argc, char **argv){
 	
 	compute_R(solution, x, y, r);
 	
+	
+	
 	//~ END OF PREPROCESSING
 	
 	//~ MODEL DEFINITION
@@ -88,6 +90,7 @@ int main(int argc, char **argv){
 	t.setNames("t");
 	IloNumVarArray s(env, k, 0, 1, ILOINT); // (30)
 	s.setNames("s");
+	
 	
 	//~ Objective Function 
 	//~ IloObjective obj = IloAdd(model, IloMinimize(env, IloSum(p - IloScalProd( IloScalProd(mones, s) + ones, r) ) ) );
@@ -136,9 +139,11 @@ int main(int argc, char **argv){
 	
 	cplex.extract(model);
 	//cplex.exportModel("../src/data/strong_model.lp");
+	//cout << "HERE" << endl;
 	
 	string export_file = "../src/data/stronger_models/stronger_model"+ instance + "_" + to_string(d_0) + "_" + to_string(k_0) + ".lp"; 
 	cplex.exportModel(export_file.c_str());
+	
 	
 	//Suppress the outpt
 	//std::cout.setstate(std::ios::failbit);
