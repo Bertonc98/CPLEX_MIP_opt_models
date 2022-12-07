@@ -105,18 +105,18 @@ Detecting symmetries...
 0     0       47.9360    16       57.0532   LiftProj: 6      859   15.98%
 Detecting symmetries...
 0     2       47.9360    16       57.0532       47.9605      859   15.94%                        0             0
-Elapsed time = 0.74 sec. (448.41 ticks, tree = 0.01 MB, solutions = 12)
+Elapsed time = 0.77 sec. (448.41 ticks, tree = 0.01 MB, solutions = 12)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  30
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.74 sec. (448.41 ticks)
+Real time             =    0.77 sec. (448.41 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.03 ticks)
 ------------
-Total (root+branch&cut) =    0.74 sec. (448.44 ticks)
+Total (root+branch&cut) =    0.78 sec. (448.44 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -216,18 +216,18 @@ Detecting symmetries...
 0     0        8.9508    24       11.3262   LiftProj: 3      749   20.97%
 Detecting symmetries...
 0     2        9.7761     9       11.3262        9.8024      749   13.45%                        0             0
-Elapsed time = 0.69 sec. (449.81 ticks, tree = 0.01 MB, solutions = 8)
+Elapsed time = 1.01 sec. (449.81 ticks, tree = 0.01 MB, solutions = 8)
 
 Mixed integer rounding cuts applied:  5
 Lift and project cuts applied:  26
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.69 sec. (449.82 ticks)
+Real time             =    1.01 sec. (449.82 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.03 ticks)
 ------------
-Total (root+branch&cut) =    0.69 sec. (449.85 ticks)
+Total (root+branch&cut) =    1.01 sec. (449.85 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -364,18 +364,18 @@ Detecting symmetries...
 0     0       40.2574     4       40.6803      Fract: 1      712    1.04%
 Detecting symmetries...
 0     0        cutoff             40.6803       40.2574      712    1.04%                        0             0
-Elapsed time = 0.39 sec. (254.91 ticks, tree = 0.01 MB, solutions = 8)
+Elapsed time = 0.43 sec. (254.91 ticks, tree = 0.01 MB, solutions = 8)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  4
 Gomory fractional cuts applied:  2
 
 Root node processing (before b&c):
-Real time             =    0.39 sec. (254.92 ticks)
+Real time             =    0.43 sec. (254.92 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.39 sec. (254.92 ticks)
+Total (root+branch&cut) =    0.43 sec. (254.92 ticks)
 Solution status 101.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -451,7 +451,7 @@ Detecting symmetries...
 Reduced MIP has 76 rows, 55 columns, and 635 nonzeros.
 Reduced MIP has 11 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.23 ticks)
-Represolve time = 0.00 sec. (1.13 ticks)
+Represolve time = 0.01 sec. (1.13 ticks)
 Probing time = 0.00 sec. (0.05 ticks)
 Clique table members: 1.
 MIP emphasis: balance optimality and feasibility.
@@ -467,18 +467,18 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0        6.8075     4        6.8230   LiftProj: 1      376    0.23%
 Detecting symmetries...
 0     2        6.8095     2        6.8230        6.8095      376    0.20%                        0             0
-Elapsed time = 0.11 sec. (63.81 ticks, tree = 0.01 MB, solutions = 7)
+Elapsed time = 0.13 sec. (63.81 ticks, tree = 0.01 MB, solutions = 7)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  6
 Gomory fractional cuts applied:  3
 
 Root node processing (before b&c):
-Real time             =    0.11 sec. (63.82 ticks)
+Real time             =    0.13 sec. (63.82 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.12 sec. (63.83 ticks)
+Total (root+branch&cut) =    0.13 sec. (63.83 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -514,7 +514,7 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.70 ticks)
+Root relaxation solution time = 0.01 sec. (1.70 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -590,18 +590,18 @@ Detecting symmetries...
 0     0       49.9765    17       54.9278  LiftProj: 10     1015    9.01%
 Detecting symmetries...
 0     2       49.9765    17       54.9278       49.9871     1015    8.99%                        0             0
-Elapsed time = 0.79 sec. (501.44 ticks, tree = 0.01 MB, solutions = 12)
+Elapsed time = 0.88 sec. (501.44 ticks, tree = 0.01 MB, solutions = 12)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  34
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.79 sec. (501.44 ticks)
+Real time             =    0.88 sec. (501.44 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.79 sec. (501.47 ticks)
+Total (root+branch&cut) =    0.88 sec. (501.47 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -703,18 +703,18 @@ Detecting symmetries...
 0     0        9.8203    23       13.7753   LiftProj: 5      792   28.71%
 Detecting symmetries...
 0     2       10.4767    15       13.7753       10.6231      792   22.88%                        0             0
-Elapsed time = 0.81 sec. (505.25 ticks, tree = 0.01 MB, solutions = 9)
+Elapsed time = 0.85 sec. (505.25 ticks, tree = 0.01 MB, solutions = 9)
 
 Mixed integer rounding cuts applied:  2
 Lift and project cuts applied:  33
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.81 sec. (505.25 ticks)
+Real time             =    0.85 sec. (505.25 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.03 ticks)
 ------------
-Total (root+branch&cut) =    0.81 sec. (505.28 ticks)
+Total (root+branch&cut) =    0.85 sec. (505.28 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -794,18 +794,18 @@ Detecting symmetries...
 *     0+    0                           49.2391       47.9785             2.56%
 Detecting symmetries...
 0     2       47.9793    12       49.2391       48.0395      615    2.44%                        0             0
-Elapsed time = 0.28 sec. (171.81 ticks, tree = 0.01 MB, solutions = 9)
+Elapsed time = 0.32 sec. (171.81 ticks, tree = 0.01 MB, solutions = 9)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  29
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.28 sec. (171.81 ticks)
+Real time             =    0.32 sec. (171.81 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.28 sec. (171.83 ticks)
+Total (root+branch&cut) =    0.32 sec. (171.83 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -915,18 +915,18 @@ Detecting symmetries...
 *     0+    0                           10.1011        9.0591            10.32%
 Detecting symmetries...
 0     2        9.2304    10       10.1011        9.2386      823    8.54%                        0             0
-Elapsed time = 0.62 sec. (404.95 ticks, tree = 0.01 MB, solutions = 12)
+Elapsed time = 0.67 sec. (404.95 ticks, tree = 0.01 MB, solutions = 12)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  31
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.62 sec. (404.96 ticks)
+Real time             =    0.67 sec. (404.96 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.62 sec. (404.98 ticks)
+Total (root+branch&cut) =    0.68 sec. (404.98 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1024,18 +1024,18 @@ Detecting symmetries...
 0     0       63.2040    19       69.4097   LiftProj: 7      645    8.94%
 Detecting symmetries...
 0     2       63.2040    19       69.4097       63.2115      645    8.93%                        0             0
-Elapsed time = 0.61 sec. (379.05 ticks, tree = 0.01 MB, solutions = 8)
+Elapsed time = 0.68 sec. (379.05 ticks, tree = 0.01 MB, solutions = 8)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  27
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.61 sec. (379.05 ticks)
+Real time             =    0.68 sec. (379.05 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.61 sec. (379.07 ticks)
+Total (root+branch&cut) =    0.68 sec. (379.07 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1071,7 +1071,7 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.50 ticks)
+Root relaxation solution time = 0.01 sec. (1.50 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -1165,18 +1165,18 @@ Detecting symmetries...
 0     0       16.7757    21       21.1706   LiftProj: 3     1207   20.76%
 Detecting symmetries...
 0     2       16.9386    19       21.1706       16.9462     1207   19.95%                        0             0
-Elapsed time = 1.00 sec. (628.35 ticks, tree = 0.01 MB, solutions = 14)
+Elapsed time = 1.12 sec. (628.35 ticks, tree = 0.01 MB, solutions = 14)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  38
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    1.00 sec. (628.36 ticks)
+Real time             =    1.12 sec. (628.36 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    1.00 sec. (628.38 ticks)
+Total (root+branch&cut) =    1.13 sec. (628.38 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1298,18 +1298,18 @@ Detecting symmetries...
 0     0       61.3113     4       61.5313   LiftProj: 1      613    0.36%
 Detecting symmetries...
 0     2       61.3577     2       61.5313       61.3756      613    0.25%                        0             0
-Elapsed time = 0.30 sec. (188.37 ticks, tree = 0.01 MB, solutions = 11)
+Elapsed time = 0.34 sec. (188.37 ticks, tree = 0.01 MB, solutions = 11)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  4
 Gomory fractional cuts applied:  5
 
 Root node processing (before b&c):
-Real time             =    0.30 sec. (188.38 ticks)
+Real time             =    0.34 sec. (188.38 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.30 sec. (188.39 ticks)
+Total (root+branch&cut) =    0.34 sec. (188.39 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1399,18 +1399,18 @@ Detecting symmetries...
 0     0       15.9264    15       16.6598   LiftProj: 4      785    4.40%
 Detecting symmetries...
 0     2       16.0771     6       16.6598       16.1343      785    3.15%                        0             0
-Elapsed time = 0.43 sec. (276.57 ticks, tree = 0.01 MB, solutions = 11)
+Elapsed time = 0.52 sec. (276.57 ticks, tree = 0.01 MB, solutions = 11)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  28
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.43 sec. (276.58 ticks)
+Real time             =    0.52 sec. (276.58 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.43 sec. (276.60 ticks)
+Total (root+branch&cut) =    0.52 sec. (276.60 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1506,18 +1506,18 @@ Detecting symmetries...
 0     0       51.8171    16       54.8794  LiftProj: 12      738    5.58%
 Detecting symmetries...
 0     2       52.2343    14       54.8794       52.2505      738    4.79%                        0             0
-Elapsed time = 0.50 sec. (305.66 ticks, tree = 0.01 MB, solutions = 10)
+Elapsed time = 0.58 sec. (305.66 ticks, tree = 0.01 MB, solutions = 10)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  27
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.50 sec. (305.67 ticks)
+Real time             =    0.58 sec. (305.67 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.50 sec. (305.69 ticks)
+Total (root+branch&cut) =    0.58 sec. (305.69 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1616,18 +1616,18 @@ Detecting symmetries...
 0     0       13.0969    24       16.4319   LiftProj: 9      849   20.30%
 Detecting symmetries...
 0     2       13.6836    16       16.4319       13.6890      849   16.69%                        0             0
-Elapsed time = 0.67 sec. (419.26 ticks, tree = 0.01 MB, solutions = 12)
+Elapsed time = 0.76 sec. (419.26 ticks, tree = 0.01 MB, solutions = 12)
 
 Mixed integer rounding cuts applied:  1
 Lift and project cuts applied:  35
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.67 sec. (419.27 ticks)
+Real time             =    0.76 sec. (419.27 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.03 ticks)
 ------------
-Total (root+branch&cut) =    0.67 sec. (419.30 ticks)
+Total (root+branch&cut) =    0.76 sec. (419.30 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1744,18 +1744,18 @@ Detecting symmetries...
 0     0       45.5683     5       45.7476   LiftProj: 1      648    0.39%
 Detecting symmetries...
 0     2       45.6328     2       45.7476       45.6345      648    0.25%                        0             0
-Elapsed time = 0.30 sec. (199.16 ticks, tree = 0.01 MB, solutions = 7)
+Elapsed time = 0.35 sec. (199.16 ticks, tree = 0.01 MB, solutions = 7)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  7
 Gomory fractional cuts applied:  2
 
 Root node processing (before b&c):
-Real time             =    0.30 sec. (199.17 ticks)
+Real time             =    0.35 sec. (199.17 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.30 sec. (199.18 ticks)
+Total (root+branch&cut) =    0.35 sec. (199.18 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1842,18 +1842,18 @@ Detecting symmetries...
 0     0       10.2769    17       11.9436  LiftProj: 14      614   13.95%
 Detecting symmetries...
 0     2       10.5362     6       11.9436       10.5362      614   11.78%                        0             0
-Elapsed time = 0.38 sec. (243.14 ticks, tree = 0.01 MB, solutions = 8)
+Elapsed time = 0.41 sec. (243.14 ticks, tree = 0.01 MB, solutions = 8)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  23
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.38 sec. (243.14 ticks)
+Real time             =    0.41 sec. (243.14 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.38 sec. (243.16 ticks)
+Total (root+branch&cut) =    0.41 sec. (243.16 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1941,18 +1941,18 @@ Detecting symmetries...
 *     0+    0                           63.0801       55.8647            11.44%
 Detecting symmetries...
 0     2       55.8647    18       63.0801       55.8738      618   11.42%                        0             0
-Elapsed time = 0.49 sec. (291.84 ticks, tree = 0.01 MB, solutions = 7)
+Elapsed time = 0.54 sec. (291.84 ticks, tree = 0.01 MB, solutions = 7)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  27
 Gomory fractional cuts applied:  1
 
 Root node processing (before b&c):
-Real time             =    0.49 sec. (291.84 ticks)
+Real time             =    0.54 sec. (291.84 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.49 sec. (291.86 ticks)
+Total (root+branch&cut) =    0.54 sec. (291.86 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2062,18 +2062,18 @@ Detecting symmetries...
 0     0       16.3644    19       22.4609  LiftProj: 10     1097   27.14%
 Detecting symmetries...
 0     2       16.3644    19       22.4609       16.3764     1097   27.09%                        0             0
-Elapsed time = 0.91 sec. (600.16 ticks, tree = 0.01 MB, solutions = 9)
+Elapsed time = 1.02 sec. (600.16 ticks, tree = 0.01 MB, solutions = 9)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  34
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.91 sec. (600.17 ticks)
+Real time             =    1.02 sec. (600.17 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.91 sec. (600.19 ticks)
+Total (root+branch&cut) =    1.02 sec. (600.19 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2161,18 +2161,18 @@ Detecting symmetries...
 *     0+    0                           57.2613       55.2287             3.55%
 Detecting symmetries...
 0     2       55.3325    11       57.2613       55.3742      581    3.30%                        0             0
-Elapsed time = 0.34 sec. (201.95 ticks, tree = 0.01 MB, solutions = 12)
+Elapsed time = 0.39 sec. (201.95 ticks, tree = 0.01 MB, solutions = 12)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  28
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.34 sec. (201.96 ticks)
+Real time             =    0.39 sec. (201.96 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.34 sec. (201.98 ticks)
+Total (root+branch&cut) =    0.39 sec. (201.98 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2281,11 +2281,11 @@ Lift and project cuts applied:  10
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.46 sec. (295.00 ticks)
+Real time             =    0.58 sec. (295.00 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.46 sec. (295.00 ticks)
+Total (root+branch&cut) =    0.58 sec. (295.00 ticks)
 Solution status 102.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2386,18 +2386,18 @@ Detecting symmetries...
 0     0       31.1981    14       34.4861  LiftProj: 15      916    9.53%
 Detecting symmetries...
 0     2       31.2875    12       34.4861       31.2966      916    9.25%                        0             0
-Elapsed time = 0.59 sec. (397.38 ticks, tree = 0.01 MB, solutions = 7)
+Elapsed time = 0.67 sec. (397.38 ticks, tree = 0.01 MB, solutions = 7)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  32
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.59 sec. (397.39 ticks)
+Real time             =    0.67 sec. (397.39 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.59 sec. (397.41 ticks)
+Total (root+branch&cut) =    0.67 sec. (397.41 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2510,18 +2510,18 @@ Detecting symmetries...
 0     0        6.4601    25        9.1778   LiftProj: 2     1101   29.61%
 Detecting symmetries...
 0     2        6.7832    15        9.1778        6.7850     1101   26.07%                        0             0
-Elapsed time = 1.01 sec. (684.38 ticks, tree = 0.01 MB, solutions = 9)
+Elapsed time = 1.15 sec. (684.38 ticks, tree = 0.01 MB, solutions = 9)
 
 Mixed integer rounding cuts applied:  3
 Lift and project cuts applied:  35
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    1.01 sec. (684.39 ticks)
+Real time             =    1.15 sec. (684.39 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    1.01 sec. (684.41 ticks)
+Total (root+branch&cut) =    1.15 sec. (684.41 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2592,18 +2592,18 @@ Detecting symmetries...
 0     0       27.7990     8       28.5540   LiftProj: 1      555    2.64%
 Detecting symmetries...
 0     2       27.9239     6       28.5540       27.9322      555    2.18%                        0             0
-Elapsed time = 0.17 sec. (104.77 ticks, tree = 0.01 MB, solutions = 6)
+Elapsed time = 0.18 sec. (104.77 ticks, tree = 0.01 MB, solutions = 6)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  16
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.17 sec. (104.77 ticks)
+Real time             =    0.18 sec. (104.77 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.17 sec. (104.79 ticks)
+Total (root+branch&cut) =    0.18 sec. (104.79 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2714,18 +2714,18 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0        3.9509     5        4.0841       Cuts: 3      598    3.26%
 Detecting symmetries...
 0     2        3.9679     7        4.0841        3.9721      598    2.74%                        0             0
-Elapsed time = 0.28 sec. (185.39 ticks, tree = 0.01 MB, solutions = 7)
+Elapsed time = 0.31 sec. (185.39 ticks, tree = 0.01 MB, solutions = 7)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  11
 Gomory fractional cuts applied:  3
 
 Root node processing (before b&c):
-Real time             =    0.28 sec. (185.39 ticks)
+Real time             =    0.31 sec. (185.39 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.28 sec. (185.40 ticks)
+Total (root+branch&cut) =    0.31 sec. (185.40 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2809,18 +2809,18 @@ Detecting symmetries...
 0     0       36.1549    15       38.6714  LiftProj: 10      837    6.51%
 Detecting symmetries...
 0     2       36.1671    14       38.6714       36.1806      837    6.44%                        0             0
-Elapsed time = 0.35 sec. (223.03 ticks, tree = 0.01 MB, solutions = 9)
+Elapsed time = 0.39 sec. (223.03 ticks, tree = 0.01 MB, solutions = 9)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  24
 Gomory fractional cuts applied:  1
 
 Root node processing (before b&c):
-Real time             =    0.35 sec. (223.04 ticks)
+Real time             =    0.39 sec. (223.04 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.35 sec. (223.06 ticks)
+Total (root+branch&cut) =    0.39 sec. (223.06 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2927,18 +2927,18 @@ Detecting symmetries...
 0     0        5.1392    24        7.5597   LiftProj: 6      890   32.02%
 Detecting symmetries...
 0     2        5.4952    14        7.5597        5.5033      890   27.20%                        0             0
-Elapsed time = 0.79 sec. (548.75 ticks, tree = 0.01 MB, solutions = 9)
+Elapsed time = 0.90 sec. (548.75 ticks, tree = 0.01 MB, solutions = 9)
 
 Mixed integer rounding cuts applied:  6
 Lift and project cuts applied:  29
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.79 sec. (548.75 ticks)
+Real time             =    0.90 sec. (548.75 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.80 sec. (548.77 ticks)
+Total (root+branch&cut) =    0.90 sec. (548.77 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -3054,11 +3054,11 @@ Lift and project cuts applied:  10
 Gomory fractional cuts applied:  2
 
 Root node processing (before b&c):
-Real time             =    0.26 sec. (159.50 ticks)
+Real time             =    0.29 sec. (159.50 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.26 sec. (159.50 ticks)
+Total (root+branch&cut) =    0.29 sec. (159.50 ticks)
 Solution status 102.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -3172,18 +3172,18 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0        4.5146     2        4.5517       Cuts: 7      615    0.81%
 Detecting symmetries...
 0     2        4.5338     4        4.5517        4.5397      616    0.26%                        0             0
-Elapsed time = 0.29 sec. (177.98 ticks, tree = 0.01 MB, solutions = 7)
+Elapsed time = 0.38 sec. (177.98 ticks, tree = 0.01 MB, solutions = 7)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  10
 Gomory fractional cuts applied:  2
 
 Root node processing (before b&c):
-Real time             =    0.29 sec. (177.98 ticks)
+Real time             =    0.38 sec. (177.98 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.29 sec. (177.99 ticks)
+Total (root+branch&cut) =    0.38 sec. (177.99 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -3271,18 +3271,18 @@ Detecting symmetries...
 0     0       71.2875    17       74.1734   LiftProj: 9      724    3.89%
 Detecting symmetries...
 0     2       71.3828    16       74.1734       71.3845      724    3.76%                        0             0
-Elapsed time = 0.44 sec. (266.96 ticks, tree = 0.01 MB, solutions = 9)
+Elapsed time = 0.49 sec. (266.96 ticks, tree = 0.01 MB, solutions = 9)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  30
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.44 sec. (266.97 ticks)
+Real time             =    0.49 sec. (266.97 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.44 sec. (266.99 ticks)
+Total (root+branch&cut) =    0.49 sec. (266.99 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -3385,18 +3385,18 @@ Detecting symmetries...
 0     0       11.4626    21       16.1240   LiftProj: 4      910   28.91%
 Detecting symmetries...
 0     2       12.2377    11       16.1240       12.2429      910   24.07%                        0             0
-Elapsed time = 0.70 sec. (461.54 ticks, tree = 0.01 MB, solutions = 7)
+Elapsed time = 0.78 sec. (461.54 ticks, tree = 0.01 MB, solutions = 7)
 
 Mixed integer rounding cuts applied:  2
 Lift and project cuts applied:  34
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.70 sec. (461.54 ticks)
+Real time             =    0.78 sec. (461.54 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.70 sec. (461.57 ticks)
+Total (root+branch&cut) =    0.78 sec. (461.57 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -3432,7 +3432,7 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.40 ticks)
+Root relaxation solution time = 0.01 sec. (1.40 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -3477,18 +3477,18 @@ Detecting symmetries...
 *     0+    0                           69.9378       67.5161             3.46%
 Detecting symmetries...
 0     2       67.5161    18       69.9378       67.5507      720    3.41%                        0             0
-Elapsed time = 0.35 sec. (179.59 ticks, tree = 0.01 MB, solutions = 9)
+Elapsed time = 0.33 sec. (179.59 ticks, tree = 0.01 MB, solutions = 9)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  22
 Gomory fractional cuts applied:  1
 
 Root node processing (before b&c):
-Real time             =    0.35 sec. (179.60 ticks)
+Real time             =    0.33 sec. (179.60 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.35 sec. (179.62 ticks)
+Total (root+branch&cut) =    0.33 sec. (179.62 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -3579,18 +3579,18 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0        8.0158     3        8.0784      Fract: 1      342    0.77%
 Detecting symmetries...
 0     1        8.0272     2        8.0784        8.0280      345    0.62%                        0             0
-Elapsed time = 0.12 sec. (72.89 ticks, tree = 0.01 MB, solutions = 5)
+Elapsed time = 0.13 sec. (72.89 ticks, tree = 0.01 MB, solutions = 5)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  2
 Gomory fractional cuts applied:  1
 
 Root node processing (before b&c):
-Real time             =    0.12 sec. (72.89 ticks)
+Real time             =    0.13 sec. (72.89 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.12 sec. (72.91 ticks)
+Total (root+branch&cut) =    0.13 sec. (72.91 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -3626,7 +3626,7 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (1.55 ticks)
+Root relaxation solution time = 0.00 sec. (1.55 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -3685,18 +3685,18 @@ Detecting symmetries...
 0     0       43.2517    17       49.9118  LiftProj: 12      788   13.34%
 Detecting symmetries...
 0     2       43.3288    17       49.9118       43.3489      788   13.15%                        0             0
-Elapsed time = 0.86 sec. (405.75 ticks, tree = 0.01 MB, solutions = 6)
+Elapsed time = 0.70 sec. (405.75 ticks, tree = 0.01 MB, solutions = 6)
 
 Mixed integer rounding cuts applied:  3
 Lift and project cuts applied:  32
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.86 sec. (405.75 ticks)
+Real time             =    0.70 sec. (405.75 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.86 sec. (405.78 ticks)
+Total (root+branch&cut) =    0.70 sec. (405.78 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -3732,7 +3732,7 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (1.55 ticks)
+Root relaxation solution time = 0.00 sec. (1.55 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -3822,18 +3822,18 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0       11.4689     4       11.6909       11.4689      862    1.90%
 0     0       11.6544     4       11.6909       Cuts: 4      871    0.31%
 0     0        cutoff             11.6909                    877    0.00%                        0             0
-Elapsed time = 0.93 sec. (410.74 ticks, tree = 0.01 MB, solutions = 9)
+Elapsed time = 0.70 sec. (410.74 ticks, tree = 0.01 MB, solutions = 9)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  4
 Gomory fractional cuts applied:  2
 
 Root node processing (before b&c):
-Real time             =    0.93 sec. (410.75 ticks)
+Real time             =    0.70 sec. (410.75 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.93 sec. (410.75 ticks)
+Total (root+branch&cut) =    0.70 sec. (410.75 ticks)
 Solution status 101.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -3969,7 +3969,7 @@ Real time             =    0.38 sec. (214.71 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.39 sec. (214.72 ticks)
+Total (root+branch&cut) =    0.38 sec. (214.72 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -4050,18 +4050,18 @@ Detecting symmetries...
 0     0       10.1885    17       11.0334   LiftProj: 4      528    7.66%
 Detecting symmetries...
 0     2       10.5793     9       11.0334       10.5832      528    4.08%                        0             0
-Elapsed time = 0.31 sec. (177.97 ticks, tree = 0.01 MB, solutions = 7)
+Elapsed time = 0.42 sec. (177.97 ticks, tree = 0.01 MB, solutions = 7)
 
 Mixed integer rounding cuts applied:  1
 Lift and project cuts applied:  19
 Gomory fractional cuts applied:  3
 
 Root node processing (before b&c):
-Real time             =    0.31 sec. (177.98 ticks)
+Real time             =    0.42 sec. (177.98 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.31 sec. (178.00 ticks)
+Total (root+branch&cut) =    0.42 sec. (178.00 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -4163,18 +4163,18 @@ Detecting symmetries...
 0     0       47.9666    16       53.0744   LiftProj: 9      930    9.62%
 Detecting symmetries...
 0     2       47.9666    16       53.0744       47.9808      930    9.60%                        0             0
-Elapsed time = 0.70 sec. (383.08 ticks, tree = 0.01 MB, solutions = 10)
+Elapsed time = 0.68 sec. (383.08 ticks, tree = 0.01 MB, solutions = 10)
 
 Mixed integer rounding cuts applied:  2
 Lift and project cuts applied:  29
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.70 sec. (383.09 ticks)
+Real time             =    0.68 sec. (383.09 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.70 sec. (383.11 ticks)
+Total (root+branch&cut) =    0.68 sec. (383.11 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -4272,18 +4272,18 @@ Detecting symmetries...
 0     0        7.2017    23       10.0449   LiftProj: 7      772   28.31%
 Detecting symmetries...
 0     2        7.9902    12       10.0449        8.0229      772   20.13%                        0             0
-Elapsed time = 0.67 sec. (436.82 ticks, tree = 0.01 MB, solutions = 8)
+Elapsed time = 0.72 sec. (436.82 ticks, tree = 0.01 MB, solutions = 8)
 
 Mixed integer rounding cuts applied:  6
 Lift and project cuts applied:  31
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.67 sec. (436.83 ticks)
+Real time             =    0.72 sec. (436.83 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.67 sec. (436.85 ticks)
+Total (root+branch&cut) =    0.72 sec. (436.85 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -4374,18 +4374,18 @@ Detecting symmetries...
 0     0       46.7977     8       47.7019   LiftProj: 4      802    1.90%
 Detecting symmetries...
 0     2       46.7977     8       47.7019       46.9013      802    1.68%                        0             0
-Elapsed time = 0.38 sec. (221.70 ticks, tree = 0.01 MB, solutions = 4)
+Elapsed time = 0.40 sec. (221.70 ticks, tree = 0.01 MB, solutions = 4)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  17
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.38 sec. (221.71 ticks)
+Real time             =    0.40 sec. (221.71 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.38 sec. (221.72 ticks)
+Total (root+branch&cut) =    0.40 sec. (221.72 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -4421,7 +4421,7 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.50 ticks)
+Root relaxation solution time = 0.01 sec. (1.50 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -4494,16 +4494,16 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0        7.1070     2        7.1268        7.1070      629    0.28%
 Detecting symmetries...
 0     0        cutoff              7.1268        7.1070      640    0.28%                        0             0
-Elapsed time = 0.30 sec. (178.13 ticks, tree = 0.01 MB, solutions = 6)
+Elapsed time = 0.34 sec. (178.13 ticks, tree = 0.01 MB, solutions = 6)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  4
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.30 sec. (178.14 ticks)
+Real time             =    0.34 sec. (178.14 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.30 sec. (178.14 ticks)
+Total (root+branch&cut) =    0.34 sec. (178.14 ticks)
 Solution status 101.

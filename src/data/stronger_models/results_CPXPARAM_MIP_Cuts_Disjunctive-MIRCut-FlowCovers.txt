@@ -83,7 +83,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0       48.4198     7       52.9813    MIRcuts: 1      225    8.61%
 Detecting symmetries...
 0     2       48.6970     6       52.9813       48.7238      225    8.04%                        0             0
-Elapsed time = 0.16 sec. (75.37 ticks, tree = 0.01 MB, solutions = 2)
+Elapsed time = 0.13 sec. (75.37 ticks, tree = 0.01 MB, solutions = 2)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  1
@@ -91,11 +91,11 @@ Disjunctive cuts applied:  8
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.16 sec. (75.37 ticks)
+Real time             =    0.13 sec. (75.37 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.16 sec. (75.38 ticks)
+Total (root+branch&cut) =    0.13 sec. (75.38 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -128,12 +128,12 @@ Tried aggregator 1 time.
 Detecting symmetries...
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.01 sec. (0.31 ticks)
+Presolve time = 0.00 sec. (0.31 ticks)
 Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.05 sec. (0.95 ticks)
+Root relaxation solution time = 0.01 sec. (0.95 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -148,7 +148,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 Detecting symmetries...
 Detecting symmetries...
 0     2        4.8382     7       11.3251        4.8487      115   57.19%                        0             0
-Elapsed time = 0.19 sec. (38.83 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.07 sec. (38.83 ticks, tree = 0.01 MB, solutions = 1)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  0
@@ -156,11 +156,11 @@ Disjunctive cuts applied:  7
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.18 sec. (38.83 ticks)
+Real time             =    0.07 sec. (38.83 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.19 sec. (38.85 ticks)
+Total (root+branch&cut) =    0.07 sec. (38.85 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -234,7 +234,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0       40.5363     2       40.6800       40.5363      104    0.35%
 Detecting symmetries...
 0     0        cutoff             40.6800       40.6800      109    0.00%                        0             0
-Elapsed time = 0.07 sec. (16.67 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.04 sec. (16.67 ticks, tree = 0.01 MB, solutions = 1)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  0
@@ -242,11 +242,11 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.07 sec. (16.49 ticks)
+Real time             =    0.04 sec. (16.49 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.18 ticks)
 ------------
-Total (root+branch&cut) =    0.07 sec. (16.67 ticks)
+Total (root+branch&cut) =    0.04 sec. (16.67 ticks)
 Solution status 101.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -279,12 +279,12 @@ Tried aggregator 1 time.
 Detecting symmetries...
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.01 sec. (0.30 ticks)
+Presolve time = 0.00 sec. (0.30 ticks)
 Probing time = 0.00 sec. (0.10 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.02 sec. (0.74 ticks)
+Root relaxation solution time = 0.01 sec. (0.74 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -292,7 +292,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0        6.4123     1                      6.4123       41
 *     0+    0                            6.4123        6.4123             0.00%
 0     0        cutoff              6.4123        6.4123       41    0.00%                        0             0
-Elapsed time = 0.05 sec. (2.57 ticks, tree = 0.01 MB, solutions = 2)
+Elapsed time = 0.02 sec. (2.57 ticks, tree = 0.01 MB, solutions = 2)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  0
@@ -300,11 +300,11 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.05 sec. (2.58 ticks)
+Real time             =    0.02 sec. (2.58 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.05 sec. (2.58 ticks)
+Total (root+branch&cut) =    0.02 sec. (2.58 ticks)
 Solution status 101.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -379,7 +379,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0       51.4906     9       54.5576       51.4906      149    5.62%
 Detecting symmetries...
 0     2       51.6681     6       54.5576       51.7066      149    5.23%                        0             0
-Elapsed time = 0.09 sec. (25.64 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.06 sec. (25.64 ticks, tree = 0.01 MB, solutions = 1)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  0
@@ -387,11 +387,11 @@ Disjunctive cuts applied:  7
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.09 sec. (25.64 ticks)
+Real time             =    0.06 sec. (25.64 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.05 ticks)
 ------------
-Total (root+branch&cut) =    0.09 sec. (25.68 ticks)
+Total (root+branch&cut) =    0.06 sec. (25.68 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -445,7 +445,7 @@ Detecting symmetries...
 0     0        5.9772     8       13.6225   Disjcuts: 2      122   56.12%
 Detecting symmetries...
 0     2        6.0678     6       13.6225        6.1559      122   54.81%                        0             0
-Elapsed time = 0.20 sec. (47.57 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.10 sec. (47.57 ticks, tree = 0.01 MB, solutions = 1)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  0
@@ -453,11 +453,11 @@ Disjunctive cuts applied:  9
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.20 sec. (47.57 ticks)
+Real time             =    0.10 sec. (47.57 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.05 ticks)
 ------------
-Total (root+branch&cut) =    0.21 sec. (47.62 ticks)
+Total (root+branch&cut) =    0.10 sec. (47.62 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -494,7 +494,7 @@ Probing time = 0.00 sec. (0.06 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.93 ticks)
+Root relaxation solution time = 0.00 sec. (0.93 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -504,7 +504,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0       49.1770     2      698.6785   Disjcuts: 1       60   92.96%
 Detecting symmetries...
 0     2       49.1770     2      698.6785       49.1770       62   92.96%                        0             0
-Elapsed time = 0.04 sec. (10.47 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.03 sec. (10.47 ticks, tree = 0.01 MB, solutions = 1)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  0
@@ -512,11 +512,11 @@ Disjunctive cuts applied:  1
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.04 sec. (10.48 ticks)
+Real time             =    0.03 sec. (10.48 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.04 sec. (10.49 ticks)
+Total (root+branch&cut) =    0.03 sec. (10.49 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -555,7 +555,7 @@ Probing time = 0.00 sec. (0.07 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.82 ticks)
+Root relaxation solution time = 0.00 sec. (0.82 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -592,7 +592,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0        7.4387     2        9.7351        7.4387      103   23.59%
 Detecting symmetries...
 0     1        7.5968     2        9.7351        8.6605      103   11.04%                        0             0
-Elapsed time = 0.11 sec. (16.39 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.05 sec. (16.39 ticks, tree = 0.01 MB, solutions = 1)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  0
@@ -600,11 +600,11 @@ Disjunctive cuts applied:  1
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.11 sec. (16.39 ticks)
+Real time             =    0.05 sec. (16.39 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.11 sec. (16.41 ticks)
+Total (root+branch&cut) =    0.05 sec. (16.41 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -748,7 +748,7 @@ Detecting symmetries...
 0     0       16.0082     9                  MIRcuts: 1      116
 Detecting symmetries...
 0     2       16.0082     9                     16.0112      116                                 0             0
-Elapsed time = 0.22 sec. (60.47 ticks, tree = 0.01 MB, solutions = 0)
+Elapsed time = 0.12 sec. (60.47 ticks, tree = 0.01 MB, solutions = 0)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  2
@@ -756,11 +756,11 @@ Disjunctive cuts applied:  9
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.22 sec. (60.47 ticks)
+Real time             =    0.12 sec. (60.47 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.22 sec. (60.48 ticks)
+Total (root+branch&cut) =    0.12 sec. (60.48 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -797,7 +797,7 @@ Probing time = 0.00 sec. (0.07 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.88 ticks)
+Root relaxation solution time = 0.00 sec. (0.88 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -887,7 +887,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 *     0+    0                           16.6575       16.6537             0.02%
 0     0       16.6537     1       16.6575       16.6537      109    0.02%
 0     0        cutoff             16.6575                    113    0.00%                        0             0
-Elapsed time = 0.08 sec. (13.46 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.04 sec. (13.46 ticks, tree = 0.01 MB, solutions = 1)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  0
@@ -895,11 +895,11 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.08 sec. (13.46 ticks)
+Real time             =    0.04 sec. (13.46 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.08 sec. (13.46 ticks)
+Total (root+branch&cut) =    0.04 sec. (13.46 ticks)
 Solution status 101.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -937,7 +937,7 @@ Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (1.02 ticks)
+Root relaxation solution time = 0.00 sec. (1.02 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -954,7 +954,7 @@ Detecting symmetries...
 0     0       49.3436     9                 Disjcuts: 1      129
 Detecting symmetries...
 0     2       49.3436     9                     49.4248      129                                 0             0
-Elapsed time = 0.16 sec. (65.98 ticks, tree = 0.01 MB, solutions = 0)
+Elapsed time = 0.11 sec. (65.98 ticks, tree = 0.01 MB, solutions = 0)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  1
@@ -962,11 +962,11 @@ Disjunctive cuts applied:  10
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.16 sec. (65.98 ticks)
+Real time             =    0.11 sec. (65.98 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.16 sec. (65.99 ticks)
+Total (root+branch&cut) =    0.11 sec. (65.99 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1020,7 +1020,7 @@ Detecting symmetries...
 0     0       12.2060     8       16.4316   Disjcuts: 1      124   25.72%
 Detecting symmetries...
 0     2       12.2340     7       16.4316       12.2571      124   25.41%                        0             0
-Elapsed time = 0.11 sec. (46.34 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.09 sec. (46.34 ticks, tree = 0.01 MB, solutions = 1)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  0
@@ -1028,11 +1028,11 @@ Disjunctive cuts applied:  10
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.11 sec. (46.34 ticks)
+Real time             =    0.09 sec. (46.34 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.11 sec. (46.36 ticks)
+Total (root+branch&cut) =    0.09 sec. (46.36 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1154,7 +1154,7 @@ Probing time = 0.00 sec. (0.06 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.84 ticks)
+Root relaxation solution time = 0.00 sec. (0.84 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -1174,11 +1174,11 @@ Disjunctive cuts applied:  2
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.04 sec. (11.00 ticks)
+Real time             =    0.03 sec. (11.00 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.04 sec. (11.02 ticks)
+Total (root+branch&cut) =    0.03 sec. (11.02 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1216,7 +1216,7 @@ Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.89 ticks)
+Root relaxation solution time = 0.00 sec. (0.89 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -1270,7 +1270,7 @@ Real time             =    0.05 sec. (18.74 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.03 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (18.77 ticks)
+Total (root+branch&cut) =    0.05 sec. (18.77 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1376,7 +1376,7 @@ Probing time = 0.00 sec. (0.06 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.85 ticks)
+Root relaxation solution time = 0.01 sec. (0.85 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -1465,7 +1465,7 @@ Probing time = 0.00 sec. (0.09 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.78 ticks)
+Root relaxation solution time = 0.00 sec. (0.78 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -1508,7 +1508,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0       15.5882     2       15.7874    MIRcuts: 3      101    1.26%
 Detecting symmetries...
 0     2       15.5934     3       15.7874       15.5963      101    1.21%                        0             0
-Elapsed time = 0.06 sec. (18.49 ticks, tree = 0.01 MB, solutions = 2)
+Elapsed time = 0.05 sec. (18.49 ticks, tree = 0.01 MB, solutions = 2)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  1
@@ -1516,7 +1516,7 @@ Disjunctive cuts applied:  2
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (18.49 ticks)
+Real time             =    0.05 sec. (18.49 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
@@ -2030,7 +2030,7 @@ Probing time = 0.00 sec. (0.12 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.87 ticks)
+Root relaxation solution time = 0.01 sec. (0.87 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -2126,7 +2126,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0        4.5323     2        4.5514        4.5323      101    0.42%
 Detecting symmetries...
 0     2        4.5323     2        4.5514        4.5323      103    0.42%                        0             0
-Elapsed time = 0.05 sec. (17.03 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.06 sec. (17.03 ticks, tree = 0.01 MB, solutions = 1)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  0
@@ -2134,11 +2134,11 @@ Disjunctive cuts applied:  1
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.05 sec. (17.04 ticks)
+Real time             =    0.06 sec. (17.04 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.05 sec. (17.04 ticks)
+Total (root+branch&cut) =    0.06 sec. (17.04 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2548,7 +2548,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0       47.1752     7       49.3481       47.1752      172    4.40%
 Detecting symmetries...
 0     0        cutoff             49.3481       47.1752      172    4.40%                        0             0
-Elapsed time = 0.06 sec. (34.79 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.08 sec. (34.79 ticks, tree = 0.01 MB, solutions = 1)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  0
@@ -2556,11 +2556,11 @@ Disjunctive cuts applied:  7
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (34.80 ticks)
+Real time             =    0.08 sec. (34.80 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (34.80 ticks)
+Total (root+branch&cut) =    0.08 sec. (34.80 ticks)
 Solution status 101.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2598,7 +2598,7 @@ Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.91 ticks)
+Root relaxation solution time = 0.01 sec. (0.91 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -2803,7 +2803,7 @@ Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.95 ticks)
+Root relaxation solution time = 0.00 sec. (0.95 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -2843,7 +2843,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0       49.2328     7       52.9256   Disjcuts: 1      145    6.98%
 Detecting symmetries...
 0     0        cutoff             52.9256       49.2328      145    6.98%                        0             0
-Elapsed time = 0.07 sec. (22.19 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.05 sec. (22.19 ticks, tree = 0.01 MB, solutions = 1)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  0
@@ -2851,11 +2851,11 @@ Disjunctive cuts applied:  5
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.07 sec. (22.19 ticks)
+Real time             =    0.05 sec. (22.19 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.07 sec. (22.19 ticks)
+Total (root+branch&cut) =    0.05 sec. (22.19 ticks)
 Solution status 101.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2893,7 +2893,7 @@ Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.98 ticks)
+Root relaxation solution time = 0.01 sec. (0.98 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -2958,7 +2958,7 @@ Probing time = 0.00 sec. (0.06 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.81 ticks)
+Root relaxation solution time = 0.01 sec. (0.81 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -2994,7 +2994,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0       47.4773     2       47.5785       47.4773       93    0.21%
 0     0       47.4773     2       47.5785   Disjcuts: 1       97    0.21%
 0     0        cutoff             47.5785                    101    0.00%                        0             0
-Elapsed time = 0.04 sec. (16.92 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.05 sec. (16.92 ticks, tree = 0.01 MB, solutions = 1)
 
 Flow cuts applied:  0
 Mixed integer rounding cuts applied:  0
@@ -3002,11 +3002,11 @@ Disjunctive cuts applied:  1
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.04 sec. (16.92 ticks)
+Real time             =    0.05 sec. (16.92 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.04 sec. (16.92 ticks)
+Total (root+branch&cut) =    0.05 sec. (16.92 ticks)
 Solution status 101.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -3047,7 +3047,7 @@ Probing time = 0.00 sec. (0.11 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.78 ticks)
+Root relaxation solution time = 0.00 sec. (0.78 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
