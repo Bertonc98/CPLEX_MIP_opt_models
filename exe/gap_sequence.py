@@ -19,8 +19,10 @@ for fl in filenames:
 	first = True
 	initial_gap = 0.0
 	n_cuts = 0
+	# ~ print(fl)
 	for line in text:
 		if "Instance" in line:
+			# ~ print(line)
 			out_text.append([])
 			n_cuts = 0
 			out_text[-1].append(line.strip())
@@ -28,13 +30,24 @@ for fl in filenames:
 		elif ":" not in line and first and "Objective" not in line and ";" in line:
 			first = False
 			obj, bi, _ = line.split(";")
+			if "integral" in obj:
+				continue
 			
 			initial_gap = (float(bi) - float(obj))/float(bi)
-		elif ":" in line and "CPX" not in line:
+		elif ":" in line and "CPX" not in line:		
 			added = True
 			obj, bi, n_c = line.split(";")
-			gap = (float(bi) - float(obj))/float(bi)
-			gap = (initial_gap - gap)/initial_gap
+			bi = bi.split(":")[-1]
+			if "integral" in obj:
+				continue
+			
+			# ~ print(initial_gap, obj, bi, n_c, sep="\t\t")
+				
+			if initial_gap == 0:
+				gap = 0
+			else:
+				gap = (float(bi) - float(obj))/float(bi)
+				gap = (initial_gap - gap)/initial_gap
 			
 			n_cuts += int(n_c.split(":")[-1])
 			out_text[-1].append(";".join([str(n_cuts), str(gap)]))
