@@ -104,7 +104,12 @@ must be called passing the name of the model that is under analysis and retrieve
 gap_pipeline compelted, even on stronger_model results.
 New directory to divide basic/stronger files (see dir tree)
 
-TODO: extract dual
+## 15/12/2022
+Quadratic model implementation, test and plot
+
+TODO: 
+- extract dual
+- If obj 0 then gap set to 0
 
 
 Footer
