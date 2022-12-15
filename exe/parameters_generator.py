@@ -8,7 +8,7 @@ if len(sys.argv) != 2:
 
 model_name = sys.argv[1]
 
-stuff = ["CPXPARAM_MIP_Cuts_"+cut for cut in ["Gomory", "Disjunctive", "LiftProj", "MIRCut", "Covers", "FlowCovers"]]
+stuff = ["CPXPARAM_MIP_Cuts_"+cut for cut in ["Gomory", "Disjunctive", "LiftProj"]]
 subsets = []
 for L in range(1, len(stuff) + 1):
     for subset in itertools.combinations(stuff, L):
