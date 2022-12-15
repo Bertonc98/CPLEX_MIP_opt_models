@@ -82,21 +82,22 @@ int main(int argc, char **argv){
 	IloNumVarArray w(env, d, -IloInfinity, IloInfinity); 
 	w.setNames("w");
 	//Violation cost
-	IloNumVar C(env, 100);
+	//IloNumVar C(env, 100);
+	int C = 10;
 	//Measurement error on point i
 	IloNumVarArray pp(env, k, 0, IloInfinity); //(7)
 	pp.setNames("p+");
 	IloNumVarArray pm(env, k, 0, IloInfinity); //(7)
 	pm.setNames("p-");
 	//Confidence region parameter
-	IloNumVar eps(env, 10);
+	//IloNumVar eps(env, 0);
+	int eps = 1;
 	//Intercept
 	IloNumVar z(env, -IloInfinity, IloInfinity); 
 	z.setName("z");
 	//binary selection of features
 	IloNumVarArray f(env, d, 0, 1, ILOINT); // (8)
 	f.setNames("f");
-	
 	
 	//~ Objective Function 
 	//~ IloObjective obj = IloAdd(model, IloMinimize(env, IloSum(p - IloScalProd( IloScalProd(mones, s) + ones, r) ) ) );
@@ -144,7 +145,7 @@ int main(int argc, char **argv){
 	
 	string export_file = "../src/data/quadratic_models/quadratic_model"+ instance + "_" + to_string(d_0) + "_" + to_string(k_0) + ".lp"; 
 	cplex.exportModel(export_file.c_str());
-	
+	cout <<"EPSILON" << eps << endl;
 	
 	//Suppress the outpt
 	//std::cout.setstate(std::ios::failbit);
