@@ -19,7 +19,7 @@ for fl in filenames:
 	first = True
 	initial_gap = 0.0
 	n_cuts = 0
-	# ~ print(fl)
+	# print(fl)
 	for line in text:
 		if "Instance" in line:
 			# ~ print(line)
@@ -30,7 +30,7 @@ for fl in filenames:
 		elif ":" not in line and first and "Objective" not in line and ";" in line:
 			first = False
 			obj, bi, _ = line.split(";")
-			if "integral" in obj:
+			if "integral" in obj or "cutoff" in obj:
 				continue
 			
 			initial_gap = (float(bi) - float(obj))/float(bi)
@@ -38,7 +38,7 @@ for fl in filenames:
 			added = True
 			obj, bi, n_c = line.split(";")
 			bi = bi.split(":")[-1]
-			if "integral" in obj:
+			if "integral" in obj or "cutoff" in obj:
 				continue
 			
 			# ~ print(initial_gap, obj, bi, n_c, sep="\t\t")
