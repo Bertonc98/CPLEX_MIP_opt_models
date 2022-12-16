@@ -91,7 +91,7 @@ int main(int argc, char **argv){
 	pm.setNames("p-");
 	//Confidence region parameter
 	//IloNumVar eps(env, 0);
-	int eps = 1;
+	int eps = 2.5;
 	//Intercept
 	IloNumVar z(env, -IloInfinity, IloInfinity); 
 	z.setName("z");
