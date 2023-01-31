@@ -51,3 +51,43 @@ void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray 
 void debug(int i){
 	std::cout << "HERE: " << i << std::endl << std::endl;
 }
+
+void print_conflicts(IloEnv env, IloModel model, IloCplex cplex){
+	IloConstraintArray constraints(env);
+	for (IloModel::Iterator it(model); it.ok(); ++it) {
+         IloExtractable ext = *it;
+         if (ext.isVariable()) {
+            IloNumVar v = ext.asVariable();
+            // Add variable bounds to the constraints array.
+            constraints.add(IloBound(v, IloBound::Lower));
+            constraints.add(IloBound(v, IloBound::Upper));
+         }
+         else if (ext.isConstraint()) {
+            IloConstraint c = ext.asConstraint();
+            constraints.add(c);
+         }
+      }
+      
+      IloNumArray prefs(env, constraints.getSize());
+      for (int i = 0; i < prefs.getSize(); ++i)
+         prefs[i] = 1.0;
+	if (cplex.refineConflict(constraints, prefs)) {
+		 // Display the solution status.
+		 IloCplex::CplexStatus status = cplex.getCplexStatus();
+		 std::cout << "Solution status = " << status << " (" <<
+			static_cast<int>(status) << ")" << std::endl;
+
+		 // Get the conflict status for the constraints that were specified.
+		 IloCplex::ConflictStatusArray conflict = cplex.getConflict(constraints);
+
+		 // Print constraints that participate in the conflict.
+		 std::cout << "Conflict:" << std::endl;
+
+		 for (int i = 0; i < constraints.getSize(); ++i) {
+			if (conflict[i] == IloCplex::ConflictMember ||
+				conflict[i] == IloCplex::ConflictPossibleMember) {
+			   std::cout << "  " << constraints[i] << std::endl;
+			}
+		 }
+	 }
+}

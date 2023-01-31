@@ -82,7 +82,7 @@ int main(int argc, char **argv){
 	
 	for(int i = 0; i<k; i++){
 		Rp[i] = 10;
-		Rm[i] = -10;
+		Rm[i] = 10;
 	} 
 	
 	//~ END OF PREPROCESSING
@@ -104,7 +104,7 @@ int main(int argc, char **argv){
 	pm.setNames("p-");
 	//Confidence region parameter
 	//IloNumVar eps(env, 0);
-	int eps = 2.5;
+	int eps = 10;
 	//Intercept
 	IloNumVar z(env, -IloInfinity, IloInfinity); 
 	z.setName("z");
@@ -197,6 +197,12 @@ int main(int argc, char **argv){
 		cout << "./linearized_model instance_number d k s"<<endl;
 		return 1;
 	}
+	/* CONFLICTS */
+	//If not feasible
+	if(st != 2)
+		print_conflicts(env, model, cplex);
+
+	// */
 	
 	
 	//~ Mismatching count 
@@ -206,12 +212,10 @@ int main(int argc, char **argv){
 	int result, pos;
 	for (int i = 0; i < k ; i++){
 		getline(cfile, tmp);
-		cout << "HEHEHEHEHE" <<endl;
-		result = 1-int(abs( cplex.getValue(s[i]) ));
-		cout << "HAHAHAHA" <<endl;
+		result = int(abs( cplex.getValue(s[i]) ));
 		pos = tmp.find(",");
 		if( result != stoi(tmp.substr(pos+1, 1)) ){
-			cout << tmp << " | " << 1-int(abs(cplex.getValue(s[i]))) << endl;
+			cout << tmp << " | " << int(abs(cplex.getValue(s[i]))) << endl;
 			errors++;
 		}
 	}
@@ -232,9 +236,7 @@ int main(int argc, char **argv){
 
 	dest_file<<line<<endl;
 	
-	cout << "HEHEHEHEHE" <<endl;
 	cout << "Obj value: " << cplex.getObjValue() << endl;
-	cout << "HAHAHAHAHA" <<endl;
 	env.end();
 	cout << "Environment destroyed." << endl;
 

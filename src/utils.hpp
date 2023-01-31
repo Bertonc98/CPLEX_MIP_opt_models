@@ -16,4 +16,6 @@ void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray 
 
 void debug(int i);
 
+void print_conflicts(IloEnv env, IloModel model, IloCplex cplex);
+
 #endif
