@@ -169,7 +169,7 @@ int main(int argc, char **argv){
 	cfile.open(compare);
 	if (!cfile) {
 		cerr << "ERROR: could not open comparison file '" << compare << endl;
-		cout << "./basic_model instance_number d k"<<endl;
+		cout << "./linearized_model instance_number d k"<<endl;
 		return 1;
 	}
 	
