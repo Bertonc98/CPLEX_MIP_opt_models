@@ -81,8 +81,8 @@ int main(int argc, char **argv){
 	compute_R(solution, x, y, Rm);
 	
 	for(int i = 0; i<k; i++){
-		Rp[i] = 10;
-		Rm[i] = 10;
+		Rp[i] *= 100000;
+		Rm[i] *= 100000;
 	} 
 	
 	//~ END OF PREPROCESSING
@@ -168,7 +168,7 @@ int main(int argc, char **argv){
 	
 	cplex.extract(model);
 	
-	string export_file = "../src/data/linearized_models/linearized_model"+ instance + "_" + to_string(d_0) + "_" + to_string(k_0) + "_" + to_string(s_0) + ".lp"; 
+	string export_file = "../src/data/linearized_models/linearized_model"+ instance + "_" + to_string(d_0) + "_" + to_string(k_0) + ".lp"; 
 	cplex.exportModel(export_file.c_str());
 	cout <<"EPSILON" << eps << endl;
 	

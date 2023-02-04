@@ -373,6 +373,7 @@ NODERANGE *nodeswritten;
    nodeswritten = (NODERANGE *) cbhandle;
 
    /* Find out what node is being processed */
+   printf("HERE");
 
    status = CPXgetcallbackinfo (env, cbdata, wherefrom,
                                 CPX_CALLBACK_INFO_NODE_COUNT, &nodecount);
@@ -386,7 +387,8 @@ NODERANGE *nodeswritten;
 
       status = CPXgetcallbacknodelp (env, cbdata, wherefrom, &nodelp);
       if ( status )  goto TERMINATE;
-
+	
+      
       sprintf (filename, "../src/data/node_aggressive%d", count);
       //~ strcat (filename, nodeswritten->name);
       strcat (filename, ".lp");

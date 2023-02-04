@@ -20,7 +20,8 @@ for line in res:
 	if len(l) > 2 and l[:2] == "..":
 		save_key = l
 	else:
-		results[save_key].append(l)
+		if l != "all":
+			results[save_key].append(l)
 
 for k, txt in results.items():
 	save_path = "../src/data/" + model_name + "s/results_"+k.split("/")[-1]
