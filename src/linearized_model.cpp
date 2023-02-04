@@ -146,8 +146,10 @@ int main(int argc, char **argv){
 		//~ Referring to the pdf description of the problem
 		model.add( (IloScalProd(w, x[i]) + z - y[i]) <= (eps + pp[i]) ); // (37)
 		model.add( (-IloScalProd(w, x[i]) - z + y[i]) <= (eps + pm[i]) );// (38)
-		model.add( (Rp[i]*(1-s[i])) <= pp[i] <= Rp[i] ); 				 // (39)
-		model.add( (Rm[i]*(1-s[i])) <= pm[i] <= Rm[i] ); 				 // (40)
+		model.add( (Rp[i]*(1-s[i])) <= pp[i] );				 // (39)
+		model.add( pp[i] <= Rp[i] );	 				 // (39)
+		model.add( (Rm[i]*(1-s[i])) <= pm[i] );				 // (40)
+		model.add( pm[i] <= Rm[i] );	 				 // (40)
 	}
 	
 	//~ Constraint over d (J) (number of features)

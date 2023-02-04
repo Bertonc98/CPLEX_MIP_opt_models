@@ -107,9 +107,17 @@ New directory to divide basic/stronger files (see dir tree)
 ## 15/12/2022
 Quadratic model implementation, test and plot
 
+## 03/02/2023
+Implementation of linearized model and first tests over the cut extraction
+
+## 04/'2/2023
+Add DUMB configuration to generate cuts in linearized model
+
+
 TODO: 
-- extract dual
-- If obj 0 then gap set to 0
+- extraction of cuts from linearized augmented
+-- Parsing of constraint and complete the definition of the dual
+- write dual
 
 
 Footer
