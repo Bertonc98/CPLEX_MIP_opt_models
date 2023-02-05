@@ -172,6 +172,12 @@ int main(int argc, char **argv){
 	
 	string export_file = "../src/data/linearized_models/linearized_model"+ instance + "_" + to_string(d_0) + "_" + to_string(k_0) + ".lp"; 
 	cplex.exportModel(export_file.c_str());
+	
+	// Save d and k values
+	ofstream fw("../src/data/feature_point.txt", ofstream::out);
+	fw << d << "\n";
+	fw << k << "\n";
+	
 	cout <<"EPSILON" << eps << endl;
 	
 	//Suppress the outpt
