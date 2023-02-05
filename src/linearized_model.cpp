@@ -17,7 +17,7 @@ int main(int argc, char **argv){
 	IloEnv env;
 	if(argc != 5){
 		cout << "Wrong number of parameters"<<endl;
-		cout << "./basic_model d k instance_number outlier_number"<<endl;
+		cout << "./linearized_model d k instance_number outlier_number"<<endl;
 		return 1;
 	}
 	
@@ -208,6 +208,7 @@ int main(int argc, char **argv){
 	
 	
 	//~ Mismatching count 
+	/*
 	int errors = 0;
 	cout << "Pnt, Out | Out model " << endl;
 	string tmp;
@@ -220,7 +221,20 @@ int main(int argc, char **argv){
 			cout << tmp << " | " << int(abs(cplex.getValue(s[i]))) << endl;
 			errors++;
 		}
+	}*/
+	
+	//Output s and f values
+	cout << endl << "s: \t";
+	for(int i =0; i<k; i++){
+		cout << cplex.getValue(s[i]) << " ";
 	}
+	
+	cout << endl << "f: \t";
+	for(int i =0; i<d; i++){
+		cout << cplex.getValue(f[i]) << " ";
+	}
+	cout << endl;
+	/*
 	//~ Saving results
 	fstream dest_file;
 	string res_name = "../src/data/linearized_results.csv";
@@ -237,6 +251,7 @@ int main(int argc, char **argv){
 	string line = filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(errors) + ";" + to_string(cplex.getObjValue());
 
 	dest_file<<line<<endl;
+	*/
 	
 	cout << "Obj value: " << cplex.getObjValue() << endl;
 	env.end();

@@ -110,13 +110,22 @@ Quadratic model implementation, test and plot
 ## 03/02/2023
 Implementation of linearized model and first tests over the cut extraction
 
-## 04/'2/2023
+## 04/02/2023
 Add DUMB configuration to generate cuts in linearized model
 
+## 05/02/2022
+Parsing file to export cuts from lp file "node_aggressive0.lp" in "export_cuts.cpp"
+It creates a new file "constraints.txt" in which are contained only the new constraints
+Pipeline to extract cuts from linearized model:
+./make linearized_model 0
+./linearized_model n d k k
+./cut_extraction ../src/data/linearized_models/linearized_model1_4_3.lp 0 1 ../src/parameters/linearized_model/CPXPARAM_MIP_Cuts_DUMB.txt
+./export_cuts
 
 TODO: 
 - extraction of cuts from linearized augmented
 -- Parsing of constraint and complete the definition of the dual
+-- the parsing phase will be performed in python, that will call the "export_cuts" program in order to create the matrix of coefficients GAMMA
 - write dual
 
 
