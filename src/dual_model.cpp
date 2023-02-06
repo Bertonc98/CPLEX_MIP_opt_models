@@ -267,13 +267,31 @@ int main(int argc, char **argv){
 	model.add( IloSum(ap) - IloSum(am) +  xiGammaZ == 0);
 	cout << "Constraint 1" <<endl;
 	
-	
-	for(int i =0; i<k; i++){
+	IloExprArray xiGammaPp(env, k);
+	// Over dimensionality
+	for(int i=0; i<k; i++){
+		xiGammaPp[i] = IloExpr(env);
+		for(int h = 0; h < G_row; h++){
+			xiGammaPp[i] += xi[h] * GAMMA[h][d + 1 + i];
+		}
 		
-		
+		model.add( psip[i] + ap[i] - pip[i] - xiGammaPp[i] <= C );
 	}
 	
 	cout << "Constraint 2" <<endl;
+	
+	IloExprArray xiGammaPm(env, k);
+	// Over dimensionality
+	for(int i=0; i<k; i++){
+		xiGammaPm[i] = IloExpr(env);
+		for(int h = 0; h < G_row; h++){
+			xiGammaPm[i] += xi[h] * GAMMA[h][d + 1 + k +i];
+		}
+		
+		model.add( psim[i] + am[i] - pim[i] - xiGammaPm[i] <= C );
+	}
+	
+	cout << "Constraint 3" <<endl;
 	/*
 	//~ Constraints over k (I) (the cardinality of the points)
 	
