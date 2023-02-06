@@ -104,8 +104,10 @@ int main(int argc, char **argv){
 	
 	//~ Read instances
 	IloNumArray2 GAMMA(env);
+	IloNumArray g(env);
 	int G_row;
-	Gfile >> GAMMA >> G_row;
+	Gfile >> GAMMA >> g >> G_row;
+	cout << g << endl;
 	
 	//~ END OF PREPROCESSING
 	
@@ -180,25 +182,98 @@ int main(int argc, char **argv){
 	IloObjective obj(env);
 	
 	IloExpr obj_expr(env);
+	//To check in lower space
+	//d=2;
+	//k=2;
+	IloExprArray quadratic(env, d);
 	
-	IloExpr obj_tmp(env);
 	// Over dimensionality
 	for(int j =0; j < d; j++){
+		quadratic[j] = IloExpr(env);
 		// Over cardinality
 		for(int i=0; i < k; i++){
-			obj_tmp += x[i][j] * (am[i] - ap[i]);
+			 quadratic[j] += (x[i][j] * (am[i] - ap[i]));
+		}
+	}
+	obj_expr = (IloExpr)(IloScalProd(quadratic, quadratic));
+	obj_expr *= 0.5;
+	cout << "1st" <<endl;
+	IloExprArray xiGamma(env, d);
+	IloExprArray xalpha(env, d);
+	for(int j =0; j < d; j++){
+		xiGamma[j] = IloExpr(env);
+		for(int i=0; i < G_row; i++){
+			 xiGamma[j] += (xi[i] * GAMMA[i][j]);
 		}
 		
-		obj_expr += IloSquare(obj_tmp);		
+		xalpha[j] = IloExpr(env);
+		for(int i=0; i < G_row; i++){
+			 xalpha[j] += (x[i][j] * (am[i] - ap[i]));
+		}
+		
+		obj_expr += ( (ll[j] - lu[j] - xiGamma[j]) * xalpha[j] );
 	}
-	obj_expr *= 1/2;
-	cout << obj_tmp <<endl;
+	cout << "2nd" <<endl;
+	IloExprArray quadratic2(env, d);
+	// Over dimensionality
+	for(int j =0; j < d; j++){
+		quadratic2[j] = IloExpr(env);
+		// Over cardinality
+		quadratic2[j] += ll[j] - lu[j] - xiGamma[j];
+	}
+	obj_expr = (IloExpr)(IloScalProd(quadratic, quadratic));
+	obj_expr *= 0.5;
+	cout << "3th" <<endl;
+	
+	for(int i=0; i<k; i++){
+		obj_expr -= (ap[i]*(y[i]+eps) - am[i]*(y[i]-eps));
+	}
+	cout << "4th" <<endl;
+	
+	for(int i=0; i<k; i++){
+		obj_expr -= ( (pip[i] - psip[i])*Rp[i] + (pim[i] - psim[i])*Rm[i] );
+	}
+	cout << "5th" <<endl;
+	
+	obj_expr -= k_0 * b1;
+	cout << "6th" <<endl;
+	
+	obj_expr -= s_0 * b2;
+	cout << "7th" <<endl;
+	
+	for(int j=0; j<k; j++){
+		obj_expr -= phi1[j];
+		obj_expr -= sigma1[j];
+	}
+	cout << "8th, 9th" <<endl;
+	
+	for(int h=0; h<G_row; h++){
+		obj_expr -= xi[h]*g[h];
+	}
+	cout << "10th" <<endl;
+	
 	
 	obj.setExpr(obj_expr);
 	obj_expr.end();
 	
 	IloAdd(model, IloMinimize(env, obj));
-	model.add(xi[0] >= 10);
+	
+	
+	IloExpr xiGammaZ(env);
+	for(int h=0; h<G_row; h++){
+		xiGammaZ += xi[h]*GAMMA[h][d];
+	}
+	
+	model.add( IloSum(ap) - IloSum(am) +  xiGammaZ == 0);
+	cout << "Constraint 1" <<endl;
+	
+	
+	for(int i =0; i<k; i++){
+		
+		
+	}
+	
+	cout << "Constraint 2" <<endl;
 	/*
 	//~ Constraints over k (I) (the cardinality of the points)
 	

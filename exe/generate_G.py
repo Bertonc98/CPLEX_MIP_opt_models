@@ -43,9 +43,12 @@ f.close()
 # d + 1 + k + k + d + k
 n_var = d + 1 + k + k + d + k
 matrix = []
+coeffs = []
 for l in lines:
 	m_line = [0 for _ in range(n_var)]
 	constraint = l.split("<=")[0]
+	coeffs.append(float(l.split("<=")[1].strip()))
+	
 	constraint = list(filter(lambda x: x !='', constraint.split(" ")))[1:]
 
 	elements = []
@@ -75,4 +78,5 @@ with open("../src/data/GAMMA.txt", 'w') as f:
 	l = l[:-2]
 	l += "]\n"
 	f.write(l)
+	f.write(str(coeffs) + "\n")
 	f.write(str(len(matrix)))
