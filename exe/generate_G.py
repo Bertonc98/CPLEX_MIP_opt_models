@@ -38,6 +38,7 @@ with open("../src/data/constraints.txt") as f:
 with open("../src/data/feature_point.txt") as f:
 	d = int(f.readline().strip())
 	k = int(f.readline().strip())
+f.close()
 # w, z, pp, pm, f, s
 # d + 1 + k + k + d + k
 n_var = d + 1 + k + k + d + k
@@ -63,6 +64,15 @@ for l in lines:
 		m_line[p] = float(coeff)
 	matrix.append(m_line)
 
-for m in matrix:
-	print(m)
-	print("")
+with open("../src/data/GAMMA.txt", 'w') as f:
+	l = "["
+	for row in matrix:
+		l += "["
+		for el in row:
+			l += str(el) + ", "
+		l = l[:-2]
+		l += "],\n"
+	l = l[:-2]
+	l += "]\n"
+	f.write(l)
+	f.write(str(len(matrix)))

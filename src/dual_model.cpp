@@ -93,69 +93,113 @@ int main(int argc, char **argv){
 	int n_variables = d + 1 + k + k + d + k;
 	
 	// Matrix GAMMA of contraint coefficients
-	IloNumArray2 G(env);
 	
 	// For each constraint add a new IloNumArray of n_varaibles length
+	filename  = "../src/data/GAMMA.txt";
+	ifstream Gfile(filename);
+	if (!Gfile) {
+		cerr << "ERROR: could not open instance file 'GAMMA.txt' in '../src/data'" << endl;
+		return 1;
+	}
 	
-	
-	
-	
+	//~ Read instances
+	IloNumArray2 GAMMA(env);
+	int G_row;
+	Gfile >> GAMMA >> G_row;
 	
 	//~ END OF PREPROCESSING
 	
 	//~ MODEL DEFINITION
 	IloModel model(env);
 	
-	//~ Variable Definition
-	//Slopes
-	IloNumVarArray w(env, d, -IloInfinity, IloInfinity); 
-	w.setNames("w");
+	//~ Variable Definition (49)
+	// alpha lenght I (dual of (37, 38))
+	IloNumVarArray ap(env, k, 0, IloInfinity); 
+	ap.setNames("a+");
+	IloNumVarArray am(env, k, 0, IloInfinity); 
+	am.setNames("a-");
+	
+	// pi length I (dual of (39, 40))
+	IloNumVarArray pip(env, k, 0, IloInfinity); 
+	pip.setNames("pi+");
+	IloNumVarArray pim(env, k, 0, IloInfinity); 
+	pim.setNames("pi-");
+	
+	// psi length I (dual of(39, 40))
+	IloNumVarArray psip(env, k, 0, IloInfinity); 
+	psip.setNames("psi+");
+	IloNumVarArray psim(env, k, 0, IloInfinity); 
+	psim.setNames("psi-");
+	
+	// lambdaU length J (dual of (41))
+	IloNumVarArray lu(env, d, 0, IloInfinity); 
+	lu.setNames("lambdaU");
+	
+	// lambdaL length J (dual of (42))
+	IloNumVarArray ll(env, d, 0, IloInfinity); 
+	ll.setNames("lambdaL");
+	
+	// Beta1, Beta2 (dual of (43, 44))
+	IloNumVar b1(env, 0, IloInfinity);
+	b1.setName("beta1");
+	IloNumVar b2(env, 0, IloInfinity);
+	b2.setName("beta2");
+	
+	// eta length I (dual of (45))
+	IloNumVarArray etap(env, k, 0, IloInfinity); 
+	etap.setNames("eta+");
+	IloNumVarArray etam(env, k, 0, IloInfinity); 
+	etam.setNames("eta-");
+	
+	// phi1, phi2 length J (dual of (46))
+	IloNumVarArray phi1(env, k, 0, IloInfinity); 
+	phi1.setNames("phi1");
+	IloNumVarArray phi2(env, k, 0, IloInfinity); 
+	phi2.setNames("phi2");
+	
+	// sigma1, sigma2 length I (dual of (47))
+	IloNumVarArray sigma1(env, k, 0, IloInfinity); 
+	sigma1.setNames("sigma1");
+	IloNumVarArray sigma2(env, k, 0, IloInfinity); 
+	sigma2.setNames("sigma2");
+	
+	// Xi length G_row (dual of inserted cosntraints in GAMMA)
+	IloNumVarArray xi(env, G_row, 0, IloInfinity); 
+	xi.setNames("xi");
+	
+
 	//Violation cost
 	//IloNumVar C(env, 100);
 	int C = 10;
-	//Measurement error on point i
-	IloNumVarArray pp(env, k, 0, IloInfinity); //(45)
-	pp.setNames("p+");
-	IloNumVarArray pm(env, k, 0, IloInfinity); //(45)
-	pm.setNames("p-");
 	//Confidence region parameter
 	//IloNumVar eps(env, 0);
 	int eps = 10;
-	//Intercept
-	IloNumVar z(env, -IloInfinity, IloInfinity); 
-	z.setName("z");
-	//binary selection of features
-	IloNumVarArray f(env, d, 0, 1, ILOINT); // (46)
-	f.setNames("f");
-	//outlier detection
-	IloNumVarArray s(env, k, 0, 1, ILOINT); // (47)
-	s.setNames("s");
 	
-	//Setting of R
-	
-	//~ Objective Function 
-	//~ IloObjective obj = IloAdd(model, IloMinimize(env, IloSum(p - IloScalProd( IloScalProd(mones, s) + ones, r) ) ) );
-	int db = 0;
+	//~ Objective Function (48)
 	
 	IloObjective obj(env);
-	// objective function //(36)
+	
 	IloExpr obj_expr(env);
 	
-	for( int j = 0; j < d ; j++){
-		obj_expr += (1/2)*(w[j]*w[j]);
+	IloExpr obj_tmp(env);
+	// Over dimensionality
+	for(int j =0; j < d; j++){
+		// Over cardinality
+		for(int i=0; i < k; i++){
+			obj_tmp += x[i][j] * (am[i] - ap[i]);
+		}
+		
+		obj_expr += IloSquare(obj_tmp);		
 	}
-	for( int i = 0; i < k ; i++){
-		obj_expr += C*(pp[i] - (1-s[i])*Rp[i]);
-	}
-	for( int i = 0; i < k ; i++){
-		obj_expr += C*(pm[i] - (1-s[i])*Rm[i]);
-	}
+	obj_expr *= 1/2;
+	cout << obj_tmp <<endl;
 	
 	obj.setExpr(obj_expr);
 	obj_expr.end();
 	
 	IloAdd(model, IloMinimize(env, obj));
-	
+	model.add(xi[0] >= 10);
+	/*
 	//~ Constraints over k (I) (the cardinality of the points)
 	
 	for( int i = 0; i < k; i++){
@@ -180,7 +224,7 @@ int main(int argc, char **argv){
 	model.add(IloSum(f) <= k_0); // (43)
 	//Ensure a certain amount of selected outliers
 	model.add(IloSum(s) >= s_0); // (44)
-		
+	*/
 	IloCplex cplex(env);
 	//~ cplex.add(obj_expr);
 	
@@ -215,14 +259,14 @@ int main(int argc, char **argv){
 		cout << "./dual_model instance_number d k s"<<endl;
 		return 1;
 	}
-	/* CONFLICTS */
+	// CONFLICTS //
 	//If not feasible
 	if(st != 2)
 		print_conflicts(env, model, cplex);
 
-	// */
+	// 
 	
-	
+	/*
 	//~ Mismatching count 
 	int errors = 0;
 	cout << "Pnt, Out | Out model " << endl;
@@ -253,11 +297,12 @@ int main(int argc, char **argv){
 	string line = filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(errors) + ";" + to_string(cplex.getObjValue());
 
 	dest_file<<line<<endl;
-	
+	*/
 	cout << "Obj value: " << cplex.getObjValue() << endl;
 	env.end();
 	cout << "Environment destroyed." << endl;
-
+	
+	
 	return 0;
 }
 
