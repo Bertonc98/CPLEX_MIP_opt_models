@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string>	
 #include <cstdlib>
+#include <map>
 #include <ilcplex/ilocplex.h>
 ILOSTLBEGIN
 
@@ -74,7 +75,7 @@ int main(int argc, char **argv){
 	
 	compute_W(solution, wl, wu, 10);
 	
-	//K = I, amount of instances
+	// k = I, amount of instances
 	int k = x.getSize();
 	IloNumArray Rp(env, k, -IloInfinity, IloInfinity);
 	IloNumArray Rm(env, k, -IloInfinity, IloInfinity);
@@ -91,6 +92,14 @@ int main(int argc, char **argv){
 	// Amount of variables
 	// w, z, pp, pm, f, s
 	int n_variables = d + 1 + k + k + d + k;
+	map<string, int> var_pos = {
+		{ "w", 0 },
+		{ "z", d },
+		{ "pp", d + 1 },
+		{ "pm", d + 1 + k },
+		{ "f", d + 1 + k + k },
+		{ "s", d + 1 + k + k + d }
+	};
 	
 	// Matrix GAMMA of contraint coefficients
 	
@@ -153,17 +162,13 @@ int main(int argc, char **argv){
 	IloNumVarArray etam(env, k, 0, IloInfinity); 
 	etam.setNames("eta-");
 	
-	// phi1, phi2 length J (dual of (46))
-	IloNumVarArray phi1(env, k, 0, IloInfinity); 
-	phi1.setNames("phi1");
-	IloNumVarArray phi2(env, k, 0, IloInfinity); 
-	phi2.setNames("phi2");
+	// phi length J (dual of (46))
+	IloNumVarArray phi(env, d, 0, IloInfinity); 
+	phi.setNames("phi");
 	
-	// sigma1, sigma2 length I (dual of (47))
-	IloNumVarArray sigma1(env, k, 0, IloInfinity); 
-	sigma1.setNames("sigma1");
-	IloNumVarArray sigma2(env, k, 0, IloInfinity); 
-	sigma2.setNames("sigma2");
+	// sigma ength I (dual of (47))
+	IloNumVarArray sigma(env, k, 0, IloInfinity); 
+	sigma.setNames("sigma");
 	
 	// Xi length G_row (dual of inserted cosntraints in GAMMA)
 	IloNumVarArray xi(env, G_row, 0, IloInfinity); 
@@ -182,15 +187,12 @@ int main(int argc, char **argv){
 	IloObjective obj(env);
 	
 	IloExpr obj_expr(env);
-	//To check in lower space
-	//d=2;
-	//k=2;
+	// The objective function is composed by 10 terms
+	// It is printed and marked each one in the following code
 	IloExprArray quadratic(env, d);
 	
-	// Over dimensionality
 	for(int j =0; j < d; j++){
 		quadratic[j] = IloExpr(env);
-		// Over cardinality
 		for(int i=0; i < k; i++){
 			 quadratic[j] += (x[i][j] * (am[i] - ap[i]));
 		}
@@ -198,12 +200,13 @@ int main(int argc, char **argv){
 	obj_expr = (IloExpr)(IloScalProd(quadratic, quadratic));
 	obj_expr *= 0.5;
 	cout << "1st" <<endl;
+	
 	IloExprArray xiGamma(env, d);
 	IloExprArray xalpha(env, d);
 	for(int j =0; j < d; j++){
 		xiGamma[j] = IloExpr(env);
 		for(int i=0; i < G_row; i++){
-			 xiGamma[j] += (xi[i] * GAMMA[i][j]);
+			 xiGamma[j] += (xi[i] * GAMMA[i][var_pos["w"] + j]);
 		}
 		
 		xalpha[j] = IloExpr(env);
@@ -214,11 +217,10 @@ int main(int argc, char **argv){
 		obj_expr += ( (ll[j] - lu[j] - xiGamma[j]) * xalpha[j] );
 	}
 	cout << "2nd" <<endl;
+	
 	IloExprArray quadratic2(env, d);
-	// Over dimensionality
 	for(int j =0; j < d; j++){
 		quadratic2[j] = IloExpr(env);
-		// Over cardinality
 		quadratic2[j] += ll[j] - lu[j] - xiGamma[j];
 	}
 	obj_expr = (IloExpr)(IloScalProd(quadratic, quadratic));
@@ -241,11 +243,15 @@ int main(int argc, char **argv){
 	obj_expr -= s_0 * b2;
 	cout << "7th" <<endl;
 	
-	for(int j=0; j<k; j++){
-		obj_expr -= phi1[j];
-		obj_expr -= sigma1[j];
+	for(int j=0; j<d; j++){
+		obj_expr -= phi[j];
 	}
-	cout << "8th, 9th" <<endl;
+	cout << "8th" <<endl;
+	
+	for(int j=0; j<k; j++){
+		obj_expr -= sigma[j];
+	}
+	cout << "9th" <<endl;
 	
 	for(int h=0; h<G_row; h++){
 		obj_expr -= xi[h]*g[h];
@@ -259,65 +265,59 @@ int main(int argc, char **argv){
 	IloAdd(model, IloMinimize(env, obj));
 	
 	
+	// Constraint section
 	IloExpr xiGammaZ(env);
 	for(int h=0; h<G_row; h++){
-		xiGammaZ += xi[h]*GAMMA[h][d];
+		xiGammaZ += xi[h]*GAMMA[h][var_pos["z"]];
 	}
 	
 	model.add( IloSum(ap) - IloSum(am) +  xiGammaZ == 0);
 	cout << "Constraint 1" <<endl;
 	
 	IloExprArray xiGammaPp(env, k);
-	// Over dimensionality
 	for(int i=0; i<k; i++){
 		xiGammaPp[i] = IloExpr(env);
 		for(int h = 0; h < G_row; h++){
-			xiGammaPp[i] += xi[h] * GAMMA[h][d + 1 + i];
+			xiGammaPp[i] += xi[h] * GAMMA[h][var_pos["pp"] + i];
 		}
 		
 		model.add( psip[i] + ap[i] - pip[i] - xiGammaPp[i] <= C );
 	}
-	
 	cout << "Constraint 2" <<endl;
 	
 	IloExprArray xiGammaPm(env, k);
-	// Over dimensionality
 	for(int i=0; i<k; i++){
 		xiGammaPm[i] = IloExpr(env);
 		for(int h = 0; h < G_row; h++){
-			xiGammaPm[i] += xi[h] * GAMMA[h][d + 1 + k +i];
+			xiGammaPm[i] += xi[h] * GAMMA[h][var_pos["pm"] + i];
 		}
 		
 		model.add( psim[i] + am[i] - pim[i] - xiGammaPm[i] <= C );
 	}
-	
 	cout << "Constraint 3" <<endl;
-	/*
-	//~ Constraints over k (I) (the cardinality of the points)
 	
-	for( int i = 0; i < k; i++){
-		//~ Referring to the pdf description of the problem
-		model.add( (IloScalProd(w, x[i]) + z - y[i]) <= (eps + pp[i]) ); // (37)
-		model.add( (-IloScalProd(w, x[i]) - z + y[i]) <= (eps + pm[i]) );// (38)
-		model.add( (Rp[i]*(1-s[i])) <= pp[i] );				 // (39)
-		model.add( pp[i] <= Rp[i] );	 				 // (39)
-		model.add( (Rm[i]*(1-s[i])) <= pm[i] );				 // (40)
-		model.add( pm[i] <= Rm[i] );	 				 // (40)
-	}
-	
-	//~ Constraint over d (J) (number of features)
-	for( int j = 0; j < d; j++){
-		//~ Referring to the pdf description of the problem
-		model.add( w[j] <= (f[j]*wu[j]) ); // (41)
-		model.add( w[j] >= (f[j]*wl[j]) ); // (42)
+	IloExprArray xiGammaF(env, d);
+	for(int j=0; j<d; j++){
+		xiGammaF[j] = IloExpr(env);
+		for(int h = 0; h < G_row; h++){
+			xiGammaF[j] += xi[h] * GAMMA[h][var_pos["f"] + j];
+		}
 		
+		model.add( (ll[j] * wl[j]) - (lu[j] * wu[j]) + phi[j] + b1 + xiGammaF[j] >= 0);
 	}
+	cout << "Constraint 4" <<endl;
 	
-	//Limit the number of points to k_0
-	model.add(IloSum(f) <= k_0); // (43)
-	//Ensure a certain amount of selected outliers
-	model.add(IloSum(s) >= s_0); // (44)
-	*/
+	IloExprArray xiGammaS(env, k);
+	for(int i=0; i<k; i++){
+		xiGammaS[i] = IloExpr(env);
+		for(int h = 0; h < G_row; h++){
+			xiGammaS[i] += xi[h] * GAMMA[h][var_pos["s"] + i];
+		}
+		
+		model.add( (psip[i] * Rp[i]) + (psim[i] * Rm[i]) + b2 - sigma[i] + xiGammaS[i] <= (C * (Rp[i] + Rm[i])) );
+	}
+	cout << "Constraint 5" <<endl;
+	
 	IloCplex cplex(env);
 	//~ cplex.add(obj_expr);
 	
@@ -357,40 +357,7 @@ int main(int argc, char **argv){
 	if(st != 2)
 		print_conflicts(env, model, cplex);
 
-	// 
 	
-	/*
-	//~ Mismatching count 
-	int errors = 0;
-	cout << "Pnt, Out | Out model " << endl;
-	string tmp;
-	int result, pos;
-	for (int i = 0; i < k ; i++){
-		getline(cfile, tmp);
-		result = int(abs( cplex.getValue(s[i]) ));
-		pos = tmp.find(",");
-		if( result != stoi(tmp.substr(pos+1, 1)) ){
-			cout << tmp << " | " << int(abs(cplex.getValue(s[i]))) << endl;
-			errors++;
-		}
-	}
-	//~ Saving results
-	fstream dest_file;
-	string res_name = "../src/data/dual_results.csv";
-	dest_file.open(res_name, fstream::app);
-	if(dest_file.fail()){
-	//~ cout<<"Destination file not exists: creating..."<<endl;
-		ofstream create_file(res_name);
-		create_file<<"";
-		create_file.close();
-		dest_file.open(res_name, fstream::app);
-		dest_file << "Instance;d_0;k_0;MismatchedOutliers;OurObj;YourObj"<<endl;
-	}
-	
-	string line = filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(errors) + ";" + to_string(cplex.getObjValue());
-
-	dest_file<<line<<endl;
-	*/
 	cout << "Obj value: " << cplex.getObjValue() << endl;
 	env.end();
 	cout << "Environment destroyed." << endl;
