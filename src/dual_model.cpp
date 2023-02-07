@@ -223,7 +223,7 @@ int main(int argc, char **argv){
 		quadratic2[j] = IloExpr(env);
 		quadratic2[j] += ll[j] - lu[j] - xiGamma[j];
 	}
-	obj_expr = (IloExpr)(IloScalProd(quadratic, quadratic));
+	obj_expr = (IloExpr)(IloScalProd(quadratic2, quadratic2));
 	obj_expr *= 0.5;
 	cout << "3th" <<endl;
 	
@@ -240,7 +240,7 @@ int main(int argc, char **argv){
 	obj_expr -= k_0 * b1;
 	cout << "6th" <<endl;
 	
-	obj_expr -= s_0 * b2;
+	obj_expr += s_0 * b2;
 	cout << "7th" <<endl;
 	
 	for(int j=0; j<d; j++){
