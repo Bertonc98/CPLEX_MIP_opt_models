@@ -129,10 +129,7 @@ Defining as "d" the amount of features, and as "k" the amount of points there ar
 So in each column there are the coefficients of a particular variable in each constraint
 
 TODO: 
-- extraction of cuts from linearized augmented
--- Parsing of constraint and complete the definition of the dual
--- the parsing phase will be performed in python, that will call the "export_cuts" program in order to create the matrix of coefficients GAMMA
-- write dual
+- Check for feasibility of the dual
 
 
 Footer

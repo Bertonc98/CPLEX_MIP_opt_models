@@ -115,9 +115,13 @@ int main(int argc, char **argv){
 	IloNumArray2 GAMMA(env);
 	IloNumArray g(env);
 	int G_row;
-	Gfile >> GAMMA >> g >> G_row;
+	int valid;
+	Gfile >> GAMMA >> g >> G_row, valid;
+	cout << GAMMA << endl;
+	// In case of no cosntraints
+	if(valid == 0)
+		g[0] = IloInfinity;
 	cout << g << endl;
-	
 	//~ END OF PREPROCESSING
 	
 	//~ MODEL DEFINITION
@@ -205,12 +209,12 @@ int main(int argc, char **argv){
 	IloExprArray xalpha(env, d);
 	for(int j =0; j < d; j++){
 		xiGamma[j] = IloExpr(env);
-		for(int i=0; i < G_row; i++){
-			 xiGamma[j] += (xi[i] * GAMMA[i][var_pos["w"] + j]);
+		for(int h=0; h < G_row; h++){
+			 xiGamma[j] += (xi[h] * GAMMA[h][var_pos["w"] + j]);
 		}
 		
 		xalpha[j] = IloExpr(env);
-		for(int i=0; i < G_row; i++){
+		for(int i=0; i < k; i++){
 			 xalpha[j] += (x[i][j] * (am[i] - ap[i]));
 		}
 		
@@ -218,10 +222,16 @@ int main(int argc, char **argv){
 	}
 	cout << "2nd" <<endl;
 	
+	IloExprArray xiGamma2(env, d);
 	IloExprArray quadratic2(env, d);
 	for(int j =0; j < d; j++){
+		xiGamma2[j] = IloExpr(env);
+		for(int h=0; h < G_row; h++){
+			 xiGamma2[j] += (xi[h] * GAMMA[h][var_pos["w"] + j]);
+		}
+		
 		quadratic2[j] = IloExpr(env);
-		quadratic2[j] += ll[j] - lu[j] - xiGamma[j];
+		quadratic2[j] += ll[j] - lu[j] - xiGamma2[j];
 	}
 	obj_expr = (IloExpr)(IloScalProd(quadratic2, quadratic2));
 	obj_expr *= 0.5;
@@ -237,10 +247,10 @@ int main(int argc, char **argv){
 	}
 	cout << "5th" <<endl;
 	
-	obj_expr -= k_0 * b1;
+	obj_expr -= (k_0 * b1);
 	cout << "6th" <<endl;
 	
-	obj_expr += s_0 * b2;
+	obj_expr += (s_0 * b2);
 	cout << "7th" <<endl;
 	
 	for(int j=0; j<d; j++){
@@ -248,8 +258,8 @@ int main(int argc, char **argv){
 	}
 	cout << "8th" <<endl;
 	
-	for(int j=0; j<k; j++){
-		obj_expr -= sigma[j];
+	for(int i=0; i<k; i++){
+		obj_expr -= sigma[i];
 	}
 	cout << "9th" <<endl;
 	
@@ -314,7 +324,7 @@ int main(int argc, char **argv){
 			xiGammaS[i] += xi[h] * GAMMA[h][var_pos["s"] + i];
 		}
 		
-		model.add( (psip[i] * Rp[i]) + (psim[i] * Rm[i]) + b2 - sigma[i] + xiGammaS[i] <= (C * (Rp[i] + Rm[i])) );
+		model.add( (psip[i] * Rp[i]) + (psim[i] * Rm[i]) + b2 - sigma[i] - xiGammaS[i] <= (C * (Rp[i] + Rm[i])) );
 	}
 	cout << "Constraint 5" <<endl;
 	
@@ -340,6 +350,8 @@ int main(int argc, char **argv){
 	
 	for( int i = 0; i < 50 ; i++) cout << "=";
 	cout << endl << "k_0 = " << k_0 << endl;
+	cout << "d_0 = " << d_0 << endl;
+	cout << "s_0 = " << s_0 << endl;
 	
 	string compare = path + "optimal_solutions/minError_toy_30_10_02_2_0_5_-10_" + instance + 
 				 "_l1_LinMgr_indicator_L0Mgr_sos1_" + to_string(d_0) +
@@ -354,11 +366,12 @@ int main(int argc, char **argv){
 	}
 	// CONFLICTS //
 	//If not feasible
+	cout << st << endl;
 	if(st != 2)
 		print_conflicts(env, model, cplex);
-
-	
-	cout << "Obj value: " << cplex.getObjValue() << endl;
+	else{
+		cout << "Obj value: " << cplex.getObjValue() << endl;
+	}	
 	env.end();
 	cout << "Environment destroyed." << endl;
 	
