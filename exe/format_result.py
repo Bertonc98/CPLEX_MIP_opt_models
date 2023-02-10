@@ -50,7 +50,7 @@ for cut in params:
 					results[pos].append(row)
 					header = False
 			elif len(row.strip()) > 0:
-				results[pos].append(row)
+				results[pos].append(row.replace("integral", ""))
 				
 	 
 	# ~ print(active_params)
