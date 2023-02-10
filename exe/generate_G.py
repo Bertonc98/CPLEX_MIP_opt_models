@@ -48,11 +48,13 @@ if(found_constraint == 1):
 		for _ in range(n_var):
 			l += "0, "
 		l = l[:-2]
-		l += "]"
-		l += "]\n"
+		l += "]]\n"
 		f.write(l)
+		
 		f.write("[n]\n")
-		f.write("1\n")
+		
+		f.write("1" + "\n")
+		
 		f.write("0")
 else:
 	with open("../src/data/constraints.txt") as f:

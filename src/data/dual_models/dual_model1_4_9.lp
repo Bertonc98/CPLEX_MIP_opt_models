@@ -101,20 +101,20 @@ Minimize
        - sigma(16)#207 - sigma(17)#208 - sigma(18)#209 - sigma(19)#210
        - sigma(20)#211 - sigma(21)#212 - sigma(22)#213 - sigma(23)#214
        - sigma(24)#215 - sigma(25)#216 - sigma(26)#217 - sigma(27)#218
-       - sigma(28)#219 - sigma(29)#220 + [ lambdaL(0)#221 ^2
-       - 2 lambdaL(0)#221 * lambdaU(0)#222 + lambdaU(0)#222 ^2
-       + lambdaL(1)#223 ^2 - 2 lambdaL(1)#223 * lambdaU(1)#224
-       + lambdaU(1)#224 ^2 + lambdaL(2)#225 ^2
-       - 2 lambdaL(2)#225 * lambdaU(2)#226 + lambdaU(2)#226 ^2
-       + lambdaL(3)#227 ^2 - 2 lambdaL(3)#227 * lambdaU(3)#228
-       + lambdaU(3)#228 ^2 + lambdaL(4)#229 ^2
-       - 2 lambdaL(4)#229 * lambdaU(4)#230 + lambdaU(4)#230 ^2
-       + lambdaL(5)#231 ^2 - 2 lambdaL(5)#231 * lambdaU(5)#232
-       + lambdaU(5)#232 ^2 + lambdaL(6)#233 ^2
-       - 2 lambdaL(6)#233 * lambdaU(6)#234 + lambdaU(6)#234 ^2
-       + lambdaL(7)#235 ^2 - 2 lambdaL(7)#235 * lambdaU(7)#236
-       + lambdaU(7)#236 ^2 + lambdaL(8)#237 ^2
-       - 2 lambdaL(8)#237 * lambdaU(8)#238 + lambdaU(8)#238 ^2 ] / 2
+       - sigma(28)#219 - sigma(29)#220 - ? xi(0)#221 + [ lambdaL(0)#222 ^2
+       - 2 lambdaL(0)#222 * lambdaU(0)#223 + lambdaU(0)#223 ^2
+       + lambdaL(1)#224 ^2 - 2 lambdaL(1)#224 * lambdaU(1)#225
+       + lambdaU(1)#225 ^2 + lambdaL(2)#226 ^2
+       - 2 lambdaL(2)#226 * lambdaU(2)#227 + lambdaU(2)#227 ^2
+       + lambdaL(3)#228 ^2 - 2 lambdaL(3)#228 * lambdaU(3)#229
+       + lambdaU(3)#229 ^2 + lambdaL(4)#230 ^2
+       - 2 lambdaL(4)#230 * lambdaU(4)#231 + lambdaU(4)#231 ^2
+       + lambdaL(5)#232 ^2 - 2 lambdaL(5)#232 * lambdaU(5)#233
+       + lambdaU(5)#233 ^2 + lambdaL(6)#234 ^2
+       - 2 lambdaL(6)#234 * lambdaU(6)#235 + lambdaU(6)#235 ^2
+       + lambdaL(7)#236 ^2 - 2 lambdaL(7)#236 * lambdaU(7)#237
+       + lambdaU(7)#237 ^2 + lambdaL(8)#238 ^2
+       - 2 lambdaL(8)#238 * lambdaU(8)#239 + lambdaU(8)#239 ^2 ] / 2
 Subject To
  c1:   ap(0)#0 - am(0)#1 + ap(1)#2 - am(1)#3 + ap(2)#4 - am(2)#5 + ap(3)#6
        - am(3)#7 + ap(4)#8 - am(4)#9 + ap(5)#10 - am(5)#11 + ap(6)#12
@@ -186,19 +186,19 @@ Subject To
  c59:  am(27)#55 - pim(27)#170 + psim(27)#171 <= 10
  c60:  am(28)#57 - pim(28)#174 + psim(28)#175 <= 10
  c61:  am(29)#59 - pim(29)#178 + psim(29)#179 <= 10
- c62:  beta1#180 + phi(0)#182 - 10 lambdaL(0)#221 - 10 lambdaU(0)#222 >= 0
- c63:  beta1#180 + phi(1)#183 + 0.128312006592751 lambdaL(1)#223
-       - 12.8312005996704 lambdaU(1)#224 >= 0
- c64:  beta1#180 + phi(2)#184 + 0.103198006749153 lambdaL(2)#225
-       - 10.3198003768921 lambdaU(2)#226 >= 0
- c65:  beta1#180 + phi(3)#185 + 0.176136001944542 lambdaL(3)#227
-       - 17.6135997772217 lambdaU(3)#228 >= 0
- c66:  beta1#180 + phi(4)#186 + 0.154607996344566 lambdaL(4)#229
-       - 15.4608001708984 lambdaU(4)#230 >= 0
- c67:  beta1#180 + phi(5)#187 - 10 lambdaL(5)#231 - 10 lambdaU(5)#232 >= 0
- c68:  beta1#180 + phi(6)#188 - 10 lambdaL(6)#233 - 10 lambdaU(6)#234 >= 0
- c69:  beta1#180 + phi(7)#189 - 10 lambdaL(7)#235 - 10 lambdaU(7)#236 >= 0
- c70:  beta1#180 + phi(8)#190 - 10 lambdaL(8)#237 - 10 lambdaU(8)#238 >= 0
+ c62:  beta1#180 + phi(0)#182 - 10 lambdaL(0)#222 - 10 lambdaU(0)#223 >= 0
+ c63:  beta1#180 + phi(1)#183 + 0.128312006592751 lambdaL(1)#224
+       - 12.8312005996704 lambdaU(1)#225 >= 0
+ c64:  beta1#180 + phi(2)#184 + 0.103198006749153 lambdaL(2)#226
+       - 10.3198003768921 lambdaU(2)#227 >= 0
+ c65:  beta1#180 + phi(3)#185 + 0.176136001944542 lambdaL(3)#228
+       - 17.6135997772217 lambdaU(3)#229 >= 0
+ c66:  beta1#180 + phi(4)#186 + 0.154607996344566 lambdaL(4)#230
+       - 15.4608001708984 lambdaU(4)#231 >= 0
+ c67:  beta1#180 + phi(5)#187 - 10 lambdaL(5)#232 - 10 lambdaU(5)#233 >= 0
+ c68:  beta1#180 + phi(6)#188 - 10 lambdaL(6)#234 - 10 lambdaU(6)#235 >= 0
+ c69:  beta1#180 + phi(7)#189 - 10 lambdaL(7)#236 - 10 lambdaU(7)#237 >= 0
+ c70:  beta1#180 + phi(8)#190 - 10 lambdaL(8)#238 - 10 lambdaU(8)#239 >= 0
  c71:  32985.8701053249 psip(0)#61 + 32985.8701053249 psim(0)#63 + beta2#181
        - sigma(0)#191 <= 659717.402106498
  c72:  42595.2661730259 psip(1)#65 + 42595.2661730259 psim(1)#67 + beta2#181

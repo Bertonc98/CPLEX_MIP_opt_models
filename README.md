@@ -128,6 +128,10 @@ It contains for each constraint a line that is composed by the coefficients of t
 Defining as "d" the amount of features, and as "k" the amount of points there are relatively (d + 1 + k + k + d + k) entries in each row
 So in each column there are the coefficients of a particular variable in each constraint
 
+## 09/02/2023
+Some minor error in the definition of the dual fixed
+Added handlingo of case in which no constraint is generated and GAMMA would be empty
+
 TODO: 
 - Check for feasibility of the dual
 

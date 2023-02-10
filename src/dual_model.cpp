@@ -116,12 +116,19 @@ int main(int argc, char **argv){
 	IloNumArray g(env);
 	int G_row;
 	int valid;
-	Gfile >> GAMMA >> g >> G_row, valid;
+	Gfile >> GAMMA >> g >> G_row >> valid;
 	cout << GAMMA << endl;
-	// In case of no cosntraints
-	if(valid == 0)
-		g[0] = IloInfinity;
 	cout << g << endl;
+	cout << "GAMMA rows: " << G_row << endl;
+	cout << "GAMMA validity: " << valid << endl;
+	// In case of no cosntraints
+	if(valid == 0){
+		cout << "No valid cuts" <<endl;
+		G_row = 1;
+		g[0] = IloInfinity;
+	}
+	cout << "GAMMA rows: " << G_row << endl;
+	cout << "bounds: " << g << endl;
 	//~ END OF PREPROCESSING
 	
 	//~ MODEL DEFINITION
