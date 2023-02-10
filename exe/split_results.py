@@ -20,7 +20,7 @@ for line in res:
 	if len(l) > 2 and l[:2] == "..":
 		save_key = l
 	else:
-		if l != "all":
+		if l != "all" and "CPXPARAM" not in l:
 			results[save_key].append(l)
 
 for k, txt in results.items():

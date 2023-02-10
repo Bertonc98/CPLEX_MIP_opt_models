@@ -32,6 +32,10 @@ thresholds = {
 "CPXPARAM_MIP_Cuts_MCFCut":	2
 }
 
+subsets = subsets +  [k for k in thresholds.keys()]
+
+dumb_parameters = "CPX_PARAM_HEURFREQ -1\nCPX_PARAM_PREIND 0\nCPX_PARAM_RELAXPREIND 0\nCPX_PARAM_PREPASS 0\nCPX_PARAM_REDUCE 0"
+
 for sub in subsets:
 	text = "CPLEX Parameter File Version 22.1.0.0\n"
 	active_params = sub.split("-")
@@ -42,6 +46,9 @@ for sub in subsets:
 			text += f"{k} -1\n"
 	
 	name = "-".join([c.split("_")[-1] for c in active_params])
+	
+	if model_name == "linearized_model":
+		text += dumb_parameters
 	
 	with open(f"../src/parameters/{model_name}/CPXPARAM_MIP_Cuts_{name}.txt", "w+") as f:
 		f.writelines(text)
