@@ -89,12 +89,16 @@ Modified run_extraction.sh in order to apply for each instance the whole set of 
 Some minor modifies in the codes in order to better parse the output
 Added split_results.py to divide the output of the overall extraction
 
+IMPORTANT:
+In order to generate the correct amount of parameters it must be modified the file "parameters_generator" according to the selected model
+
 The flow will be:
 - bash run_tests_models.sh basic_model -> save all the models on the different instances
 - bash run_extraction_results.sh cut_extraction >> ../src/data/basic_models/results.txt -> obtain the results of each model and each instance with every single parameter active  
 - split_results.py -> divide results.txt from the previous point in different files according to the parameter that generated them
 - format_result.py -> must obtain the formatted results and search for best gap (and save number of cuts)
 - gap_extraction.sh -> retrieve a single file for each cut containing the gaps and the number of cuts applied in each instance
+- gap_sequence.py -> compute the formatted gap file that will be analyzed
 
 ## 04/12/2022 
 Improved the generality of the script for each model and provided a single script to run the whole process "gap_pipeline.sh"

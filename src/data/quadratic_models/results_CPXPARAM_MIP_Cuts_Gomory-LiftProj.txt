@@ -1,20 +1,5 @@
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 883.581725 after 0.00 sec. (0.00 ticks)
@@ -32,7 +17,7 @@ Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.59 ticks)
+Root relaxation solution time = 0.00 sec. (0.60 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -82,35 +67,20 @@ Detecting symmetries...
 0     0      364.4909     9      415.0905   LiftProj: 4      435   12.19%
 Detecting symmetries...
 0     2      365.3969     7      415.0905      365.5496      435   11.93%                        0             0
-Elapsed time = 0.15 sec. (89.45 ticks, tree = 0.01 MB, solutions = 5)
+Elapsed time = 0.36 sec. (89.99 ticks, tree = 0.01 MB, solutions = 5)
 
 Lift and project cuts applied:  20
 Gomory fractional cuts applied:  1
 
 Root node processing (before b&c):
-Real time             =    0.15 sec. (89.45 ticks)
+Real time             =    0.36 sec. (89.99 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.15 sec. (89.47 ticks)
+Total (root+branch&cut) =    0.36 sec. (90.01 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 883.581725 after 0.00 sec. (0.00 ticks)
@@ -136,7 +106,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 
 *     0+    0                          883.5817        0.0000           100.00%
 *     0     0      integral     0      262.6193      262.6193       40    0.00%                        0             0
-Elapsed time = 0.01 sec. (0.90 ticks, tree = 0.00 MB, solutions = 1)
+Elapsed time = 0.01 sec. (0.91 ticks, tree = 0.00 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
@@ -148,23 +118,8 @@ Real time             =    0.00 sec. (0.00 ticks)
 ------------
 Total (root+branch&cut) =    0.01 sec. (0.91 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 883.581725 after 0.00 sec. (0.00 ticks)
@@ -236,35 +191,20 @@ Detecting symmetries...
 0     0      383.6757     8      415.0905  LiftProj: 10      461    7.57%
 Detecting symmetries...
 0     2      387.8299     5      415.0905      388.6843      461    6.36%                        0             0
-Elapsed time = 0.15 sec. (82.16 ticks, tree = 0.01 MB, solutions = 4)
+Elapsed time = 0.38 sec. (82.75 ticks, tree = 0.01 MB, solutions = 4)
 
 Lift and project cuts applied:  24
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.15 sec. (82.16 ticks)
+Real time             =    0.38 sec. (82.76 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.03 ticks)
 ------------
-Total (root+branch&cut) =    0.16 sec. (82.19 ticks)
+Total (root+branch&cut) =    0.38 sec. (82.78 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 883.581725 after 0.00 sec. (0.00 ticks)
@@ -293,35 +233,20 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 *     0+    0                          315.1239      314.8220             0.10%
 *     0     0      integral     0      314.8876      Fract: 1       40    0.00%
 0     0        cutoff            314.8876      314.8876       40    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.45 ticks, tree = 0.01 MB, solutions = 2)
+Elapsed time = 0.01 sec. (1.47 ticks, tree = 0.01 MB, solutions = 2)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  1
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.46 ticks)
+Real time             =    0.01 sec. (1.47 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.46 ticks)
+Total (root+branch&cut) =    0.01 sec. (1.47 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 693.854204 after 0.00 sec. (0.00 ticks)
@@ -370,35 +295,20 @@ Detecting symmetries...
 0     0      425.3913     9      441.1644   LiftProj: 2      184    3.58%
 Detecting symmetries...
 0     2      425.7897     7      441.1644      425.9290      184    3.45%                        0             0
-Elapsed time = 0.06 sec. (31.57 ticks, tree = 0.01 MB, solutions = 4)
+Elapsed time = 0.16 sec. (31.85 ticks, tree = 0.01 MB, solutions = 4)
 
 Lift and project cuts applied:  12
 Gomory fractional cuts applied:  1
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (31.58 ticks)
+Real time             =    0.16 sec. (31.85 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (31.59 ticks)
+Total (root+branch&cut) =    0.16 sec. (31.87 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 693.854204 after 0.00 sec. (0.00 ticks)
@@ -412,7 +322,7 @@ Tried aggregator 1 time.
 Detecting symmetries...
 Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
 Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.22 ticks)
+Presolve time = 0.00 sec. (0.21 ticks)
 Probing time = 0.00 sec. (0.02 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
@@ -426,35 +336,20 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0      405.5114     1      693.8542      405.5114       49   41.56%
 *     0+    0                          407.3057      405.5114             0.44%
 *     0     0      integral     0      405.9187      405.9187       52    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.27 ticks, tree = 0.01 MB, solutions = 2)
+Elapsed time = 0.01 sec. (1.29 ticks, tree = 0.01 MB, solutions = 2)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.28 ticks)
+Real time             =    0.01 sec. (1.29 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.28 ticks)
+Total (root+branch&cut) =    0.01 sec. (1.29 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 693.854204 after 0.00 sec. (0.00 ticks)
@@ -508,35 +403,20 @@ Detecting symmetries...
 0     0      428.9001     9      441.1644   LiftProj: 2      201    2.78%
 Detecting symmetries...
 0     2      429.5785     6      441.1644      430.3954      201    2.44%                        0             0
-Elapsed time = 0.08 sec. (39.00 ticks, tree = 0.01 MB, solutions = 5)
+Elapsed time = 0.20 sec. (39.34 ticks, tree = 0.01 MB, solutions = 5)
 
 Lift and project cuts applied:  13
 Gomory fractional cuts applied:  1
 
 Root node processing (before b&c):
-Real time             =    0.08 sec. (39.01 ticks)
+Real time             =    0.20 sec. (39.34 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.08 sec. (39.02 ticks)
+Total (root+branch&cut) =    0.20 sec. (39.36 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 693.854204 after 0.00 sec. (0.00 ticks)
@@ -555,7 +435,7 @@ Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.51 ticks)
+Root relaxation solution time = 0.00 sec. (0.52 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -574,23 +454,8 @@ Real time             =    0.00 sec. (0.00 ticks)
 ------------
 Total (root+branch&cut) =    0.01 sec. (1.11 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 845.668317 after 0.00 sec. (0.00 ticks)
@@ -647,35 +512,20 @@ Detecting symmetries...
 0     0      534.5366     9      607.3004   LiftProj: 1      232   11.98%
 Detecting symmetries...
 0     2      534.5366     9      607.3004      534.5667      232   11.98%                        0             0
-Elapsed time = 0.10 sec. (50.16 ticks, tree = 0.01 MB, solutions = 4)
+Elapsed time = 0.23 sec. (50.54 ticks, tree = 0.01 MB, solutions = 4)
 
 Lift and project cuts applied:  17
 Gomory fractional cuts applied:  2
 
 Root node processing (before b&c):
-Real time             =    0.10 sec. (50.16 ticks)
+Real time             =    0.23 sec. (50.54 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.10 sec. (50.17 ticks)
+Total (root+branch&cut) =    0.24 sec. (50.56 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 845.668317 after 0.00 sec. (0.00 ticks)
@@ -701,7 +551,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 
 *     0+    0                          845.6683        0.0000           100.00%
 *     0     0      integral     0      484.8467      484.8467       43    0.00%                        0             0
-Elapsed time = 0.01 sec. (0.94 ticks, tree = 0.00 MB, solutions = 1)
+Elapsed time = 0.01 sec. (0.95 ticks, tree = 0.00 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
@@ -713,23 +563,8 @@ Real time             =    0.00 sec. (0.00 ticks)
 ------------
 Total (root+branch&cut) =    0.01 sec. (0.95 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 845.668317 after 0.00 sec. (0.00 ticks)
@@ -785,35 +620,20 @@ Detecting symmetries...
 0     0      554.5065     9      589.5104   LiftProj: 5      218    5.94%
 Detecting symmetries...
 0     2      556.7875     8      589.5104      557.7771      218    5.38%                        0             0
-Elapsed time = 0.09 sec. (46.37 ticks, tree = 0.01 MB, solutions = 5)
+Elapsed time = 0.23 sec. (46.74 ticks, tree = 0.01 MB, solutions = 5)
 
 Lift and project cuts applied:  20
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.09 sec. (46.37 ticks)
+Real time             =    0.23 sec. (46.74 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.09 sec. (46.38 ticks)
+Total (root+branch&cut) =    0.23 sec. (46.76 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 845.668317 after 0.00 sec. (0.00 ticks)
@@ -839,7 +659,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 
 *     0+    0                          845.6683        0.0000           100.00%
 *     0     0      integral     0      561.1585      561.1585       45    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.16 ticks, tree = 0.00 MB, solutions = 1)
+Elapsed time = 0.01 sec. (1.17 ticks, tree = 0.00 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
@@ -851,23 +671,8 @@ Real time             =    0.00 sec. (0.00 ticks)
 ------------
 Total (root+branch&cut) =    0.01 sec. (1.17 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 656.468148 after 0.00 sec. (0.00 ticks)
@@ -926,35 +731,20 @@ Detecting symmetries...
 0     0      435.4401     9      465.9177   LiftProj: 6      305    6.54%
 Detecting symmetries...
 0     2      435.4401     9      465.9177      435.6794      305    6.49%                        0             0
-Elapsed time = 0.11 sec. (59.74 ticks, tree = 0.01 MB, solutions = 5)
+Elapsed time = 0.26 sec. (60.14 ticks, tree = 0.01 MB, solutions = 5)
 
 Lift and project cuts applied:  19
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.11 sec. (59.74 ticks)
+Real time             =    0.26 sec. (60.14 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.11 sec. (59.76 ticks)
+Total (root+branch&cut) =    0.26 sec. (60.15 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 656.468148 after 0.00 sec. (0.00 ticks)
@@ -980,7 +770,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 
 *     0+    0                          656.4681        0.0000           100.00%
 *     0     0      integral     0      389.1110      389.1110       45    0.00%                        0             0
-Elapsed time = 0.01 sec. (0.94 ticks, tree = 0.00 MB, solutions = 1)
+Elapsed time = 0.01 sec. (0.95 ticks, tree = 0.00 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
@@ -992,23 +782,8 @@ Real time             =    0.00 sec. (0.00 ticks)
 ------------
 Total (root+branch&cut) =    0.01 sec. (0.95 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 656.468148 after 0.00 sec. (0.00 ticks)
@@ -1064,35 +839,20 @@ Detecting symmetries...
 0     0      436.5779     9      465.9177   LiftProj: 8      250    6.30%
 Detecting symmetries...
 0     2      436.5779     9      465.9177      436.8068      250    6.25%                        0             0
-Elapsed time = 0.10 sec. (51.52 ticks, tree = 0.01 MB, solutions = 5)
+Elapsed time = 0.23 sec. (51.88 ticks, tree = 0.01 MB, solutions = 5)
 
 Lift and project cuts applied:  18
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.10 sec. (51.52 ticks)
+Real time             =    0.23 sec. (51.89 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.10 sec. (51.54 ticks)
+Total (root+branch&cut) =    0.23 sec. (51.90 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 656.468148 after 0.00 sec. (0.00 ticks)
@@ -1111,14 +871,14 @@ Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.49 ticks)
+Root relaxation solution time = 0.00 sec. (0.50 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0+    0                          656.4681        0.0000           100.00%
 *     0     0      integral     0      410.1756      410.1756       35    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.08 ticks, tree = 0.00 MB, solutions = 1)
+Elapsed time = 0.01 sec. (1.09 ticks, tree = 0.00 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
@@ -1130,23 +890,8 @@ Real time             =    0.00 sec. (0.00 ticks)
 ------------
 Total (root+branch&cut) =    0.01 sec. (1.09 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 673.426656 after 0.00 sec. (0.00 ticks)
@@ -1164,7 +909,7 @@ Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.72 ticks)
+Root relaxation solution time = 0.00 sec. (0.73 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -1200,35 +945,20 @@ Detecting symmetries...
 0     0      440.8669     9      465.5226   LiftProj: 6      216    5.30%
 Detecting symmetries...
 0     2      441.1110     8      465.5226      441.2543      216    5.21%                        0             0
-Elapsed time = 0.09 sec. (45.83 ticks, tree = 0.01 MB, solutions = 4)
+Elapsed time = 0.21 sec. (46.18 ticks, tree = 0.01 MB, solutions = 4)
 
 Lift and project cuts applied:  17
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.09 sec. (45.83 ticks)
+Real time             =    0.21 sec. (46.19 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.09 sec. (45.85 ticks)
+Total (root+branch&cut) =    0.22 sec. (46.21 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 673.426656 after 0.00 sec. (0.00 ticks)
@@ -1247,7 +977,7 @@ Probing time = 0.00 sec. (0.02 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.36 ticks)
+Root relaxation solution time = 0.00 sec. (0.37 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -1260,29 +990,14 @@ Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (0.88 ticks)
+Real time             =    0.01 sec. (0.89 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (0.88 ticks)
+Total (root+branch&cut) =    0.01 sec. (0.89 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 673.426656 after 0.00 sec. (0.00 ticks)
@@ -1341,35 +1056,20 @@ Detecting symmetries...
 0     0      443.7593     8      465.5226   LiftProj: 7      240    4.68%
 Detecting symmetries...
 0     2      444.1619     7      465.5226      444.1650      240    4.59%                        0             0
-Elapsed time = 0.11 sec. (53.85 ticks, tree = 0.01 MB, solutions = 3)
+Elapsed time = 0.26 sec. (54.27 ticks, tree = 0.01 MB, solutions = 3)
 
 Lift and project cuts applied:  18
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.11 sec. (53.85 ticks)
+Real time             =    0.26 sec. (54.28 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.11 sec. (53.87 ticks)
+Total (root+branch&cut) =    0.26 sec. (54.29 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 673.426656 after 0.00 sec. (0.00 ticks)
@@ -1402,29 +1102,14 @@ Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.10 ticks)
+Real time             =    0.01 sec. (1.11 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.10 ticks)
+Total (root+branch&cut) =    0.01 sec. (1.11 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 525.128430 after 0.00 sec. (0.00 ticks)
@@ -1437,7 +1122,7 @@ Tried aggregator 1 time.
 Detecting symmetries...
 Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
 Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.25 ticks)
+Presolve time = 0.00 sec. (0.24 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
@@ -1473,35 +1158,20 @@ Detecting symmetries...
 0     0      314.5228     4      315.2212   LiftProj: 2      190    0.22%
 *     0+    0                          315.2212      314.5228             0.22%
 0     0        cutoff            315.2212                    196    0.00%                        0             0
-Elapsed time = 0.05 sec. (24.86 ticks, tree = 0.01 MB, solutions = 4)
+Elapsed time = 0.14 sec. (25.11 ticks, tree = 0.01 MB, solutions = 4)
 
 Lift and project cuts applied:  9
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.05 sec. (24.87 ticks)
+Real time             =    0.14 sec. (25.12 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.05 sec. (24.87 ticks)
+Total (root+branch&cut) =    0.14 sec. (25.12 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 525.128430 after 0.00 sec. (0.00 ticks)
@@ -1539,23 +1209,8 @@ Real time             =    0.00 sec. (0.00 ticks)
 ------------
 Total (root+branch&cut) =    0.01 sec. (0.94 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 525.128430 after 0.00 sec. (0.00 ticks)
@@ -1600,35 +1255,20 @@ Detecting symmetries...
 0     0      313.1106     7      315.4732   LiftProj: 3      144    0.75%
 0     0      313.3566     7      315.4732   LiftProj: 4      151    0.67%
 0     0        cutoff            315.4732                    164    0.00%                        0             0
-Elapsed time = 0.04 sec. (19.17 ticks, tree = 0.01 MB, solutions = 6)
+Elapsed time = 0.11 sec. (19.37 ticks, tree = 0.01 MB, solutions = 6)
 
 Lift and project cuts applied:  4
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.04 sec. (19.18 ticks)
+Real time             =    0.11 sec. (19.37 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.04 sec. (19.18 ticks)
+Total (root+branch&cut) =    0.11 sec. (19.37 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 525.128430 after 0.00 sec. (0.00 ticks)
@@ -1666,23 +1306,8 @@ Real time             =    0.00 sec. (0.00 ticks)
 ------------
 Total (root+branch&cut) =    0.01 sec. (1.04 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 549.267052 after 0.00 sec. (0.00 ticks)
@@ -1695,12 +1320,12 @@ Tried aggregator 1 time.
 Detecting symmetries...
 Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
 Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.25 ticks)
+Presolve time = 0.00 sec. (0.24 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.60 ticks)
+Root relaxation solution time = 0.00 sec. (0.61 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -1734,35 +1359,20 @@ Detecting symmetries...
 *     0+    0                          396.1684      383.4483             3.21%
 Detecting symmetries...
 0     2      384.0429     8      396.1684      384.1134      182    3.04%                        0             0
-Elapsed time = 0.07 sec. (33.60 ticks, tree = 0.01 MB, solutions = 6)
+Elapsed time = 0.17 sec. (33.90 ticks, tree = 0.01 MB, solutions = 6)
 
 Lift and project cuts applied:  16
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.07 sec. (33.60 ticks)
+Real time             =    0.17 sec. (33.90 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.07 sec. (33.62 ticks)
+Total (root+branch&cut) =    0.17 sec. (33.92 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 549.267052 after 0.00 sec. (0.00 ticks)
@@ -1788,7 +1398,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 
 *     0+    0                          549.2671        0.0000           100.00%
 *     0     0      integral     0      372.4575      372.4575       43    0.00%                        0             0
-Elapsed time = 0.01 sec. (0.92 ticks, tree = 0.00 MB, solutions = 1)
+Elapsed time = 0.01 sec. (0.93 ticks, tree = 0.00 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
@@ -1800,23 +1410,8 @@ Real time             =    0.00 sec. (0.00 ticks)
 ------------
 Total (root+branch&cut) =    0.01 sec. (0.93 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 549.267052 after 0.00 sec. (0.00 ticks)
@@ -1834,7 +1429,7 @@ Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.47 ticks)
+Root relaxation solution time = 0.00 sec. (0.48 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -1868,35 +1463,20 @@ Detecting symmetries...
 0     0      389.3904     6      396.1684   LiftProj: 3      142    1.71%
 Detecting symmetries...
 0     2      389.7995     4      396.1684      390.1999      142    1.51%                        0             0
-Elapsed time = 0.06 sec. (28.07 ticks, tree = 0.01 MB, solutions = 5)
+Elapsed time = 0.17 sec. (28.37 ticks, tree = 0.01 MB, solutions = 5)
 
 Lift and project cuts applied:  13
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (28.07 ticks)
+Real time             =    0.17 sec. (28.38 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (28.09 ticks)
+Total (root+branch&cut) =    0.17 sec. (28.39 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 549.267052 after 0.00 sec. (0.00 ticks)
@@ -1922,7 +1502,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 
 *     0+    0                          549.2671        0.0000           100.00%
 *     0     0      integral     0      385.0255      385.0255       33    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.05 ticks, tree = 0.00 MB, solutions = 1)
+Elapsed time = 0.01 sec. (1.06 ticks, tree = 0.00 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
@@ -1934,23 +1514,8 @@ Real time             =    0.00 sec. (0.00 ticks)
 ------------
 Total (root+branch&cut) =    0.01 sec. (1.06 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 941.720518 after 0.00 sec. (0.00 ticks)
@@ -1999,35 +1564,20 @@ Detecting symmetries...
 0     0      625.8010     8      652.5589   LiftProj: 2      157    4.10%
 Detecting symmetries...
 0     2      629.5213     6      652.5589      629.8739      157    3.48%                        0             0
-Elapsed time = 0.06 sec. (26.59 ticks, tree = 0.01 MB, solutions = 5)
+Elapsed time = 0.15 sec. (26.86 ticks, tree = 0.01 MB, solutions = 5)
 
 Lift and project cuts applied:  10
 Gomory fractional cuts applied:  3
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (26.60 ticks)
+Real time             =    0.15 sec. (26.86 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (26.62 ticks)
+Total (root+branch&cut) =    0.15 sec. (26.88 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 941.720518 after 0.00 sec. (0.00 ticks)
@@ -2041,19 +1591,19 @@ Tried aggregator 1 time.
 Detecting symmetries...
 Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
 Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.22 ticks)
+Presolve time = 0.00 sec. (0.21 ticks)
 Probing time = 0.00 sec. (0.02 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.42 ticks)
+Root relaxation solution time = 0.00 sec. (0.43 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0+    0                          941.7205        0.0000           100.00%
 *     0     0      integral     0      596.9704      596.9704       48    0.00%                        0             0
-Elapsed time = 0.01 sec. (0.96 ticks, tree = 0.00 MB, solutions = 1)
+Elapsed time = 0.01 sec. (0.97 ticks, tree = 0.00 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
@@ -2065,23 +1615,8 @@ Real time             =    0.00 sec. (0.00 ticks)
 ------------
 Total (root+branch&cut) =    0.01 sec. (0.97 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 941.720518 after 0.00 sec. (0.00 ticks)
@@ -2136,35 +1671,20 @@ Detecting symmetries...
 0     0      649.8222     5      652.5589   LiftProj: 1      269    0.42%
 Detecting symmetries...
 0     0        cutoff            652.5589      649.8222      269    0.42%                        0             0
-Elapsed time = 0.08 sec. (39.71 ticks, tree = 0.01 MB, solutions = 4)
+Elapsed time = 0.21 sec. (40.07 ticks, tree = 0.01 MB, solutions = 4)
 
 Lift and project cuts applied:  15
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.08 sec. (39.72 ticks)
+Real time             =    0.21 sec. (40.08 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.08 sec. (39.72 ticks)
+Total (root+branch&cut) =    0.21 sec. (40.08 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 941.720518 after 0.00 sec. (0.00 ticks)
@@ -2196,29 +1716,14 @@ Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.18 ticks)
+Real time             =    0.01 sec. (1.19 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.18 ticks)
+Total (root+branch&cut) =    0.01 sec. (1.19 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 671.289819 after 0.00 sec. (0.00 ticks)
@@ -2236,7 +1741,7 @@ Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.66 ticks)
+Root relaxation solution time = 0.00 sec. (0.67 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -2285,35 +1790,20 @@ Detecting symmetries...
 0     0      348.2483     8      392.1998   LiftProj: 4      361   11.21%
 Detecting symmetries...
 0     2      348.8097     7      392.1998      349.0020      361   11.01%                        0             0
-Elapsed time = 0.13 sec. (72.23 ticks, tree = 0.01 MB, solutions = 5)
+Elapsed time = 0.32 sec. (72.75 ticks, tree = 0.01 MB, solutions = 5)
 
 Lift and project cuts applied:  19
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.13 sec. (72.23 ticks)
+Real time             =    0.32 sec. (72.75 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.13 sec. (72.25 ticks)
+Total (root+branch&cut) =    0.32 sec. (72.77 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 671.289819 after 0.00 sec. (0.00 ticks)
@@ -2332,7 +1822,7 @@ Probing time = 0.00 sec. (0.02 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.43 ticks)
+Root relaxation solution time = 0.00 sec. (0.44 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -2341,35 +1831,20 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0      304.9439     1      671.2898      304.9439       48   54.57%
 *     0+    0                          305.0518      304.9439             0.04%
 *     0     0      integral     0      304.9870      304.9870       50    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.26 ticks, tree = 0.01 MB, solutions = 2)
+Elapsed time = 0.01 sec. (1.28 ticks, tree = 0.01 MB, solutions = 2)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.27 ticks)
+Real time             =    0.01 sec. (1.28 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.27 ticks)
+Total (root+branch&cut) =    0.01 sec. (1.28 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 671.289819 after 0.00 sec. (0.00 ticks)
@@ -2424,35 +1899,20 @@ Detecting symmetries...
 0     0      352.0730     9      392.1998   LiftProj: 6      236   10.23%
 Detecting symmetries...
 0     2      354.5785     7      392.1998      354.6203      236    9.58%                        0             0
-Elapsed time = 0.09 sec. (46.13 ticks, tree = 0.01 MB, solutions = 5)
+Elapsed time = 0.22 sec. (46.49 ticks, tree = 0.01 MB, solutions = 5)
 
 Lift and project cuts applied:  19
 Gomory fractional cuts applied:  1
 
 Root node processing (before b&c):
-Real time             =    0.09 sec. (46.13 ticks)
+Real time             =    0.22 sec. (46.49 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.09 sec. (46.14 ticks)
+Total (root+branch&cut) =    0.22 sec. (46.50 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 671.289819 after 0.00 sec. (0.00 ticks)
@@ -2484,29 +1944,14 @@ Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.06 ticks)
+Real time             =    0.01 sec. (1.07 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.06 ticks)
+Total (root+branch&cut) =    0.01 sec. (1.07 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 758.032827 after 0.00 sec. (0.00 ticks)
@@ -2564,35 +2009,20 @@ Detecting symmetries...
 0     0      459.7600     9      497.5652   LiftProj: 5      249    7.60%
 Detecting symmetries...
 0     2      460.2923     8      497.5652      460.9536      249    7.36%                        0             0
-Elapsed time = 0.10 sec. (53.13 ticks, tree = 0.01 MB, solutions = 6)
+Elapsed time = 0.24 sec. (53.51 ticks, tree = 0.01 MB, solutions = 6)
 
 Lift and project cuts applied:  18
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.10 sec. (53.13 ticks)
+Real time             =    0.24 sec. (53.51 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.10 sec. (53.15 ticks)
+Total (root+branch&cut) =    0.24 sec. (53.53 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 758.032827 after 0.00 sec. (0.00 ticks)
@@ -2611,7 +2041,7 @@ Probing time = 0.00 sec. (0.02 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.46 ticks)
+Root relaxation solution time = 0.00 sec. (0.47 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -2624,29 +2054,14 @@ Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.01 ticks)
+Real time             =    0.01 sec. (1.02 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.01 ticks)
+Total (root+branch&cut) =    0.01 sec. (1.02 ticks)
 Solution status 101.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 758.032827 after 0.00 sec. (0.00 ticks)
@@ -2664,7 +2079,7 @@ Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.61 ticks)
+Root relaxation solution time = 0.00 sec. (0.62 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -2706,35 +2121,20 @@ Detecting symmetries...
 0     0      471.8664     7      497.5652   LiftProj: 4      268    5.16%
 Detecting symmetries...
 0     2      471.8664     7      497.5652      471.9726      268    5.14%                        0             0
-Elapsed time = 0.11 sec. (56.27 ticks, tree = 0.01 MB, solutions = 6)
+Elapsed time = 0.26 sec. (56.67 ticks, tree = 0.01 MB, solutions = 6)
 
 Lift and project cuts applied:  16
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.11 sec. (56.27 ticks)
+Real time             =    0.26 sec. (56.68 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.11 sec. (56.29 ticks)
+Total (root+branch&cut) =    0.26 sec. (56.69 ticks)
 CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
+Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-CPXPARAM_MIP_Cuts_Cliques                        -1
-CPXPARAM_MIP_Cuts_Covers                         -1
-CPXPARAM_MIP_Cuts_FlowCovers                     -1
-CPXPARAM_MIP_Cuts_Implied                        -1
-CPXPARAM_MIP_Cuts_GUBCovers                      -1
-CPXPARAM_MIP_Cuts_Gomory                         2
-CPXPARAM_MIP_Cuts_PathCut                        -1
-CPXPARAM_MIP_Cuts_MIRCut                         -1
-CPXPARAM_MIP_Cuts_Disjunctive                    -1
-CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
-CPXPARAM_MIP_Cuts_MCFCut                         -1
-CPXPARAM_MIP_Cuts_LiftProj                       3
-CPXPARAM_MIP_Cuts_LocalImplied                   -1
-CPXPARAM_MIP_Cuts_BQP                            -1
-CPXPARAM_MIP_Cuts_RLT                            -1
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 758.032827 after 0.00 sec. (0.00 ticks)
@@ -2762,7 +2162,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 *     0+    0                          451.8439        0.0000           100.00%
 0     0        cutoff            451.8439      451.8439       34    0.00%
 0     0        cutoff            451.8439      451.8439       34    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.13 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.01 sec. (1.14 ticks, tree = 0.01 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0

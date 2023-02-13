@@ -9,6 +9,7 @@ if len(sys.argv) != 2:
 model_name = sys.argv[1]
 # basic = ["Gomory", "Disjunctive", "LiftProj"]
 # stronger = ["Covers", "FlowCovers", "Gomory", "Disjunctive", "LiftProj", "MIRCut"]
+# quadratic = ["Gomory", "Disjunctive", "LiftProj"]
 stuff = ["CPXPARAM_MIP_Cuts_"+cut for cut in ["Gomory", "Disjunctive", "LiftProj"]]
 subsets = []
 for L in range(1, len(stuff) + 1):
