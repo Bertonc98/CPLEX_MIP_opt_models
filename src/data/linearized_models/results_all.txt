@@ -5,7 +5,7 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.66 ticks)
+Root relaxation solution time = 0.00 sec. (0.66 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -14,7 +14,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0        0.0000     2                    Cuts: 10      111
 *     0     0      integral     0        0.0000       Cuts: 6      112    0.00%
 0     0        cutoff              0.0000        0.0000      112    0.00%                        0             0
-Elapsed time = 0.05 sec. (5.97 ticks, tree = 0.01 MB, solutions = 1)
+Elapsed time = 0.02 sec. (5.97 ticks, tree = 0.01 MB, solutions = 1)
 
 GUB cover cuts applied:  0
 Clique cuts applied:  0
@@ -31,11 +31,11 @@ Disjunctive cuts applied:  1
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.05 sec. (5.98 ticks)
+Real time             =    0.02 sec. (5.98 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.05 sec. (5.98 ticks)
+Total (root+branch&cut) =    0.02 sec. (5.98 ticks)
 Solution status 101.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -87,7 +87,7 @@ Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0     0      integral     0       -0.0000       -0.0000      101   -5.88%                        0             0
-Elapsed time = 0.01 sec. (0.79 ticks, tree = 0.00 MB, solutions = 1)
+Elapsed time = 0.00 sec. (0.79 ticks, tree = 0.00 MB, solutions = 1)
 
 GUB cover cuts applied:  0
 Clique cuts applied:  0
@@ -183,7 +183,7 @@ Real time             =    0.02 sec. (8.32 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.03 sec. (8.33 ticks)
+Total (root+branch&cut) =    0.02 sec. (8.33 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -716,7 +716,7 @@ Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0     0      integral     0        0.0000        0.0000       85   49.96%                        0             0
-Elapsed time = 0.01 sec. (0.66 ticks, tree = 0.00 MB, solutions = 1)
+Elapsed time = 0.00 sec. (0.66 ticks, tree = 0.00 MB, solutions = 1)
 
 GUB cover cuts applied:  0
 Clique cuts applied:  0
@@ -733,11 +733,11 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (0.67 ticks)
+Real time             =    0.00 sec. (0.67 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (0.67 ticks)
+Total (root+branch&cut) =    0.00 sec. (0.67 ticks)
 Solution status 101.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1198,7 +1198,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0        0.0000     4                    Cuts: 10      194
 0     0        0.0000     2                    Cuts: 14      208
 0     2        0.0000     3                      0.0000      208                                 0             0
-Elapsed time = 0.03 sec. (11.91 ticks, tree = 0.01 MB, solutions = 0)
+Elapsed time = 0.04 sec. (11.91 ticks, tree = 0.01 MB, solutions = 0)
 
 GUB cover cuts applied:  0
 Clique cuts applied:  0
@@ -1215,11 +1215,11 @@ Disjunctive cuts applied:  1
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.03 sec. (11.90 ticks)
+Real time             =    0.04 sec. (11.90 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.03 sec. (11.92 ticks)
+Total (root+branch&cut) =    0.04 sec. (11.92 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce

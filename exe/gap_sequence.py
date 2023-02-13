@@ -32,8 +32,10 @@ for fl in filenames:
 			obj, bi, _ = line.split(";")
 			if "integral" in obj or "cutoff" in obj:
 				continue
-			
-			initial_gap = (float(bi) - float(obj))/float(bi)
+			if float(bi) != 0.0:
+				initial_gap = (float(bi) - float(obj))/float(bi)
+			else:
+				initial_gap = 0
 		elif ":" in line and "CPX" not in line:		
 			added = True
 			obj, bi, n_c = line.split(";")
