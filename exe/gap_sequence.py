@@ -51,6 +51,7 @@ for fl in filenames:
 			
 			n_cuts += int(n_c.split(":")[-1])
 			out_text[-1].append(";".join([str(n_cuts), str(gap)]))
+			n_cuts = 0
 	
 	to_file_text = []
 	for instance in out_text:

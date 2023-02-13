@@ -99,9 +99,9 @@ int main(int argc, char **argv){
 	int C = 10;
 	//Measurement error on point i
 	IloNumVarArray pp(env, k, 0, IloInfinity); //(45)
-	pp.setNames("p+");
+	pp.setNames("pp");
 	IloNumVarArray pm(env, k, 0, IloInfinity); //(45)
-	pm.setNames("p-");
+	pm.setNames("pm");
 	//Confidence region parameter
 	//IloNumVar eps(env, 0);
 	int eps = 10;

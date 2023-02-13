@@ -137,21 +137,21 @@ int main(int argc, char **argv){
 	//~ Variable Definition (49)
 	// alpha lenght I (dual of (37, 38))
 	IloNumVarArray ap(env, k, 0, IloInfinity); 
-	ap.setNames("a+");
+	ap.setNames("ap");
 	IloNumVarArray am(env, k, 0, IloInfinity); 
-	am.setNames("a-");
+	am.setNames("am");
 	
 	// pi length I (dual of (39, 40))
 	IloNumVarArray pip(env, k, 0, IloInfinity); 
-	pip.setNames("pi+");
+	pip.setNames("pip");
 	IloNumVarArray pim(env, k, 0, IloInfinity); 
-	pim.setNames("pi-");
+	pim.setNames("pim");
 	
 	// psi length I (dual of(39, 40))
 	IloNumVarArray psip(env, k, 0, IloInfinity); 
-	psip.setNames("psi+");
+	psip.setNames("psip");
 	IloNumVarArray psim(env, k, 0, IloInfinity); 
-	psim.setNames("psi-");
+	psim.setNames("psim");
 	
 	// lambdaU length J (dual of (41))
 	IloNumVarArray lu(env, d, 0, IloInfinity); 
@@ -169,9 +169,9 @@ int main(int argc, char **argv){
 	
 	// eta length I (dual of (45))
 	IloNumVarArray etap(env, k, 0, IloInfinity); 
-	etap.setNames("eta+");
+	etap.setNames("tap");
 	IloNumVarArray etam(env, k, 0, IloInfinity); 
-	etam.setNames("eta-");
+	etam.setNames("tam");
 	
 	// phi length J (dual of (46))
 	IloNumVarArray phi(env, d, 0, IloInfinity); 
