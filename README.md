@@ -136,7 +136,18 @@ So in each column there are the coefficients of a particular variable in each co
 Some minor error in the definition of the dual fixed
 Added handlingo of case in which no constraint is generated and GAMMA would be empty
 
+## 20/02/2022
+Referals to the pdf of the thesis:
+basic_model = basic model
+stronger_model = stronger model
+quadratic model = quadratic model (only feature selection)
+mccormick_model = McCormick linearization (quadratic with outlier detection and feature selection)
+linearized_model = disjunctive linearization (quadratic with outlier detection and feature selection)
+
+Start implementation of McCormick
+s
 TODO: 
+- McCormick implementation
 - Check for feasibility of the dual
 
 
