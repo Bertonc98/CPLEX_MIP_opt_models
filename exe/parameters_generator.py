@@ -51,7 +51,7 @@ for sub in subsets:
 	
 	name = "-".join([c.split("_")[-1] for c in active_params])
 	
-	if model_name == "linearized_model":
+	if model_name == "linearized_model" or model_name == "mccormick_model":
 		text += dumb_parameters
 	
 	with open(f"../src/parameters/{model_name}/CPXPARAM_MIP_Cuts_{name}.txt", "w+") as f:
