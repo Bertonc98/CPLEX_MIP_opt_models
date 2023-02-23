@@ -17,6 +17,10 @@ CPLEX_MIP_opt_models <br />
     ├── data <br />
     │   └── basic_models <br />
     │   └── stronger_models <br />
+    │   └── quadratic_models <br />
+    │   └── disjunctive_models <br />
+    │   └── mccormick_models <br />
+    │   └── SFSOD <br />
     ├── instance_set <br />
     │   └── optimal_solutions <br />
     └── parameters <br />

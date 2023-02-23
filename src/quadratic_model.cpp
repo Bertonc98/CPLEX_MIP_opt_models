@@ -188,25 +188,34 @@ int main(int argc, char **argv){
 			errors++;
 		}
 	}
+	*/
 	
 	//~ Saving results
 	fstream dest_file;
-	string res_name = "../src/data/quadratic_results.csv";
+	string res_name = "../src/data/SFSOD/quadratic_results.csv";
+	string line = "";
+	
+	ifstream myfile;
+	myfile.open(res_name);
+	if(!myfile) {
+		cout<<"file not exists"<<endl;
+		line = "Instance;d_0;k_0;OurObj;intercept;slopes\n";
+	} 
+	
 	dest_file.open(res_name, fstream::app);
-	if(dest_file.fail()){
-	//~ cout<<"Destination file not exists: creating..."<<endl;
-		ofstream create_file(res_name);
-		create_file<<"";
-		create_file.close();
-		dest_file.open(res_name, fstream::app);
-		dest_file << "Instance;d_0;k_0;MismatchedOutliers;OurObj;YourObj"<<endl;
+	
+	line += filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(cplex.getObjValue()) + ";" + to_string(cplex.getValue(z)) + ";";
+	
+	for(int i=0; i<d; i++){
+		if(i != d-1)
+			line += to_string(cplex.getValue(w[i])) + "~";
+		else
+			line += to_string(cplex.getValue(w[i]));
 	}
 	
-	string line = filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(errors) + ";" + to_string(cplex.getObjValue());
-
 	dest_file<<line<<endl;
 	
-	*/
+	
 	cout << "Obj value: " << cplex.getObjValue() << endl;
 	
 	env.end();
