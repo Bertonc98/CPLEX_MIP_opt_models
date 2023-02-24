@@ -220,13 +220,14 @@ int main(int argc, char **argv){
 	int result, pos;
 	for (int i = 0; i < k ; i++){
 		getline(cfile, tmp);
-		result = 1-int(abs( cplex.getValue(s[i]) ));
+		result = int(abs( cplex.getValue(s[i]) ));
 		pos = tmp.find(",");
 		if( result != stoi(tmp.substr(pos+1, 1)) ){
-			cout << tmp << " | " << int(abs(cplex.getValue(s[i]))) << endl;
+			cout << tmp << " | " << result << endl;
 			errors++;
 		}
 	}
+	cout << "errors: " << errors << endl;
 	
 	//Output s and f values
 	cout << endl << "s: \t";
