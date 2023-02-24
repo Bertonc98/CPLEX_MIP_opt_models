@@ -220,7 +220,7 @@ int main(int argc, char **argv){
 	int result, pos;
 	for (int i = 0; i < k ; i++){
 		getline(cfile, tmp);
-		result = int(abs( cplex.getValue(s[i]) ));
+		result = 1-int(abs( cplex.getValue(s[i]) ));
 		pos = tmp.find(",");
 		if( result != stoi(tmp.substr(pos+1, 1)) ){
 			cout << tmp << " | " << int(abs(cplex.getValue(s[i]))) << endl;
