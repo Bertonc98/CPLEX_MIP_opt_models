@@ -123,7 +123,6 @@ int main(int argc, char **argv){
 	//Setting of R
 	
 	//~ Objective Function 
-	//~ IloObjective obj = IloAdd(model, IloMinimize(env, IloSum(p - IloScalProd( IloScalProd(mones, s) + ones, r) ) ) );
 	int db = 0;
 	
 	IloObjective obj(env);
@@ -219,18 +218,20 @@ int main(int argc, char **argv){
 	
 	//~ Mismatching count 
 	int errors = 0;
-	//~ cout << "Pnt, Out | Out model " << endl;
+	cout << "Pnt, Out | Out model " << endl;
 	string tmp;
 	int result, pos;
 	for (int i = 0; i < k ; i++){
 		getline(cfile, tmp);
-		result = 1-int(abs(cplex.getValue(s[i])));
+		result = int(abs( cplex.getValue(s[i]) ));
 		pos = tmp.find(",");
 		if( result != stoi(tmp.substr(pos+1, 1)) ){
-			//~ cout << tmp << " | " << 1-int(abs(cplex.getValue(s[i]))) << endl;
+			cout << tmp << " | " << result << endl;
 			errors++;
 		}
 	}
+	cout << "errors: " << errors << endl;
+	
 	
 	//Output s and f values
 	cout << endl << "s: \t";
