@@ -1,9 +1,11 @@
 # CPLEX_MIP_opt_models
-In order to compile the two models:
+[![Project](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_c-6EJ-oO-VawDYBLmeyksnJOPEjEBBp)
+
+In order to compile the models:
 
 - Move to exe directory
-- Execute "./maker basic_model/strong_model 0", this will compile the model file
-- Execute the model as: "basicmodel/strong_model instance d k"
+- Execute "./maker name_model 0", this will compile the model file
+- Execute the model as: "name_model instance d k"
   Where instance is the toy instance number, d and k as defined in the model
   
 The basic model output comprehend the comparison between the provided results and the computed ones on the bash\\
