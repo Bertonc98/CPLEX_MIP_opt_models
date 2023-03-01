@@ -239,7 +239,7 @@ int main(int argc, char **argv){
 	if(!myfile) {
 		//cout<<"file not exists"<<endl;
 		if(generated_instances){
-			line = "Instance;d_0;k_0;Time;OurObj;intercept;slopes\n";
+			line = "Instance;d_0;k;Time;OurObj;intercept;slopes\n";
 		}
 		else{
 			line = "Instance;d_0;k_0;MismatchedOutliers;OurObj;intercept;slopes\n";
@@ -248,7 +248,7 @@ int main(int argc, char **argv){
 	
 	dest_file.open(res_name, fstream::app);
 	if(generated_instances){
-		line += filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(time_span) + ";" + to_string(cplex.getValue(obj)) + ";" + to_string(cplex.getValue(z)) + ";";
+		line += filename + ";" + to_string(d_0) + ";" + to_string(k) + ";" + to_string(time_span) + ";" + to_string(cplex.getValue(obj)) + ";" + to_string(cplex.getValue(z)) + ";";
 	}
 	else{
 		line += filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(errors) + ";" + to_string(cplex.getValue(obj)) + ";" + to_string(cplex.getValue(z)) + ";";
