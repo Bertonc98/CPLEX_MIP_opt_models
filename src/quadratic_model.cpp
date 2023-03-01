@@ -91,7 +91,7 @@ int main(int argc, char **argv){
 	pm.setNames("pm");
 	//Confidence region parameter
 	//IloNumVar eps(env, 0);
-	int eps = 2.5;
+	int eps = 0.5;
 	//Intercept
 	IloNumVar z(env, -IloInfinity, IloInfinity); 
 	z.setName("z");
@@ -108,7 +108,7 @@ int main(int argc, char **argv){
 	IloExpr obj_expr(env);
 	
 	for( int j = 0; j < d ; j++){
-		obj_expr += (1/2)*(w[j]*w[j]);
+		obj_expr += (0.5)*(w[j]*w[j]);
 	}
 	for( int i = 0; i < k ; i++){
 		obj_expr += C*(pp[i] + pm[i]);

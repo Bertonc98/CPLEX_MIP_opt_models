@@ -5,23 +5,23 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.75 ticks)
+Root relaxation solution time = 0.02 sec. (5.83 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000     6                      0.0000       77
-0     2        0.0000     7                      0.0000       77                                 0             0
-Elapsed time = 0.01 sec. (2.17 ticks, tree = 0.01 MB, solutions = 0)
+0     0        0.2276     9                      0.2276       20
+0     2        0.2276    25                      0.2276       20                                 0             0
+Elapsed time = 0.04 sec. (21.62 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (2.17 ticks)
+Real time             =    0.04 sec. (21.63 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (2.19 ticks)
+Total (root+branch&cut) =    0.04 sec. (21.66 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -30,23 +30,23 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.56 ticks)
+Root relaxation solution time = 0.03 sec. (10.25 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000     4                      0.0000       57
-0     2        0.0000     4                      0.0000       57                                 0             0
-Elapsed time = 0.01 sec. (1.53 ticks, tree = 0.01 MB, solutions = 0)
+0     0        0.0044     6                      0.0044      245
+0     2        0.0044    12                      0.0071      245                                 0             0
+Elapsed time = 0.04 sec. (16.43 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.53 ticks)
+Real time             =    0.04 sec. (16.44 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.55 ticks)
+Total (root+branch&cut) =    0.04 sec. (16.46 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -55,23 +55,573 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.63 ticks)
+Root relaxation solution time = 0.02 sec. (5.67 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000     6                      0.0000       57
-0     2        0.0000     6                      0.0000       57                                 0             0
-Elapsed time = 0.01 sec. (1.72 ticks, tree = 0.01 MB, solutions = 0)
+0     0        3.6709    11                      3.6709       28
+0     2        3.6709    19                      3.6709       28                                 0             0
+Elapsed time = 0.03 sec. (14.89 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.71 ticks)
+Real time             =    0.03 sec. (14.90 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.03 sec. (14.92 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.03 sec. (9.87 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.5055     9                      0.5055      137
+0     2        0.5055    14                      0.5055      137                                 0             0
+Elapsed time = 0.04 sec. (18.63 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (18.64 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (18.67 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.03 sec. (6.64 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.1757     9                      0.1757       26
+0     2        0.1757    24                      0.1757       26                                 0             0
+Elapsed time = 0.04 sec. (20.94 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (20.95 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (20.97 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (4.69 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0079     6                      0.0079       22
+0     2        0.0079    19                      0.0079       22                                 0             0
+Elapsed time = 0.04 sec. (18.63 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (18.64 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (18.66 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (6.18 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        1.5650     9                      1.5650       24
+0     2        1.5650    22                      1.5650       24                                 0             0
+Elapsed time = 0.04 sec. (18.44 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (18.45 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (18.47 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.04 sec. (10.07 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000     4                      0.0000      161
+0     2        0.0000     7                      0.0000      161                                 0             0
+Elapsed time = 0.05 sec. (19.97 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.05 sec. (19.98 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.05 sec. (20.00 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (6.70 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.7579     6                      0.7579       30
+0     2        0.7579    23                      0.7579       30                                 0             0
+Elapsed time = 0.04 sec. (20.39 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (20.40 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (20.42 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.03 sec. (12.95 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.1767     4                      0.1767      199
+0     2        0.1767    11                      0.1767      199                                 0             0
+Elapsed time = 0.04 sec. (18.27 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (18.28 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (18.30 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (6.44 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        2.3492    10                      2.3492       35
+0     2        2.3492    20                      2.3492       35                                 0             0
+Elapsed time = 0.03 sec. (17.48 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (17.49 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (17.51 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.03 sec. (11.26 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0007     9                      0.0007      181
+0     2        0.0007    13                      0.0007      181                                 0             0
+Elapsed time = 0.04 sec. (18.10 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (18.11 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (18.13 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (6.34 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.5885    10                      0.5885       28
+0     2        0.5885    23                      0.5885       28                                 0             0
+Elapsed time = 0.04 sec. (18.84 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (18.85 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (18.87 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.03 sec. (10.62 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000     2                      0.0000      217
+0     2        0.0000     6                      0.0000      217                                 0             0
+Elapsed time = 0.04 sec. (14.84 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (14.85 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (14.87 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (6.67 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.8260     8                      0.8260       37
+0     2        0.8260    18                      0.8260       37                                 0             0
+Elapsed time = 0.04 sec. (16.70 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (16.72 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (16.74 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.03 sec. (9.65 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.1151    11                      0.1151      124
+0     2        0.1151    12                      0.1151      124                                 0             0
+Elapsed time = 0.04 sec. (13.59 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (13.60 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (13.63 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (6.43 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0684     9                      0.0684       34
+0     2        0.0684    21                      0.0684       34                                 0             0
+Elapsed time = 0.03 sec. (17.64 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (17.65 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (17.67 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.03 sec. (11.85 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0103     5                      0.0103      272
+0     2        0.0103     8                      0.0103      272                                 0             0
+Elapsed time = 0.04 sec. (17.04 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (17.05 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (17.07 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.03 sec. (7.19 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.7128     5                      0.7128       72
+0     2        0.7128    14                      0.7128       72                                 0             0
+Elapsed time = 0.04 sec. (15.70 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (15.71 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (15.73 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.03 sec. (11.69 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0496     9                      0.0496      177
+0     2        0.0496    12                      0.0496      177                                 0             0
+Elapsed time = 0.04 sec. (17.76 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (17.77 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (17.80 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (5.07 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000     2                      0.0000       25
+0     2        0.0000    17                      0.0000       25                                 0             0
+Elapsed time = 0.03 sec. (17.29 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (17.29 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.03 sec. (17.32 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.03 sec. (10.30 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.1195     5                      0.1195      216
+0     2        0.1195     9                      0.1195      216                                 0             0
+Elapsed time = 0.04 sec. (14.59 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (14.60 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (14.62 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (7.32 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0927    11                      0.0927       57
+0     2        0.0927    23                      0.0927       57                                 0             0
+Elapsed time = 0.04 sec. (20.31 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (20.32 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (20.34 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.03 sec. (8.39 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0182     9                      0.0182      108
+0     2        0.0182    13                      0.0182      108                                 0             0
+Elapsed time = 0.04 sec. (16.57 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (16.58 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (16.60 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (9.39 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0027     7                      0.0027       49
+0     2        0.0027    22                      0.0038       49                                 0             0
+Elapsed time = 0.04 sec. (23.05 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (23.06 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.03 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.74 ticks)
+Total (root+branch&cut) =    0.04 sec. (23.08 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -80,196 +630,23 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.27 ticks)
+Root relaxation solution time = 0.03 sec. (10.91 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0     0      integral     0        0.0000        0.0000       19    0.00%                        0             0
-Elapsed time = 0.00 sec. (0.45 ticks, tree = 0.00 MB, solutions = 1)
+0     0        0.0000     5                      0.0000      209
+0     2        0.0000    16                      0.0000      209                                 0             0
+Elapsed time = 0.04 sec. (20.33 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.00 sec. (0.46 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.00 sec. (0.46 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.54 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     7                      0.0000       62
-0     2        0.0000     7                      0.0000       62                                 0             0
-Elapsed time = 0.01 sec. (2.11 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (2.10 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.03 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (2.13 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.40 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     3                      0.0000       48
-0     2        0.0000     3                      0.0000       86                                 0             0
-Elapsed time = 0.01 sec. (1.37 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.37 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.03 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.39 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.23 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     5                      0.0000       26
-0     2        0.0000     3                      0.0000       43                                 0             0
-Elapsed time = 0.01 sec. (1.63 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.35 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.31 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.65 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.29 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0     0      integral     0        0.0000        0.0000       28    0.00%                        0             0
-Elapsed time = 0.00 sec. (0.48 ticks, tree = 0.00 MB, solutions = 1)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.00 sec. (0.49 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.00 sec. (0.49 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.68 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     8                      0.0000       65
-0     2        0.0000     8                      0.0000       65                                 0             0
-Elapsed time = 0.01 sec. (2.03 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (2.02 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.03 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (2.06 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.53 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     4                      0.0000       55
-0     2        0.0000     4                      0.0000       94                                 0             0
-Elapsed time = 0.01 sec. (2.49 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (2.15 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.36 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (2.51 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.69 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     5                      0.0000       71
-0     2        0.0000     5                      0.0000       71                                 0             0
-Elapsed time = 0.01 sec. (1.78 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.78 ticks)
+Real time             =    0.04 sec. (20.34 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.80 ticks)
+Total (root+branch&cut) =    0.04 sec. (20.36 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -278,23 +655,23 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.35 ticks)
+Root relaxation solution time = 0.02 sec. (5.11 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000     2                      0.0000       41
-0     2        0.0000     2                      0.0000       56                                 0             0
-Elapsed time = 0.01 sec. (1.38 ticks, tree = 0.01 MB, solutions = 0)
+0     0        0.1075     6                      0.1075       25
+0     2        0.1075    16                      0.1075       25                                 0             0
+Elapsed time = 0.03 sec. (14.91 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.37 ticks)
+Real time             =    0.03 sec. (14.92 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.40 ticks)
+Total (root+branch&cut) =    0.03 sec. (14.94 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -303,23 +680,23 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.51 ticks)
+Root relaxation solution time = 0.02 sec. (5.20 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000     4                      0.0000       55
-0     2        0.0000     4                      0.0000       55                                 0             0
-Elapsed time = 0.01 sec. (1.54 ticks, tree = 0.01 MB, solutions = 0)
+0     0        0.0160    10                      0.0160       24
+0     2        0.0160    19                      0.0160       24                                 0             0
+Elapsed time = 0.04 sec. (17.60 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.54 ticks)
+Real time             =    0.04 sec. (17.61 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.56 ticks)
+Total (root+branch&cut) =    0.04 sec. (17.63 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -328,98 +705,23 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.51 ticks)
+Root relaxation solution time = 0.02 sec. (6.47 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000     6                      0.0000       57
-0     2        0.0000     8                      0.0000       77                                 0             0
-Elapsed time = 0.01 sec. (2.49 ticks, tree = 0.01 MB, solutions = 0)
+0     0        0.6147    10                      0.6147       25
+0     2        0.6147    24                      0.6147       25                                 0             0
+Elapsed time = 0.04 sec. (20.32 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (2.26 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.25 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (2.51 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.36 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     2                      0.0000       30
-0     2        0.0000     2                      0.0000       70                                 0             0
-Elapsed time = 0.01 sec. (1.66 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.23 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.46 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.69 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.35 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     1                      0.0000       35
-0     2        0.0000     2                      0.0000       75                                 0             0
-Elapsed time = 0.01 sec. (1.65 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.35 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.32 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.67 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.81 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     5                      0.0000       63
-0     2        0.0000     5                      0.0000       63                                 0             0
-Elapsed time = 0.01 sec. (2.07 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (2.07 ticks)
+Real time             =    0.04 sec. (20.33 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (2.09 ticks)
+Total (root+branch&cut) =    0.04 sec. (20.35 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -428,23 +730,23 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.41 ticks)
+Root relaxation solution time = 0.03 sec. (13.84 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000     4                      0.0000       48
-0     2        0.0000     4                      0.0000       48                                 0             0
-Elapsed time = 0.01 sec. (1.38 ticks, tree = 0.01 MB, solutions = 0)
+0     0        0.0995     5                      0.0995      239
+0     2        0.0995    10                      0.0995      239                                 0             0
+Elapsed time = 0.04 sec. (19.06 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.37 ticks)
+Real time             =    0.04 sec. (19.07 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.40 ticks)
+Total (root+branch&cut) =    0.04 sec. (19.09 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -453,172 +755,23 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.31 ticks)
+Root relaxation solution time = 0.02 sec. (7.64 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000     4                      0.0000       28
-0     2        0.0000     5                      0.0000       51                                 0             0
-Elapsed time = 0.01 sec. (1.58 ticks, tree = 0.01 MB, solutions = 0)
+0     0        0.0748     8                      0.0748       28
+0     2        0.0748    19                      0.0748       28                                 0             0
+Elapsed time = 0.04 sec. (20.51 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.32 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.28 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.60 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.35 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0     0      integral     0        0.0000        0.0000       40    0.00%                        0             0
-Elapsed time = 0.01 sec. (0.54 ticks, tree = 0.00 MB, solutions = 1)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (0.55 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (0.55 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.49 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     6                      0.0000       54
-0     2        0.0000     4                      0.0000       91                                 0             0
-Elapsed time = 0.01 sec. (2.63 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (2.31 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.35 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (2.66 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.48 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     3                      0.0000       52
-0     2        0.0000     4                      0.0000       90                                 0             0
-Elapsed time = 0.01 sec. (1.75 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.55 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.22 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.78 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.28 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     3                      0.0000       18
-0     2        0.0000     2                      0.0000       44                                 0             0
-Elapsed time = 0.01 sec. (1.31 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.13 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.21 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.33 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.18 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     4                      0.0000       23
-0     2        0.0000     4                      0.0000       42                                 0             0
-Elapsed time = 0.01 sec. (1.14 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.13 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.03 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.16 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.50 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     3                      0.0000       53
-0     2        0.0000     3                      0.0000       53                                 0             0
-Elapsed time = 0.01 sec. (1.30 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.30 ticks)
+Real time             =    0.04 sec. (20.52 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.32 ticks)
+Total (root+branch&cut) =    0.04 sec. (20.54 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -627,23 +780,23 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.48 ticks)
+Root relaxation solution time = 0.03 sec. (7.37 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000     6                      0.0000       52
-0     2        0.0000     6                      0.0000       52                                 0             0
-Elapsed time = 0.01 sec. (2.09 ticks, tree = 0.01 MB, solutions = 0)
+0     0        0.8841     9                      0.8841       81
+0     2        0.8841    16                      0.8841       81                                 0             0
+Elapsed time = 0.05 sec. (15.73 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (2.09 ticks)
+Real time             =    0.05 sec. (15.74 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (2.11 ticks)
+Total (root+branch&cut) =    0.05 sec. (15.76 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -652,194 +805,23 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.26 ticks)
+Root relaxation solution time = 0.02 sec. (6.60 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0     0      integral     0        0.0000        0.0000       14    0.00%                        0             0
-Elapsed time = 0.00 sec. (0.45 ticks, tree = 0.00 MB, solutions = 1)
+0     0        1.1284     7                      1.1284       47
+0     2        1.1284    22                      1.1284       47                                 0             0
+Elapsed time = 0.04 sec. (19.84 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.00 sec. (0.45 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.00 sec. (0.45 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.27 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0     0      integral     0        0.0000        0.0000       19    0.00%                        0             0
-Elapsed time = 0.00 sec. (0.46 ticks, tree = 0.00 MB, solutions = 1)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.00 sec. (0.46 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.00 sec. (0.46 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.52 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     6                      0.0000       62
-0     2        0.0000     6                      0.0000       62                                 0             0
-Elapsed time = 0.01 sec. (2.29 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (2.29 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.03 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (2.32 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.37 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     4                      0.0000       48
-0     2        0.0000     4                      0.0000       99                                 0             0
-Elapsed time = 0.01 sec. (2.25 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.91 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.35 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (2.27 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.28 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0     0      integral     0        0.0000        0.0000       20    0.00%                        0             0
-Elapsed time = 0.00 sec. (0.47 ticks, tree = 0.00 MB, solutions = 1)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.00 sec. (0.47 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.00 sec. (0.47 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.29 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0     0      integral     0        0.0000        0.0000       27    0.00%                        0             0
-Elapsed time = 0.00 sec. (0.48 ticks, tree = 0.00 MB, solutions = 1)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (0.49 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (0.49 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.53 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     9                      0.0000       59
-0     2        0.0000     9                      0.0000       59                                 0             0
-Elapsed time = 0.01 sec. (2.66 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (2.66 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.03 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (2.69 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.58 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     7                      0.0000       61
-0     2        0.0000     7                      0.0000       61                                 0             0
-Elapsed time = 0.01 sec. (2.19 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (2.19 ticks)
+Real time             =    0.04 sec. (19.85 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (2.21 ticks)
+Total (root+branch&cut) =    0.04 sec. (19.88 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -848,72 +830,23 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.40 ticks)
+Root relaxation solution time = 0.03 sec. (9.86 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000     3                      0.0000       40
-0     2        0.0000     4                      0.0000       72                                 0             0
-Elapsed time = 0.01 sec. (1.59 ticks, tree = 0.01 MB, solutions = 0)
+0     0        0.0000     3                      0.0000      121
+0     2        0.0000     8                      0.0000      121                                 0             0
+Elapsed time = 0.04 sec. (13.67 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.33 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.28 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.61 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.24 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0     0      integral     0        0.0000        0.0000       28    0.00%                        0             0
-Elapsed time = 0.00 sec. (0.38 ticks, tree = 0.00 MB, solutions = 1)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.00 sec. (0.39 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.00 sec. (0.39 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.61 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000     8                      0.0000       61
-0     2        0.0000     9                      0.0000       61                                 0             0
-Elapsed time = 0.01 sec. (2.52 ticks, tree = 0.01 MB, solutions = 0)
-
-Zero-half cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (2.51 ticks)
+Real time             =    0.04 sec. (13.68 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (2.54 ticks)
+Total (root+branch&cut) =    0.04 sec. (13.70 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -922,23 +855,23 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.59 ticks)
+Root relaxation solution time = 0.02 sec. (6.05 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000     5                      0.0000       63
-0     2        0.0000     6                      0.0000       63                                 0             0
-Elapsed time = 0.01 sec. (1.81 ticks, tree = 0.01 MB, solutions = 0)
+0     0        1.5584     8                      1.5584       36
+0     2        1.5584    20                      1.5584       36                                 0             0
+Elapsed time = 0.03 sec. (16.87 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.81 ticks)
+Real time             =    0.03 sec. (16.88 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.83 ticks)
+Total (root+branch&cut) =    0.03 sec. (16.90 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -947,23 +880,23 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.39 ticks)
+Root relaxation solution time = 0.04 sec. (8.50 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000     3                      0.0000       39
-0     2        0.0000     2                      0.0000       56                                 0             0
-Elapsed time = 0.01 sec. (1.42 ticks, tree = 0.01 MB, solutions = 0)
+0     0        0.0000     4                      0.0000       94
+0     2        0.0000     7                      0.0000       94                                 0             0
+Elapsed time = 0.04 sec. (13.23 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.41 ticks)
+Real time             =    0.04 sec. (13.24 ticks)
 Sequential b&c:
-Real time             =    0.00 sec. (0.03 ticks)
+Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.44 ticks)
+Total (root+branch&cut) =    0.04 sec. (13.26 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -972,20 +905,96 @@ Warning: Control callbacks may disable some MIP features.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.30 ticks)
+Root relaxation solution time = 0.02 sec. (5.24 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0     0      integral     0        0.0000        0.0000       28    0.00%                        0             0
-Elapsed time = 0.00 sec. (0.49 ticks, tree = 0.00 MB, solutions = 1)
+0     0        0.0000     6                      0.0000       29
+0     2        0.0000    14                      0.0000       29                                 0             0
+Elapsed time = 0.03 sec. (14.63 ticks, tree = 0.01 MB, solutions = 0)
 
 Zero-half cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.00 sec. (0.50 ticks)
+Real time             =    0.03 sec. (14.64 ticks)
 Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
+Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.00 sec. (0.50 ticks)
-Solution status 101.
+Total (root+branch&cut) =    0.04 sec. (14.66 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.04 sec. (13.93 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000     3                      0.0000      291
+0     2        0.0000     6                      0.0000      291                                 0             0
+Elapsed time = 0.05 sec. (20.07 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (20.08 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.05 sec. (20.10 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (6.47 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        1.0643     9                      1.0643       38
+0     2        1.0643    19                      1.0643       38                                 0             0
+Elapsed time = 0.03 sec. (18.27 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (18.28 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (18.30 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.03 sec. (8.38 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.1204    10                      0.1204      120
+0     2        0.1204    14                      0.1204      120                                 0             0
+Elapsed time = 0.03 sec. (12.94 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (12.95 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (12.97 ticks)
+CPLEX Error  1006: Error during callback.

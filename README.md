@@ -18,13 +18,16 @@ CPLEX_MIP_opt_models <br />
 └── src <br />
     ├── data <br />
     │   └── basic_models <br />
+    │   │   └── generated_results <br />
     │   └── stronger_models <br />
     │   └── quadratic_models <br />
     │   └── disjunctive_models <br />
     │   └── mccormick_models <br />
     │   └── SFSOD <br />
+    │   │   └── generated_results <br />
     ├── instance_set <br />
     │   └── optimal_solutions <br />
+    │   └── generated_instances <br />
     └── parameters <br />
          └── basic_model <br />
          └── stronger_model <br />
@@ -142,7 +145,7 @@ So in each column there are the coefficients of a particular variable in each co
 Some minor error in the definition of the dual fixed
 Added handlingo of case in which no constraint is generated and GAMMA would be empty
 
-## 20/02/2022
+## 20/02/2023
 Referals to the pdf of the thesis:
 basic_model = basic model
 stronger_model = stronger model
@@ -151,9 +154,12 @@ mccormick_model = McCormick linearization (quadratic with outlier detection and 
 linearized_model = disjunctive linearization (quadratic with outlier detection and feature selection)
 
 Start implementation of McCormick
-s
+
+## 01/03/2023
+Generation of new instances code int generation_instances.py
+Modified basic_model in order to handle generated instances, passing an additional parameters specifying the cardinality
+
 TODO: 
-- McCormick implementation
 - Check for feasibility of the dual
 
 

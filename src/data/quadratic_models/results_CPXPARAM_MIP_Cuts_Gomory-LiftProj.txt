@@ -2,2175 +2,1776 @@ Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 883.581725 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1364.723298 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.60 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          883.5817        0.0000           100.00%
-*     0+    0                          639.6325        0.0000           100.00%
-0     0      262.6193     7      639.6325      262.6193       42   58.94%
-0     0      286.5591     7      639.6325      Fract: 7       63   55.20%
-*     0+    0                          462.8177      286.5591            38.08%
-0     0      293.5854     9      462.8177       Cuts: 9       76   36.57%
-0     0      301.5632     9      462.8177      Cuts: 10       90   34.84%
-0     0      306.1297     8      462.8177       Cuts: 8      104   33.86%
-*     0+    0                          423.2225      306.1297            27.67%
-0     0      312.7966     8      423.2225       Cuts: 9      118   26.09%
-Detecting symmetries...
-0     0      315.4527     9      423.2225       Cuts: 6      134   25.46%
-0     0      318.8574     8      423.2225       Cuts: 9      148   24.66%
-*     0+    0                          415.0905      318.8574            23.18%
-0     0      320.8794     9      415.0905      Cuts: 10      159   22.70%
-0     0      323.1302     9      415.0905      Cuts: 15      176   22.15%
-0     0      324.7867     9      415.0905       Cuts: 8      185   21.76%
-0     0      330.4213     9      415.0905   LiftProj: 7      199   20.40%
-0     0      332.2638     9      415.0905   LiftProj: 5      210   19.95%
-0     0      333.3546     9      415.0905   LiftProj: 4      218   19.69%
-0     0      335.1698     9      415.0905   LiftProj: 4      227   19.25%
-0     0      337.4144     9      415.0905   LiftProj: 6      236   18.71%
-0     0      341.9556     9      415.0905   LiftProj: 5      249   17.62%
-0     0      344.8138     8      415.0905       Cuts: 6      264   16.93%
-0     0      349.0056     9      415.0905  LiftProj: 11      277   15.92%
-0     0      351.2383     9      415.0905   LiftProj: 4      291   15.38%
-0     0      352.1982     9      415.0905   LiftProj: 6      303   15.15%
-0     0      354.2050     9      415.0905   LiftProj: 5      317   14.67%
-0     0      355.0247     9      415.0905   LiftProj: 7      324   14.47%
-0     0      356.1831     9      415.0905   LiftProj: 5      334   14.19%
-0     0      358.4324     9      415.0905   LiftProj: 4      345   13.65%
-0     0      359.7838     9      415.0905   LiftProj: 7      355   13.32%
-0     0      360.4316     9      415.0905   LiftProj: 5      359   13.17%
-0     0      360.6568     9      415.0905   LiftProj: 6      364   13.11%
-0     0      360.7380     9      415.0905   LiftProj: 5      370   13.09%
-0     0      361.1767     9      415.0905   LiftProj: 5      378   12.99%
-0     0      361.6945     9      415.0905   LiftProj: 6      387   12.86%
-0     0      363.0958     9      415.0905   LiftProj: 5      395   12.53%
-0     0      363.7882     9      415.0905   LiftProj: 9      404   12.36%
-0     0      363.9173     9      415.0905   LiftProj: 5      414   12.33%
-0     0      364.0836     9      415.0905   LiftProj: 4      420   12.29%
-0     0      364.4238     9      415.0905   LiftProj: 4      431   12.21%
-0     0      364.4909     9      415.0905   LiftProj: 4      435   12.19%
-Detecting symmetries...
-0     2      365.3969     7      415.0905      365.5496      435   11.93%                        0             0
-Elapsed time = 0.36 sec. (89.99 ticks, tree = 0.01 MB, solutions = 5)
-
-Lift and project cuts applied:  20
-Gomory fractional cuts applied:  1
-
-Root node processing (before b&c):
-Real time             =    0.36 sec. (89.99 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.36 sec. (90.01 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 883.581725 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 11 rows and 5 columns.
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.22 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.36 ticks)
+Root relaxation solution time = 0.01 sec. (1.76 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          883.5817        0.0000           100.00%
-*     0     0      integral     0      262.6193      262.6193       40    0.00%                        0             0
-Elapsed time = 0.01 sec. (0.91 ticks, tree = 0.00 MB, solutions = 1)
+*     0+    0                         1364.7233        0.0000           100.00%
+0     0      707.7725     9     1364.7233      707.7725       13   48.14%
+*     0+    0                         1256.1229      707.7725            43.65%
+*     0+    0                         1098.5732      707.7725            35.57%
+0     2      707.7725     9     1098.5732      707.7725       13   35.57%                        0             0
+Elapsed time = 0.04 sec. (12.61 ticks, tree = 0.01 MB, solutions = 3)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (0.91 ticks)
+Real time             =    0.04 sec. (12.62 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (12.63 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1364.723298 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIQP Presolve eliminated 11 rows and 5 columns.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.11 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.47 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1364.7233        0.0000           100.00%
+*     0     0      integral     0      707.7725      707.7725       13    0.00%                        0             0
+Elapsed time = 0.01 sec. (1.88 ticks, tree = 0.00 MB, solutions = 1)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.01 sec. (1.89 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (0.91 ticks)
+Total (root+branch&cut) =    0.01 sec. (1.89 ticks)
 Solution status 101.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 883.581725 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1364.723298 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.57 ticks)
+Root relaxation solution time = 0.01 sec. (1.50 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          883.5817        0.0000           100.00%
-*     0+    0                          639.6325        0.0000           100.00%
-0     0      269.4766     5      639.6325      269.4766       42   57.87%
-0     0      275.7599     7      639.6325      Fract: 5       57   56.89%
-*     0+    0                          423.2225      275.7599            34.84%
-0     0      287.2466     7      423.2225      Cuts: 13       72   32.13%
-0     0      307.4249     7      423.2225      Cuts: 11       94   27.36%
-*     0+    0                          415.0905      307.4249            25.94%
-0     0      315.3772     9      415.0905       Cuts: 7      103   24.02%
-0     0      321.6257     8      415.0905      Cuts: 10      115   22.52%
-Detecting symmetries...
-0     0      325.5060     7      415.0905   LiftProj: 9      130   21.58%
-0     0      330.6593     8      415.0905       Cuts: 8      144   20.34%
-0     0      337.7905     8      415.0905   LiftProj: 6      160   18.62%
-0     0      340.1495     9      415.0905   LiftProj: 4      168   18.05%
-0     0      347.8323     9      415.0905       Cuts: 9      180   16.20%
-0     0      349.6850     9      415.0905   LiftProj: 4      190   15.76%
-0     0      351.5195     8      415.0905   LiftProj: 6      203   15.31%
-0     0      352.7040     9      415.0905   LiftProj: 6      209   15.03%
-0     0      353.8668     9      415.0905   LiftProj: 7      216   14.75%
-0     0      360.8315     8      415.0905   LiftProj: 7      228   13.07%
-0     0      364.1839     8      415.0905   LiftProj: 5      239   12.26%
-0     0      368.3327     9      415.0905   LiftProj: 9      253   11.26%
-0     0      371.5693     8      415.0905   LiftProj: 6      276   10.48%
-0     0      373.1008     8      415.0905   LiftProj: 7      289   10.12%
-0     0      373.3017     8      415.0905   LiftProj: 3      298   10.07%
-0     0      373.9044     7      415.0905   LiftProj: 6      306    9.92%
-0     0      374.8068     8      415.0905   LiftProj: 3      316    9.70%
-0     0      375.3864     8      415.0905   LiftProj: 5      325    9.57%
-0     0      375.7167     8      415.0905   LiftProj: 6      335    9.49%
-0     0      376.1327     7      415.0905   LiftProj: 4      344    9.39%
-0     0      376.3065     7      415.0905   LiftProj: 6      349    9.34%
-0     0      376.6385     8      415.0905   LiftProj: 6      357    9.26%
-0     0      376.9444     7      415.0905   LiftProj: 5      363    9.19%
-0     0      377.3032     8      415.0905   LiftProj: 4      372    9.10%
-0     0      379.1311     8      415.0905   LiftProj: 8      389    8.66%
-0     0      379.9824     8      415.0905  LiftProj: 11      403    8.46%
-0     0      380.2342     8      415.0905   LiftProj: 4      409    8.40%
-0     0      381.0494     8      415.0905   LiftProj: 5      417    8.20%
-0     0      381.1899     8      415.0905   LiftProj: 7      421    8.17%
-0     0      381.3332     8      415.0905   LiftProj: 4      426    8.13%
-0     0      381.3380     8      415.0905   LiftProj: 7      428    8.13%
-0     0      381.5616     8      415.0905   LiftProj: 4      431    8.08%
-0     0      382.1508     8      415.0905   LiftProj: 9      439    7.94%
-0     0      382.5210     8      415.0905   LiftProj: 7      449    7.85%
-0     0      383.5384     8      415.0905   LiftProj: 5      456    7.60%
-0     0      383.6757     8      415.0905  LiftProj: 10      461    7.57%
-Detecting symmetries...
-0     2      387.8299     5      415.0905      388.6843      461    6.36%                        0             0
-Elapsed time = 0.38 sec. (82.75 ticks, tree = 0.01 MB, solutions = 4)
+*     0+    0                         1364.7233        0.0000           100.00%
+0     0      712.4119     6     1364.7233      712.4119       13   47.80%
+*     0+    0                         1246.8030      712.4119            42.86%
+0     0      739.5912     9     1246.8030      Fract: 5       48   40.68%
+*     0+    0                         1031.4612      739.5912            28.30%
+0     0      746.2412     8     1031.4612      Fract: 1       55   27.65%
+0     0      758.4686     9     1031.4612      Fract: 7       81   26.47%
+0     0      761.3940     9     1031.4612      Fract: 3      106   26.18%
+0     0      761.4819     9     1031.4612      Fract: 1      111   26.17%
+*     0+    0                          903.0579      761.4819            15.68%
+0     2      761.4819     9      903.0579      764.1795      111   15.38%                        0             0
+Elapsed time = 0.08 sec. (23.43 ticks, tree = 0.01 MB, solutions = 4)
 
-Lift and project cuts applied:  24
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  9
+
+Root node processing (before b&c):
+Real time             =    0.08 sec. (23.44 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.08 sec. (23.45 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1364.723298 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIQP Presolve eliminated 3 rows and 1 columns.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.15 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.41 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1364.7233        0.0000           100.00%
+0     0      767.7014     7     1364.7233      767.7014       13   43.75%
+*     0+    0                          767.7014      767.7014             0.00%
+0     0        cutoff            767.7014      767.7014       13    0.00%                        0             0
+Elapsed time = 0.01 sec. (2.01 ticks, tree = 0.01 MB, solutions = 1)
+
+Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.38 sec. (82.76 ticks)
+Real time             =    0.02 sec. (2.02 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.00 ticks)
+------------
+Total (root+branch&cut) =    0.02 sec. (2.02 ticks)
+Solution status 101.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1151.924409 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.69 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1151.9244        0.0000           100.00%
+0     0      804.5059     9     1151.9244      804.5059       12   30.16%
+*     0+    0                         1141.1136      804.5059            29.50%
+0     0      811.1450     9     1141.1136      Fract: 8       36   28.92%
+*     0+    0                          889.7105      811.1450             8.83%
+0     0      816.5759     9      889.7105      Fract: 9       62    8.22%
+0     0      819.4157     9      889.7105      Fract: 3       85    7.90%
+0     0      819.4283     9      889.7105      Fract: 1       88    7.90%
+0     0      820.9328     9      889.7105      Fract: 5      106    7.73%
+0     0      822.8925     9      889.7105      Fract: 4      120    7.51%
+0     0      823.3717     9      889.7105      Fract: 2      124    7.46%
+0     2      823.3717     9      889.7105      824.3082      124    7.35%                        0             0
+Elapsed time = 0.09 sec. (25.97 ticks, tree = 0.01 MB, solutions = 3)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  7
+
+Root node processing (before b&c):
+Real time             =    0.09 sec. (25.97 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.09 sec. (25.98 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1151.924409 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIQP Presolve eliminated 11 rows and 5 columns.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.11 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.55 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1151.9244        0.0000           100.00%
+*     0     0      integral     0      804.5059      804.5059       14    0.00%                        0             0
+Elapsed time = 0.01 sec. (1.96 ticks, tree = 0.00 MB, solutions = 1)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.01 sec. (1.96 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.00 ticks)
+------------
+Total (root+branch&cut) =    0.01 sec. (1.96 ticks)
+Solution status 101.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1151.924409 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.63 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1151.9244        0.0000           100.00%
+0     0      804.5059     8     1151.9244      804.5059       14   30.16%
+*     0+    0                         1107.5453      804.5059            27.36%
+0     0      811.4660     9     1107.5453      Fract: 7       42   26.73%
+*     0+    0                          889.7105      811.4660             8.79%
+0     0      817.4465     8      889.7105      Fract: 9       62    8.12%
+0     0      822.7697     8      889.7105      Fract: 6       86    7.52%
+0     0      824.0082     8      889.7105      Fract: 5       97    7.38%
+0     0      824.0570     8      889.7105      Fract: 1      101    7.38%
+0     2      824.8089     6      889.7105      825.2082      101    7.25%                        0             0
+Elapsed time = 0.08 sec. (21.18 ticks, tree = 0.01 MB, solutions = 3)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  6
+
+Root node processing (before b&c):
+Real time             =    0.08 sec. (21.19 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.08 sec. (21.21 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1151.924409 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIQP Presolve eliminated 3 rows and 1 columns.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.15 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.47 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1151.9244        0.0000           100.00%
+0     0      812.0465     6     1151.9244      812.0465       13   29.51%
+*     0+    0                          812.0465      812.0465             0.00%
+0     0        cutoff            812.0465      812.0465       13    0.00%                        0             0
+Elapsed time = 0.01 sec. (2.06 ticks, tree = 0.01 MB, solutions = 1)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.01 sec. (2.07 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.00 ticks)
+------------
+Total (root+branch&cut) =    0.01 sec. (2.07 ticks)
+Solution status 101.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1316.037410 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.68 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1316.0374        0.0000           100.00%
+0     0      989.3200     9     1316.0374      989.3200       12   24.83%
+*     0+    0                         1297.4734      989.3200            23.75%
+*     0+    0                         1148.2856      989.3200            13.84%
+0     2      989.3200     9     1148.2856      989.3200       12   13.84%                        0             0
+Elapsed time = 0.04 sec. (9.64 ticks, tree = 0.01 MB, solutions = 3)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (9.65 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (9.66 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1316.037410 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIQP Presolve eliminated 11 rows and 5 columns.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.11 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.45 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1316.0374        0.0000           100.00%
+*     0     0      integral     0     1000.8791     1000.8791       14    0.00%                        0             0
+Elapsed time = 0.01 sec. (1.86 ticks, tree = 0.00 MB, solutions = 1)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.01 sec. (1.86 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.00 ticks)
+------------
+Total (root+branch&cut) =    0.01 sec. (1.86 ticks)
+Solution status 101.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1316.037410 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.50 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1316.0374        0.0000           100.00%
+0     0      991.1867     6     1316.0374      991.1867       13   24.68%
+*     0+    0                         1205.1602      991.1867            17.75%
+0     0     1001.8017     7     1205.1602      Fract: 6       40   16.87%
+*     0+    0                         1044.6951     1001.8017             4.11%
+0     2     1003.5322     5     1044.6951     1004.2233       40    3.87%                        0             0
+Elapsed time = 0.05 sec. (11.24 ticks, tree = 0.01 MB, solutions = 3)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  6
+
+Root node processing (before b&c):
+Real time             =    0.05 sec. (11.24 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.03 ticks)
 ------------
-Total (root+branch&cut) =    0.38 sec. (82.78 ticks)
+Total (root+branch&cut) =    0.05 sec. (11.27 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 883.581725 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1316.037410 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-MIP Presolve eliminated 3 rows and 1 columns.
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.54 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          883.5817        0.0000           100.00%
-0     0      314.8220     1      883.5817      314.8220       38   64.37%
-*     0+    0                          315.1239      314.8220             0.10%
-*     0     0      integral     0      314.8876      Fract: 1       40    0.00%
-0     0        cutoff            314.8876      314.8876       40    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.47 ticks, tree = 0.01 MB, solutions = 2)
-
-Lift and project cuts applied:  0
-Gomory fractional cuts applied:  1
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.47 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.47 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 693.854204 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+MIQP Presolve eliminated 3 rows and 1 columns.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.15 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.25 ticks)
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.68 ticks)
+Root relaxation solution time = 0.01 sec. (1.41 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          693.8542        0.0000           100.00%
-*     0+    0                          634.5912        0.0000           100.00%
-0     0      405.5114     7      634.5912      405.5114       50   36.10%
-0     0      410.2840     9      634.5912      Fract: 7       62   35.35%
-*     0+    0                          455.9855      410.2840            10.02%
-0     0      415.5101     9      455.9855      Cuts: 13       72    8.88%
-0     0      419.8278     9      455.9855       Cuts: 9       82    7.93%
-*     0+    0                          441.1644      419.8278             4.84%
-0     0      420.6057     8      441.1644       Cuts: 6       90    4.66%
-0     0      421.1386     9      441.1644       Cuts: 8       99    4.54%
-Detecting symmetries...
-0     0      421.2190     9      441.1644   LiftProj: 6      104    4.52%
-0     0      422.2389     9      441.1644       Cuts: 9      118    4.29%
-0     0      422.6439     8      441.1644       Cuts: 4      128    4.20%
-0     0      422.8009     9      441.1644   LiftProj: 4      132    4.16%
-0     0      423.0207     9      441.1644   LiftProj: 2      140    4.11%
-0     0      423.4107     9      441.1644   LiftProj: 5      145    4.02%
-0     0      423.8635     9      441.1644   LiftProj: 4      151    3.92%
-0     0      424.0423     9      441.1644       Cuts: 5      155    3.88%
-0     0      424.2802     9      441.1644   LiftProj: 4      160    3.83%
-0     0      424.8561     9      441.1644   LiftProj: 3      168    3.70%
-0     0      425.3567     8      441.1644   LiftProj: 4      180    3.58%
-0     0      425.3835     8      441.1644   LiftProj: 2      183    3.58%
-0     0      425.3913     9      441.1644   LiftProj: 2      184    3.58%
-Detecting symmetries...
-0     2      425.7897     7      441.1644      425.9290      184    3.45%                        0             0
-Elapsed time = 0.16 sec. (31.85 ticks, tree = 0.01 MB, solutions = 4)
-
-Lift and project cuts applied:  12
-Gomory fractional cuts applied:  1
-
-Root node processing (before b&c):
-Real time             =    0.16 sec. (31.85 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.16 sec. (31.87 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 693.854204 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 11 rows and 5 columns.
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.21 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.45 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          693.8542        0.0000           100.00%
-0     0      405.5114     1      693.8542      405.5114       49   41.56%
-*     0+    0                          407.3057      405.5114             0.44%
-*     0     0      integral     0      405.9187      405.9187       52    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.29 ticks, tree = 0.01 MB, solutions = 2)
+*     0+    0                         1316.0374        0.0000           100.00%
+0     0     1001.2216     6     1316.0374     1001.2216       12   23.92%
+*     0+    0                         1001.2216     1001.2216             0.00%
+0     0        cutoff           1001.2216     1001.2216       12    0.00%                        0             0
+Elapsed time = 0.01 sec. (2.00 ticks, tree = 0.01 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.29 ticks)
+Real time             =    0.01 sec. (2.01 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.29 ticks)
+Total (root+branch&cut) =    0.01 sec. (2.01 ticks)
 Solution status 101.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 693.854204 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1103.567137 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.61 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          693.8542        0.0000           100.00%
-*     0+    0                          652.0517        0.0000           100.00%
-*     0+    0                          648.3061        0.0000           100.00%
-0     0      405.5114     7      648.3061      405.5114       44   37.45%
-0     0      411.7817     9      648.3061       Cuts: 7       55   36.48%
-*     0+    0                          449.4074      411.7817             8.37%
-0     0      415.9508     9      449.4074       Cuts: 9       65    7.44%
-0     0      417.6580     9      449.4074       Cuts: 8       72    7.06%
-0     0      419.9596     9      449.4074       Cuts: 9       84    6.55%
-0     0      422.1971     9      449.4074       Cuts: 8       97    6.05%
-Detecting symmetries...
-0     0      422.8645     9      449.4074   LiftProj: 5      104    5.91%
-0     0      423.8253     9      449.4074   LiftProj: 4      113    5.69%
-0     0      424.3924     9      449.4074   LiftProj: 5      120    5.57%
-0     0      425.9311     9      449.4074   LiftProj: 3      130    5.22%
-*     0+    0                          441.1644      425.9311             3.45%
-0     0      426.5154     9      441.1644   LiftProj: 5      139    3.32%
-0     0      426.9175     9      441.1644   LiftProj: 4      145    3.23%
-0     0      427.2458     9      441.1644   LiftProj: 4      151    3.15%
-0     0      427.6140     9      441.1644   LiftProj: 4      158    3.07%
-0     0      427.7296     9      441.1644   LiftProj: 3      164    3.05%
-0     0      427.7643     9      441.1644   LiftProj: 3      168    3.04%
-0     0      427.9291     9      441.1644   LiftProj: 3      175    3.00%
-0     0      428.0902     9      441.1644   LiftProj: 4      179    2.96%
-0     0      428.4924     9      441.1644   LiftProj: 4      186    2.87%
-0     0      428.5969     9      441.1644   LiftProj: 3      190    2.85%
-0     0      428.7312     9      441.1644   LiftProj: 3      194    2.82%
-0     0      428.8610     9      441.1644   LiftProj: 3      198    2.79%
-0     0      428.9001     9      441.1644   LiftProj: 2      201    2.78%
-Detecting symmetries...
-0     2      429.5785     6      441.1644      430.3954      201    2.44%                        0             0
-Elapsed time = 0.20 sec. (39.34 ticks, tree = 0.01 MB, solutions = 5)
-
-Lift and project cuts applied:  13
-Gomory fractional cuts applied:  1
-
-Root node processing (before b&c):
-Real time             =    0.20 sec. (39.34 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.20 sec. (39.36 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 693.854204 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 3 rows and 1 columns.
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.52 ticks)
+Root relaxation solution time = 0.01 sec. (1.76 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          693.8542        0.0000           100.00%
-*     0     0      integral     0      425.0746      425.0746       34    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.10 ticks, tree = 0.00 MB, solutions = 1)
+*     0+    0                         1103.5671        0.0000           100.00%
+0     0      805.3814     8     1103.5671      805.3814       13   27.02%
+*     0+    0                         1093.9162      805.3814            26.38%
+0     0      825.9314     9     1093.9162      Fract: 6       37   24.50%
+*     0+    0                          982.2314      825.9314            15.91%
+0     0      834.1452     9      982.2314      Fract: 3       52   15.08%
+0     0      835.8680     9      982.2314      Fract: 1       58   14.90%
+0     0      835.9700     9      982.2314      Fract: 1       61   14.89%
+0     2      835.9700     9      982.2314      838.1353       61   14.67%                        0             0
+Elapsed time = 0.07 sec. (19.87 ticks, tree = 0.01 MB, solutions = 3)
 
 Lift and project cuts applied:  0
-Gomory fractional cuts applied:  0
+Gomory fractional cuts applied:  8
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.11 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.11 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 845.668317 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.70 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          845.6683        0.0000           100.00%
-*     0+    0                          648.8417        0.0000           100.00%
-0     0      484.8467     7      648.8417      484.8467       54   25.28%
-0     0      509.6615     9      648.8417      Fract: 7       65   21.45%
-*     0+    0                          626.4130      509.6615            18.64%
-0     0      515.5588     9      626.4130      Cuts: 12       77   17.70%
-0     0      519.2157     9      626.4130      Cuts: 10       88   17.11%
-*     0+    0                          607.3004      519.2157            14.50%
-0     0      520.9405     9      607.3004       Cuts: 8      102   14.22%
-0     0      523.6365     9      607.3004       Cuts: 8      108   13.78%
-Detecting symmetries...
-0     0      523.9800     9      607.3004       Cuts: 5      111   13.72%
-0     0      524.6734     9      607.3004       Cuts: 9      118   13.61%
-0     0      525.6730     9      607.3004       Cuts: 8      131   13.44%
-0     0      525.9240     9      607.3004       Cuts: 7      135   13.40%
-0     0      527.7990     9      607.3004   LiftProj: 4      142   13.09%
-0     0      528.8081     9      607.3004   LiftProj: 4      150   12.92%
-0     0      529.3648     9      607.3004       Cuts: 3      154   12.83%
-0     0      529.7266     9      607.3004   LiftProj: 5      161   12.77%
-0     0      530.1210     9      607.3004   LiftProj: 5      169   12.71%
-0     0      530.4535     9      607.3004   LiftProj: 3      175   12.65%
-0     0      531.0753     9      607.3004   LiftProj: 3      181   12.55%
-0     0      531.9134     9      607.3004       Cuts: 6      188   12.41%
-0     0      532.1550     9      607.3004   LiftProj: 3      193   12.37%
-0     0      532.7170     9      607.3004   LiftProj: 5      202   12.28%
-0     0      533.1331     9      607.3004   LiftProj: 4      206   12.21%
-0     0      533.4055     9      607.3004   LiftProj: 4      211   12.17%
-0     0      533.7645     9      607.3004   LiftProj: 4      217   12.11%
-0     0      533.9546     9      607.3004   LiftProj: 4      221   12.08%
-0     0      534.4180     9      607.3004   LiftProj: 7      226   12.00%
-0     0      534.5015     9      607.3004   LiftProj: 3      230   11.99%
-0     0      534.5366     9      607.3004   LiftProj: 1      232   11.98%
-Detecting symmetries...
-0     2      534.5366     9      607.3004      534.5667      232   11.98%                        0             0
-Elapsed time = 0.23 sec. (50.54 ticks, tree = 0.01 MB, solutions = 4)
-
-Lift and project cuts applied:  17
-Gomory fractional cuts applied:  2
-
-Root node processing (before b&c):
-Real time             =    0.23 sec. (50.54 ticks)
+Real time             =    0.07 sec. (19.88 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.24 sec. (50.56 ticks)
+Total (root+branch&cut) =    0.07 sec. (19.89 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 845.668317 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1103.567137 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-MIP Presolve eliminated 11 rows and 5 columns.
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+MIQP Presolve eliminated 11 rows and 5 columns.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.14 ticks)
 Probing time = 0.00 sec. (0.02 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.22 ticks)
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.11 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.02 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.40 ticks)
+Root relaxation solution time = 0.01 sec. (1.41 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          845.6683        0.0000           100.00%
-*     0     0      integral     0      484.8467      484.8467       43    0.00%                        0             0
-Elapsed time = 0.01 sec. (0.95 ticks, tree = 0.00 MB, solutions = 1)
+*     0+    0                         1103.5671        0.0000           100.00%
+*     0     0      integral     0      837.8540      837.8540       12    0.00%                        0             0
+Elapsed time = 0.01 sec. (1.82 ticks, tree = 0.00 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (0.95 ticks)
+Real time             =    0.01 sec. (1.83 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (0.95 ticks)
+Total (root+branch&cut) =    0.01 sec. (1.83 ticks)
 Solution status 101.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 845.668317 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1103.567137 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.55 ticks)
+Root relaxation solution time = 0.01 sec. (1.49 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          845.6683        0.0000           100.00%
-0     0      498.6071     5      845.6683      498.6071       38   41.04%
-*     0+    0                          697.1349      498.6071            28.48%
-0     0      503.9467     8      697.1349       Cuts: 5       48   27.71%
-*     0+    0                          648.8417      503.9467            22.33%
-0     0      517.2484     7      648.8417      Cuts: 10       59   20.28%
-*     0+    0                          626.4130      517.2484            17.43%
-0     0      528.4788     8      626.4130       Cuts: 9       69   15.63%
-0     0      531.9624     8      626.4130      Cuts: 12       83   15.08%
-*     0+    0                          589.5104      531.9624             9.76%
-0     0      536.9647     7      589.5104       Cuts: 9       92    8.91%
-Detecting symmetries...
-0     0      537.2664     8      589.5104   LiftProj: 6       95    8.86%
-0     0      539.7943     8      589.5104      Cuts: 10      108    8.43%
-0     0      540.9420     8      589.5104       Cuts: 7      117    8.24%
-0     0      544.0402     9      589.5104   LiftProj: 7      128    7.71%
-0     0      545.3011     9      589.5104   LiftProj: 8      134    7.50%
-0     0      547.5530     8      589.5104   LiftProj: 5      145    7.12%
-0     0      549.5854     8      589.5104   LiftProj: 5      151    6.77%
-0     0      550.5814     8      589.5104   LiftProj: 6      161    6.60%
-0     0      550.7693     8      589.5104   LiftProj: 6      167    6.57%
-0     0      551.7734     8      589.5104   LiftProj: 5      180    6.40%
-0     0      551.9745     8      589.5104  LiftProj: 10      184    6.37%
-0     0      552.6663     8      589.5104   LiftProj: 6      190    6.25%
-0     0      552.8234     8      589.5104   LiftProj: 5      194    6.22%
-0     0      553.5951     8      589.5104   LiftProj: 5      201    6.09%
-0     0      553.8825     9      589.5104   LiftProj: 4      204    6.04%
-0     0      553.9569     9      589.5104   LiftProj: 5      206    6.03%
-0     0      554.1317     9      589.5104   LiftProj: 5      210    6.00%
-0     0      554.3768     8      589.5104   LiftProj: 2      215    5.96%
-0     0      554.5065     9      589.5104   LiftProj: 5      218    5.94%
-Detecting symmetries...
-0     2      556.7875     8      589.5104      557.7771      218    5.38%                        0             0
-Elapsed time = 0.23 sec. (46.74 ticks, tree = 0.01 MB, solutions = 5)
+*     0+    0                         1103.5671        0.0000           100.00%
+0     0      805.3814     8     1103.5671      805.3814       13   27.02%
+*     0+    0                         1103.5570      805.3814            27.02%
+0     0      827.4329     8     1103.5570      Fract: 7       41   25.02%
+*     0+    0                          982.2314      827.4329            15.76%
+0     0      832.9095     9      982.2314      Fract: 3       55   15.20%
+0     0      836.3379     9      982.2314      Fract: 4       83   14.85%
+0     0      837.4048     9      982.2314      Fract: 1       93   14.74%
+0     0      839.0205     9      982.2314      Fract: 1      100   14.58%
+0     0      840.2546     9      982.2314      Fract: 1      108   14.45%
+0     0      840.7312     9      982.2314      Fract: 1      111   14.41%
+0     2      840.7312     9      982.2314      841.1419      111   14.36%                        0             0
+Elapsed time = 0.10 sec. (27.01 ticks, tree = 0.01 MB, solutions = 3)
 
-Lift and project cuts applied:  20
-Gomory fractional cuts applied:  0
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  10
 
 Root node processing (before b&c):
-Real time             =    0.23 sec. (46.74 ticks)
+Real time             =    0.10 sec. (27.02 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.23 sec. (46.76 ticks)
+Total (root+branch&cut) =    0.10 sec. (27.03 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 845.668317 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1103.567137 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-MIP Presolve eliminated 3 rows and 1 columns.
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
+MIQP Presolve eliminated 3 rows and 1 columns.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.15 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.58 ticks)
+Root relaxation solution time = 0.01 sec. (1.47 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          845.6683        0.0000           100.00%
-*     0     0      integral     0      561.1585      561.1585       45    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.17 ticks, tree = 0.00 MB, solutions = 1)
+*     0+    0                         1103.5671        0.0000           100.00%
+0     0      848.5070     6     1103.5671      848.5070       13   23.11%
+*     0+    0                          848.5070      848.5070             0.00%
+0     0        cutoff            848.5070      848.5070       13    0.00%                        0             0
+Elapsed time = 0.01 sec. (2.06 ticks, tree = 0.01 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.17 ticks)
+Real time             =    0.01 sec. (2.07 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.17 ticks)
+Total (root+branch&cut) =    0.01 sec. (2.07 ticks)
 Solution status 101.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 656.468148 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1092.984150 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.25 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.64 ticks)
+Root relaxation solution time = 0.01 sec. (1.61 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          656.4681        0.0000           100.00%
-*     0+    0                          534.4657        0.0000           100.00%
-0     0      386.2283     7      534.4657      386.2283       47   27.74%
-0     0      389.8771     9      534.4657       Cuts: 6       61   27.05%
-*     0+    0                          526.4159      389.8771            25.94%
-0     0      398.6827     9      526.4159      Cuts: 11       75   24.26%
-*     0+    0                          474.3633      398.6827            15.95%
-0     0      404.4484     9      474.3633      Cuts: 10       88   14.74%
-0     0      409.2732     9      474.3633      Cuts: 13      107   13.72%
-0     0      414.3195     8      474.3633      Cuts: 10      123   12.66%
-*     0+    0                          465.9177      414.3195            11.07%
-Detecting symmetries...
-0     0      416.2282     8      465.9177       Cuts: 9      137   10.66%
-0     0      417.5494     9      465.9177       Cuts: 8      144   10.38%
-0     0      418.6909     9      465.9177      Cuts: 10      159   10.14%
-0     0      421.8475     9      465.9177      Cuts: 11      171    9.46%
-0     0      423.0943     9      465.9177  LiftProj: 11      184    9.19%
-0     0      424.3648     8      465.9177   LiftProj: 7      191    8.92%
-0     0      425.4108     9      465.9177   LiftProj: 9      203    8.69%
-0     0      426.8197     9      465.9177   LiftProj: 9      214    8.39%
-0     0      428.1678     9      465.9177   LiftProj: 6      221    8.10%
-0     0      428.8531     9      465.9177   LiftProj: 6      225    7.96%
-0     0      429.6106     9      465.9177   LiftProj: 7      230    7.79%
-0     0      430.2565     9      465.9177   LiftProj: 6      236    7.65%
-0     0      430.8302     9      465.9177   LiftProj: 8      243    7.53%
-0     0      432.5296     8      465.9177   LiftProj: 9      257    7.17%
-0     0      432.9855     9      465.9177   LiftProj: 8      265    7.07%
-0     0      433.0359     9      465.9177   LiftProj: 7      270    7.06%
-0     0      433.8382     9      465.9177   LiftProj: 6      278    6.89%
-0     0      434.1187     9      465.9177   LiftProj: 6      286    6.83%
-0     0      434.4464     9      465.9177   LiftProj: 7      290    6.75%
-0     0      434.6019     9      465.9177   LiftProj: 6      293    6.72%
-0     0      435.3529     9      465.9177   LiftProj: 6      299    6.56%
-0     0      435.4401     9      465.9177   LiftProj: 6      305    6.54%
-Detecting symmetries...
-0     2      435.4401     9      465.9177      435.6794      305    6.49%                        0             0
-Elapsed time = 0.26 sec. (60.14 ticks, tree = 0.01 MB, solutions = 5)
+*     0+    0                         1092.9842        0.0000           100.00%
+0     0      877.0823     8     1092.9842      877.0823       11   19.75%
+*     0+    0                         1089.1526      877.0823            19.47%
+0     0      888.2726     9     1089.1526      Fract: 6       31   18.44%
+*     0+    0                          973.2614      888.2726             8.73%
+*     0+    0                          971.2909      888.2726             8.55%
+0     2      889.7410     8      971.2909      894.1401       31    7.94%                        0             0
+Elapsed time = 0.05 sec. (12.37 ticks, tree = 0.01 MB, solutions = 4)
 
-Lift and project cuts applied:  19
-Gomory fractional cuts applied:  0
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  6
 
 Root node processing (before b&c):
-Real time             =    0.26 sec. (60.14 ticks)
+Real time             =    0.05 sec. (12.37 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.26 sec. (60.15 ticks)
+Total (root+branch&cut) =    0.05 sec. (12.39 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 656.468148 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1092.984150 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-MIP Presolve eliminated 11 rows and 5 columns.
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+MIQP Presolve eliminated 11 rows and 5 columns.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.14 ticks)
 Probing time = 0.00 sec. (0.02 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.22 ticks)
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.11 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.02 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.40 ticks)
+Root relaxation solution time = 0.01 sec. (1.43 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          656.4681        0.0000           100.00%
-*     0     0      integral     0      389.1110      389.1110       45    0.00%                        0             0
-Elapsed time = 0.01 sec. (0.95 ticks, tree = 0.00 MB, solutions = 1)
+*     0+    0                         1092.9842        0.0000           100.00%
+*     0     0      integral     0      886.3787      886.3787       13    0.00%                        0             0
+Elapsed time = 0.01 sec. (1.84 ticks, tree = 0.00 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (0.95 ticks)
+Real time             =    0.01 sec. (1.84 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (0.95 ticks)
+Total (root+branch&cut) =    0.01 sec. (1.84 ticks)
 Solution status 101.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 656.468148 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1092.984150 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.54 ticks)
+Root relaxation solution time = 0.01 sec. (1.49 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          656.4681        0.0000           100.00%
-*     0+    0                          534.4657        0.0000           100.00%
-0     0      386.2283     7      534.4657      386.2283       36   27.74%
-0     0      390.0124     9      534.4657      Fract: 6       50   27.03%
-*     0+    0                          526.4159      390.0124            25.91%
-0     0      398.6577     9      526.4159      Cuts: 11       66   24.27%
-*     0+    0                          474.3633      398.6577            15.96%
-0     0      404.3451     9      474.3633      Cuts: 13       81   14.76%
-*     0+    0                          465.9177      404.3451            13.22%
-0     0      408.4526     9      465.9177      Cuts: 11       95   12.33%
-0     0      409.8970     9      465.9177       Cuts: 5      105   12.02%
-Detecting symmetries...
-0     0      410.5871     9      465.9177   LiftProj: 8      115   11.88%
-0     0      416.5698     9      465.9177   LiftProj: 5      130   10.59%
-0     0      423.3201     8      465.9177      Cuts: 13      142    9.14%
-0     0      425.4743     9      465.9177      Cuts: 11      152    8.68%
-0     0      426.1085     9      465.9177      Cuts: 12      160    8.54%
-0     0      427.3844     9      465.9177   LiftProj: 5      169    8.27%
-0     0      428.1034     9      465.9177   LiftProj: 6      175    8.12%
-0     0      428.5334     9      465.9177   LiftProj: 5      180    8.02%
-0     0      429.7885     9      465.9177   LiftProj: 8      188    7.75%
-0     0      431.7216     9      465.9177  LiftProj: 12      200    7.34%
-0     0      432.0918     9      465.9177   LiftProj: 8      206    7.26%
-0     0      433.7088     9      465.9177   LiftProj: 6      215    6.91%
-0     0      434.6130     9      465.9177   LiftProj: 6      220    6.72%
-0     0      435.2953     9      465.9177   LiftProj: 8      227    6.57%
-0     0      435.6590     9      465.9177   LiftProj: 5      231    6.49%
-0     0      436.1407     9      465.9177   LiftProj: 6      237    6.39%
-0     0      436.4110     9      465.9177   LiftProj: 5      244    6.33%
-0     0      436.4887     9      465.9177  LiftProj: 14      247    6.32%
-0     0      436.5779     9      465.9177   LiftProj: 8      250    6.30%
-Detecting symmetries...
-0     2      436.5779     9      465.9177      436.8068      250    6.25%                        0             0
-Elapsed time = 0.23 sec. (51.88 ticks, tree = 0.01 MB, solutions = 5)
+*     0+    0                         1092.9842        0.0000           100.00%
+0     0      886.3787     7     1092.9842      886.3787       11   18.90%
+*     0+    0                         1085.0621      886.3787            18.31%
+0     0      898.4289     6     1085.0621      Fract: 7       47   17.20%
+*     0+    0                          973.2614      898.4289             7.69%
+0     0      906.0231     8      973.2614      Fract: 6       83    6.91%
+*     0+    0                          958.4069      906.0231             5.47%
+0     0      907.5107     8      958.4069      Fract: 4       91    5.31%
+0     2      907.6238     7      958.4069      910.3885       91    5.01%                        0             0
+Elapsed time = 0.06 sec. (14.86 ticks, tree = 0.01 MB, solutions = 4)
 
-Lift and project cuts applied:  18
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  6
+
+Root node processing (before b&c):
+Real time             =    0.06 sec. (14.86 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.06 sec. (14.88 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1092.984150 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIQP Presolve eliminated 3 rows and 1 columns.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.15 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.35 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1092.9842        0.0000           100.00%
+0     0      900.3151     5     1092.9842      900.3151       11   17.63%
+*     0+    0                          900.3151      900.3151             0.00%
+0     0        cutoff            900.3151      900.3151       11    0.00%                        0             0
+Elapsed time = 0.01 sec. (1.94 ticks, tree = 0.01 MB, solutions = 1)
+
+Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.23 sec. (51.89 ticks)
+Real time             =    0.01 sec. (1.95 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.00 ticks)
+------------
+Total (root+branch&cut) =    0.01 sec. (1.95 ticks)
+Solution status 101.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 933.792467 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.63 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          933.7925        0.0000           100.00%
+0     0      586.9854     9      933.7925      586.9854       11   37.14%
+*     0+    0                          921.6569      586.9854            36.31%
+0     0      598.3336     9      921.6569      Fract: 8       55   35.08%
+*     0+    0                          704.4991      598.3336            15.07%
+0     0      604.1861     9      704.4991      Fract: 6       91   14.24%
+0     0      608.8876     8      704.4991      Fract: 8      119   13.57%
+*     0+    0                          677.4287      608.8876            10.12%
+0     0      611.1793     8      677.4287      Fract: 4      140    9.78%
+0     2      613.7790     7      677.4287      614.3635      140    9.31%                        0             0
+Elapsed time = 0.08 sec. (22.44 ticks, tree = 0.01 MB, solutions = 4)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  7
+
+Root node processing (before b&c):
+Real time             =    0.08 sec. (22.44 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.08 sec. (22.47 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 933.792467 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIQP Presolve eliminated 11 rows and 5 columns.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.11 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.37 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          933.7925        0.0000           100.00%
+*     0     0      integral     0      586.9854      586.9854       11    0.00%                        0             0
+Elapsed time = 0.01 sec. (1.78 ticks, tree = 0.00 MB, solutions = 1)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.01 sec. (1.78 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.00 ticks)
+------------
+Total (root+branch&cut) =    0.01 sec. (1.78 ticks)
+Solution status 101.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 933.792467 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.44 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          933.7925        0.0000           100.00%
+0     0      587.3488     7      933.7925      587.3488       11   37.10%
+*     0+    0                          897.4946      587.3488            34.56%
+0     0      602.7364     9      897.4946      Fract: 6       55   32.84%
+*     0+    0                          712.1330      602.7364            15.36%
+0     0      605.2866     8      712.1330      Fract: 8       84   15.00%
+*     0+    0                          704.4991      605.2866            14.08%
+0     2      605.2866     8      704.4991      605.5719       84   14.04%                        0             0
+Elapsed time = 0.07 sec. (18.26 ticks, tree = 0.01 MB, solutions = 4)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  7
+
+Root node processing (before b&c):
+Real time             =    0.07 sec. (18.27 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.23 sec. (51.90 ticks)
+Total (root+branch&cut) =    0.07 sec. (18.29 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 656.468148 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 933.792467 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-MIP Presolve eliminated 3 rows and 1 columns.
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
+MIQP Presolve eliminated 3 rows and 1 columns.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.15 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.50 ticks)
+Root relaxation solution time = 0.01 sec. (1.44 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          656.4681        0.0000           100.00%
-*     0     0      integral     0      410.1756      410.1756       35    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.09 ticks, tree = 0.00 MB, solutions = 1)
+*     0+    0                          933.7925        0.0000           100.00%
+0     0      597.5885     7      933.7925      597.5885       12   36.00%
+*     0+    0                          597.5885      597.5885             0.00%
+0     0        cutoff            597.5885      597.5885       12    0.00%                        0             0
+Elapsed time = 0.01 sec. (2.03 ticks, tree = 0.01 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.09 ticks)
+Real time             =    0.01 sec. (2.04 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.09 ticks)
+Total (root+branch&cut) =    0.01 sec. (2.04 ticks)
 Solution status 101.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 673.426656 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 945.045027 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.73 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          673.4267        0.0000           100.00%
-*     0+    0                          482.5302        0.0000           100.00%
-0     0      417.5617     7      482.5302      417.5617       54   13.46%
-0     0      420.1512     9      482.5302       Cuts: 6       65   12.93%
-*     0+    0                          475.1344      420.1512            11.57%
-0     0      425.8004     8      475.1344      Cuts: 13       80   10.38%
-*     0+    0                          465.5226      425.8004             8.53%
-0     0      428.9794     9      465.5226      Cuts: 11       97    7.85%
-0     0      429.9666     9      465.5226       Cuts: 5      106    7.64%
-0     0      430.9336     9      465.5226      Cuts: 12      112    7.43%
-Detecting symmetries...
-0     0      430.9875     9      465.5226   LiftProj: 7      116    7.42%
-0     0      431.7776     9      465.5226       Cuts: 8      124    7.25%
-0     0      432.9009     9      465.5226   LiftProj: 6      130    7.01%
-0     0      434.0886     9      465.5226   LiftProj: 5      137    6.75%
-0     0      435.0369     9      465.5226   LiftProj: 5      143    6.55%
-0     0      436.0761     9      465.5226   LiftProj: 5      153    6.33%
-0     0      436.9897     9      465.5226       Cuts: 5      159    6.13%
-0     0      437.0836     9      465.5226   LiftProj: 9      162    6.11%
-0     0      437.6203     9      465.5226   LiftProj: 5      169    5.99%
-0     0      438.0080     9      465.5226       Cuts: 6      177    5.91%
-0     0      438.2823     9      465.5226   LiftProj: 6      181    5.85%
-0     0      438.4205     9      465.5226   LiftProj: 6      187    5.82%
-0     0      439.5682     9      465.5226   LiftProj: 4      194    5.58%
-0     0      440.0957     9      465.5226   LiftProj: 4      198    5.46%
-0     0      440.1930     9      465.5226   LiftProj: 5      199    5.44%
-0     0      440.7004     9      465.5226   LiftProj: 6      208    5.33%
-0     0      440.7694     9      465.5226   LiftProj: 6      212    5.32%
-0     0      440.8669     9      465.5226   LiftProj: 6      216    5.30%
-Detecting symmetries...
-0     2      441.1110     8      465.5226      441.2543      216    5.21%                        0             0
-Elapsed time = 0.21 sec. (46.18 ticks, tree = 0.01 MB, solutions = 4)
-
-Lift and project cuts applied:  17
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.21 sec. (46.19 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.22 sec. (46.21 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 673.426656 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 11 rows and 5 columns.
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.22 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.37 ticks)
+Root relaxation solution time = 0.01 sec. (1.75 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          673.4267        0.0000           100.00%
-*     0     0      integral     0      425.9937      425.9937       45    0.00%                        0             0
-Elapsed time = 0.01 sec. (0.88 ticks, tree = 0.00 MB, solutions = 1)
+*     0+    0                          945.0450        0.0000           100.00%
+0     0      691.3327     9      945.0450      691.3327       13   26.85%
+*     0+    0                          939.6644      691.3327            26.43%
+0     0      696.3158     9      939.6644      Fract: 8       39   25.90%
+*     0+    0                          786.7113      696.3158            11.49%
+0     0      703.5250     9      786.7113      Fract: 3       61   10.57%
+0     0      706.3491     9      786.7113      Fract: 8       91   10.21%
+0     0      708.1240     9      786.7113      Fract: 7      134    9.99%
+*     0+    0                          754.8601      708.1240             6.19%
+0     2      708.4710     8      754.8601      708.5217      134    6.14%                        0             0
+Elapsed time = 0.09 sec. (27.37 ticks, tree = 0.01 MB, solutions = 4)
 
 Lift and project cuts applied:  0
-Gomory fractional cuts applied:  0
+Gomory fractional cuts applied:  10
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (0.89 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (0.89 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 673.426656 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.55 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          673.4267        0.0000           100.00%
-0     0      423.0032     5      673.4267      423.0032       39   37.19%
-*     0+    0                          591.6412      423.0032            28.50%
-0     0      424.4779     7      591.6412       Cuts: 5       49   28.25%
-*     0+    0                          465.5226      424.4779             8.82%
-0     0      427.1854     7      465.5226       Cuts: 8       62    8.24%
-0     0      427.9529     8      465.5226       Cuts: 8       70    8.07%
-0     0      429.3805     6      465.5226      Cuts: 10       78    7.76%
-0     0      430.3089     8      465.5226       Cuts: 8       85    7.56%
-Detecting symmetries...
-0     0      430.8175     8      465.5226   LiftProj: 8       93    7.46%
-0     0      431.5945     9      465.5226   LiftProj: 6      101    7.29%
-0     0      432.6686     8      465.5226      Cuts: 10      111    7.06%
-0     0      434.0536     9      465.5226       Cuts: 7      118    6.76%
-0     0      434.5228     9      465.5226      Cuts: 11      127    6.66%
-0     0      435.3587     9      465.5226       Cuts: 7      135    6.48%
-0     0      435.6315     9      465.5226   LiftProj: 6      140    6.42%
-0     0      436.1909     8      465.5226       Cuts: 6      148    6.30%
-0     0      436.8634     8      465.5226  LiftProj: 10      159    6.16%
-0     0      437.0522     9      465.5226   LiftProj: 4      162    6.12%
-0     0      437.5384     8      465.5226   LiftProj: 7      173    6.01%
-0     0      438.8320     9      465.5226   LiftProj: 5      181    5.73%
-0     0      439.0868     8      465.5226      Cuts: 11      186    5.68%
-0     0      440.6785     9      465.5226   LiftProj: 5      193    5.34%
-0     0      441.1123     9      465.5226   LiftProj: 4      200    5.24%
-0     0      441.5537     9      465.5226   LiftProj: 4      205    5.15%
-0     0      442.4775     8      465.5226   LiftProj: 5      211    4.95%
-0     0      442.6449     9      465.5226   LiftProj: 3      215    4.91%
-0     0      443.0272     9      465.5226   LiftProj: 5      218    4.83%
-0     0      443.3830     8      465.5226   LiftProj: 4      224    4.76%
-0     0      443.5386     8      465.5226   LiftProj: 4      229    4.72%
-0     0      443.6834     8      465.5226   LiftProj: 5      233    4.69%
-0     0      443.7471     8      465.5226   LiftProj: 5      238    4.68%
-0     0      443.7593     8      465.5226   LiftProj: 7      240    4.68%
-Detecting symmetries...
-0     2      444.1619     7      465.5226      444.1650      240    4.59%                        0             0
-Elapsed time = 0.26 sec. (54.27 ticks, tree = 0.01 MB, solutions = 3)
-
-Lift and project cuts applied:  18
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.26 sec. (54.28 ticks)
+Real time             =    0.09 sec. (27.38 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.26 sec. (54.29 ticks)
+Total (root+branch&cut) =    0.09 sec. (27.39 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 673.426656 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 945.045027 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-MIP Presolve eliminated 3 rows and 1 columns.
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.51 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          673.4267        0.0000           100.00%
-*     0+    0                          448.7922        0.0000           100.00%
-*     0     0      integral     0      446.2379      446.2379       37    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.10 ticks, tree = 0.00 MB, solutions = 2)
-
-Lift and project cuts applied:  0
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.11 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.11 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 525.128430 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.62 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          525.1284        0.0000           100.00%
-*     0+    0                          499.7053        0.0000           100.00%
-0     0      283.8374     7      499.7053      283.8374       45   43.20%
-*     0+    0                          335.4671      283.8374            15.39%
-0     0      286.3451     9      335.4671       Cuts: 5       55   14.64%
-0     0      292.2453     9      335.4671      Cuts: 10       68   12.88%
-*     0+    0                          315.2212      292.2453             7.29%
-0     0      295.5661     9      315.2212       Cuts: 8       84    6.24%
-0     0      298.3111     9      315.2212       Cuts: 6       92    5.36%
-0     0      299.1813     9      315.2212       Cuts: 8       98    5.09%
-Detecting symmetries...
-0     0      300.0363     9      315.2212       Cuts: 6      107    4.82%
-0     0      300.5932     9      315.2212       Cuts: 4      111    4.64%
-0     0      301.6965     9      315.2212   LiftProj: 5      118    4.29%
-0     0      303.1750     8      315.2212   LiftProj: 5      127    3.82%
-0     0      303.7280     8      315.2212       Cuts: 4      131    3.65%
-0     0      303.9503     9      315.2212   LiftProj: 5      134    3.58%
-0     0      304.4531     8      315.2212   LiftProj: 5      141    3.42%
-0     0      305.1925     9      315.2212   LiftProj: 7      148    3.18%
-0     0      308.4262     7      315.2212   LiftProj: 4      160    2.16%
-0     0      310.1115     4      315.2212   LiftProj: 2      169    1.62%
-0     0      310.2794     5      315.2212   LiftProj: 2      171    1.57%
-0     0      310.8494     5      315.2212   LiftProj: 3      175    1.39%
-0     0      314.5228     4      315.2212   LiftProj: 2      190    0.22%
-*     0+    0                          315.2212      314.5228             0.22%
-0     0        cutoff            315.2212                    196    0.00%                        0             0
-Elapsed time = 0.14 sec. (25.11 ticks, tree = 0.01 MB, solutions = 4)
-
-Lift and project cuts applied:  9
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.14 sec. (25.12 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.14 sec. (25.12 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 525.128430 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 11 rows and 5 columns.
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+MIQP Presolve eliminated 11 rows and 5 columns.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.14 ticks)
 Probing time = 0.00 sec. (0.02 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.22 ticks)
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.11 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.02 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.39 ticks)
+Root relaxation solution time = 0.01 sec. (1.48 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          525.1284        0.0000           100.00%
-*     0     0      integral     0      283.8374      283.8374       44    0.00%                        0             0
-Elapsed time = 0.01 sec. (0.93 ticks, tree = 0.00 MB, solutions = 1)
+*     0+    0                          945.0450        0.0000           100.00%
+*     0     0      integral     0      691.4451      691.4451       13    0.00%                        0             0
+Elapsed time = 0.01 sec. (1.89 ticks, tree = 0.00 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (0.94 ticks)
+Real time             =    0.01 sec. (1.89 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (0.94 ticks)
+Total (root+branch&cut) =    0.01 sec. (1.89 ticks)
 Solution status 101.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 525.128430 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 945.045027 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.50 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          525.1284        0.0000           100.00%
-*     0+    0                          502.7786        0.0000           100.00%
-0     0      286.9244     7      502.7786      286.9244       33   42.93%
-*     0+    0                          406.3795      286.9244            29.39%
-0     0      294.1139     8      406.3795      Fract: 7       47   27.63%
-*     0+    0                          392.9654      294.1139            25.16%
-0     0      298.0361     9      392.9654      Cuts: 12       58   24.16%
-0     0      301.0392     9      392.9654       Cuts: 9       67   23.39%
-*     0+    0                          392.1710      301.0392            23.24%
-0     0      303.2856     9      392.1710       Cuts: 8       80   22.66%
-*     0+    0                          315.4732      303.2856             3.86%
-0     0      305.7018     9      315.4732       Cuts: 7       90    3.10%
-Detecting symmetries...
-0     0      307.8305     8      315.4732      Cuts: 10      100    2.42%
-0     0      309.4630     8      315.4732       Cuts: 6      108    1.91%
-0     0      310.5530     8      315.4732       Cuts: 4      114    1.56%
-0     0      311.5026     9      315.4732       Cuts: 4      124    1.26%
-0     0      311.8337     9      315.4732       Cuts: 2      128    1.15%
-0     0      312.2607     8      315.4732   LiftProj: 1      134    1.02%
-0     0      313.1106     7      315.4732   LiftProj: 3      144    0.75%
-0     0      313.3566     7      315.4732   LiftProj: 4      151    0.67%
-0     0        cutoff            315.4732                    164    0.00%                        0             0
-Elapsed time = 0.11 sec. (19.37 ticks, tree = 0.01 MB, solutions = 6)
-
-Lift and project cuts applied:  4
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.11 sec. (19.37 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.11 sec. (19.37 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 525.128430 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 3 rows and 1 columns.
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.44 ticks)
+Root relaxation solution time = 0.01 sec. (1.54 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          525.1284        0.0000           100.00%
-*     0     0      integral     0      293.4740      293.4740       26    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.03 ticks, tree = 0.00 MB, solutions = 1)
+*     0+    0                          945.0450        0.0000           100.00%
+0     0      697.1328     6      945.0450      697.1328       13   26.23%
+*     0+    0                          938.1434      697.1328            25.69%
+0     0      705.2354     7      938.1434      Fract: 5       39   24.83%
+*     0+    0                          794.3733      705.2354            11.22%
+0     0      709.1895     7      794.3733      Fract: 7       65   10.72%
+*     0+    0                          786.7113      709.1895             9.85%
+0     0      712.4725     7      786.7113      Fract: 3       90    9.44%
+*     0+    0                          768.6883      712.4725             7.31%
+0     2      712.4725     7      768.6883      713.0450       90    7.24%                        0             0
+Elapsed time = 0.08 sec. (19.25 ticks, tree = 0.01 MB, solutions = 5)
 
 Lift and project cuts applied:  0
-Gomory fractional cuts applied:  0
+Gomory fractional cuts applied:  7
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.04 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.04 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 549.267052 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.61 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          549.2671        0.0000           100.00%
-*     0+    0                          473.7492        0.0000           100.00%
-0     0      363.2658     7      473.7492      363.2658       42   23.32%
-*     0+    0                          458.3613      363.2658            20.75%
-0     0      366.0844     9      458.3613      Fract: 7       55   20.13%
-*     0+    0                          444.0143      366.0844            17.55%
-0     0      367.5735     9      444.0143       Cuts: 8       65   17.22%
-*     0+    0                          399.6484      367.5735             8.03%
-0     0      370.0838     8      399.6484      Cuts: 11       79    7.40%
-0     0      373.5779     8      399.6484       Cuts: 7       87    6.52%
-0     0      375.6549     8      399.6484      Cuts: 10      102    6.00%
-Detecting symmetries...
-0     0      376.0896     8      399.6484   LiftProj: 5      112    5.89%
-0     0      376.1174     9      399.6484   LiftProj: 3      114    5.89%
-0     0      376.6026     9      399.6484   LiftProj: 3      119    5.77%
-0     0      376.6959     9      399.6484   LiftProj: 4      122    5.74%
-0     0      378.1442     9      399.6484   LiftProj: 5      128    5.38%
-0     0      378.4635     8      399.6484   LiftProj: 4      138    5.30%
-0     0      379.2367     7      399.6484   LiftProj: 2      142    5.11%
-0     0      379.2713     9      399.6484   LiftProj: 4      144    5.10%
-0     0      380.3723     9      399.6484   LiftProj: 4      151    4.82%
-0     0      380.8148     9      399.6484   LiftProj: 7      155    4.71%
-0     0      381.2194     9      399.6484   LiftProj: 5      159    4.61%
-0     0      381.8576     9      399.6484   LiftProj: 5      165    4.45%
-0     0      383.4126     9      399.6484  LiftProj: 11      177    4.06%
-0     0      383.4483     9      399.6484   LiftProj: 5      182    4.05%
-*     0+    0                          396.1684      383.4483             3.21%
-Detecting symmetries...
-0     2      384.0429     8      396.1684      384.1134      182    3.04%                        0             0
-Elapsed time = 0.17 sec. (33.90 ticks, tree = 0.01 MB, solutions = 6)
-
-Lift and project cuts applied:  16
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.17 sec. (33.90 ticks)
+Real time             =    0.08 sec. (19.26 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.17 sec. (33.92 ticks)
+Total (root+branch&cut) =    0.08 sec. (19.27 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 549.267052 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 945.045027 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-MIP Presolve eliminated 11 rows and 5 columns.
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.21 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.39 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          549.2671        0.0000           100.00%
-*     0     0      integral     0      372.4575      372.4575       43    0.00%                        0             0
-Elapsed time = 0.01 sec. (0.93 ticks, tree = 0.00 MB, solutions = 1)
-
-Lift and project cuts applied:  0
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (0.93 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (0.93 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 549.267052 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+MIQP Presolve eliminated 3 rows and 1 columns.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.15 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.48 ticks)
+Root relaxation solution time = 0.01 sec. (1.48 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          549.2671        0.0000           100.00%
-*     0+    0                          476.4585        0.0000           100.00%
-0     0      372.1627     6      476.4585      372.1627       30   21.89%
-0     0      377.5017     6      476.4585      Fract: 5       42   20.77%
-*     0+    0                          404.2019      377.5017             6.61%
-0     0      380.7964     7      404.2019       Cuts: 8       53    5.79%
-0     0      381.9389     6      404.2019       Cuts: 6       65    5.51%
-*     0+    0                          399.6484      381.9389             4.43%
-0     0      382.7808     7      399.6484       Cuts: 7       73    4.22%
-0     0      384.4411     7      399.6484      Cuts: 10       87    3.81%
-Detecting symmetries...
-0     0      384.8741     7      399.6484      Cuts: 10       94    3.70%
-0     0      385.0569     6      399.6484   LiftProj: 4      100    3.65%
-0     0      385.8263     7      399.6484   LiftProj: 4      106    3.46%
-0     0      386.8208     7      399.6484   LiftProj: 7      112    3.21%
-0     0      386.9249     7      399.6484   LiftProj: 3      115    3.18%
-0     0      387.0054     7      399.6484   LiftProj: 5      118    3.16%
-0     0      387.4531     7      399.6484   LiftProj: 3      121    3.05%
-0     0      388.3408     6      399.6484   LiftProj: 3      127    2.83%
-0     0      388.4172     7      399.6484   LiftProj: 3      128    2.81%
-0     0      388.4964     6      399.6484   LiftProj: 2      130    2.79%
-*     0+    0                          396.1684      388.4964             1.94%
-0     0      388.5554     7      396.1684   LiftProj: 4      132    1.92%
-0     0      388.9344     7      396.1684   LiftProj: 2      136    1.83%
-0     0      389.0349     7      396.1684   LiftProj: 3      138    1.80%
-0     0      389.3654     7      396.1684   LiftProj: 2      140    1.72%
-0     0      389.3904     6      396.1684   LiftProj: 3      142    1.71%
-Detecting symmetries...
-0     2      389.7995     4      396.1684      390.1999      142    1.51%                        0             0
-Elapsed time = 0.17 sec. (28.37 ticks, tree = 0.01 MB, solutions = 5)
-
-Lift and project cuts applied:  13
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.17 sec. (28.38 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.17 sec. (28.39 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 549.267052 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 3 rows and 1 columns.
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.47 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          549.2671        0.0000           100.00%
-*     0     0      integral     0      385.0255      385.0255       33    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.06 ticks, tree = 0.00 MB, solutions = 1)
+*     0+    0                          945.0450        0.0000           100.00%
+0     0      692.1198     7      945.0450      692.1198       13   26.76%
+*     0+    0                          938.3762      692.1198            26.24%
+0     0      692.1248     4      938.3762      Fract: 6       27   26.24%
+*     0+    0                          692.1248      692.1248             0.00%
+0     0        cutoff            692.1248      692.1248       27    0.00%                        0             0
+Elapsed time = 0.02 sec. (4.12 ticks, tree = 0.01 MB, solutions = 2)
 
 Lift and project cuts applied:  0
-Gomory fractional cuts applied:  0
+Gomory fractional cuts applied:  6
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.06 ticks)
+Real time             =    0.02 sec. (4.13 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.06 ticks)
+Total (root+branch&cut) =    0.02 sec. (4.13 ticks)
 Solution status 101.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 941.720518 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1337.092188 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.61 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          941.7205        0.0000           100.00%
-*     0+    0                          872.5219        0.0000           100.00%
-0     0      601.4591     6      872.5219      601.4591       44   31.07%
-*     0+    0                          737.8283      601.4591            18.48%
-0     0      604.1950     8      737.8283      Fract: 4       54   18.11%
-*     0+    0                          696.2579      604.1950            13.22%
-0     0      612.1935     8      696.2579      Cuts: 11       66   12.07%
-*     0+    0                          652.5589      612.1935             6.19%
-0     0      613.9272     8      652.5589       Cuts: 7       78    5.92%
-0     0      614.7701     8      652.5589      Cuts: 10       90    5.79%
-0     0      618.2080     8      652.5589       Cuts: 5      100    5.26%
-Detecting symmetries...
-0     0      618.7373     8      652.5589       Cuts: 5      105    5.18%
-0     0      620.7336     8      652.5589   LiftProj: 3      119    4.88%
-0     0      622.4192     8      652.5589       Cuts: 7      129    4.62%
-0     0      622.9606     8      652.5589   LiftProj: 1      131    4.54%
-0     0      623.3522     8      652.5589   LiftProj: 3      134    4.48%
-0     0      623.6464     8      652.5589   LiftProj: 1      138    4.43%
-0     0      623.8727     8      652.5589       Cuts: 3      141    4.40%
-0     0      623.9006     8      652.5589   LiftProj: 3      143    4.39%
-0     0      624.3594     8      652.5589   LiftProj: 3      149    4.32%
-0     0      624.5316     8      652.5589   LiftProj: 2      150    4.29%
-0     0      625.7381     8      652.5589   LiftProj: 3      155    4.11%
-0     0      625.8010     8      652.5589   LiftProj: 2      157    4.10%
-Detecting symmetries...
-0     2      629.5213     6      652.5589      629.8739      157    3.48%                        0             0
-Elapsed time = 0.15 sec. (26.86 ticks, tree = 0.01 MB, solutions = 5)
-
-Lift and project cuts applied:  10
-Gomory fractional cuts applied:  3
-
-Root node processing (before b&c):
-Real time             =    0.15 sec. (26.86 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.15 sec. (26.88 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 941.720518 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 11 rows and 5 columns.
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.21 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.43 ticks)
+Root relaxation solution time = 0.01 sec. (1.75 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          941.7205        0.0000           100.00%
-*     0     0      integral     0      596.9704      596.9704       48    0.00%                        0             0
-Elapsed time = 0.01 sec. (0.97 ticks, tree = 0.00 MB, solutions = 1)
+*     0+    0                         1337.0922        0.0000           100.00%
+0     0     1047.8755     9     1337.0922     1047.8755       13   21.63%
+*     0+    0                         1316.0757     1047.8755            20.38%
+0     0     1059.1782     9     1316.0757      Fract: 6       39   19.52%
+*     0+    0                         1175.8990     1059.1782             9.93%
+0     0     1062.2716     9     1175.8990      Fract: 7       51    9.66%
+0     0     1064.1528     9     1175.8990      Fract: 2       63    9.50%
+*     0+    0                         1167.4501     1064.1528             8.85%
+0     0     1064.8690     9     1167.4501      Fract: 2       70    8.79%
+0     2     1064.8690     9     1167.4501     1065.1286       70    8.76%                        0             0
+Elapsed time = 0.08 sec. (20.91 ticks, tree = 0.01 MB, solutions = 4)
 
 Lift and project cuts applied:  0
-Gomory fractional cuts applied:  0
+Gomory fractional cuts applied:  8
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (0.97 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (0.97 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 941.720518 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.64 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          941.7205        0.0000           100.00%
-*     0+    0                          877.2624        0.0000           100.00%
-0     0      601.4591     6      877.2624      601.4591       46   31.44%
-*     0+    0                          696.2579      601.4591            13.62%
-0     0      603.0527     8      696.2579       Cuts: 4       56   13.39%
-0     0      614.3239     7      696.2579      Cuts: 14       76   11.77%
-*     0+    0                          652.5589      614.3239             5.86%
-0     0      617.4292     7      652.5589       Cuts: 9       89    5.38%
-0     0      620.7676     6      652.5589       Cuts: 8      101    4.87%
-0     0      625.7674     9      652.5589       Cuts: 9      118    4.11%
-Detecting symmetries...
-0     0      627.3344     8      652.5589       Cuts: 9      126    3.87%
-0     0      630.5963     8      652.5589   LiftProj: 5      141    3.37%
-0     0      631.3758     8      652.5589   LiftProj: 4      147    3.25%
-0     0      632.2834     7      652.5589   LiftProj: 7      152    3.11%
-0     0      632.5491     8      652.5589       Cuts: 7      158    3.07%
-0     0      634.3674     8      652.5589   LiftProj: 6      166    2.79%
-0     0      637.2784     8      652.5589   LiftProj: 7      180    2.34%
-0     0      637.3960     8      652.5589       Cuts: 6      184    2.32%
-0     0      638.4684     8      652.5589   LiftProj: 8      191    2.16%
-0     0      640.3065     8      652.5589   LiftProj: 5      200    1.88%
-0     0      640.5584     8      652.5589   LiftProj: 7      207    1.84%
-0     0      640.6641     7      652.5589       Cuts: 5      211    1.82%
-0     0      643.9924     8      652.5589   LiftProj: 5      224    1.31%
-0     0      647.3645     6      652.5589   LiftProj: 4      245    0.80%
-0     0      648.6649     6      652.5589   LiftProj: 6      256    0.60%
-0     0      648.9643     6      652.5589   LiftProj: 2      258    0.55%
-0     0      649.5824     5      652.5589   LiftProj: 3      265    0.46%
-0     0      649.8044     5      652.5589   LiftProj: 1      268    0.42%
-0     0      649.8222     5      652.5589   LiftProj: 1      269    0.42%
-Detecting symmetries...
-0     0        cutoff            652.5589      649.8222      269    0.42%                        0             0
-Elapsed time = 0.21 sec. (40.07 ticks, tree = 0.01 MB, solutions = 4)
-
-Lift and project cuts applied:  15
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.21 sec. (40.08 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.21 sec. (40.08 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 941.720518 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 3 rows and 1 columns.
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.59 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          941.7205        0.0000           100.00%
-*     0     0      integral     0      601.4591      601.4591       41    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.18 ticks, tree = 0.00 MB, solutions = 1)
-
-Lift and project cuts applied:  0
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.19 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.19 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 671.289819 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.67 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          671.2898        0.0000           100.00%
-*     0+    0                          538.6067        0.0000           100.00%
-0     0      285.1772     7      538.6067      285.1772       48   47.05%
-*     0+    0                          527.4518      285.1772            45.93%
-0     0      296.3193     9      527.4518      Fract: 6       62   43.82%
-*     0+    0                          398.4261      296.3193            25.63%
-0     0      304.2602     9      398.4261       Cuts: 9       70   23.63%
-*     0+    0                          392.1998      304.2602            22.42%
-0     0      307.2516     9      392.1998       Cuts: 8       83   21.66%
-0     0      312.3213     9      392.1998       Cuts: 9       95   20.37%
-0     0      313.1180     9      392.1998       Cuts: 5      101   20.16%
-Detecting symmetries...
-0     0      315.0920     9      392.1998       Cuts: 5      112   19.66%
-0     0      316.6421     9      392.1998   LiftProj: 5      121   19.27%
-0     0      317.0177     8      392.1998       Cuts: 6      126   19.17%
-0     0      319.0330     9      392.1998       Cuts: 6      134   18.66%
-0     0      320.1301     9      392.1998       Cuts: 4      142   18.38%
-0     0      327.0757     8      392.1998   LiftProj: 4      159   16.60%
-0     0      329.0899     9      392.1998   LiftProj: 4      164   16.09%
-0     0      330.0181     9      392.1998   LiftProj: 3      171   15.85%
-0     0      333.5423     8      392.1998   LiftProj: 3      180   14.96%
-0     0      334.1898     9      392.1998       Cuts: 5      183   14.79%
-0     0      334.8253     9      392.1998   LiftProj: 3      189   14.63%
-0     0      335.1829     9      392.1998   LiftProj: 5      195   14.54%
-0     0      335.7291     9      392.1998       Cuts: 6      208   14.40%
-0     0      338.2439     9      392.1998   LiftProj: 5      227   13.76%
-0     0      339.3974     9      392.1998      Cuts: 11      239   13.46%
-0     0      340.3345     9      392.1998   LiftProj: 4      246   13.22%
-0     0      340.5519     9      392.1998   LiftProj: 5      249   13.17%
-0     0      342.8122     9      392.1998   LiftProj: 5      264   12.59%
-0     0      343.0848     9      392.1998   LiftProj: 4      269   12.52%
-0     0      343.2687     9      392.1998   LiftProj: 4      274   12.48%
-0     0      343.8168     9      392.1998   LiftProj: 5      286   12.34%
-0     0      344.0940     9      392.1998   LiftProj: 4      292   12.27%
-0     0      344.7563     8      392.1998   LiftProj: 5      302   12.10%
-0     0      345.5707     9      392.1998   LiftProj: 4      315   11.89%
-0     0      346.2353     9      392.1998   LiftProj: 8      325   11.72%
-0     0      346.9409     9      392.1998   LiftProj: 4      330   11.54%
-0     0      347.4198     9      392.1998   LiftProj: 4      337   11.42%
-0     0      348.1467     8      392.1998   LiftProj: 5      351   11.23%
-0     0      348.2187     8      392.1998   LiftProj: 5      359   11.21%
-0     0      348.2483     8      392.1998   LiftProj: 4      361   11.21%
-Detecting symmetries...
-0     2      348.8097     7      392.1998      349.0020      361   11.01%                        0             0
-Elapsed time = 0.32 sec. (72.75 ticks, tree = 0.01 MB, solutions = 5)
-
-Lift and project cuts applied:  19
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.32 sec. (72.75 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.32 sec. (72.77 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 671.289819 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 11 rows and 5 columns.
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.22 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.44 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          671.2898        0.0000           100.00%
-0     0      304.9439     1      671.2898      304.9439       48   54.57%
-*     0+    0                          305.0518      304.9439             0.04%
-*     0     0      integral     0      304.9870      304.9870       50    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.28 ticks, tree = 0.01 MB, solutions = 2)
-
-Lift and project cuts applied:  0
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (1.28 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.28 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 671.289819 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.50 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          671.2898        0.0000           100.00%
-*     0+    0                          548.6165        0.0000           100.00%
-0     0      304.9439     6      548.6165      304.9439       32   44.42%
-*     0+    0                          522.3973      304.9439            41.63%
-0     0      307.4500     8      522.3973       Cuts: 6       42   41.15%
-*     0+    0                          462.2964      307.4500            33.50%
-0     0      316.4552     7      462.2964      Cuts: 12       55   31.55%
-*     0+    0                          392.1998      316.4552            19.31%
-0     0      319.9428     8      392.1998      Cuts: 11       66   18.42%
-0     0      324.6389     8      392.1998       Cuts: 8       78   17.23%
-0     0      327.7930     8      392.1998      Cuts: 15       91   16.42%
-Detecting symmetries...
-0     0      328.7415     8      392.1998   LiftProj: 6       99   16.18%
-0     0      329.0631     8      392.1998   LiftProj: 5      103   16.10%
-0     0      329.9942     8      392.1998   LiftProj: 4      114   15.86%
-0     0      337.1155     9      392.1998      Cuts: 15      130   14.04%
-0     0      337.7182     9      392.1998       Cuts: 8      139   13.89%
-0     0      338.4233     8      392.1998       Cuts: 8      144   13.71%
-0     0      340.5853     8      392.1998       Cuts: 8      156   13.16%
-0     0      342.3005     8      392.1998   LiftProj: 6      166   12.72%
-0     0      342.9973     9      392.1998   LiftProj: 6      170   12.55%
-0     0      343.7261     8      392.1998   LiftProj: 5      178   12.36%
-0     0      345.7628     9      392.1998   LiftProj: 9      191   11.84%
-0     0      347.8246     9      392.1998   LiftProj: 4      202   11.31%
-0     0      348.4185     9      392.1998   LiftProj: 6      209   11.16%
-0     0      348.4563     9      392.1998   LiftProj: 3      212   11.15%
-0     0      350.9729     7      392.1998   LiftProj: 5      223   10.51%
-0     0      351.2928     8      392.1998   LiftProj: 6      229   10.43%
-0     0      352.0556     9      392.1998   LiftProj: 4      233   10.24%
-0     0      352.0730     9      392.1998   LiftProj: 6      236   10.23%
-Detecting symmetries...
-0     2      354.5785     7      392.1998      354.6203      236    9.58%                        0             0
-Elapsed time = 0.22 sec. (46.49 ticks, tree = 0.01 MB, solutions = 5)
-
-Lift and project cuts applied:  19
-Gomory fractional cuts applied:  1
-
-Root node processing (before b&c):
-Real time             =    0.22 sec. (46.49 ticks)
+Real time             =    0.08 sec. (20.92 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.22 sec. (46.50 ticks)
+Total (root+branch&cut) =    0.08 sec. (20.93 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 671.289819 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1337.092188 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-MIP Presolve eliminated 3 rows and 1 columns.
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+MIQP Presolve eliminated 11 rows and 5 columns.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.11 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.02 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.47 ticks)
+Root relaxation solution time = 0.01 sec. (1.43 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          671.2898        0.0000           100.00%
-*     0     0      integral     0      363.5184      363.5184       29    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.06 ticks, tree = 0.00 MB, solutions = 1)
+*     0+    0                         1337.0922        0.0000           100.00%
+*     0     0      integral     0     1047.8755     1047.8755       12    0.00%                        0             0
+Elapsed time = 0.01 sec. (1.84 ticks, tree = 0.00 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.07 ticks)
+Real time             =    0.01 sec. (1.84 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.07 ticks)
+Total (root+branch&cut) =    0.01 sec. (1.84 ticks)
 Solution status 101.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 758.032827 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1337.092188 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.66 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          758.0328        0.0000           100.00%
-*     0+    0                          643.3001        0.0000           100.00%
-0     0      431.0120     7      643.3001      431.0120       48   33.00%
-*     0+    0                          591.9356      431.0120            27.19%
-0     0      434.0791     9      591.9356      Fract: 6       58   26.67%
-0     0      440.3754     9      591.9356       Cuts: 9       72   25.60%
-*     0+    0                          534.0033      440.3754            17.53%
-0     0      444.2818     9      534.0033       Cuts: 7       81   16.80%
-*     0+    0                          513.0512      444.2818            13.40%
-0     0      447.0611     9      513.0512      Cuts: 11       90   12.86%
-0     0      448.9262     8      513.0512       Cuts: 7       97   12.50%
-Detecting symmetries...
-0     0      449.5253     9      513.0512       Cuts: 7      108   12.38%
-*     0+    0                          497.5652      449.5253             9.65%
-0     0      450.1218     8      497.5652   LiftProj: 5      114    9.54%
-0     0      450.7596     9      497.5652       Cuts: 7      123    9.41%
-0     0      451.6912     9      497.5652       Cuts: 7      135    9.22%
-0     0      452.6672     9      497.5652       Cuts: 9      141    9.02%
-0     0      453.1451     9      497.5652   LiftProj: 7      151    8.93%
-0     0      453.9342     9      497.5652   LiftProj: 6      159    8.77%
-0     0      454.5607     9      497.5652   LiftProj: 9      170    8.64%
-0     0      455.1454     9      497.5652   LiftProj: 7      178    8.53%
-0     0      455.2164     9      497.5652   LiftProj: 6      182    8.51%
-0     0      455.8132     9      497.5652   LiftProj: 8      195    8.39%
-0     0      456.0876     9      497.5652   LiftProj: 5      203    8.34%
-0     0      456.2502     9      497.5652   LiftProj: 5      209    8.30%
-0     0      456.2607     9      497.5652   LiftProj: 7      212    8.30%
-0     0      456.6520     9      497.5652   LiftProj: 7      222    8.22%
-0     0      457.4938     9      497.5652   LiftProj: 5      227    8.05%
-0     0      458.8567     9      497.5652   LiftProj: 5      236    7.78%
-0     0      459.2222     9      497.5652   LiftProj: 6      241    7.71%
-0     0      459.6740     9      497.5652   LiftProj: 5      246    7.62%
-0     0      459.7600     9      497.5652   LiftProj: 5      249    7.60%
-Detecting symmetries...
-0     2      460.2923     8      497.5652      460.9536      249    7.36%                        0             0
-Elapsed time = 0.24 sec. (53.51 ticks, tree = 0.01 MB, solutions = 6)
-
-Lift and project cuts applied:  18
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.24 sec. (53.51 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.24 sec. (53.53 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 758.032827 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 11 rows and 5 columns.
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 68 rows, 74 columns, and 676 nonzeros.
-Reduced MIP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.22 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.47 ticks)
+Root relaxation solution time = 0.01 sec. (1.57 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          758.0328        0.0000           100.00%
-*     0     0      integral     0      431.0120      431.0120       52    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.01 ticks, tree = 0.00 MB, solutions = 1)
+*     0+    0                         1337.0922        0.0000           100.00%
+0     0     1047.8755     8     1337.0922     1047.8755       13   21.63%
+*     0+    0                         1313.2548     1047.8755            20.21%
+0     0     1059.0682     8     1313.2548      Fract: 6       51   19.36%
+*     0+    0                         1167.4501     1059.0682             9.28%
+0     0     1070.8226     8     1167.4501      Fract: 8       74    8.28%
+*     0+    0                         1141.0900     1070.8226             6.16%
+0     2     1070.8226     8     1141.0900     1071.5804       74    6.09%                        0             0
+Elapsed time = 0.06 sec. (16.43 ticks, tree = 0.01 MB, solutions = 4)
 
 Lift and project cuts applied:  0
-Gomory fractional cuts applied:  0
+Gomory fractional cuts applied:  7
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.02 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (1.02 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 758.032827 after 0.00 sec. (0.00 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 79 rows, 79 columns, and 705 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.62 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          758.0328        0.0000           100.00%
-*     0+    0                          644.4799        0.0000           100.00%
-0     0      431.2487     6      644.4799      431.2487       42   33.09%
-*     0+    0                          591.9356      431.2487            27.15%
-0     0      434.1390     8      591.9356       Cuts: 4       51   26.66%
-0     0      438.8774     9      591.9356      Cuts: 11       66   25.86%
-*     0+    0                          534.0033      438.8774            17.81%
-0     0      445.9251     8      534.0033      Cuts: 11       79   16.49%
-*     0+    0                          504.0961      445.9251            11.54%
-0     0      448.2849     9      504.0961       Cuts: 9       93   11.07%
-0     0      450.9558     8      504.0961      Cuts: 11      108   10.54%
-Detecting symmetries...
-0     0      452.3755     7      504.0961       Cuts: 8      114   10.26%
-*     0+    0                          497.5652      452.3755             9.08%
-0     0      453.2451     8      497.5652       Cuts: 8      121    8.91%
-0     0      456.4241     9      497.5652       Cuts: 8      136    8.27%
-0     0      457.4423     9      497.5652      Cuts: 11      148    8.06%
-0     0      458.5499     9      497.5652   LiftProj: 8      160    7.84%
-0     0      460.8145     8      497.5652      Cuts: 11      173    7.39%
-0     0      463.6292     9      497.5652   LiftProj: 8      184    6.82%
-0     0      466.4176     8      497.5652   LiftProj: 6      197    6.26%
-0     0      467.1122     8      497.5652   LiftProj: 5      204    6.12%
-0     0      467.4172     8      497.5652   LiftProj: 6      209    6.06%
-0     0      468.4569     8      497.5652   LiftProj: 6      220    5.85%
-0     0      468.5618     8      497.5652   LiftProj: 7      224    5.83%
-0     0      468.8467     8      497.5652   LiftProj: 8      229    5.77%
-0     0      469.0952     8      497.5652   LiftProj: 6      230    5.72%
-0     0      469.4030     9      497.5652   LiftProj: 8      235    5.66%
-0     0      469.4635     8      497.5652   LiftProj: 5      242    5.65%
-0     0      469.7714     8      497.5652   LiftProj: 4      245    5.59%
-0     0      469.9115     8      497.5652   LiftProj: 7      248    5.56%
-0     0      471.3689     8      497.5652   LiftProj: 7      254    5.26%
-0     0      471.6399     8      497.5652   LiftProj: 6      260    5.21%
-0     0      471.7798     8      497.5652   LiftProj: 4      263    5.18%
-0     0      471.8664     7      497.5652   LiftProj: 4      268    5.16%
-Detecting symmetries...
-0     2      471.8664     7      497.5652      471.9726      268    5.14%                        0             0
-Elapsed time = 0.26 sec. (56.67 ticks, tree = 0.01 MB, solutions = 6)
-
-Lift and project cuts applied:  16
-Gomory fractional cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.26 sec. (56.68 ticks)
+Real time             =    0.06 sec. (16.44 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.26 sec. (56.69 ticks)
+Total (root+branch&cut) =    0.06 sec. (16.45 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 758.032827 after 0.00 sec. (0.00 ticks)
+Found incumbent of value 1337.092188 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-MIP Presolve eliminated 3 rows and 1 columns.
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
+MIQP Presolve eliminated 3 rows and 1 columns.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.15 ticks)
 Probing time = 0.00 sec. (0.03 ticks)
 Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 76 rows, 78 columns, and 692 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+Classifier predicts products in MIQP should be linearized.
 Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.53 ticks)
+Root relaxation solution time = 0.01 sec. (1.45 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          758.0328        0.0000           100.00%
-*     0+    0                          451.8439        0.0000           100.00%
-0     0        cutoff            451.8439      451.8439       34    0.00%
-0     0        cutoff            451.8439      451.8439       34    0.00%                        0             0
-Elapsed time = 0.01 sec. (1.14 ticks, tree = 0.01 MB, solutions = 1)
+*     0+    0                         1337.0922        0.0000           100.00%
+0     0     1047.8755     8     1337.0922     1047.8755       12   21.63%
+*     0+    0                         1047.8755     1047.8755             0.00%
+0     0        cutoff           1047.8755     1047.8755       12    0.00%                        0             0
+Elapsed time = 0.01 sec. (2.05 ticks, tree = 0.01 MB, solutions = 1)
 
 Lift and project cuts applied:  0
 Gomory fractional cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (1.14 ticks)
+Real time             =    0.01 sec. (2.06 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (1.14 ticks)
+Total (root+branch&cut) =    0.01 sec. (2.06 ticks)
+Solution status 101.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1107.058717 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.69 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1107.0587        0.0000           100.00%
+0     0      690.4898     9     1107.0587      690.4898       12   37.63%
+*     0+    0                         1030.0515      690.4898            32.97%
+0     0      698.7805     9     1030.0515      Fract: 7       45   32.16%
+*     0+    0                          801.1518      698.7805            12.78%
+0     0      700.6159     9      801.1518      Fract: 1       52   12.55%
+0     0      701.6656     9      801.1518      Fract: 8       58   12.42%
+0     0      704.1077     9      801.1518      Fract: 2       72   12.11%
+0     0      704.4318     9      801.1518      Fract: 6       82   12.07%
+0     2      705.2098     8      801.1518      705.6977       82   11.91%                        0             0
+Elapsed time = 0.08 sec. (26.15 ticks, tree = 0.01 MB, solutions = 3)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  8
+
+Root node processing (before b&c):
+Real time             =    0.08 sec. (26.16 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.09 sec. (26.17 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1107.058717 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIQP Presolve eliminated 11 rows and 5 columns.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.11 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.35 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1107.0587        0.0000           100.00%
+*     0     0      integral     0      690.4898      690.4898       12    0.00%                        0             0
+Elapsed time = 0.01 sec. (1.76 ticks, tree = 0.00 MB, solutions = 1)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.01 sec. (1.76 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.00 ticks)
+------------
+Total (root+branch&cut) =    0.01 sec. (1.76 ticks)
+Solution status 101.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1107.058717 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.43 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1107.0587        0.0000           100.00%
+0     0      691.2918     7     1107.0587      691.2918       12   37.56%
+*     0+    0                         1021.8941      691.2918            32.35%
+0     0      701.5662     9     1021.8941      Fract: 6       46   31.35%
+*     0+    0                          801.1518      701.5662            12.43%
+0     0      709.9096     9      801.1518      Fract: 8       78   11.39%
+0     0      712.7638     8      801.1518      Fract: 3       94   11.03%
+0     0      714.1075     9      801.1518      Fract: 4      119   10.86%
+0     2      714.1075     9      801.1518      714.2458      119   10.85%                        0             0
+Elapsed time = 0.08 sec. (23.09 ticks, tree = 0.01 MB, solutions = 3)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  9
+
+Root node processing (before b&c):
+Real time             =    0.08 sec. (23.10 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.08 sec. (23.11 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1107.058717 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIQP Presolve eliminated 3 rows and 1 columns.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.15 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.48 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1107.0587        0.0000           100.00%
+0     0      792.5126     7     1107.0587      792.5126       13   28.41%
+*     0+    0                          792.5126      792.5126             0.00%
+0     0        cutoff            792.5126      792.5126       13    0.00%                        0             0
+Elapsed time = 0.01 sec. (2.08 ticks, tree = 0.01 MB, solutions = 1)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.01 sec. (2.09 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.00 ticks)
+------------
+Total (root+branch&cut) =    0.01 sec. (2.09 ticks)
+Solution status 101.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1237.134638 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.69 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1237.1346        0.0000           100.00%
+0     0      813.3288     9     1237.1346      813.3288       12   34.26%
+*     0+    0                         1129.0032      813.3288            27.96%
+*     0+    0                          923.2042      813.3288            11.90%
+0     2      813.3288     9      923.2042      813.3288       12   11.90%                        0             0
+Elapsed time = 0.04 sec. (11.81 ticks, tree = 0.01 MB, solutions = 3)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (11.82 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (11.83 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1237.134638 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIQP Presolve eliminated 11 rows and 5 columns.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 68 rows, 74 columns, and 676 nonzeros.
+Reduced MIQP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.11 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.49 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1237.1346        0.0000           100.00%
+*     0     0      integral     0      813.3288      813.3288       13    0.00%                        0             0
+Elapsed time = 0.01 sec. (1.90 ticks, tree = 0.00 MB, solutions = 1)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.01 sec. (1.91 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.00 ticks)
+------------
+Total (root+branch&cut) =    0.01 sec. (1.91 ticks)
+Solution status 101.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1237.134638 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 79 rows, 79 columns, and 705 nonzeros.
+Reduced MIQP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.54 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1237.1346        0.0000           100.00%
+0     0      813.3300     7     1237.1346      813.3300       14   34.26%
+*     0+    0                         1128.2413      813.3300            27.91%
+0     0      821.9754     8     1128.2413      Fract: 6       42   27.15%
+*     0+    0                         1032.2692      821.9754            20.37%
+0     0      828.3048     9     1032.2692      Fract: 7       59   19.76%
+*     0+    0                         1020.5978      828.3048            18.84%
+*     0+    0                          961.2771      828.3048            13.83%
+0     2      828.3048     9      961.2771      830.2811       59   13.63%                        0             0
+Elapsed time = 0.06 sec. (17.75 ticks, tree = 0.01 MB, solutions = 5)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  6
+
+Root node processing (before b&c):
+Real time             =    0.06 sec. (17.76 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.06 sec. (17.78 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 1237.134638 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIQP Presolve eliminated 3 rows and 1 columns.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.15 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 76 rows, 78 columns, and 692 nonzeros.
+Reduced MIQP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.45 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         1237.1346        0.0000           100.00%
+0     0      819.1089     5     1237.1346      819.1089       13   33.79%
+*     0+    0                          819.1089      819.1089             0.00%
+0     0        cutoff            819.1089      819.1089       13    0.00%                        0             0
+Elapsed time = 0.01 sec. (2.04 ticks, tree = 0.01 MB, solutions = 1)
+
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.01 sec. (2.05 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.00 ticks)
+------------
+Total (root+branch&cut) =    0.01 sec. (2.05 ticks)
 Solution status 101.
