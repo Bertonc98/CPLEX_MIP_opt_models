@@ -7,7 +7,6 @@
 #include <ilcplex/ilocplex.h>
 #include <chrono>
 
-
 ILOSTLBEGIN
 
 using namespace std;
@@ -134,8 +133,6 @@ int main(int argc, char **argv){
 	IloObjective obj = IloAdd(model, IloMinimize(env, IloSum(q)));
 	
 	//~ int db = 0;
-	cout << x[0] <<endl;
-	cout<< d <<endl;
 	
 	//~ Constraints over k
 	for( int i = 0; i < k; i++){
