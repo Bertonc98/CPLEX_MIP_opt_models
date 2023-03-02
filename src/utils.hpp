@@ -10,6 +10,8 @@
 
 void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_factor);
 
+void compute_W_optimal_hyperplane(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_factor);
+
 float_t dot_product(IloNumArray x, IloNumArray wu);
 
 void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r);

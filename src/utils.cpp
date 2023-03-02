@@ -28,6 +28,18 @@ void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_f
 	
 }
 
+void compute_W_optimal_hyperplane(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_factor){
+	//~ The optimal hyperplane is composed by the first 5 features set to 1, the others to 0
+	//~ No bound for the last coefficient, the intercept
+	int len = solution.getSize();
+	//~ Computing bounds
+	for( int i = 1; i < len; i++ ){
+		wl[i-1] = (float_t)solution[i] + scale_factor;
+		wu[i-1] = (float_t)solution[i] - scale_factor;
+	}
+	
+}
+
 float_t dot_product(IloNumArray x, IloNumArray solution){
 	//The intercept is added previously
 	float_t res = solution[0];

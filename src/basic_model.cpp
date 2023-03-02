@@ -16,21 +16,22 @@ int main(int argc, char **argv){
 	IloEnv env;
 	if(argc < 4){
 		cout << "Wrong number of parameters"<<endl;
-		cout << "./basic_model instance_number d k cardinality*"<<endl;
+		cout << "./basic_model instance_number d k cardinality* dimensionality*"<<endl;
 		cout << "d is the amount of features that are at most NOT considered"<<endl;
 		cout << "k is the number of points that are at least considered as outliers" <<endl;
 		cout << "instance_number is the toy_instance considered" <<endl;
 		cout << "cardinality is optional. and it will lead to handle the generated instances" <<endl;
+		cout << "dimensionality is optional. and it will lead to handle the generated instances" <<endl;
 		return 1;
 	}
 	
 	bool generated_instances = false;
-	int cardinality;
+	int cardinality, dimensionality;
 	
-	if(argc == 5){
+	if(argc == 6){
 		cardinality = stoi(argv[4]);
+		dimensionality = stoi(argv[5]);
 		generated_instances = true;
-		
 	}
 	
 	string instance = argv[1];
@@ -41,7 +42,7 @@ int main(int argc, char **argv){
 	string filename;
 	if(generated_instances){
 		path = "../src/instance_set/generated_instances/";
-		filename  = path + "toy_" + to_string(cardinality) + "_10_-" + instance + ".dat";
+		filename  = path + "toy_" + to_string(cardinality) + "_" + to_string(dimensionality) + "_-" + instance + ".dat";
 	}
 	else{
 		path = "../src/instance_set/";
@@ -77,7 +78,8 @@ int main(int argc, char **argv){
 					 "00000Result.dat";
 	}
 	else{
-		sol = path + "hyperplane.dat";
+		solution_n = dimensionality;
+		sol = path + "hyperplane" + to_string(dimensionality) + ".dat";
 	}
 	
 	ifstream sfile(sol);
@@ -102,7 +104,14 @@ int main(int argc, char **argv){
 	IloNumArray wl(env, d);
 	IloNumArray wu(env, d);
 	
-	compute_W(solution, wl, wu, 2);
+	// SCALE FACTOR 10
+	int scale_factor = 2;
+	if(generated_instances){
+		compute_W_optimal_hyperplane(solution, wl, wu, scale_factor)
+	}
+	else{
+		compute_W(solution, wl, wu, 2);
+	}
 	
 	int k = x.getSize();
 	IloNumArray r(env, k);
@@ -236,7 +245,7 @@ int main(int argc, char **argv){
 	if(!myfile) {
 		//cout<<"file not exists"<<endl;
 		if(generated_instances){
-			line = "Instance;d_0;k;Time;OurObj;intercept;slopes\n";
+			line = "Instance;d;k;w_bound;Time;OurObj;intercept;slopes\n";
 		}
 		else{
 			line = "Instance;d_0;k_0;MismatchedOutliers;OurObj;intercept;slopes\n";
@@ -245,7 +254,7 @@ int main(int argc, char **argv){
 	
 	dest_file.open(res_name, fstream::app);
 	if(generated_instances){
-		line += filename + ";" + to_string(d_0) + ";" + to_string(k) + ";" + to_string(time_span) + ";" + to_string(cplex.getValue(obj)) + ";" + to_string(cplex.getValue(z)) + ";";
+		line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";" + to_string(cplex.getValue(obj)) + ";" + to_string(cplex.getValue(z)) + ";";
 	}
 	else{
 		line += filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(errors) + ";" + to_string(cplex.getValue(obj)) + ";" + to_string(cplex.getValue(z)) + ";";
