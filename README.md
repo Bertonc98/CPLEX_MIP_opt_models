@@ -20,9 +20,13 @@ CPLEX_MIP_opt_models <br />
     │   └── basic_models <br />
     │   │   └── generated_results <br />
     │   └── stronger_models <br />
+    │   │   └── generated_results <br />
     │   └── quadratic_models <br />
+    │   │   └── generated_results <br />
     │   └── disjunctive_models <br />
+    │   │   └── generated_results <br />
     │   └── mccormick_models <br />
+    │   │   └── generated_results <br />
     │   └── SFSOD <br />
     │   │   └── generated_results <br />
     ├── instance_set <br />
@@ -31,6 +35,9 @@ CPLEX_MIP_opt_models <br />
     └── parameters <br />
          └── basic_model <br />
          └── stronger_model <br />
+         └── quadratic_models <br />
+         └── disjunctive_models <br />
+         └── mccormick_models <br />
 
 
 ## 06/11/2022 Update
@@ -158,6 +165,9 @@ Start implementation of McCormick
 ## 01/03/2023
 Generation of new instances code int generation_instances.py
 Modified basic_model in order to handle generated instances, passing an additional parameters specifying the cardinality
+
+## 02/03/2023
+Run of the models over the sysntetic instances
 
 TODO: 
 - Check for feasibility of the dual
