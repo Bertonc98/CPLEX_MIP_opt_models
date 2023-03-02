@@ -11,7 +11,7 @@ ILOSTLBEGIN
 
 
 /*
- * From "Modelli MPHero the Disjunctive Linearization of the Projected McCormick's model
+ * From "Modelli MPHero the Disjunctive Linearization of the Projected mccormick_'s model
  * 
  */
 
@@ -20,7 +20,7 @@ int main(int argc, char **argv){
 	IloEnv env;
 	if(argc < 5){
 		cout << "Wrong number of parameters"<<endl;
-		cout << "./linearized_model instance_number d k cardinality*"<<endl;
+		cout << "./mccormick_model instance_number d k cardinality*"<<endl;
 		cout << "d is the amount of features that are at most NOT considered"<<endl;
 		cout << "k is the number of points that are at least considered as outliers" <<endl;
 		cout << "instance_number is the toy_instance considered" <<endl;
@@ -55,7 +55,7 @@ int main(int argc, char **argv){
 	ifstream ifile(filename);
 	if (!ifile) {
 		cerr << "ERROR: could not open instance file '" << filename << endl;
-		cout << "./linearized_model instance_number d k k cardinality*"<<endl;
+		cout << "./mccormick_model instance_number d k k cardinality*"<<endl;
 		cout << "d is the amount of features that are at most NOT considered"<<endl;
 		cout << "k is the number of points that are at least considered as outliers" <<endl;
 		cout << "instance_number is the toy_instance considered" <<endl;
@@ -212,10 +212,10 @@ int main(int argc, char **argv){
 	string export_file;
 	
 	if(generated_instances){
-		export_file = "../src/data/linearized_models/generated_results/linearized_model"+ instance + "_" + to_string(cardinality) + ".lp"; 
+		export_file = "../src/data/mccormick_models/generated_results/mccormick_model"+ instance + "_" + to_string(cardinality) + ".lp"; 
 	}
 	else{
-		export_file = "../src/data/linearized_models/linearized_model"+ instance + "_" + to_string(d_0) + "_" + to_string(k_0) + ".lp"; 
+		export_file = "../src/data/mccormick_models/mccormick_model"+ instance + "_" + to_string(d_0) + "_" + to_string(k_0) + ".lp"; 
 	}
 	
 	cplex.exportModel(export_file.c_str());
@@ -259,7 +259,7 @@ int main(int argc, char **argv){
 		cfile.open(compare);
 		if (!cfile) {
 			cerr << "ERROR: could not open comparison file '" << compare << endl;
-			cout << "./linearized_model instance_number d k"<<endl;
+			cout << "./mccormick_model instance_number d k"<<endl;
 			return 1;
 		}
 		
@@ -295,10 +295,10 @@ int main(int argc, char **argv){
 	//~ Saving results
 	string res_name;
 	if(generated_instances){
-		res_name = "../src/data/SFSOD/generated_results/linearized_results.csv";
+		res_name = "../src/data/SFSOD/generated_results/mccormick_results.csv";
 	}
 	else{
-		res_name = "../src/data/SFSOD/linearized_results.csv";
+		res_name = "../src/data/SFSOD/mccormick_results.csv";
 	}
 	fstream dest_file;
 	string line = "";
