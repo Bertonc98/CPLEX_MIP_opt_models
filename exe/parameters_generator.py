@@ -8,11 +8,11 @@ if len(sys.argv) != 2:
 
 model_name = sys.argv[1]
 # basic = ["Gomory", "Disjunctive", "LiftProj"]
-# stronger = ["Covers", "FlowCovers", "Gomory", "Disjunctive", "LiftProj", "MIRCut"]
+# stronger = ["Gomory", "Disjunctive", "LiftProj"]
 # quadratic = ["Gomory", "Disjunctive", "LiftProj"]
 # linearized = ["Gomory", "Disjunctive", "LiftProj", "MIRCut"]
 # mccormick = ["Gomory", "FlowCovers", "Disjunctive", "LiftProj", "MIRCut"]
-stuff = ["CPXPARAM_MIP_Cuts_"+cut for cut in ["Gomory", "FlowCovers", "Disjunctive", "LiftProj", "MIRCut"]]
+stuff = ["CPXPARAM_MIP_Cuts_"+cut for cut in ["Gomory", "Disjunctive", "LiftProj"]]
 subsets = []
 for L in range(1, len(stuff) + 1):
     for subset in itertools.combinations(stuff, L):

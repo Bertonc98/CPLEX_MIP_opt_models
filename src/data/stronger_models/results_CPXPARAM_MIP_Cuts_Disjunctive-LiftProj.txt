@@ -208,14 +208,14 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0       45.3867     8       61.1938       45.3867       98   25.83%
 Detecting symmetries...
 0     2       45.3867     8       61.1938       45.3867       98   25.83%                        0             0
-Elapsed time = 0.03 sec. (6.60 ticks, tree = 0.01 MB, solutions = 2)
+Elapsed time = 0.04 sec. (6.60 ticks, tree = 0.01 MB, solutions = 2)
 
 Lift and project cuts applied:  0
 Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.03 sec. (6.60 ticks)
+Real time             =    0.04 sec. (6.60 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
@@ -527,7 +527,7 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0      -36.6532     2      -35.8137      -36.6532      102    2.34%
 Detecting symmetries...
 0     1      -36.6532     2      -35.8137      -36.6532      108    2.34%                        0             0
-Elapsed time = 0.04 sec. (5.75 ticks, tree = 0.01 MB, solutions = 2)
+Elapsed time = 0.03 sec. (5.75 ticks, tree = 0.01 MB, solutions = 2)
 
 Lift and project cuts applied:  0
 Disjunctive cuts applied:  0
@@ -549,7 +549,7 @@ MIP Presolve eliminated 30 rows and 0 columns.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.26 ticks)
-Found incumbent of value 4258.001232 after 0.01 sec. (0.63 ticks)
+Found incumbent of value 4258.001232 after 0.00 sec. (0.63 ticks)
 Probing time = 0.00 sec. (0.06 ticks)
 Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
@@ -561,7 +561,7 @@ Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.85 ticks)
+Root relaxation solution time = 0.00 sec. (0.85 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -573,18 +573,18 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0       36.5391     6       56.1876   LiftProj: 3      109   34.97%
 Detecting symmetries...
 0     2       36.5391     6       56.1876       36.5391      109   34.97%                        0             0
-Elapsed time = 0.07 sec. (9.60 ticks, tree = 0.01 MB, solutions = 2)
+Elapsed time = 0.04 sec. (9.60 ticks, tree = 0.01 MB, solutions = 2)
 
 Lift and project cuts applied:  4
 Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.07 sec. (9.60 ticks)
+Real time             =    0.04 sec. (9.60 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.07 sec. (9.61 ticks)
+Total (root+branch&cut) =    0.04 sec. (9.61 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -676,7 +676,7 @@ Real time             =    0.04 sec. (7.19 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.04 ticks)
 ------------
-Total (root+branch&cut) =    0.05 sec. (7.22 ticks)
+Total (root+branch&cut) =    0.04 sec. (7.22 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -755,18 +755,18 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 *     0+    0                           51.8824       42.8442            17.42%
 Detecting symmetries...
 0     2       42.8442     6       51.8824       42.8442       92   17.42%                        0             0
-Elapsed time = 0.04 sec. (5.45 ticks, tree = 0.01 MB, solutions = 3)
+Elapsed time = 0.03 sec. (5.45 ticks, tree = 0.01 MB, solutions = 3)
 
 Lift and project cuts applied:  0
 Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.04 sec. (5.43 ticks)
+Real time             =    0.03 sec. (5.43 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.03 ticks)
 ------------
-Total (root+branch&cut) =    0.04 sec. (5.47 ticks)
+Total (root+branch&cut) =    0.03 sec. (5.47 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -802,18 +802,18 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 *     0+    0                           -4.1212      -13.2491           221.48%
 Detecting symmetries...
 0     2      -13.2491     6       -4.1212      -13.2491       88  221.48%                        0             0
-Elapsed time = 0.04 sec. (8.02 ticks, tree = 0.01 MB, solutions = 3)
+Elapsed time = 0.06 sec. (8.02 ticks, tree = 0.01 MB, solutions = 3)
 
 Lift and project cuts applied:  2
 Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.04 sec. (7.99 ticks)
+Real time             =    0.06 sec. (7.99 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.04 ticks)
 ------------
-Total (root+branch&cut) =    0.04 sec. (8.03 ticks)
+Total (root+branch&cut) =    0.06 sec. (8.03 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -900,7 +900,7 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.04 sec. (5.62 ticks)
+Real time             =    0.03 sec. (5.62 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.03 ticks)
 ------------
@@ -1035,7 +1035,7 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.04 sec. (6.04 ticks)
+Real time             =    0.03 sec. (6.04 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.04 ticks)
 ------------
@@ -1214,18 +1214,18 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 *     0+    0                           32.1479       31.7258             1.31%
 Detecting symmetries...
 0     2       31.7258     2       32.1479       31.7258      133    1.31%                        0             0
-Elapsed time = 0.04 sec. (5.44 ticks, tree = 0.01 MB, solutions = 5)
+Elapsed time = 0.03 sec. (5.44 ticks, tree = 0.01 MB, solutions = 5)
 
 Lift and project cuts applied:  0
 Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.04 sec. (5.45 ticks)
+Real time             =    0.03 sec. (5.45 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.04 sec. (5.46 ticks)
+Total (root+branch&cut) =    0.03 sec. (5.46 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1317,7 +1317,7 @@ Real time             =    0.03 sec. (5.68 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.04 sec. (5.69 ticks)
+Total (root+branch&cut) =    0.03 sec. (5.69 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
