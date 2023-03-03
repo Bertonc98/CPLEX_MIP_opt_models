@@ -16,21 +16,23 @@ int main(int argc, char **argv){
 	IloEnv env;
 	if(argc < 4){
 		cout << "Wrong number of parameters"<<endl;
-		cout << "./basic_model instance_number d k cardinality* dimensionality*"<<endl;
+		cout << "./basic_model instance_number d k cardinality* dimensionality*, scale_factor*"<<endl;
 		cout << "d is the amount of features that are at most NOT considered"<<endl;
 		cout << "k is the number of points that are at least considered as outliers" <<endl;
 		cout << "instance_number is the toy_instance considered" <<endl;
 		cout << "cardinality is optional. and it will lead to handle the generated instances" <<endl;
 		cout << "dimensionality is optional. and it will lead to handle the generated instances" <<endl;
+		cout << "scale_factor is optional. and it will lead to handle the generated instances" <<endl;
 		return 1;
 	}
 	
 	bool generated_instances = false;
-	int cardinality, dimensionality;
+	int cardinality, dimensionality, scale_factor;
 	
-	if(argc == 6){
+	if(argc == 7){
 		cardinality = stoi(argv[4]);
 		dimensionality = stoi(argv[5]);
+		scale_factor = stoi(argv[6]);
 		generated_instances = true;
 	}
 	
@@ -105,9 +107,8 @@ int main(int argc, char **argv){
 	IloNumArray wu(env, d);
 	
 	// SCALE FACTOR 10
-	int scale_factor = 2;
 	if(generated_instances){
-		compute_W_optimal_hyperplane(solution, wl, wu, scale_factor)
+		compute_W_optimal_hyperplane(solution, wl, wu, scale_factor);
 	}
 	else{
 		compute_W(solution, wl, wu, 2);
@@ -185,6 +186,7 @@ int main(int argc, char **argv){
 
 	//std::cout.setstate(std::ios::failbit);
 	// Resolution time
+	cplex.setParam(IloCplex::Param::TimeLimit, 500);
 	chrono::steady_clock sc;  
 	auto start = sc.now();     // start timer
 
@@ -193,6 +195,10 @@ int main(int argc, char **argv){
 	auto end = sc.now();       // end timer 
 	auto time_span = static_cast<chrono::duration<double>>(end - start).count();   // measure time span between start & end
 	
+	IloAlgorithm::Status st = cplex.getStatus();
+	cout <<"Status: " <<  st <<endl;
+	if(st != 2)
+		print_conflicts(env, model, cplex);
 	
 	//std::cout.clear();
 	int errors = 0;
@@ -254,16 +260,29 @@ int main(int argc, char **argv){
 	
 	dest_file.open(res_name, fstream::app);
 	if(generated_instances){
-		line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";" + to_string(cplex.getValue(obj)) + ";" + to_string(cplex.getValue(z)) + ";";
+		if(st!=2){
+			line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";None;None;";
+		}
+		else{
+			line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";" + to_string(cplex.getValue(obj)) + ";" + to_string(cplex.getValue(z)) + ";";
+		}
 	}
 	else{
 		line += filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(errors) + ";" + to_string(cplex.getValue(obj)) + ";" + to_string(cplex.getValue(z)) + ";";
 	}
 	for(int i=0; i<d; i++){
-		if(i != d-1)
-			line += to_string(cplex.getValue(a[i])) + "~";
-		else
-			line += to_string(cplex.getValue(a[i]));
+		if(st != 2){
+			if(i != d-1)
+				line += "None~";
+			else
+				line += "None";
+		}
+		else{
+			if(i != d-1)
+				line += to_string(cplex.getValue(a[i])) + "~";
+			else
+				line += to_string(cplex.getValue(a[i]));
+		}
 	}
 	
 	dest_file<<line<<endl;

@@ -18,7 +18,7 @@ def generate_points(k, d):
 
 def compute_y(x, alpha):
   '''
-  Compute y with the dot product w*x, with w with 6 1s and other values 0
+  Compute y with the dot product w*x, with w with 5 1s and other values 0
   Params:
     x: np.array, of cardinality k, and dimensionality d (it contains intercept)
     alpha: int, signal-tonoise ratio (SNR)
@@ -42,7 +42,7 @@ def corrupt_response(y, mu_r):
 
 def corrupt_row(row, mu_a, b):
   '''
-  Generate the corruption of a row, modifying ONLY the first 6 (intercept + 5 dimensions) values
+  Generate the corruption of a row, modifying ONLY the first 5 values
   '''
   if b == 1:
     rng = np.random.default_rng()

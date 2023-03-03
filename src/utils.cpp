@@ -31,11 +31,12 @@ void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_f
 void compute_W_optimal_hyperplane(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_factor){
 	//~ The optimal hyperplane is composed by the first 5 features set to 1, the others to 0
 	//~ No bound for the last coefficient, the intercept
+	std::cout << "Scale factor: " << scale_factor <<std::endl;
 	int len = solution.getSize();
 	//~ Computing bounds
 	for( int i = 1; i < len; i++ ){
-		wl[i-1] = (float_t)solution[i] + scale_factor;
-		wu[i-1] = (float_t)solution[i] - scale_factor;
+		wl[i-1] = ((float_t)solution[i] + 2) * scale_factor;
+		wu[i-1] = ((float_t)solution[i] - 2) * scale_factor;
 	}
 	
 }
@@ -54,9 +55,16 @@ float_t dot_product(IloNumArray x, IloNumArray solution){
 
 void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r){
 	int solution_size =  x.getSize();
+	float max = 0;
+	float error;
+	for( int i = 0; i < solution_size; i++ ){
+		error = abs( y[i] - dot_product(x[i], solution) );		
+		if(error > max)
+			max = error;
+	}
 	
 	for( int i = 0; i < solution_size; i++ ){
-		r[i] = abs( y[i] - dot_product(x[i], solution) );		
+		r[i] = max;
 	}
 }
 
