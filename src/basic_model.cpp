@@ -111,7 +111,7 @@ int main(int argc, char **argv){
 		compute_W_optimal_hyperplane(solution, wl, wu, scale_factor);
 	}
 	else{
-		compute_W(solution, wl, wu, 2);
+		compute_W(solution, wl, wu, 100);
 	}
 	
 	int k = x.getSize();

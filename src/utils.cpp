@@ -12,13 +12,13 @@ void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_f
 	for( int i = 1; i < len; i++ ){
 		//~ Positive case: lower the half, upper the double
 		if( solution[i] > 0 ){
-			wl[i-1] = (float_t)solution[i]/scale_factor;
 			wu[i-1] = (float_t)solution[i]*scale_factor;
+			wl[i-1] = (float_t)solution[i]-wu[i-1];
 		}
 		//~ Negative case: lower the double, upper the half
 		else if( solution[i] < 0 ){
 			wl[i-1] = (float_t)solution[i]*scale_factor;
-			wu[i-1] = (float_t)solution[i]/scale_factor;
+			wu[i-1] = (float_t)solution[i]-wl[i-1];
 		}
 		else{
 			wl[i-1] = -scale_factor;
