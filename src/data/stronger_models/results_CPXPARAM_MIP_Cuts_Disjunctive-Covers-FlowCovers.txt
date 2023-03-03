@@ -7,8 +7,923 @@ MIP Presolve eliminated 30 rows and 0 columns.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 3 bounds.
+Found incumbent of value 3416.145229 after 0.00 sec. (0.62 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.72 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3416.1452     -341.6145           110.00%
+*     0+    0                           70.5986     -341.6145           583.88%
+0     0       35.2235     6       70.5986       35.2235       90   50.11%
+Detecting symmetries...
+0     2       35.2235     6       70.5986       35.2235       90   50.11%                        0             0
+Elapsed time = 0.03 sec. (6.50 ticks, tree = 0.01 MB, solutions = 2)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (6.50 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (6.51 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3561.510944 after 0.00 sec. (0.63 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.84 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3561.5109     -356.1511           110.00%
+*     0+    0                           -2.0853     -356.1511              ---
+0     0      -37.4604     6       -2.0853      -37.4604      102     ---
+Detecting symmetries...
+0     2      -37.4604     6       -2.0853      -37.4604      102     ---                         0             0
+Elapsed time = 0.03 sec. (6.85 ticks, tree = 0.01 MB, solutions = 2)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (6.85 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.03 sec. (6.86 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 4398.593616 after 0.00 sec. (0.86 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.84 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         4398.5936     -439.8594           110.00%
+*     0+    0                           29.8310     -439.8594              ---
+0     0       25.3990     4       29.8310       25.3990      102   14.86%
+*     0+    0                           29.6652       25.3990            14.38%
+Detecting symmetries...
+0     2       25.3990     4       29.6652       25.3990      102   14.38%                        0             0
+Elapsed time = 0.03 sec. (6.33 ticks, tree = 0.01 MB, solutions = 3)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (6.30 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.04 ticks)
+------------
+Total (root+branch&cut) =    0.03 sec. (6.34 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3026.111984 after 0.00 sec. (0.84 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.97 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3026.1120     -302.6112           110.00%
+*     0+    0                          -16.9664     -302.6112              ---
+0     0      -21.3985     2      -16.9664      -21.3985      112   26.12%
+*     0+    0                          -17.7515      -21.3985            20.54%
+Detecting symmetries...
+0     2      -21.3985     2      -17.7515      -21.3985      112   20.54%                        0             0
+Elapsed time = 0.04 sec. (6.81 ticks, tree = 0.01 MB, solutions = 3)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (6.78 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.03 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (6.82 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3445.872688 after 0.00 sec. (0.62 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.80 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3445.8727     -344.5873           110.00%
+*     0+    0                           61.1938     -344.5873           663.11%
+0     0       45.3867     8       61.1938       45.3867       98   25.83%
+Detecting symmetries...
+0     2       45.3867     8       61.1938       45.3867       98   25.83%                        0             0
+Elapsed time = 0.04 sec. (7.12 ticks, tree = 0.01 MB, solutions = 2)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (7.12 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (7.14 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3859.481621 after 0.00 sec. (0.63 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.87 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3859.4816     -385.9482           110.00%
+*     0+    0                          -20.1319     -385.9482              ---
+0     0      -35.9390     9      -20.1319      -35.9390      105   78.52%
+Detecting symmetries...
+0     2      -35.9390     9      -20.1319      -35.9390      105   78.52%                        0             0
+Elapsed time = 0.04 sec. (7.43 ticks, tree = 0.01 MB, solutions = 2)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (7.43 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (7.44 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3456.737137 after 0.00 sec. (0.86 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.96 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3456.7371     -345.6737           110.00%
+*     0+    0                           47.1585     -345.6737           833.00%
+0     0       45.2780     5       47.1585       45.2780      112    3.99%
+*     0+    0                           46.6268       45.2780             2.89%
+*     0+    0                           45.6605       45.2780             0.84%
+*     0+    0                           45.3506       45.2780             0.16%
+Detecting symmetries...
+0     2       45.2780     2       45.3506       45.2780      112    0.16%                        0             0
+Elapsed time = 0.04 sec. (7.15 ticks, tree = 0.01 MB, solutions = 5)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (7.16 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (7.17 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3747.842503 after 0.00 sec. (0.82 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.84 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3747.8425     -374.7843           110.00%
+*     0+    0                          -30.7094     -374.7843              ---
+0     0      -32.5899     4      -30.7094      -32.5899       99    6.12%
+*     0+    0                          -31.7786      -32.5899             2.55%
+*     0+    0                          -31.9862      -32.5899             1.89%
+Detecting symmetries...
+0     2      -32.5899     4      -31.9862      -32.5899       99    1.89%                        0             0
+Elapsed time = 0.03 sec. (6.68 ticks, tree = 0.01 MB, solutions = 4)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (6.66 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.04 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (6.69 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 4064.802647 after 0.00 sec. (0.62 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.75 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         4064.8026     -406.4803           110.00%
+*     0+    0                           73.7169     -406.4803           651.41%
+0     0       57.5230     6       73.7169       57.5230       88   21.97%
+*     0+    0                           72.3065       57.5230            20.45%
+*     0+    0                           71.5554       57.5230            19.61%
+Detecting symmetries...
+0     2       57.5230     6       71.5554       57.5230       88   19.61%                        0             0
+Elapsed time = 0.04 sec. (6.64 ticks, tree = 0.01 MB, solutions = 4)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (6.62 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.03 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (6.65 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3914.878178 after 0.00 sec. (0.62 ticks)
 Probing time = 0.00 sec. (0.07 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.80 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3914.8782     -391.4878           110.00%
+*     0+    0                           -3.0814     -391.4878              ---
+0     0      -19.2753     6       -3.0814      -19.2753       94  525.54%
+*     0+    0                           -4.5407      -19.2753           324.50%
+Detecting symmetries...
+0     2      -19.2753     6       -4.5407      -19.2753       94  324.50%                        0             0
+Elapsed time = 0.04 sec. (6.38 ticks, tree = 0.01 MB, solutions = 3)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (6.36 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.03 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (6.40 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 5437.464523 after 0.00 sec. (0.87 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.83 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         5437.4645     -543.7465           110.00%
+*     0+    0                           44.6359     -543.7465              ---
+0     0       43.7964     4       44.6359       43.7964      101    1.88%
+0     0       43.7964     2       44.6359   Disjcuts: 2      106    1.88%
+Detecting symmetries...
+0     2       43.7964     2       44.6359       43.7964      106    1.88%                        0             0
+Elapsed time = 0.04 sec. (9.35 ticks, tree = 0.01 MB, solutions = 2)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  2
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (9.35 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (9.36 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 4494.141769 after 0.00 sec. (0.90 ticks)
+Probing time = 0.00 sec. (0.07 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.89 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         4494.1418     -449.4142           110.00%
+*     0+    0                          -35.8137     -449.4142              ---
+0     0      -36.6532     2      -35.8137      -36.6532      102    2.34%
+Detecting symmetries...
+0     1      -36.6532     2      -35.8137      -36.6532      108    2.34%                        0             0
+Elapsed time = 0.04 sec. (8.71 ticks, tree = 0.01 MB, solutions = 2)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (8.53 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.19 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (8.72 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 4258.001232 after 0.00 sec. (0.63 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.85 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         4258.0012     -425.8001           110.00%
+*     0+    0                           56.1876     -425.8001           857.82%
+0     0       36.5391    10       56.1876       36.5391      103   34.97%
+Detecting symmetries...
+0     2       36.5391     8       56.1876       36.5391      103   34.97%                        0             0
+Elapsed time = 0.04 sec. (8.11 ticks, tree = 0.01 MB, solutions = 2)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (8.09 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.03 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (8.12 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3742.236614 after 0.00 sec. (0.62 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.80 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3742.2366     -374.2237           110.00%
+*     0+    0                          -13.4995     -374.2237              ---
+0     0      -33.1480     9      -13.4995      -33.1480       92  145.55%
+Detecting symmetries...
+0     2      -33.1480     9      -13.4995      -33.1480       92  145.55%                        0             0
+Elapsed time = 0.04 sec. (6.97 ticks, tree = 0.01 MB, solutions = 2)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (6.97 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (6.98 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 4547.836590 after 0.00 sec. (0.84 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.86 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         4547.8366     -454.7837           110.00%
+*     0+    0                           37.3980     -454.7837              ---
+0     0       33.6408     6       37.3980       33.6408      101   10.05%
+Detecting symmetries...
+0     2       33.6408     6       37.3980       33.6408      101   10.05%                        0             0
+Elapsed time = 0.03 sec. (6.49 ticks, tree = 0.01 MB, solutions = 2)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (6.49 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.03 sec. (6.50 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 4058.624840 after 0.00 sec. (0.83 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.86 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         4058.6248     -405.8625           110.00%
+*     0+    0                          -38.8823     -405.8625           943.82%
+0     0      -42.6396     4      -38.8823      -42.6396       99    9.66%
+Detecting symmetries...
+0     2      -42.6396     4      -38.8823      -42.6396       99    9.66%                        0             0
+Elapsed time = 0.03 sec. (6.54 ticks, tree = 0.01 MB, solutions = 2)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (6.54 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.03 sec. (6.55 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 4374.439144 after 0.00 sec. (0.62 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.76 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         4374.4391     -437.4439           110.00%
+*     0+    0                           63.6896     -437.4439           786.84%
+0     0       42.8442     6       63.6896       42.8442       92   32.73%
+*     0+    0                           51.8824       42.8442            17.42%
+Detecting symmetries...
+0     2       42.8442     6       51.8824       42.8442       92   17.42%                        0             0
+Elapsed time = 0.03 sec. (5.97 ticks, tree = 0.01 MB, solutions = 3)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (5.95 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.03 ticks)
+------------
+Total (root+branch&cut) =    0.03 sec. (5.99 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3327.922153 after 0.00 sec. (0.60 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.71 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3327.9222     -332.7922           110.00%
+*     0+    0                            7.5964     -332.7922              ---
+0     0      -13.2491     8        7.5964      -13.2491       85  274.41%
+*     0+    0                           -4.6041      -13.2491           187.77%
+Detecting symmetries...
+0     2      -13.2491     8       -4.6041      -13.2491       85  187.77%                        0             0
+Elapsed time = 0.04 sec. (6.20 ticks, tree = 0.01 MB, solutions = 3)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (6.18 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.03 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (6.21 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3764.380360 after 0.00 sec. (0.87 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.07 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.77 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3764.3804     -376.4380           110.00%
+*     0+    0                           51.9989     -376.4380           823.93%
+0     0       48.9448     2       51.9989       48.9448       90    5.87%
+*     0+    0                           48.9869       48.9448             0.09%
+Detecting symmetries...
+0     2       48.9448     2       48.9869       48.9448       90    0.09%                        0             0
+Elapsed time = 0.03 sec. (6.21 ticks, tree = 0.01 MB, solutions = 3)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (6.19 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.03 ticks)
+------------
+Total (root+branch&cut) =    0.03 sec. (6.23 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3802.548122 after 0.00 sec. (0.83 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.81 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3802.5481     -380.2548           110.00%
+*     0+    0                          -24.4337     -380.2548              ---
+0     0      -27.4879     4      -24.4337      -27.4879       91   12.50%
+*     0+    0                          -27.2849      -27.4879             0.74%
+Detecting symmetries...
+0     2      -27.4879     4      -27.2849      -27.4879       91    0.74%                        0             0
+Elapsed time = 0.03 sec. (6.27 ticks, tree = 0.01 MB, solutions = 3)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (6.24 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.03 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (6.28 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3023.004913 after 0.00 sec. (0.62 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
 Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
 Detecting symmetries...
@@ -24,56 +939,25 @@ Root relaxation solution time = 0.00 sec. (0.88 ticks)
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0       43.0201     6                     43.0201       54
-0     0       44.1279     8                 Disjcuts: 5       70
-0     0       45.8298     8                     Cuts: 8       82
-0     0       46.9849     8                 Disjcuts: 7       98
-*     0+    0                           56.4455       46.9849            16.76%
-0     0       47.9121     8       56.4455   Disjcuts: 8      111   15.12%
-*     0+    0                           52.9813       47.9121             9.57%
+*     0+    0                         3023.0049     -302.3005           110.00%
+*     0+    0                           38.6876     -302.3005           881.39%
+0     0       28.0444     8       38.6876       28.0444      110   27.51%
+*     0+    0                           38.3555       28.0444            26.88%
 Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 25 rows and 24 columns.
-Reduced MIP has 85 rows, 55 columns, and 721 nonzeros.
-Reduced MIP has 15 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.19 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 85 rows, 55 columns, and 721 nonzeros.
-Reduced MIP has 15 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.25 ticks)
-Represolve time = 0.00 sec. (0.63 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.98 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           52.9813       47.9121             9.57%
-0     0       47.9121     8       52.9813       47.9121      185    9.57%
-0     0       47.9958     8       52.9813   Disjcuts: 1      190    9.41%
-Detecting symmetries...
-0     2       48.4789     6       52.9813       48.4931      190    8.47%                        0             0
-Elapsed time = 0.13 sec. (42.70 ticks, tree = 0.01 MB, solutions = 2)
+0     2       28.0444     8       38.3555       28.0444      110   26.88%                        0             0
+Elapsed time = 0.04 sec. (7.48 ticks, tree = 0.01 MB, solutions = 3)
 
 Cover cuts applied:  0
 Flow cuts applied:  0
-Disjunctive cuts applied:  7
+Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.13 sec. (42.70 ticks)
+Real time             =    0.04 sec. (7.45 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.03 ticks)
 ------------
-Total (root+branch&cut) =    0.13 sec. (42.73 ticks)
+Total (root+branch&cut) =    0.04 sec. (7.49 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -84,105 +968,74 @@ MIP Presolve eliminated 30 rows and 0 columns.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.31 ticks)
-Probing time = 0.00 sec. (0.05 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.95 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        2.5600     6                      2.5600       61
-0     0        2.8243     6                 Disjcuts: 4       74
-0     0        3.6607     7                     Cuts: 7       87
-*     0+    0                           11.3251        3.6607            67.68%
-0     0        4.6412     7       11.3251   Disjcuts: 4       99   59.02%
-0     0        4.7899     6       11.3251   Disjcuts: 6      110   57.71%
-0     0        4.8382     7       11.3251   Disjcuts: 4      115   57.28%
-Detecting symmetries...
-Detecting symmetries...
-0     2        4.8382     7       11.3251        4.8487      115   57.19%                        0             0
-Elapsed time = 0.11 sec. (38.23 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  7
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.11 sec. (38.23 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.11 sec. (38.24 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 3 bounds.
+Found incumbent of value 3066.685009 after 0.00 sec. (0.62 ticks)
 Probing time = 0.00 sec. (0.08 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
 Detecting symmetries...
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.96 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3066.6850     -306.6685           110.00%
+*     0+    0                          -23.0829     -306.6685              ---
+0     0      -33.7261    13      -23.0829      -33.7261      120   46.11%
+Detecting symmetries...
+0     2      -33.7261     8      -23.0829      -33.7261      120   46.11%                        0             0
+Elapsed time = 0.04 sec. (9.36 ticks, tree = 0.01 MB, solutions = 2)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (9.36 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (9.37 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3115.913773 after 0.00 sec. (0.88 ticks)
+Probing time = 0.00 sec. (0.07 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
 Probing time = 0.00 sec. (0.06 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.82 ticks)
+Root relaxation solution time = 0.00 sec. (0.84 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0       40.5363     2                     40.5363       49
-0     0       40.5363     2                 Disjcuts: 1       56
-*     0+    0                           40.6800       40.5363             0.35%
+*     0+    0                         3115.9138     -311.5914           110.00%
+*     0+    0                           28.6729     -311.5914              ---
+0     0       27.1153     4       28.6729       27.1153      103    5.43%
 Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 38 rows and 33 columns.
-Reduced MIP has 72 rows, 46 columns, and 687 nonzeros.
-Reduced MIP has 6 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.18 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 72 rows, 46 columns, and 687 nonzeros.
-Reduced MIP has 6 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.22 ticks)
-Represolve time = 0.00 sec. (0.51 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.71 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           40.6800       40.5363             0.35%
-0     0       40.5363     2       40.6800       40.5363      104    0.35%
-Detecting symmetries...
-0     0        cutoff             40.6800       40.6800      109    0.00%                        0             0
-Elapsed time = 0.08 sec. (16.62 ticks, tree = 0.01 MB, solutions = 1)
+0     2       27.1153     4       28.6729       27.1153      103    5.43%                        0             0
+Elapsed time = 0.03 sec. (6.50 ticks, tree = 0.01 MB, solutions = 2)
 
 Cover cuts applied:  0
 Flow cuts applied:  0
@@ -190,12 +1043,12 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.08 sec. (16.44 ticks)
+Real time             =    0.03 sec. (6.50 ticks)
 Sequential b&c:
-Real time             =    0.00 sec. (0.18 ticks)
+Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.08 sec. (16.63 ticks)
-Solution status 101.
+Total (root+branch&cut) =    0.03 sec. (6.51 ticks)
+CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
@@ -205,27 +1058,30 @@ MIP Presolve eliminated 30 rows and 0 columns.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 6 bounds.
-Probing time = 0.00 sec. (0.22 ticks)
-Cover probing fixed 0 vars, tightened 1 bounds.
+Found incumbent of value 3219.743156 after 0.00 sec. (0.86 ticks)
+Probing time = 0.00 sec. (0.07 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
 Detecting symmetries...
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.10 ticks)
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.75 ticks)
+Root relaxation solution time = 0.00 sec. (1.12 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        6.4123     1                      6.4123       41
-*     0+    0                            6.4123        6.4123             0.00%
-0     0        cutoff              6.4123        6.4123       41    0.00%                        0             0
-Elapsed time = 0.01 sec. (2.60 ticks, tree = 0.01 MB, solutions = 2)
+*     0+    0                         3219.7432     -321.9743           110.00%
+*     0+    0                          -36.7602     -321.9743           775.88%
+0     0      -38.3178     9      -36.7602      -38.3178      128    4.24%
+*     0+    0                          -37.4968      -38.3178             2.19%
+Detecting symmetries...
+0     2      -38.3178     7      -37.4968      -38.3178      128    2.19%                        0             0
+Elapsed time = 0.04 sec. (8.16 ticks, tree = 0.01 MB, solutions = 3)
 
 Cover cuts applied:  0
 Flow cuts applied:  0
@@ -233,12 +1089,12 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.01 sec. (2.60 ticks)
+Real time             =    0.04 sec. (8.16 ticks)
 Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
+Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.01 sec. (2.60 ticks)
-Solution status 101.
+Total (root+branch&cut) =    0.04 sec. (8.17 ticks)
+CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
@@ -248,7 +1104,7 @@ MIP Presolve eliminated 30 rows and 0 columns.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
+Found incumbent of value 3687.288952 after 0.00 sec. (0.62 ticks)
 Probing time = 0.00 sec. (0.06 ticks)
 Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
@@ -260,56 +1116,30 @@ Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.89 ticks)
+Root relaxation solution time = 0.00 sec. (0.83 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0       50.7422     6                     50.7422       57
-0     0       50.8148     9                 Disjcuts: 5       70
-0     0       51.4906     9                     Cuts: 7       81
-*     0+    0                           54.5576       51.4906             5.62%
+*     0+    0                         3687.2890     -368.7289           110.00%
+*     0+    0                           43.2506     -368.7289           952.54%
+0     0       31.9673    10       43.2506       31.9673      102   26.09%
+*     0+    0                           35.4872       31.9673             9.92%
 Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 23 rows and 23 columns.
-Reduced MIP has 87 rows, 56 columns, and 726 nonzeros.
-Reduced MIP has 16 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.18 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 87 rows, 56 columns, and 726 nonzeros.
-Reduced MIP has 16 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Represolve time = 0.00 sec. (0.58 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.99 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           54.5576       51.4906             5.62%
-0     0       51.4906     9       54.5576       51.4906      149    5.62%
-Detecting symmetries...
-0     2       51.6681     6       54.5576       51.7066      149    5.23%                        0             0
-Elapsed time = 0.08 sec. (25.23 ticks, tree = 0.01 MB, solutions = 1)
+0     2       31.9673     6       35.4872       31.9673      102    9.92%                        0             0
+Elapsed time = 0.04 sec. (7.54 ticks, tree = 0.01 MB, solutions = 3)
 
 Cover cuts applied:  0
 Flow cuts applied:  0
-Disjunctive cuts applied:  7
+Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.08 sec. (25.23 ticks)
+Real time             =    0.04 sec. (7.51 ticks)
 Sequential b&c:
-Real time             =    0.00 sec. (0.05 ticks)
+Real time             =    0.00 sec. (0.03 ticks)
 ------------
-Total (root+branch&cut) =    0.08 sec. (25.28 ticks)
+Total (root+branch&cut) =    0.04 sec. (7.55 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -320,175 +1150,7 @@ MIP Presolve eliminated 30 rows and 0 columns.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.06 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.31 ticks)
-Probing time = 0.00 sec. (0.05 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.90 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        2.3864     6                      2.3864       56
-0     0        2.4308     8                 Disjcuts: 3       67
-0     0        3.4576     8                     Cuts: 8       80
-*     0+    0                           13.6225        3.4576            74.62%
-0     0        4.0904     8       13.6225   Disjcuts: 7       89   69.97%
-0     0        4.9314     8       13.6225   Disjcuts: 8      103   63.80%
-0     0        5.9235     8       13.6225   Disjcuts: 8      117   56.52%
-Detecting symmetries...
-0     0        5.9772     8       13.6225   Disjcuts: 2      122   56.12%
-Detecting symmetries...
-0     2        6.0678     6       13.6225        6.1559      122   54.81%                        0             0
-Elapsed time = 0.13 sec. (46.73 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  9
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.13 sec. (46.73 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.05 ticks)
-------------
-Total (root+branch&cut) =    0.14 sec. (46.77 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.06 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.94 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          698.6785      -80.3724           111.50%
-0     0       49.1770     2      698.6785       49.1770       57   92.96%
-0     0       49.1770     2      698.6785   Disjcuts: 1       60   92.96%
-Detecting symmetries...
-0     2       49.1770     2      698.6785       49.1770       62   92.96%                        0             0
-Elapsed time = 0.05 sec. (10.47 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  1
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.05 sec. (10.47 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (10.48 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-MIP Presolve modified 1 coefficients.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 4 bounds.
-Probing time = 0.00 sec. (0.10 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-MIP Presolve modified 1 coefficients.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.07 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.82 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        7.4387     2                      7.4387       48
-*     0+    0                            9.7351        7.4387            23.59%
-0     0        7.4387     2        9.7351   Disjcuts: 1       52   23.59%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 26 rows and 21 columns.
-Reduced MIP has 84 rows, 58 columns, and 722 nonzeros.
-Reduced MIP has 18 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.21 ticks)
-Probing fixed 0 vars, tightened 1 bounds.
-Probing time = 0.00 sec. (0.05 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 84 rows, 58 columns, and 722 nonzeros.
-Reduced MIP has 18 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Represolve time = 0.00 sec. (0.57 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.75 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                            9.7351        7.4387            23.59%
-0     0        7.4387     2        9.7351        7.4387      103   23.59%
-Detecting symmetries...
-0     1        7.5968     2        9.7351        8.6605      103   11.04%                        0             0
-Elapsed time = 0.09 sec. (16.38 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  1
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.09 sec. (16.38 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.09 sec. (16.39 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 1 bounds.
+Found incumbent of value 3761.343384 after 0.00 sec. (0.61 ticks)
 Probing time = 0.00 sec. (0.06 ticks)
 Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
@@ -505,133 +1167,13 @@ Root relaxation solution time = 0.00 sec. (0.97 ticks)
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0       65.7942     6                     65.7942       62
-0     0       65.8043     8                     Cuts: 6       73
-0     0       65.8467     8                 Disjcuts: 8       81
-*     0+    0                           67.9165       65.8467             3.05%
+*     0+    0                         3761.3434     -376.1343           110.00%
+*     0+    0                          -32.7168     -376.1343              ---
+0     0      -44.0001     9      -32.7168      -44.0001      119   34.49%
+*     0+    0                          -40.1187      -44.0001             9.67%
 Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 29 columns.
-Reduced MIP has 80 rows, 50 columns, and 706 nonzeros.
-Reduced MIP has 10 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.19 ticks)
-Probing fixed 0 vars, tightened 1 bounds.
-Probing time = 0.00 sec. (0.05 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 80 rows, 50 columns, and 706 nonzeros.
-Reduced MIP has 10 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.25 ticks)
-Represolve time = 0.00 sec. (0.57 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Clique table members: 1.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.90 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           67.9165       65.8467             3.05%
-0     0       65.8467     8       67.9165       65.8467      152    3.05%
-0     0       65.8757     7       67.9165   Disjcuts: 6      159    3.00%
-Detecting symmetries...
-0     2       65.8804     6       67.9165       65.8928      159    2.98%                        0             0
-Elapsed time = 0.10 sec. (26.96 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  4
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.10 sec. (26.96 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.10 sec. (26.99 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.31 ticks)
-Probing time = 0.00 sec. (0.05 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.90 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       11.8594     6                     11.8594       54
-0     0       13.0587     8                     Cuts: 7       64
-0     0       14.3400     9                    Cuts: 10       74
-0     0       14.9580     9                 Disjcuts: 6       85
-0     0       15.4990     9                     Cuts: 9       96
-0     0       15.8090     9                 Disjcuts: 8      106
-Detecting symmetries...
-0     0       15.8132     9                   Covers: 1      107
-Detecting symmetries...
-0     2       15.8132     9                     15.8238      107                                 0             0
-Elapsed time = 0.15 sec. (55.12 ticks, tree = 0.01 MB, solutions = 0)
-
-Cover cuts applied:  1
-Flow cuts applied:  0
-Disjunctive cuts applied:  9
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.15 sec. (55.11 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.15 sec. (55.13 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 6 bounds.
-Probing time = 0.00 sec. (0.08 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.31 ticks)
-Probing time = 0.00 sec. (0.07 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.88 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       60.5073     2                     60.5073       52
-*     0+    0                           60.5115       60.5073             0.01%
+0     2      -44.0001     9      -40.1187      -44.0001      119    9.67%                        0             0
+Elapsed time = 0.04 sec. (6.74 ticks, tree = 0.01 MB, solutions = 3)
 
 Cover cuts applied:  0
 Flow cuts applied:  0
@@ -639,11 +1181,242 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.03 sec. (8.74 ticks)
+Real time             =    0.04 sec. (6.72 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.03 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (6.75 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3711.446571 after 0.00 sec. (0.82 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.14 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3711.4466     -371.1447           110.00%
+*     0+    0                           33.2793     -371.1447              ---
+0     0       31.7258     2       33.2793       31.7258      133    4.67%
+*     0+    0                           33.1336       31.7258             4.25%
+*     0+    0                           32.5097       31.7258             2.41%
+*     0+    0                           32.1479       31.7258             1.31%
+Detecting symmetries...
+0     2       31.7258     2       32.1479       31.7258      133    1.31%                        0             0
+Elapsed time = 0.04 sec. (7.01 ticks, tree = 0.01 MB, solutions = 5)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (7.02 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (7.03 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Found incumbent of value 3421.578598 after 0.00 sec. (0.89 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.90 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3421.5786     -342.1579           110.00%
+0     0      -33.8071     9     3421.5786      -33.8071      110  100.99%
+*     0+    0                          -30.4260      -33.8071            11.11%
+0     0      -33.8071     2      -30.4260   Disjcuts: 8      121   11.11%
+0     0      -33.8071     2      -30.4260   Disjcuts: 1      123   11.11%
+0     0      -33.8071     2      -30.4260   Disjcuts: 1      125   11.11%
+*     0+    0                          -32.3726      -33.8071             4.43%
+Detecting symmetries...
+0     2      -33.8071     2      -32.3726      -33.8071      125    4.43%                        0             0
+Elapsed time = 0.06 sec. (19.79 ticks, tree = 0.01 MB, solutions = 3)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  10
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.06 sec. (19.77 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.04 ticks)
+------------
+Total (root+branch&cut) =    0.06 sec. (19.81 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 4639.180756 after 0.00 sec. (0.62 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.75 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         4639.1808     -463.9181           110.00%
+*     0+    0                           65.2464     -463.9181           811.02%
+0     0       58.0744     8       65.2464       58.0744       92   10.99%
+Detecting symmetries...
+0     2       58.0744     8       65.2464       58.0744       92   10.99%                        0             0
+Elapsed time = 0.04 sec. (6.20 ticks, tree = 0.01 MB, solutions = 2)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (6.21 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (6.22 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3694.731331 after 0.00 sec. (0.62 ticks)
+Probing time = 0.00 sec. (0.07 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.83 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3694.7313     -369.4731           110.00%
+*     0+    0                            0.7963     -369.4731              ---
+0     0       -6.3757    11        0.7963       -6.3757      101  900.69%
+Detecting symmetries...
+0     2       -6.3757     8        0.7963       -6.3757      101  900.69%                        0             0
+Elapsed time = 0.04 sec. (8.43 ticks, tree = 0.01 MB, solutions = 2)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (8.41 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.03 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (8.44 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 4002.507305 after 0.00 sec. (0.84 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.82 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         4002.5073     -400.2507           110.00%
+*     0+    0                           65.9595     -400.2507           706.81%
+0     0       64.4411     2       65.9595       64.4411       95    2.30%
+*     0+    0                           65.3965       64.4411             1.46%
+*     0+    0                           64.4435       64.4411             0.00%
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (5.09 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.00 ticks)
 ------------
-Total (root+branch&cut) =    0.03 sec. (8.74 ticks)
+Total (root+branch&cut) =    0.03 sec. (5.09 ticks)
 Solution status 102.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -654,76 +1427,7 @@ MIP Presolve eliminated 30 rows and 0 columns.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.08 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.07 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.84 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       16.6537     2                     16.6537       50
-*     0+    0                           16.6575       16.6537             0.02%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 2 times.
-MIP Presolve eliminated 44 rows and 36 columns.
-Aggregator did 1 substitutions.
-Reduced MIP has 65 rows, 42 columns, and 670 nonzeros.
-Reduced MIP has 2 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 65 rows, 42 columns, and 670 nonzeros.
-Reduced MIP has 2 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
-Represolve time = 0.00 sec. (0.45 ticks)
-Probing time = 0.00 sec. (0.01 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.51 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           16.6575       16.6537             0.02%
-0     0       16.6537     1       16.6575       16.6537      109    0.02%
-0     0        cutoff             16.6575                    113    0.00%                        0             0
-Elapsed time = 0.06 sec. (13.44 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  0
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (13.44 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (13.44 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
+Found incumbent of value 4093.910694 after 0.00 sec. (0.80 ticks)
 Probing time = 0.00 sec. (0.06 ticks)
 Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
@@ -731,383 +1435,6 @@ Detecting symmetries...
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.31 ticks)
-Probing time = 0.00 sec. (0.05 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.02 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       44.2061     6                     44.2061       61
-0     0       45.0903     9                 Disjcuts: 6       76
-0     0       46.6821     9                    Cuts: 10       86
-0     0       47.9220     9                 Disjcuts: 9       98
-0     0       48.8809     9                     Cuts: 9      110
-0     0       49.2887     9                 Disjcuts: 9      121
-Detecting symmetries...
-0     0       49.2994     9                 Disjcuts: 1      123
-0     0       49.3214     9                     Cuts: 2      127
-0     0       49.3436     9                 Disjcuts: 1      129
-Detecting symmetries...
-0     2       49.3436     9                     49.4248      129                                 0             0
-Elapsed time = 0.16 sec. (64.88 ticks, tree = 0.01 MB, solutions = 0)
-
-Cover cuts applied:  1
-Flow cuts applied:  0
-Disjunctive cuts applied:  10
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.16 sec. (64.88 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.16 sec. (64.90 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 3 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.31 ticks)
-Probing time = 0.00 sec. (0.05 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.91 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       10.2945     6                     10.2945       57
-*     0+    0                           16.4316       10.2945            37.35%
-0     0       10.4942     8       16.4316   Disjcuts: 5       70   36.13%
-0     0       10.8973     8       16.4316   Disjcuts: 8       81   33.68%
-0     0       11.3475     8       16.4316   Disjcuts: 7       93   30.94%
-0     0       11.8168     8       16.4316   Disjcuts: 8      109   28.08%
-0     0       12.1681     7       16.4316   Disjcuts: 9      120   25.95%
-Detecting symmetries...
-0     0       12.2060     8       16.4316   Disjcuts: 1      124   25.72%
-Detecting symmetries...
-0     2       12.2340     7       16.4316       12.2571      124   25.41%                        0             0
-Elapsed time = 0.12 sec. (45.53 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  10
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.12 sec. (45.53 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.12 sec. (45.55 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 3 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.06 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.89 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       46.5469     2                     46.5469       53
-*     0+    0                           47.4290       46.5469             1.86%
-0     0       46.5469     2       47.4290   Disjcuts: 1       57    1.86%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 36 rows and 32 columns.
-Reduced MIP has 74 rows, 47 columns, and 692 nonzeros.
-Reduced MIP has 7 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.19 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.05 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 74 rows, 47 columns, and 692 nonzeros.
-Reduced MIP has 7 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
-Represolve time = 0.00 sec. (0.53 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.76 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           47.4290       46.5469             1.86%
-0     0       46.5469     2       47.4290       46.5469      111    1.86%
-0     0        cutoff             47.4290                    119    0.00%                        0             0
-Elapsed time = 0.06 sec. (16.75 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  1
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (16.75 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (16.75 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.06 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.84 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          754.6210      -94.3684           112.51%
-0     0       10.7585     2      754.6210       10.7585       50   98.57%
-0     0       10.7585     2      754.6210   Disjcuts: 1       53   98.57%
-*     0+    0                           15.2716       10.7585            29.55%
-0     0       10.7585     2       15.2716   Disjcuts: 1       56   29.55%
-Detecting symmetries...
-0     2       10.7585     2       15.2716       10.7585       56   29.55%                        0             0
-Elapsed time = 0.05 sec. (10.99 ticks, tree = 0.01 MB, solutions = 2)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  2
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.05 sec. (10.99 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.05 sec. (11.00 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 3 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.31 ticks)
-Probing time = 0.00 sec. (0.05 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.89 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       58.8715     6                     58.8715       57
-0     0       59.6608     7                 Disjcuts: 4       70
-0     0       60.8556     5                 Disjcuts: 5       80
-*     0+    0                           61.8856       60.8556             1.66%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 2 times.
-MIP Presolve eliminated 35 rows and 31 columns.
-Aggregator did 1 substitutions.
-Reduced MIP has 74 rows, 47 columns, and 696 nonzeros.
-Reduced MIP has 7 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.25 ticks)
-Probing fixed 0 vars, tightened 10 bounds.
-Probing time = 0.00 sec. (0.33 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-MIP Presolve modified 5 coefficients.
-Reduced MIP has 74 rows, 47 columns, and 696 nonzeros.
-Reduced MIP has 7 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Represolve time = 0.00 sec. (0.89 ticks)
-Probing fixed 0 vars, tightened 8 bounds.
-Probing time = 0.00 sec. (0.20 ticks)
-Clique table members: 1.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.73 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           61.8856       60.8556             1.66%
-0     0       60.8572     4       61.8856       60.8572      138    1.66%
-Detecting symmetries...
-0     2       61.8249     1       61.8856       61.8249      138    0.10%                        0             0
-Elapsed time = 0.08 sec. (18.53 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  2
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.08 sec. (18.53 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.03 ticks)
-------------
-Total (root+branch&cut) =    0.08 sec. (18.56 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 1 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.31 ticks)
-Probing time = 0.00 sec. (0.05 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.07 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       10.2675     6                     10.2675       65
-0     0       10.4236     8                 Disjcuts: 6       76
-0     0       11.3358     8                    Cuts: 10       89
-*     0+    0                           21.7788       11.3358            47.95%
-0     0       11.7491     9       21.7788       Cuts: 8       98   46.05%
-0     0       12.4545     8       21.7788  Disjcuts: 12      109   42.81%
-0     0       12.6721     9       21.7788   Disjcuts: 4      116   41.81%
-Detecting symmetries...
-0     0       12.6763     9       21.7788   Disjcuts: 1      117   41.80%
-0     0       12.7925     8       21.7788   Disjcuts: 1      126   41.26%
-0     0       12.7935     9       21.7788   Flowcuts: 1      127   41.26%
-0     0       12.7958     8       21.7788   Flowcuts: 1      128   41.25%
-Detecting symmetries...
-0     2       12.8426     7       21.7788       12.8581      128   40.96%                        0             0
-Elapsed time = 0.14 sec. (57.41 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  2
-Disjunctive cuts applied:  7
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.14 sec. (57.41 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.14 sec. (57.42 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 4 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.06 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.85 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          850.5680      -92.8051           110.91%
-0     0       58.3813     2      850.5680       58.3813       51   93.14%
-0     0       58.3813     2      850.5680   Disjcuts: 2       55   93.14%
-*     0+    0                           58.4112       58.3813             0.05%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 32 rows and 30 columns.
-Reduced MIP has 78 rows, 49 columns, and 702 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.18 ticks)
-Probing time = 0.00 sec. (0.05 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 78 rows, 49 columns, and 702 nonzeros.
-Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
-Represolve time = 0.00 sec. (0.53 ticks)
 Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
@@ -1117,102 +1444,26 @@ Root relaxation solution time = 0.00 sec. (0.84 ticks)
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                           58.4112       58.3813             0.05%
-0     0       58.3813     2       58.4112       58.3813      113    0.05%
+*     0+    0                         4093.9107     -409.3911           110.00%
+*     0+    0                          -16.8328     -409.3911              ---
+0     0      -18.3511     8      -16.8328      -18.3511       99    9.02%
+*     0+    0                          -17.0665      -18.3511             7.53%
+*     0+    0                          -17.4979      -18.3511             4.88%
 Detecting symmetries...
-0     0        cutoff             58.4112       58.3813      120    0.05%                        0             0
-Elapsed time = 0.07 sec. (16.35 ticks, tree = 0.01 MB, solutions = 2)
+0     2      -18.3511     8      -17.4979      -18.3511       99    4.88%                        0             0
+Elapsed time = 0.04 sec. (7.75 ticks, tree = 0.01 MB, solutions = 4)
 
 Cover cuts applied:  0
 Flow cuts applied:  0
-Disjunctive cuts applied:  2
+Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.07 sec. (16.35 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.07 sec. (16.35 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-MIP Presolve modified 1 coefficients.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing fixed 0 vars, tightened 10 bounds.
-Probing time = 0.00 sec. (0.16 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-MIP Presolve modified 1 coefficients.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing fixed 0 vars, tightened 4 bounds.
-Probing time = 0.00 sec. (0.09 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.78 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          682.2187      -97.6235           114.31%
-0     0       15.5882     2      682.2187       15.5882       47   97.72%
-0     0       15.5882     2      682.2187   Disjcuts: 1       49   97.72%
-*     0+    0                           15.7874       15.5882             1.26%
-0     0       15.5882     2       15.7874   Disjcuts: 1       52    1.26%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 34 rows and 31 columns.
-MIP Presolve modified 1 coefficients.
-Reduced MIP has 76 rows, 48 columns, and 697 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.19 ticks)
-Probing fixed 0 vars, tightened 4 bounds.
-Probing time = 0.00 sec. (0.10 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-MIP Presolve modified 1 coefficients.
-Reduced MIP has 76 rows, 48 columns, and 697 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
-Represolve time = 0.00 sec. (0.59 ticks)
-Probing fixed 0 vars, tightened 1 bounds.
-Probing time = 0.00 sec. (0.06 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.69 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           15.7874       15.5882             1.26%
-0     0       15.5882     2       15.7874       15.5882       96    1.26%
-Detecting symmetries...
-0     2       15.5934     3       15.7874       15.5963      100    1.21%                        0             0
-Elapsed time = 0.07 sec. (18.17 ticks, tree = 0.01 MB, solutions = 2)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  2
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.07 sec. (18.17 ticks)
+Real time             =    0.04 sec. (7.75 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.07 sec. (18.18 ticks)
+Total (root+branch&cut) =    0.04 sec. (7.76 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1223,8 +1474,8 @@ MIP Presolve eliminated 30 rows and 0 columns.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
+Found incumbent of value 2782.214642 after 0.00 sec. (0.63 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
 Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
 Detecting symmetries...
@@ -1235,15 +1486,17 @@ Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.94 ticks)
+Root relaxation solution time = 0.00 sec. (0.84 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0       31.6179     6                     31.6179       61
-0     0       31.6325     7                 Disjcuts: 4       73
-*     0     0      integral     0       34.4860       34.4860       95    0.00%                        0             0
-Elapsed time = 0.03 sec. (10.60 ticks, tree = 0.01 MB, solutions = 1)
+*     0+    0                         2782.2146     -278.2215           110.00%
+*     0+    0                           51.8003     -278.2215           637.10%
+0     0       40.6477     6       51.8003       40.6477      100   21.53%
+Detecting symmetries...
+0     2       40.6477     6       51.8003       40.6477      100   21.53%                        0             0
+Elapsed time = 0.03 sec. (5.85 ticks, tree = 0.01 MB, solutions = 2)
 
 Cover cuts applied:  0
 Flow cuts applied:  0
@@ -1251,160 +1504,11 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.03 sec. (10.61 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.03 sec. (10.61 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.31 ticks)
-Probing time = 0.00 sec. (0.05 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.95 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        5.4416     6                      5.4416       61
-0     0        5.6106     8                 Disjcuts: 5       82
-0     0        7.0573     7                 Disjcuts: 4       97
-*     0+    0                            9.1778        7.0573            23.11%
-0     0        7.6794     7        9.1778   Disjcuts: 6      105   16.33%
-0     0        7.8630     6        9.1778   Disjcuts: 3      112   14.33%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 24 rows and 22 columns.
-Reduced MIP has 86 rows, 57 columns, and 725 nonzeros.
-Reduced MIP has 17 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.19 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.04 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 86 rows, 57 columns, and 725 nonzeros.
-Reduced MIP has 17 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Represolve time = 0.00 sec. (0.63 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.97 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                            9.1778        7.8630            14.33%
-0     0        7.8630     6        9.1778        7.8630      181   14.33%
-0     0        8.0541     7        9.1778   Disjcuts: 2      191   12.24%
-Detecting symmetries...
-0     0        cutoff              9.1778        8.0541      191   12.24%                        0             0
-Elapsed time = 0.13 sec. (38.58 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  5
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.13 sec. (38.58 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.13 sec. (38.58 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 3 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.06 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.74 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       28.4414     2                     28.4414       42
-*     0+    0                           28.5540       28.4414             0.39%
-0     0       28.4414     2       28.5540   Disjcuts: 1       46    0.39%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 35 rows and 31 columns.
-Reduced MIP has 75 rows, 48 columns, and 694 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.19 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.06 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 75 rows, 48 columns, and 694 nonzeros.
-Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Represolve time = 0.00 sec. (0.54 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.66 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           28.5540       28.4414             0.39%
-0     0       28.4414     2       28.5540       28.4414       92    0.39%
-*     0+    0                           28.5434       28.4414             0.36%
-Detecting symmetries...
-0     2       28.4414     2       28.5434       28.4414       92    0.36%                        0             0
-Elapsed time = 0.06 sec. (13.78 ticks, tree = 0.01 MB, solutions = 2)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  1
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (13.78 ticks)
+Real time             =    0.03 sec. (5.85 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (13.79 ticks)
+Total (root+branch&cut) =    0.03 sec. (5.86 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1415,78 +1519,8 @@ MIP Presolve eliminated 30 rows and 0 columns.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 4 bounds.
-Probing time = 0.00 sec. (0.08 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.06 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.87 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        3.9556     2                      3.9556       52
-*     0+    0                            4.0841        3.9556             3.15%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 2 times.
-MIP Presolve eliminated 42 rows and 35 columns.
-Aggregator did 1 substitutions.
-Reduced MIP has 67 rows, 43 columns, and 674 nonzeros.
-Reduced MIP has 3 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 67 rows, 43 columns, and 674 nonzeros.
-Reduced MIP has 3 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.15 ticks)
-Represolve time = 0.00 sec. (0.47 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Clique table members: 1.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.46 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                            4.0841        3.9556             3.15%
-0     0        3.9556     1        4.0841        3.9556      109    3.15%
-*     0     0      integral     0        4.0841        3.9556      116    3.15%
-0     0        4.0841     0        4.0841        4.0841      116    0.00%                        0             0
-Elapsed time = 0.07 sec. (14.95 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  0
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.07 sec. (14.90 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.06 ticks)
-------------
-Total (root+branch&cut) =    0.07 sec. (14.96 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.06 ticks)
+Found incumbent of value 3349.690247 after 0.00 sec. (0.63 ticks)
+Probing time = 0.00 sec. (0.07 ticks)
 Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
 Detecting symmetries...
@@ -1494,36 +1528,6 @@ Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.31 ticks)
 Probing time = 0.00 sec. (0.05 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.96 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       34.8025     6                     34.8025       60
-*     0+    0                           38.6713       34.8025            10.00%
-0     0       34.8319     8       38.6713   Disjcuts: 5       73    9.93%
-0     0       35.6475     8       38.6713   Disjcuts: 3       84    7.82%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 28 rows and 27 columns.
-Reduced MIP has 82 rows, 52 columns, and 712 nonzeros.
-Reduced MIP has 12 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.19 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.05 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 82 rows, 52 columns, and 712 nonzeros.
-Reduced MIP has 12 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Represolve time = 0.00 sec. (0.58 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
@@ -1532,55 +1536,12 @@ Root relaxation solution time = 0.00 sec. (0.82 ticks)
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                           38.6713       35.6475             7.82%
-0     0       35.6475     8       38.6713       35.6475      145    7.82%
+*     0+    0                         3349.6902     -334.9690           110.00%
+*     0+    0                          -20.8683     -334.9690              ---
+0     0      -32.0209     8      -20.8683      -32.0209       98   53.44%
 Detecting symmetries...
-0     0        cutoff             38.6713       35.6475      145    7.82%                        0             0
-Elapsed time = 0.10 sec. (23.02 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  6
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.10 sec. (23.03 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.10 sec. (23.03 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.06 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.31 ticks)
-Probing time = 0.00 sec. (0.05 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (1.00 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.4196     6                      0.4196       63
-0     0        0.6887     7                 Disjcuts: 4       80
-0     0        1.6781     6                 Disjcuts: 4      106
-*     0     0      integral     0        7.4242        7.4242      134    0.00%                        0             0
-Elapsed time = 0.06 sec. (17.64 ticks, tree = 0.01 MB, solutions = 1)
+0     2      -32.0209     8      -20.8683      -32.0209       98   53.44%                        0             0
+Elapsed time = 0.03 sec. (6.29 ticks, tree = 0.01 MB, solutions = 2)
 
 Cover cuts applied:  0
 Flow cuts applied:  0
@@ -1588,129 +1549,105 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (17.64 ticks)
+Real time             =    0.03 sec. (6.29 ticks)
 Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
+Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (17.64 ticks)
-Solution status 101.
+Total (root+branch&cut) =    0.03 sec. (6.30 ticks)
+CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Tried aggregator 1 time.
 MIP Presolve eliminated 30 rows and 0 columns.
-MIP Presolve modified 3 coefficients.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.29 ticks)
-Probing fixed 0 vars, tightened 10 bounds.
-Probing time = 0.00 sec. (0.22 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-MIP Presolve modified 2 coefficients.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing fixed 0 vars, tightened 3 bounds.
-Probing time = 0.00 sec. (0.12 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.88 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0     0      integral     0       36.9182       36.9182       54    0.00%                        0             0
-Elapsed time = 0.01 sec. (2.62 ticks, tree = 0.00 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  0
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.01 sec. (2.63 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.01 sec. (2.63 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-MIP Presolve modified 1 coefficients.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.27 ticks)
-Probing fixed 0 vars, tightened 8 bounds.
-Probing time = 0.00 sec. (0.19 ticks)
+Found incumbent of value 3811.002159 after 0.00 sec. (0.86 ticks)
+Probing time = 0.00 sec. (0.07 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
 Detecting symmetries...
-MIP Presolve modified 1 coefficients.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing fixed 0 vars, tightened 4 bounds.
-Probing time = 0.00 sec. (0.11 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.78 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        4.5323     2                      4.5323       44
-*     0+    0                            4.5514        4.5323             0.42%
-0     0        4.5323     2        4.5514   Disjcuts: 1       48    0.42%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 36 rows and 32 columns.
-Reduced MIP has 74 rows, 47 columns, and 692 nonzeros.
-Reduced MIP has 7 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.19 ticks)
-Probing fixed 0 vars, tightened 4 bounds.
-Probing time = 0.00 sec. (0.11 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 74 rows, 47 columns, and 692 nonzeros.
-Reduced MIP has 7 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
-Represolve time = 0.00 sec. (0.59 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
+Presolve time = 0.00 sec. (0.31 ticks)
 Probing time = 0.00 sec. (0.06 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.74 ticks)
+Root relaxation solution time = 0.00 sec. (0.81 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                            4.5514        4.5323             0.42%
-0     0        4.5323     2        4.5514        4.5323      101    0.42%
+*     0+    0                         3811.0022     -381.1002           110.00%
+*     0+    0                           40.8428     -381.1002              ---
+0     0       30.3598     2       40.8428       30.3598       97   25.67%
+*     0+    0                           32.0719       30.3598             5.34%
+*     0+    0                           30.4857       30.3598             0.41%
 Detecting symmetries...
-0     2        4.5323     2        4.5514        4.5323      103    0.42%                        0             0
-Elapsed time = 0.07 sec. (16.93 ticks, tree = 0.01 MB, solutions = 1)
+0     2       30.3598     2       30.4857       30.3598       97    0.41%                        0             0
+Elapsed time = 0.03 sec. (6.02 ticks, tree = 0.01 MB, solutions = 4)
 
 Cover cuts applied:  0
 Flow cuts applied:  0
-Disjunctive cuts applied:  1
+Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.07 sec. (16.93 ticks)
+Real time             =    0.03 sec. (6.00 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.03 ticks)
+------------
+Total (root+branch&cut) =    0.03 sec. (6.03 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 30 rows and 0 columns.
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Found incumbent of value 3356.648254 after 0.00 sec. (0.85 ticks)
+Probing time = 0.00 sec. (0.07 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.09 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                         3356.6483     -335.6648           110.00%
+*     0+    0                          -21.7467     -335.6648              ---
+0     0      -32.2296     2      -21.7467      -32.2296      127   48.21%
+*     0+    0                          -30.5175      -32.2296             5.61%
+*     0+    0                          -32.0295      -32.2296             0.62%
+Detecting symmetries...
+0     2      -32.2296     2      -32.0295      -32.2296      127    0.62%                        0             0
+Elapsed time = 0.04 sec. (6.72 ticks, tree = 0.01 MB, solutions = 4)
+
+Cover cuts applied:  0
+Flow cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (6.72 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.08 sec. (16.94 ticks)
+Total (root+branch&cut) =    0.04 sec. (6.73 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1721,8 +1658,8 @@ MIP Presolve eliminated 30 rows and 0 columns.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 1 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
+Found incumbent of value 4588.349533 after 0.00 sec. (0.62 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
 Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
 Detecting symmetries...
@@ -1733,93 +1670,17 @@ Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.90 ticks)
+Root relaxation solution time = 0.00 sec. (0.87 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0       63.6500     6                     63.6500       54
-0     0       64.7895     8                 Disjcuts: 5       67
-0     0       67.2057     7                 Disjcuts: 7       77
-*     0+    0                           74.1734       67.2057             9.39%
+*     0+    0                         4588.3495     -458.8350           110.00%
+*     0+    0                           49.9629     -458.8350              ---
+0     0       35.1558     9       49.9629       35.1558      105   29.64%
 Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 26 rows and 24 columns.
-Reduced MIP has 84 rows, 55 columns, and 719 nonzeros.
-Reduced MIP has 15 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.19 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.04 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 84 rows, 55 columns, and 719 nonzeros.
-Reduced MIP has 15 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.25 ticks)
-Represolve time = 0.00 sec. (0.57 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.74 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           74.1734       67.2057             9.39%
-0     0       67.2057     7       74.1734       67.2057      134    9.39%
-Detecting symmetries...
-0     0        cutoff             74.1734       67.2057      134    9.39%                        0             0
-Elapsed time = 0.08 sec. (23.72 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  6
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.08 sec. (23.72 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.08 sec. (23.72 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Found incumbent of value 994.898600 after 0.00 sec. (0.55 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.31 ticks)
-Probing time = 0.00 sec. (0.05 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.89 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          994.8986     -114.3356           111.49%
-*     0+    0                           37.2949     -114.3356           406.57%
-0     0        6.3884     6       37.2949        6.3884       54   82.87%
-*     0+    0                           16.1240        6.3884            60.38%
-Detecting symmetries...
-0     2        6.3884     6       16.1240        6.3884       54   60.38%                        0             0
-Elapsed time = 0.04 sec. (6.70 ticks, tree = 0.01 MB, solutions = 3)
+0     2       35.1558     9       49.9629       35.1558      105   29.64%                        0             0
+Elapsed time = 0.04 sec. (6.51 ticks, tree = 0.01 MB, solutions = 2)
 
 Cover cuts applied:  0
 Flow cuts applied:  0
@@ -1827,11 +1688,11 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.04 sec. (6.70 ticks)
+Real time             =    0.04 sec. (6.51 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.04 sec. (6.71 ticks)
+Total (root+branch&cut) =    0.04 sec. (6.52 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1842,389 +1703,8 @@ MIP Presolve eliminated 30 rows and 0 columns.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.26 ticks)
-Found incumbent of value 514.414321 after 0.00 sec. (0.68 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.12 ticks)
-Cover probing fixed 0 vars, tightened 1 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.08 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.79 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          514.4143     -106.7235           120.75%
-*     0+    0                           83.5731     -106.7235           227.70%
-0     0       69.0899     2       83.5731       69.0899       47   17.33%
-0     0       69.0899     2       83.5731     Covers: 1       48   17.33%
-*     0+    0                           69.6843       69.0899             0.85%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 27 rows and 27 columns.
-Reduced MIP has 83 rows, 52 columns, and 714 nonzeros.
-Reduced MIP has 12 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.19 ticks)
-Probing time = 0.00 sec. (0.07 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 83 rows, 52 columns, and 714 nonzeros.
-Reduced MIP has 12 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.25 ticks)
-Represolve time = 0.00 sec. (0.59 ticks)
-Probing time = 0.00 sec. (0.07 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.71 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           69.6843       69.0899             0.85%
-0     0       69.0899     2       69.6843       69.0899       96    0.85%
-Detecting symmetries...
-0     1       69.0899     2       69.6843       69.0899      100    0.85%                        0             0
-Elapsed time = 0.06 sec. (14.12 ticks, tree = 0.01 MB, solutions = 3)
-
-Cover cuts applied:  1
-Flow cuts applied:  0
-Disjunctive cuts applied:  0
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (13.88 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.25 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (14.13 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.13 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.07 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.75 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        7.6579     2                      7.6579       41
-*     0+    0                            8.0780        7.6579             5.20%
-0     0        7.6579     2        8.0780   Disjcuts: 1       44    5.20%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 37 rows and 32 columns.
-Reduced MIP has 73 rows, 47 columns, and 689 nonzeros.
-Reduced MIP has 7 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.18 ticks)
-Probing fixed 0 vars, tightened 1 bounds.
-Probing time = 0.00 sec. (0.08 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 73 rows, 47 columns, and 689 nonzeros.
-Reduced MIP has 7 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.22 ticks)
-Represolve time = 0.00 sec. (0.55 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.66 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                            8.0780        7.6579             5.20%
-0     0        7.6579     2        8.0780        7.6579       87    5.20%
-Detecting symmetries...
-0     1        7.7002     2        8.0780        7.9356       89    1.76%                        0             0
-Elapsed time = 0.08 sec. (18.05 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  1
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.08 sec. (18.05 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.08 sec. (18.06 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.06 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.31 ticks)
+Found incumbent of value 4450.754070 after 0.00 sec. (0.63 ticks)
 Probing time = 0.00 sec. (0.05 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.94 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       46.2013     6                     46.2013       60
-0     0       46.2394     7                 Disjcuts: 5       71
-0     0       46.4378     7                 Disjcuts: 3       83
-0     0       46.9301     7                     Cuts: 6       92
-0     0       47.1410     7                 Disjcuts: 5      101
-*     0+    0                           49.3481       47.1410             4.47%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 27 rows and 25 columns.
-Reduced MIP has 83 rows, 54 columns, and 716 nonzeros.
-Reduced MIP has 14 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.19 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.04 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 83 rows, 54 columns, and 716 nonzeros.
-Reduced MIP has 14 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.25 ticks)
-Represolve time = 0.00 sec. (0.60 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.96 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           49.3481       47.1410             4.47%
-0     0       47.1410     7       49.3481       47.1410      177    4.47%
-Detecting symmetries...
-0     0        cutoff             49.3481       47.1410      177    4.47%                        0             0
-Elapsed time = 0.11 sec. (34.92 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  6
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.11 sec. (34.93 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.11 sec. (34.93 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.06 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.31 ticks)
-Probing time = 0.00 sec. (0.05 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.91 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.8948     6                      0.8948       57
-0     0        1.6642     8                 Disjcuts: 5       71
-0     0        7.3682     6                 Disjcuts: 2       89
-*     0+    0                           11.6907        7.3682            36.97%
-0     0        cutoff             11.6907                    108    0.00%                        0             0
-Elapsed time = 0.05 sec. (18.44 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  4
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.05 sec. (18.45 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.05 sec. (18.45 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 5 bounds.
-Probing time = 0.00 sec. (0.08 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.06 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.75 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       41.8656     2                     41.8656       44
-*     0+    0                           41.9255       41.8656             0.14%
-0     0        cutoff             41.9255       41.8656       51    0.14%                        0             0
-Elapsed time = 0.05 sec. (8.79 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  0
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.05 sec. (8.80 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.05 sec. (8.80 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-MIP Presolve modified 2 coefficients.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 5 bounds.
-Probing time = 0.00 sec. (0.12 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-MIP Presolve modified 2 coefficients.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.08 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.78 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       10.6421     2                     10.6421       45
-*     0+    0                           10.9052       10.6421             2.41%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 2 times.
-MIP Presolve eliminated 44 rows and 36 columns.
-MIP Presolve modified 1 coefficients.
-Aggregator did 1 substitutions.
-Reduced MIP has 65 rows, 42 columns, and 670 nonzeros.
-Reduced MIP has 2 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing fixed 0 vars, tightened 4 bounds.
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-MIP Presolve modified 2 coefficients.
-Reduced MIP has 65 rows, 42 columns, and 670 nonzeros.
-Reduced MIP has 2 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
-Represolve time = 0.00 sec. (0.48 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.45 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           10.9052       10.6421             2.41%
-0     0       10.6421     1       10.9052       10.6421       99    2.41%
-*     0     0      integral     0       10.9052       10.9052      101    0.00%                        0             0
-Elapsed time = 0.08 sec. (14.91 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  0
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.08 sec. (14.88 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.04 ticks)
-------------
-Total (root+branch&cut) =    0.08 sec. (14.92 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 3 bounds.
-Probing time = 0.00 sec. (0.08 ticks)
 Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
 Detecting symmetries...
@@ -2235,60 +1715,30 @@ Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.95 ticks)
+Root relaxation solution time = 0.00 sec. (0.85 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0       48.4886     6                     48.4886       59
-0     0       48.5199     7                 Disjcuts: 3       68
-0     0       49.2132     5                 Disjcuts: 4       75
-*     0+    0                           52.9256       49.2132             7.01%
+*     0+    0                         4450.7541     -445.0754           110.00%
+*     0+    0                          -37.6763     -445.0754              ---
+0     0      -52.4834    11      -37.6763      -52.4834      108   39.30%
 Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 28 rows and 26 columns.
-Reduced MIP has 82 rows, 53 columns, and 713 nonzeros.
-Reduced MIP has 13 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.19 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.04 ticks)
-Cover probing fixed 0 vars, tightened 2 bounds.
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 82 rows, 53 columns, and 713 nonzeros.
-Reduced MIP has 13 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Represolve time = 0.00 sec. (0.56 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.80 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           52.9256       49.2132             7.01%
-0     0       49.2132     5       52.9256       49.2132      141    7.01%
-0     0       49.2328     7       52.9256   Disjcuts: 1      145    6.98%
-Detecting symmetries...
-0     0        cutoff             52.9256       49.2328      145    6.98%                        0             0
-Elapsed time = 0.08 sec. (21.87 ticks, tree = 0.01 MB, solutions = 1)
+0     2      -52.4834    10      -37.6763      -52.4834      108   39.30%                        0             0
+Elapsed time = 0.04 sec. (9.18 ticks, tree = 0.01 MB, solutions = 2)
 
 Cover cuts applied:  0
 Flow cuts applied:  0
-Disjunctive cuts applied:  5
+Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.08 sec. (21.88 ticks)
+Real time             =    0.04 sec. (9.16 ticks)
 Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
+Real time             =    0.00 sec. (0.03 ticks)
 ------------
-Total (root+branch&cut) =    0.08 sec. (21.88 ticks)
-Solution status 101.
+Total (root+branch&cut) =    0.04 sec. (9.19 ticks)
+CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
@@ -2298,7 +1748,7 @@ MIP Presolve eliminated 30 rows and 0 columns.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 1 bounds.
+Found incumbent of value 3824.835205 after 0.00 sec. (0.85 ticks)
 Probing time = 0.00 sec. (0.06 ticks)
 Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
@@ -2310,35 +1760,33 @@ Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.98 ticks)
+Root relaxation solution time = 0.00 sec. (0.78 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0       -6.1266     6                     -6.1266       62
-0     0       -5.6413     9                     Cuts: 7       76
-0     0       -3.9051     8                 Disjcuts: 8       90
-0     0       -2.5420     8                 Disjcuts: 7      102
-0     0       -1.9545     8                     Cuts: 9      115
-0     0       -1.2142     8                 Disjcuts: 7      126
+*     0+    0                         3824.8352     -382.4835           110.00%
+0     0       42.7909     4     3824.8352       42.7909       97   98.88%
+*     0+    0                           45.2604       42.7909             5.46%
+0     0       42.7909     2       45.2604   Disjcuts: 4      102    5.46%
+0     0       42.7909     2       45.2604   Disjcuts: 1      104    5.46%
+*     0+    0                           44.4764       42.7909             3.79%
+0     0       42.7909     2       44.4764   Disjcuts: 1      106    3.79%
 Detecting symmetries...
-0     0       -1.1654     8                   Covers: 2      133
-*     0+    0                           10.0443       -1.1654           111.60%
-Detecting symmetries...
-0     2       -1.1466     7       10.0443       -0.9279      133  109.24%                        0             0
-Elapsed time = 0.14 sec. (56.92 ticks, tree = 0.01 MB, solutions = 1)
+0     2       42.7909     2       44.4764       42.7909      106    3.79%                        0             0
+Elapsed time = 0.06 sec. (15.20 ticks, tree = 0.01 MB, solutions = 3)
 
-Cover cuts applied:  2
+Cover cuts applied:  0
 Flow cuts applied:  0
 Disjunctive cuts applied:  6
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.14 sec. (56.93 ticks)
+Real time             =    0.06 sec. (15.21 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.15 sec. (56.94 ticks)
+Total (root+branch&cut) =    0.06 sec. (15.22 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2348,131 +1796,30 @@ Tried aggregator 1 time.
 MIP Presolve eliminated 30 rows and 0 columns.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing fixed 0 vars, tightened 3 bounds.
-Probing time = 0.00 sec. (0.07 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing time = 0.00 sec. (0.06 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (0.81 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       47.4773     2                     47.4773       45
-*     0+    0                           47.5785       47.4773             0.21%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIP Presolve eliminated 38 rows and 33 columns.
-Reduced MIP has 72 rows, 46 columns, and 687 nonzeros.
-Reduced MIP has 6 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.18 ticks)
-Probing fixed 0 vars, tightened 1 bounds.
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 72 rows, 46 columns, and 687 nonzeros.
-Reduced MIP has 6 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.22 ticks)
-Represolve time = 0.00 sec. (0.50 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.65 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           47.5785       47.4773             0.21%
-0     0       47.4773     2       47.5785       47.4773       93    0.21%
-0     0       47.4773     2       47.5785   Disjcuts: 1       97    0.21%
-0     0        cutoff             47.5785                    101    0.00%                        0             0
-Elapsed time = 0.07 sec. (16.72 ticks, tree = 0.01 MB, solutions = 1)
-
-Cover cuts applied:  0
-Flow cuts applied:  0
-Disjunctive cuts applied:  1
-Cone linearizations applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.07 sec. (16.72 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
-------------
-Total (root+branch&cut) =    0.07 sec. (16.72 ticks)
-Solution status 101.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIP Presolve eliminated 30 rows and 0 columns.
-MIP Presolve modified 2 coefficients.
-Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0.00 sec. (0.27 ticks)
-Probing fixed 0 vars, tightened 15 bounds.
-Probing time = 0.00 sec. (0.21 ticks)
-Cover probing fixed 0 vars, tightened 1 bounds.
+Found incumbent of value 4523.659515 after 0.00 sec. (0.82 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
 Detecting symmetries...
-MIP Presolve modified 2 coefficients.
 Reduced MIP has 110 rows, 79 columns, and 795 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.30 ticks)
-Probing fixed 0 vars, tightened 4 bounds.
-Probing time = 0.00 sec. (0.11 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.78 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        7.0905     2                      7.0905       43
-0     0        7.0905     2                 Disjcuts: 1       46
-*     0+    0                            7.1260        7.0905             0.50%
-Detecting symmetries...
-
-Repeating presolve.
-Tried aggregator 2 times.
-MIP Presolve eliminated 44 rows and 36 columns.
-Aggregator did 1 substitutions.
-Reduced MIP has 65 rows, 42 columns, and 670 nonzeros.
-Reduced MIP has 2 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing fixed 0 vars, tightened 6 bounds.
+Presolve time = 0.00 sec. (0.31 ticks)
 Probing time = 0.00 sec. (0.06 ticks)
-Tried aggregator 1 time.
-MIP Presolve modified 2 coefficients.
-Reduced MIP has 65 rows, 42 columns, and 670 nonzeros.
-Reduced MIP has 2 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
-Represolve time = 0.00 sec. (0.50 ticks)
-Probing fixed 0 vars, tightened 2 bounds.
-Probing time = 0.00 sec. (0.03 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (0.38 ticks)
+Root relaxation solution time = 0.00 sec. (0.91 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                            7.1260        7.0905             0.50%
-0     0        7.0905     1        7.1260        7.0905       89    0.50%
-0     0        cutoff              7.1260                     92    0.00%                        0             0
-Elapsed time = 0.06 sec. (14.91 ticks, tree = 0.01 MB, solutions = 1)
+*     0+    0                         4523.6595     -452.3660           110.00%
+*     0+    0                          -52.2183     -452.3660           766.30%
+0     0      -54.6705     7      -52.2183      -54.6705      107    4.70%
+Detecting symmetries...
+0     2      -54.6705     7      -52.2183      -54.6705      107    4.70%                        0             0
+Elapsed time = 0.04 sec. (7.10 ticks, tree = 0.01 MB, solutions = 2)
 
 Cover cuts applied:  0
 Flow cuts applied:  0
@@ -2480,9 +1827,9 @@ Disjunctive cuts applied:  0
 Cone linearizations applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (14.91 ticks)
+Real time             =    0.04 sec. (7.10 ticks)
 Sequential b&c:
-Real time             =    0.00 sec. (0.00 ticks)
+Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (14.91 ticks)
-Solution status 101.
+Total (root+branch&cut) =    0.04 sec. (7.11 ticks)
+CPLEX Error  1006: Error during callback.

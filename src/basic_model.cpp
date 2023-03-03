@@ -93,9 +93,10 @@ int main(int argc, char **argv){
 		cout << "instance_number is the toy_instance considered" <<endl;
 		return 1;
 	}
-	cout << "Working with: " << sol << endl;
 	
-
+	cout << "+++Working with: " << sol << endl;
+	cout << "+++Instance: " << filename << endl;
+	
 	IloNumArray solution(env, solution_n);
 	
 
@@ -118,6 +119,14 @@ int main(int argc, char **argv){
 	IloNumArray r(env, k);
 	
 	compute_R(solution, x, y, r);
+	/*
+	float sum = 0;
+	for(int i =0; i<k; i++){
+		sum+=r[i];
+	}
+	cout << "##############" << sum/(float)k<<endl<<endl;
+	return 0;
+	* */
 	
 	//~ END OF PREPROCESSING
 	

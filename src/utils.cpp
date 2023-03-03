@@ -57,7 +57,8 @@ void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray 
 	int solution_size =  x.getSize();
 	float max = 0;
 	float error;
-	for( int i = 0; i < solution_size; i++ ){
+	
+	for( int i = 0; i < solution_size; i++ ){		
 		error = abs( y[i] - dot_product(x[i], solution) );		
 		if(error > max)
 			max = error;

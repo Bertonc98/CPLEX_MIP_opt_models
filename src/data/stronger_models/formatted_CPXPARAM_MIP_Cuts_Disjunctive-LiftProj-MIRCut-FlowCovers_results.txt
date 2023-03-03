@@ -1,781 +1,472 @@
 0
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 43.0201 6 43.0201 54
-0 0 44.1279 8 Cuts:7 70
-0 0 46.6047 8 Cuts:14 86
-0 0 47.4257 8 Cuts:13 104
-0 0 48.5153 7 Cuts:14 113
-0+ 0 nan nan 52.9813 48.5153 nan 8.43%
-0+ 0 nan nan 52.9813 48.5153 nan 8.43%
-0 0 48.5153 7 52.9813 48.5153 188 8.43%
-0 0 48.9425 8 52.9813 LiftProj:4 196 7.62%
-0 0 49.0164 8 52.9813 LiftProj:5 198 7.48%
-0 0 49.5726 8 52.9813 LiftProj:4 209 6.43%
-0 0 49.7463 8 52.9813 LiftProj:5 221 6.11%
-0 0 49.8334 8 52.9813 LiftProj:8 226 5.94%
-0 0 49.9897 8 52.9813 LiftProj:6 239 5.65%
-0 0 50.1112 8 52.9813 LiftProj:11 247 5.42%
-0 0 50.1316 8 52.9813 LiftProj:7 256 5.38%
-0 0 50.3339 8 52.9813 LiftProj:9 270 5.00%
-0 0 50.7377 8 52.9813 LiftProj:10 278 4.23%
-0+ 0 nan nan 52.9813 50.7377 nan 4.23%
-0 0 50.8508 8 52.9813 LiftProj:7 283 4.02%
-0 0 50.9548 8 52.9813 LiftProj:5 289 3.82%
-0 0 50.9722 8 52.9813 LiftProj:5 293 3.79%
-0 0 50.9735 8 52.9813 LiftProj:2 298 3.79%
-0 0 51.0656 8 52.9813 LiftProj:1 303 3.62%
-0 0 51.4687 8 52.9813 LiftProj:3 313 2.85%
-0 0 51.5312 8 52.9813 LiftProj:2 315 2.74%
-0 0 51.8239 6 52.9813 LiftProj:3 329 2.18%
-0 0 51.9745 7 52.9813 LiftProj:2 335 1.90%
-0 0 51.9943 7 52.9813 LiftProj:2 338 1.86%
-0 0 52.0624 7 52.9813 LiftProj:2 342 1.73%
-0 0 52.0969 7 52.9813 LiftProj:2 345 1.67%
-0 0 52.0987 7 52.9813 LiftProj:1 346 1.67%
-0 0 cutoff 52.9813 52.0987 346 1.67% 0
+0+ 0 nan nan 3416.1452 -341.6145 nan 110.00%
+0+ 0 nan nan 70.5986 -341.6145 nan 583.88%
+0 0 35.2235 6 70.5986 35.2235 90 50.11%
+0 2 35.2235 6 70.5986 35.2235 90 50.11%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 15
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 1
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 2.5600 6 2.5600 61
-0 0 2.8243 6 Disjcuts:4 74
-0 0 3.6607 7 Cuts:8 87
-0+ 0 nan nan 11.3251 3.6607 nan 67.68%
-0 0 4.6431 7 11.3251 Cuts:6 100 59.00%
-0 0 4.8295 7 11.3251 Cuts:10 112 57.36%
-0 0 5.1254 6 11.3251 Cuts:10 134 54.74%
-0 0 5.1337 7 11.3251 Cuts:4 136 54.67%
-0 0 5.1558 7 11.3251 Cuts:4 139 54.47%
-0 0 5.1997 7 11.3251 Cuts:2 142 54.09%
-0 0 5.2353 7 11.3251 Cuts:2 147 53.77%
-0 0 5.3846 7 11.3251 LiftProj:2 156 52.45%
-0 0 5.4915 7 11.3251 Cuts:3 163 51.51%
-0 0 5.5126 7 11.3251 Cuts:2 166 51.32%
-0 0 5.5128 7 11.3251 LiftProj:1 167 51.32%
-0 0 5.5160 7 11.3251 LiftProj:2 168 51.29%
-0 0 5.6204 7 11.3251 LiftProj:2 172 50.37%
-0 0 5.6259 7 11.3251 LiftProj:2 174 50.32%
-0 0 5.6985 7 11.3251 LiftProj:3 178 49.68%
-0 0 5.7972 6 11.3251 LiftProj:3 185 48.81%
-0 0 5.9347 7 11.3251 Cuts:4 191 47.60%
-0 0 5.9504 7 11.3251 Cuts:5 194 47.46%
-0 0 6.3369 7 11.3251 LiftProj:4 203 44.05%
-0 0 6.6498 7 11.3251 LiftProj:5 215 41.28%
-0 0 6.7474 7 11.3251 Cuts:4 223 40.42%
-0 0 6.7517 7 11.3251 LiftProj:3 225 40.38%
-0 0 6.9188 6 11.3251 LiftProj:3 232 38.91%
-0 0 7.1282 7 11.3251 LiftProj:5 240 37.06%
-0 0 7.1345 7 11.3251 LiftProj:3 243 37.00%
-0 0 7.4150 7 11.3251 LiftProj:2 252 34.53%
-0 0 8.2621 6 11.3251 LiftProj:3 266 27.05%
-0+ 0 nan nan 11.3251 8.2621 nan 27.05%
-0 0 8.2676 6 11.3251 LiftProj:3 269 27.00%
-0 0 8.5571 6 11.3251 LiftProj:3 276 24.44%
-0 0 8.8865 6 11.3251 LiftProj:3 282 21.53%
-0 0 9.3340 5 11.3251 LiftProj:4 290 17.58%
-0+ 0 nan nan 11.3251 9.3340 nan 17.58%
-0 0 9.3340 5 11.3251 9.3340 359 17.58%
-0 0 9.7241 5 11.3251 LiftProj:5 366 14.14%
-0 0 9.9409 5 11.3251 LiftProj:2 371 12.22%
-0 0 10.7882 3 11.3251 LiftProj:2 393 4.74%
-0 0 cutoff 11.3251 410 0.00% 0 0
+0+ 0 nan nan 3561.5109 -356.1511 nan 110.00%
+0+ 0 nan nan -2.0853 -356.1511 nan ---
+0 0 -37.4604 6 -2.0853 -37.4604 102 ---
+0 2 -37.4604 6 -2.0853 -37.4604 102 ---
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 9
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 2
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 40.5363 2 40.5363 49
-0 0 40.5363 2 Disjcuts:1 56
-0+ 0 nan nan 40.6800 40.5363 nan 0.35%
-0+ 0 nan nan 40.6800 40.5363 nan 0.35%
-0 0 40.5363 2 40.6800 40.5363 104 0.35%
-0 0 cutoff 40.6800 40.6800 109 0.00% 0
+0+ 0 nan nan 4398.5936 -439.8594 nan 110.00%
+0+ 0 nan nan 29.8310 -439.8594 nan ---
+0 0 25.3990 4 29.8310 25.3990 102 14.86%
+0+ 0 nan nan 29.6652 25.3990 nan 14.38%
+0 2 25.3990 4 29.6652 25.3990 102 14.38%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 3
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 6.4123 1 6.4123 41
-0+ 0 nan nan 6.4123 6.4123 nan 0.00%
-0 0 cutoff 6.4123 6.4123 41 0.00% 0
+0+ 0 nan nan 3026.1120 -302.6112 nan 110.00%
+0+ 0 nan nan -16.9664 -302.6112 nan ---
+0 0 -21.3985 2 -16.9664 -21.3985 112 26.12%
+0 0 -21.3985 2 -16.9664 LiftProj:1 114 26.12%
+0+ 0 nan nan -20.7585 -21.3985 nan 3.08%
+0 2 -21.3985 2 -20.7585 -21.3985 114 3.08%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 1
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 4
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 50.7422 6 50.7422 57
-0 0 50.8148 9 Cuts:11 70
-0 0 51.4906 9 Cuts:10 81
-0+ 0 nan nan 54.5576 51.4906 nan 5.62%
-0+ 0 nan nan 54.5576 51.4906 nan 5.62%
-0 0 51.4906 9 54.5576 51.4906 149 5.62%
-0 0 51.5227 9 54.5576 LiftProj:3 154 5.56%
-0 0 51.6373 9 54.5576 LiftProj:5 160 5.35%
-0 0 51.6519 9 54.5576 LiftProj:3 164 5.33%
-0 0 51.8293 9 54.5576 LiftProj:5 173 5.00%
-0 0 51.8675 9 54.5576 LiftProj:4 177 4.93%
-0 0 51.9033 9 54.5576 LiftProj:4 180 4.87%
-0 0 51.9398 9 54.5576 LiftProj:3 185 4.80%
-0 0 51.9916 9 54.5576 Cuts:4 189 4.70%
-0 0 52.2381 9 54.5576 Cuts:9 198 4.25%
-0 0 52.4726 9 54.5576 LiftProj:5 202 3.82%
-0 0 52.6180 9 54.5576 LiftProj:4 208 3.56%
-0 0 52.7808 9 54.5576 Cuts:6 214 3.26%
-0 0 53.0412 9 54.5576 LiftProj:5 218 2.78%
-0 0 53.2432 9 54.5576 LiftProj:6 225 2.41%
-0 0 53.4291 8 54.5576 LiftProj:3 237 2.07%
-0 0 53.5132 6 54.5576 LiftProj:3 246 1.91%
-0 0 53.8031 6 54.5576 LiftProj:6 259 1.38%
-0+ 0 nan nan 54.5576 53.8031 nan 1.38%
-0 0 54.0278 5 54.5576 LiftProj:1 265 0.97%
-0 0 54.2192 3 54.5576 LiftProj:2 272 0.62%
-0 0 54.3544 3 54.5576 LiftProj:3 275 0.37%
-0 0 cutoff 54.5576 287 0.00% 0 0
+0+ 0 nan nan 3445.8727 -344.5873 nan 110.00%
+0+ 0 nan nan 61.1938 -344.5873 nan 663.11%
+0 0 45.3867 8 61.1938 45.3867 98 25.83%
+0 2 45.3867 8 61.1938 45.3867 98 25.83%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 5
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 5
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 2.3864 6 2.3864 56
-0 0 2.4308 8 Cuts:4 67
-0 0 3.4576 8 Cuts:8 80
-0+ 0 nan nan 13.6225 3.4576 nan 74.62%
-0 0 4.3265 8 13.6225 Cuts:11 98 68.24%
-0 0 5.2480 8 13.6225 Cuts:11 118 61.48%
-0 0 5.7671 8 13.6225 Cuts:9 135 57.66%
-0 0 5.8957 7 13.6225 Cuts:5 145 56.72%
-0 0 6.0028 7 13.6225 LiftProj:4 152 55.93%
-0 0 6.0488 7 13.6225 LiftProj:4 157 55.60%
-0 0 6.1420 6 13.6225 LiftProj:4 162 54.91%
-0 0 6.3829 7 13.6225 LiftProj:5 177 53.14%
-0 0 6.5617 7 13.6225 Cuts:3 188 51.83%
-0 0 6.6530 7 13.6225 Cuts:8 196 51.16%
-0 0 6.7881 7 13.6225 LiftProj:3 208 50.17%
-0 0 7.0150 7 13.6225 LiftProj:4 218 48.50%
-0 0 7.7991 7 13.6225 LiftProj:3 232 42.75%
-0 0 8.0105 7 13.6225 Cuts:8 238 41.20%
-0 0 8.2884 6 13.6225 LiftProj:5 249 39.16%
-0 0 8.5187 7 13.6225 LiftProj:3 255 37.47%
-0 0 8.5454 7 13.6225 LiftProj:6 259 37.27%
-0 0 8.6625 7 13.6225 LiftProj:4 265 36.41%
-0 0 8.8514 7 13.6225 LiftProj:5 274 35.02%
-0 0 8.8923 7 13.6225 LiftProj:5 279 34.72%
-0 0 8.9440 7 13.6225 LiftProj:4 285 34.34%
-0 0 9.0487 7 13.6225 LiftProj:4 300 33.58%
-0 0 9.1161 7 13.6225 LiftProj:4 310 33.08%
-0 0 9.2319 7 13.6225 LiftProj:3 317 32.23%
-0 0 9.3953 7 13.6225 Cuts:4 322 31.03%
-0 0 9.7350 6 13.6225 LiftProj:6 332 28.54%
-0 0 9.8426 7 13.6225 Cuts:4 337 27.75%
-0 0 10.0557 7 13.6225 LiftProj:4 343 26.18%
-0 0 11.1584 6 13.6225 LiftProj:4 361 18.09%
-0 0 11.3353 6 13.6225 LiftProj:6 367 16.79%
-0+ 0 nan nan 13.6225 11.3353 nan 16.79%
-0 0 11.3353 6 13.6225 11.3353 433 16.79%
-0 0 11.8727 4 13.6225 Cuts:5 453 12.84%
-0 0 12.2458 4 13.6225 LiftProj:2 465 10.11%
-0+ 0 nan nan 13.6225 12.2458 nan 10.11%
-0 0 12.7443 4 13.6225 LiftProj:1 473 6.45%
-0 0 cutoff 13.6225 493 0.00% 0 0
+0+ 0 nan nan 3859.4816 -385.9482 nan 110.00%
+0+ 0 nan nan -20.1319 -385.9482 nan ---
+0 0 -35.9390 9 -20.1319 -35.9390 105 78.52%
+0 0 -35.9390 6 -20.1319 LiftProj:2 108 78.52%
+0 2 -35.9390 6 -20.1319 -35.9390 108 78.52%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 8
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 2
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 6
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0+ 0 nan nan 698.6785 -80.3724 nan 111.50%
-0 0 49.1770 2 698.6785 49.1770 57 92.96%
-0 0 49.1770 2 698.6785 Disjcuts:1 60 92.96%
-0 2 49.1770 2 698.6785 49.1770 62 92.96%
+0+ 0 nan nan 3456.7371 -345.6737 nan 110.00%
+0+ 0 nan nan 47.1585 -345.6737 nan 833.00%
+0 0 45.2780 5 47.1585 45.2780 112 3.99%
+0+ 0 nan nan 46.6268 45.2780 nan 2.89%
+0 0 45.2780 2 46.6268 LiftProj:2 115 2.89%
+0+ 0 nan nan 46.0893 45.2780 nan 1.76%
+0+ 0 nan nan 45.3506 45.2780 nan 0.16%
+0 2 45.2780 2 45.3506 45.2780 115 0.16%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 1
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 2
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 7
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 7.4387 2 7.4387 48
-0+ 0 nan nan 9.7351 7.4387 nan 23.59%
-0 0 7.4387 2 9.7351 Disjcuts:1 52 23.59%
-0+ 0 nan nan 9.7351 7.4387 nan 23.59%
-0 0 7.4387 2 9.7351 7.4387 103 23.59%
-0 1 7.5968 2 9.7351 8.6605 103 11.04%
+0+ 0 nan nan 3747.8425 -374.7843 nan 110.00%
+0+ 0 nan nan -30.7094 -374.7843 nan ---
+0 0 -32.5899 4 -30.7094 -32.5899 99 6.12%
+0+ 0 nan nan -31.7786 -32.5899 nan 2.55%
+0+ 0 nan nan -31.9862 -32.5899 nan 1.89%
+0 2 -32.5899 4 -31.9862 -32.5899 99 1.89%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 1
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 8
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 65.7942 6 65.7942 62
-0 0 65.8043 8 Cuts:8 73
-0 0 65.8491 8 Cuts:12 82
-0+ 0 nan nan 67.9165 65.8491 nan 3.04%
-0+ 0 nan nan 67.9165 65.8491 nan 3.04%
-0 0 65.8491 8 67.9165 65.8491 150 3.04%
-0 0 65.8760 7 67.9165 Cuts:9 160 3.00%
-0 0 65.8778 7 67.9165 LiftProj:4 162 3.00%
-0 0 66.0518 7 67.9165 LiftProj:4 174 2.75%
-0 0 66.0825 7 67.9165 LiftProj:3 177 2.70%
-0 0 66.3394 7 67.9165 LiftProj:3 187 2.32%
-0 0 66.3560 7 67.9165 LiftProj:2 189 2.30%
-0 0 66.3784 7 67.9165 LiftProj:3 191 2.26%
-0 0 66.6688 6 67.9165 LiftProj:4 203 1.84%
-0 0 66.7572 7 67.9165 Cuts:5 206 1.71%
-0 0 66.8795 7 67.9165 LiftProj:3 211 1.53%
-0 0 66.8964 7 67.9165 LiftProj:3 214 1.50%
-0 0 67.0053 6 67.9165 LiftProj:2 219 1.34%
-0 0 67.1764 4 67.9165 LiftProj:1 232 1.09%
-0 0 67.3028 3 67.9165 LiftProj:2 237 0.90%
-0 0 67.7148 2 67.9165 LiftProj:2 243 0.30%
-0 0 cutoff 67.9165 67.7148 250 0.30% 0
+0+ 0 nan nan 4064.8026 -406.4803 nan 110.00%
+0+ 0 nan nan 73.7169 -406.4803 nan 651.41%
+0 0 57.5230 6 73.7169 57.5230 88 21.97%
+0+ 0 nan nan 72.3065 57.5230 nan 20.45%
+0+ 0 nan nan 71.5554 57.5230 nan 19.61%
+0 2 57.5230 6 71.5554 57.5230 88 19.61%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 5
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 9
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 11.8594 6 11.8594 54
-0 0 13.0587 8 Cuts:15 69
-0 0 14.3400 9 Cuts:14 78
-0 0 14.9580 9 Cuts:12 89
-0 0 15.5614 9 Cuts:11 105
-0 0 16.1743 9 Cuts:15 130
-0 0 16.2028 9 LiftProj:4 137
-0 0 16.2051 9 LiftProj:6 138
-0 0 16.2137 9 LiftProj:5 141
-0 0 16.2582 9 LiftProj:6 155
-0 0 16.3193 9 LiftProj:3 162
-0 0 16.3227 9 Cuts:6 164
-0 0 16.3481 9 LiftProj:5 168
-0 0 16.3662 9 LiftProj:2 172
-0 0 16.3812 9 LiftProj:6 174
-0 0 16.3907 9 LiftProj:3 175
-0 0 16.4022 9 LiftProj:5 177
-0 0 16.4152 9 LiftProj:3 182
-0 0 16.4182 9 LiftProj:1 185
-0 0 16.4304 9 LiftProj:1 189
-0 0 16.4396 8 LiftProj:1 194
-0 0 16.4524 9 LiftProj:5 195
-0 0 16.4564 9 LiftProj:3 203
-0 0 16.4586 9 LiftProj:1 205
-0 2 16.4586 9 16.4958 205 0 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 14
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 2
-10
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 60.5073 2 60.5073 52
-0+ 0 nan nan 60.5115 60.5073 nan 0.01%
+0+ 0 nan nan 3914.8782 -391.4878 nan 110.00%
+0+ 0 nan nan -3.0814 -391.4878 nan ---
+0 0 -19.2753 6 -3.0814 -19.2753 94 525.54%
+0+ 0 nan nan -4.5407 -19.2753 nan 324.50%
+0 2 -19.2753 6 -4.5407 -19.2753 94 324.50%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
+10
+Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
+0+ 0 nan nan 5437.4645 -543.7465 nan 110.00%
+0+ 0 nan nan 44.6359 -543.7465 nan ---
+0 0 43.7964 4 44.6359 43.7964 101 1.88%
+0 0 43.7964 2 44.6359 Disjcuts:2 106 1.88%
+0 2 43.7964 2 44.6359 43.7964 106 1.88%
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 2
 11
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 16.6537 2 16.6537 50
-0+ 0 nan nan 16.6575 16.6537 nan 0.02%
-0+ 0 nan nan 16.6575 16.6537 nan 0.02%
-0 0 16.6537 1 16.6575 16.6537 109 0.02%
-0 0 cutoff 16.6575 113 0.00% 0 0
+0+ 0 nan nan 4494.1418 -449.4142 nan 110.00%
+0+ 0 nan nan -35.8137 -449.4142 nan ---
+0 0 -36.6532 2 -35.8137 -36.6532 102 2.34%
+0 1 -36.6532 2 -35.8137 -36.6532 108 2.34%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 12
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 44.2061 6 44.2061 61
-0 0 45.3583 9 Cuts:13 78
-0 0 46.7496 9 Cuts:15 89
-0 0 48.1516 9 Cuts:16 100
-0 0 49.1911 9 Cuts:12 112
-0 0 49.5790 9 Cuts:11 124
-0 0 49.6039 9 Cuts:9 129
-0 0 49.6153 9 LiftProj:4 135
-0 0 49.6638 9 LiftProj:5 145
-0 0 49.6909 9 Cuts:10 151
-0 0 49.7390 9 LiftProj:8 158
-0 0 49.8745 7 LiftProj:7 166
-0 0 49.8780 8 LiftProj:5 167
-0 0 50.0655 8 LiftProj:7 176
-0 0 50.1951 8 LiftProj:7 183
-0 0 50.2803 7 Cuts:18 190
-0 0 50.2999 8 LiftProj:5 192
-0 0 50.4393 8 LiftProj:6 196
-0+ 0 nan nan 55.3987 50.4393 nan 8.95%
-0+ 0 nan nan 55.3987 50.4393 nan 8.95%
-0 0 50.4393 8 55.3987 50.4393 275 8.95%
-0 0 50.5702 8 55.3987 LiftProj:5 276 8.72%
-0 0 50.7360 7 55.3987 LiftProj:5 282 8.42%
-0 0 50.7606 8 55.3987 LiftProj:5 285 8.37%
-0 0 50.8103 8 55.3987 LiftProj:7 289 8.28%
-0 0 51.0118 8 55.3987 LiftProj:7 298 7.92%
-0 0 51.1496 8 55.3987 LiftProj:5 303 7.67%
-0 0 51.2412 7 55.3987 LiftProj:4 310 7.50%
-0 0 51.3537 8 55.3987 LiftProj:4 313 7.30%
-0 0 51.3740 8 55.3987 LiftProj:6 316 7.27%
-0 0 51.4528 9 55.3987 LiftProj:8 320 7.12%
-0 0 51.5000 8 55.3987 LiftProj:2 325 7.04%
-0 0 51.5442 8 55.3987 LiftProj:3 329 6.96%
-0 0 51.5997 8 55.3987 LiftProj:4 336 6.86%
-0 0 51.6012 8 55.3987 LiftProj:2 337 6.85%
-0 2 51.6012 8 55.3987 51.6294 337 6.80%
+0+ 0 nan nan 4258.0012 -425.8001 nan 110.00%
+0+ 0 nan nan 56.1876 -425.8001 nan 857.82%
+0 0 36.5391 10 56.1876 36.5391 103 34.97%
+0 0 36.5391 9 56.1876 LiftProj:1 107 34.97%
+0 0 36.5391 6 56.1876 LiftProj:3 109 34.97%
+0 2 36.5391 6 56.1876 36.5391 109 34.97%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 18
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 4
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 13
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 10.2945 6 10.2945 57
-0+ 0 nan nan 16.4316 10.2945 nan 37.35%
-0 0 10.4942 8 16.4316 Disjcuts:5 70 36.13%
-0 0 10.8973 8 16.4316 Cuts:10 81 33.68%
-0 0 11.3533 8 16.4316 Cuts:10 92 30.91%
-0 0 11.6979 8 16.4316 Cuts:10 103 28.81%
-0 0 12.1984 7 16.4316 Cuts:9 120 25.76%
-0 0 12.3500 7 16.4316 Cuts:8 129 24.84%
-0 0 12.4458 7 16.4316 LiftProj:4 135 24.26%
-0 0 12.4634 7 16.4316 LiftProj:4 140 24.15%
-0 0 12.5316 6 16.4316 LiftProj:3 147 23.73%
-0 0 12.5346 7 16.4316 LiftProj:2 155 23.72%
-0 0 12.5529 7 16.4316 LiftProj:4 160 23.61%
-0 0 12.5629 7 16.4316 LiftProj:4 168 23.54%
-0 0 12.5897 7 16.4316 LiftProj:3 173 23.38%
-0 0 12.6019 7 16.4316 LiftProj:2 176 23.31%
-0 0 12.6097 7 16.4316 Cuts:6 181 23.26%
-0 0 12.6143 7 16.4316 LiftProj:3 187 23.23%
-0 0 12.6613 7 16.4316 LiftProj:4 194 22.95%
-0 0 12.7162 7 16.4316 LiftProj:3 197 22.61%
-0 0 12.7363 7 16.4316 LiftProj:4 202 22.49%
-0 0 12.7828 7 16.4316 LiftProj:4 207 22.21%
-0 0 12.7955 7 16.4316 LiftProj:3 209 22.13%
-0 0 12.8998 7 16.4316 LiftProj:3 216 21.49%
-0 0 12.9515 7 16.4316 LiftProj:3 221 21.18%
-0 0 12.9977 7 16.4316 LiftProj:3 224 20.90%
-0 0 13.0152 7 16.4316 LiftProj:2 226 20.79%
-0 0 13.0382 7 16.4316 LiftProj:2 232 20.65%
-0 0 13.0979 7 16.4316 LiftProj:2 236 20.29%
-0 2 13.0979 7 16.4316 13.1080 236 20.23%
+0+ 0 nan nan 3742.2366 -374.2237 nan 110.00%
+0+ 0 nan nan -13.4995 -374.2237 nan ---
+0 0 -33.1480 9 -13.4995 -33.1480 92 145.55%
+0 0 -33.1480 8 -13.4995 LiftProj:2 94 145.55%
+0 2 -33.1480 8 -13.4995 -33.1480 94 145.55%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 13
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 1
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 14
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 46.5469 2 46.5469 53
-0+ 0 nan nan 47.4290 46.5469 nan 1.86%
-0 0 46.5469 2 47.4290 Disjcuts:1 57 1.86%
-0+ 0 nan nan 47.4290 46.5469 nan 1.86%
-0 0 46.5469 2 47.4290 46.5469 111 1.86%
-0 0 cutoff 47.4290 119 0.00% 0 0
+0+ 0 nan nan 4547.8366 -454.7837 nan 110.00%
+0+ 0 nan nan 37.3980 -454.7837 nan ---
+0 0 33.6408 6 37.3980 33.6408 101 10.05%
+0 0 33.6408 4 37.3980 LiftProj:2 104 10.05%
+0 0 33.6408 2 37.3980 LiftProj:1 105 10.05%
+0+ 0 nan nan 34.5295 33.6408 nan 2.57%
+0 2 33.6408 2 34.5295 33.6408 105 2.57%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 1
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 3
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 15
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0+ 0 nan nan 754.6210 -94.3684 nan 112.51%
-0 0 10.7585 2 754.6210 10.7585 50 98.57%
-0 0 10.7585 2 754.6210 Disjcuts:1 53 98.57%
-0+ 0 nan nan 15.2716 10.7585 nan 29.55%
-0 0 10.7585 2 15.2716 Disjcuts:1 56 29.55%
-0 2 10.7585 2 15.2716 10.7585 56 29.55%
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 2
-16
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 58.8715 6 58.8715 57
-0 0 59.6608 7 Disjcuts:4 70
-0 0 60.8556 5 Disjcuts:5 80
-0+ 0 nan nan 61.8856 60.8556 nan 1.66%
-0+ 0 nan nan 61.8856 60.8556 nan 1.66%
-0 0 60.8572 4 61.8856 60.8572 138 1.66%
-0 0 60.8670 5 61.8856 LiftProj:1 140 1.65%
-0 0 60.8942 5 61.8856 LiftProj:1 141 1.60%
-0 0 61.0461 5 61.8856 LiftProj:1 148 1.36%
-0 0 61.0558 5 61.8856 Cuts:2 150 1.34%
-0 0 61.0570 5 61.8856 LiftProj:1 151 1.34%
-0 0 61.0606 5 61.8856 LiftProj:1 154 1.33%
-0 0 0 61.8856 61.0606 167 1.33%
-0 0 61.8856 0 61.8856 61.8856 167 0.00%
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 1
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 3
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 2
-17
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 10.2675 6 10.2675 65
-0 0 10.4236 8 Cuts:8 76
-0 0 11.3358 8 Cuts:11 89
-0+ 0 nan nan 21.7788 11.3358 nan 47.95%
-0 0 11.7550 9 21.7788 Cuts:11 100 46.03%
-0 0 12.3018 9 21.7788 Cuts:13 110 43.51%
-0 0 12.4473 9 21.7788 Cuts:12 118 42.85%
-0 0 12.5650 9 21.7788 Cuts:5 125 42.31%
-0 0 12.5974 9 21.7788 Cuts:5 129 42.16%
-0 0 12.6677 9 21.7788 LiftProj:2 135 41.83%
-0 0 12.6730 9 21.7788 LiftProj:1 137 41.81%
-0 2 12.7852 7 21.7788 12.9043 137 40.75%
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 4
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 6
-18
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0+ 0 nan nan 850.5680 -92.8051 nan 110.91%
-0 0 58.3813 2 850.5680 58.3813 51 93.14%
-0 0 58.3813 2 850.5680 Cuts:4 55 93.14%
-0+ 0 nan nan 58.4112 58.3813 nan 0.05%
-0+ 0 nan nan 58.4112 58.3813 nan 0.05%
-0 0 58.3813 2 58.4112 58.3813 113 0.05%
-0 0 cutoff 58.4112 58.3813 120 0.05% 0
+0+ 0 nan nan 4058.6248 -405.8625 nan 110.00%
+0+ 0 nan nan -38.8823 -405.8625 nan 943.82%
+0 0 -42.6396 4 -38.8823 -42.6396 99 9.66%
+0 0 -42.6396 4 -38.8823 LiftProj:1 102 9.66%
+0 2 -42.6396 4 -38.8823 -42.6396 102 9.66%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 1
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 2
-19
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
+16
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0+ 0 nan nan 682.2187 -97.6235 nan 114.31%
-0 0 15.5882 2 682.2187 15.5882 47 97.72%
-0 0 15.5882 2 682.2187 Disjcuts:1 49 97.72%
-0+ 0 nan nan 15.7874 15.5882 nan 1.26%
-0 0 15.5882 2 15.7874 Disjcuts:1 52 1.26%
-0+ 0 nan nan 15.7874 15.5882 nan 1.26%
-0 0 15.5882 2 15.7874 15.5882 96 1.26%
-0 0 15.5882 2 15.7874 MIRcuts:3 101 1.26%
-0 2 15.5934 3 15.7874 15.5963 101 1.21%
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 1
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 2
-20
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 31.6179 6 31.6179 61
-0 0 31.6325 7 Disjcuts:4 73
-0 0 0 34.4860 34.4860 95 0.00% 0
+0+ 0 nan nan 4374.4391 -437.4439 nan 110.00%
+0+ 0 nan nan 63.6896 -437.4439 nan 786.84%
+0 0 42.8442 6 63.6896 42.8442 92 32.73%
+0+ 0 nan nan 51.8824 42.8442 nan 17.42%
+0 2 42.8442 6 51.8824 42.8442 92 17.42%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
+17
+Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
+0+ 0 nan nan 3327.9222 -332.7922 nan 110.00%
+0+ 0 nan nan 7.5964 -332.7922 nan ---
+0 0 -13.2491 8 7.5964 -13.2491 85 274.41%
+0 0 -13.2491 8 7.5964 LiftProj:1 87 274.41%
+0 0 -13.2491 6 7.5964 LiftProj:1 88 274.41%
+0+ 0 nan nan -4.1212 -13.2491 nan 221.48%
+0 2 -13.2491 6 -4.1212 -13.2491 88 221.48%
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 2
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
+18
+Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
+0+ 0 nan nan 3764.3804 -376.4380 nan 110.00%
+0+ 0 nan nan 51.9989 -376.4380 nan 823.93%
+0 0 48.9448 2 51.9989 48.9448 90 5.87%
+0+ 0 nan nan 48.9869 48.9448 nan 0.09%
+0 2 48.9448 2 48.9869 48.9448 90 0.09%
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
+19
+Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
+0+ 0 nan nan 3802.5481 -380.2548 nan 110.00%
+0+ 0 nan nan -24.4337 -380.2548 nan ---
+0 0 -27.4879 4 -24.4337 -27.4879 91 12.50%
+0 0 -27.4879 2 -24.4337 LiftProj:1 92 12.50%
+0+ 0 nan nan -27.4457 -27.4879 nan 0.15%
+0 2 -27.4879 2 -27.4457 -27.4879 92 0.15%
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 1
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
+20
+Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
+0+ 0 nan nan 3023.0049 -302.3005 nan 110.00%
+0+ 0 nan nan 38.6876 -302.3005 nan 881.39%
+0 0 28.0444 8 38.6876 28.0444 110 27.51%
+0 0 28.0444 6 38.6876 LiftProj:1 111 27.51%
+0 2 28.0444 6 38.6876 28.0444 111 27.51%
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 1
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 21
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 5.4416 6 5.4416 61
-0 0 5.6106 8 Cuts:6 82
-0 0 7.0573 7 Disjcuts:4 97
-0+ 0 nan nan 9.1778 7.0573 nan 23.11%
-0 0 7.6794 7 9.1778 Cuts:7 105 16.33%
-0 0 7.8756 6 9.1778 Cuts:5 114 14.19%
-0+ 0 nan nan 9.1778 7.8756 nan 14.19%
-0 0 7.8756 6 9.1778 7.8756 184 14.19%
-0 0 8.0566 6 9.1778 Cuts:3 200 12.22%
-0 0 8.0865 7 9.1778 LiftProj:1 205 11.89%
-0 0 8.1581 7 9.1778 Cuts:8 212 11.11%
-0 0 cutoff 9.1778 8.1581 212 11.11% 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 1
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 5
-22
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 28.4414 2 28.4414 42
-0+ 0 nan nan 28.5540 28.4414 nan 0.39%
-0 0 28.4414 2 28.5540 Disjcuts:1 46 0.39%
-0+ 0 nan nan 28.5540 28.4414 nan 0.39%
-0 0 28.4414 2 28.5540 28.4414 92 0.39%
-0 0 28.4414 2 28.5540 LiftProj:1 94 0.39%
-0+ 0 nan nan 28.5434 28.4414 nan 0.36%
-0 1 28.4505 2 28.5434 28.4505 97 0.33%
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 1
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 1
-23
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 3.9556 2 3.9556 52
-0+ 0 nan nan 4.0841 3.9556 nan 3.15%
-0+ 0 nan nan 4.0841 3.9556 nan 3.15%
-0 0 3.9556 1 4.0841 3.9556 109 3.15%
-0 0 3.9573 1 4.0841 LiftProj:1 111 3.10%
-0 0 cutoff 4.0841 117 0.00% 0 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 1
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
-24
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 34.8025 6 34.8025 60
-0+ 0 nan nan 38.6713 34.8025 nan 10.00%
-0 0 34.8319 8 38.6713 Cuts:12 73 9.93%
-0 0 35.6475 8 38.6713 Cuts:4 84 7.82%
-0+ 0 nan nan 38.6713 35.6475 nan 7.82%
-0 0 35.6475 8 38.6713 35.6475 145 7.82%
-0 0 35.7844 8 38.6713 LiftProj:4 150 7.47%
-0 0 35.8934 8 38.6713 LiftProj:3 156 7.18%
-0 0 35.8988 8 38.6713 LiftProj:2 158 7.17%
-0 0 36.1885 8 38.6713 LiftProj:4 169 6.42%
-0 0 36.7536 8 38.6713 LiftProj:5 180 4.96%
-0 0 36.9668 7 38.6713 Cuts:4 189 4.41%
-0 0 37.6549 5 38.6713 Cuts:3 209 2.63%
-0+ 0 nan nan 38.6713 37.6549 nan 2.63%
-0 0 38.2419 5 38.6713 LiftProj:3 223 1.11%
-0 0 cutoff 38.6713 237 0.00% 0 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 1
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 1
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 4
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
-25
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 0.4196 6 0.4196 63
-0 0 0.6887 7 Disjcuts:4 80
-0 0 1.6781 6 Disjcuts:4 106
-0 0 0 7.4242 7.4242 134 0.00% 0
+0+ 0 nan nan 3066.6850 -306.6685 nan 110.00%
+0+ 0 nan nan -23.0829 -306.6685 nan ---
+0 0 -33.7261 13 -23.0829 -33.7261 120 46.11%
+0 2 -33.7261 8 -23.0829 -33.7261 120 46.11%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
+22
+Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
+0+ 0 nan nan 3115.9138 -311.5914 nan 110.00%
+0+ 0 nan nan 28.6729 -311.5914 nan ---
+0 0 27.1153 4 28.6729 27.1153 103 5.43%
+0 0 27.1153 2 28.6729 LiftProj:1 104 5.43%
+0+ 0 nan nan 27.4801 27.1153 nan 1.33%
+0 2 27.1153 2 27.4801 27.1153 104 1.33%
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 1
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
+23
+Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
+0+ 0 nan nan 3219.7432 -321.9743 nan 110.00%
+0+ 0 nan nan -36.7602 -321.9743 nan 775.88%
+0 0 -38.3178 9 -36.7602 -38.3178 128 4.24%
+0 0 -38.3178 6 -36.7602 LiftProj:6 136 4.24%
+0 0 -38.3178 4 -36.7602 LiftProj:3 142 4.24%
+0 0 -38.3178 2 -36.7602 LiftProj:1 143 4.24%
+0+ 0 nan nan -37.7564 -38.3178 nan 1.49%
+0 2 -38.3178 2 -37.7564 -38.3178 143 1.49%
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 9
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
+24
+Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
+0+ 0 nan nan 3687.2890 -368.7289 nan 110.00%
+0+ 0 nan nan 43.2506 -368.7289 nan 952.54%
+0 0 31.9673 10 43.2506 31.9673 102 26.09%
+0+ 0 nan nan 35.4872 31.9673 nan 9.92%
+0 2 31.9673 6 35.4872 31.9673 102 9.92%
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
+25
+Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
+0+ 0 nan nan 3761.3434 -376.1343 nan 110.00%
+0+ 0 nan nan -32.7168 -376.1343 nan ---
+0 0 -44.0001 9 -32.7168 -44.0001 119 34.49%
+0 0 -44.0001 13 -32.7168 LiftProj:2 129 34.49%
+0 0 -44.0001 12 -32.7168 LiftProj:1 138 34.49%
+0 2 -44.0001 6 -32.7168 -44.0001 138 34.49%
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 2
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 26
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 0 36.9182 36.9182 54 0.00% 0
+0+ 0 nan nan 3711.4466 -371.1447 nan 110.00%
+0+ 0 nan nan 33.2793 -371.1447 nan ---
+0 0 31.7258 2 33.2793 31.7258 133 4.67%
+0+ 0 nan nan 33.1336 31.7258 nan 4.25%
+0+ 0 nan nan 32.5097 31.7258 nan 2.41%
+0+ 0 nan nan 32.1479 31.7258 nan 1.31%
+0 2 31.7258 2 32.1479 31.7258 133 1.31%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 27
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 4.5323 2 4.5323 44
-0+ 0 nan nan 4.5514 4.5323 nan 0.42%
-0 0 4.5323 2 4.5514 Disjcuts:1 48 0.42%
-0+ 0 nan nan 4.5514 4.5323 nan 0.42%
-0 0 4.5323 2 4.5514 4.5323 101 0.42%
-0 0 4.5323 2 4.5514 LiftProj:1 104 0.42%
-0 0 4.5323 2 4.5514 LiftProj:1 106 0.42%
-0 2 4.5342 3 4.5514 4.5364 106 0.33%
+0+ 0 nan nan 3421.5786 -342.1579 nan 110.00%
+0 0 -33.8071 9 3421.5786 -33.8071 110 100.99%
+0+ 0 nan nan -30.4260 -33.8071 nan 11.11%
+0 0 -33.8071 2 -30.4260 Cuts:12 121 11.11%
+0 0 -33.8071 2 -30.4260 Disjcuts:1 123 11.11%
+0 0 -33.8071 2 -30.4260 Disjcuts:1 125 11.11%
+0+ 0 nan nan -32.3726 -33.8071 nan 4.43%
+0 2 -33.8071 2 -32.3726 -33.8071 125 4.43%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 1
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 1
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 4
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 10
 28
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 63.6500 6 63.6500 54
-0 0 64.7895 8 Cuts:6 67
-0 0 67.2057 7 Disjcuts:7 77
-0+ 0 nan nan 74.1734 67.2057 nan 9.39%
-0+ 0 nan nan 74.1734 67.2057 nan 9.39%
-0 0 67.2057 7 74.1734 67.2057 134 9.39%
-0 0 67.8163 7 74.1734 Cuts:4 142 8.57%
-0 0 68.0373 7 74.1734 Cuts:4 148 8.27%
-0 0 68.1828 7 74.1734 Cuts:5 155 8.08%
-0 0 68.7944 7 74.1734 Cuts:4 170 7.25%
-0 0 68.8135 7 74.1734 LiftProj:3 176 7.23%
-0 0 68.8658 7 74.1734 Cuts:4 179 7.16%
-0 0 69.1045 7 74.1734 LiftProj:3 187 6.83%
-0 0 69.1773 7 74.1734 LiftProj:4 190 6.74%
-0 0 69.3066 7 74.1734 LiftProj:3 195 6.56%
-0 0 71.7612 5 74.1734 LiftProj:2 215 3.25%
-0 0 71.9758 6 74.1734 LiftProj:2 219 2.96%
-0 0 72.6599 5 74.1734 LiftProj:3 229 2.04%
-0 0 72.7627 5 74.1734 LiftProj:2 232 1.90%
-0 0 72.8744 5 74.1734 LiftProj:1 237 1.75%
-0 0 73.0332 5 74.1734 LiftProj:2 245 1.54%
-0 0 73.5054 5 74.1734 Cuts:6 255 0.90%
-0 0 73.6396 5 74.1734 LiftProj:2 258 0.72%
-0 0 73.7676 5 74.1734 LiftProj:2 265 0.55%
-0 0 0 74.1734 73.7676 280 0.55%
-0 0 74.1734 0 74.1734 74.1734 280 0.00%
+0+ 0 nan nan 4639.1808 -463.9181 nan 110.00%
+0+ 0 nan nan 65.2464 -463.9181 nan 811.02%
+0 0 58.0744 8 65.2464 58.0744 92 10.99%
+0 2 58.0744 8 65.2464 58.0744 92 10.99%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 7
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 29
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0+ 0 nan nan 994.8986 -114.3356 nan 111.49%
-0+ 0 nan nan 37.2949 -114.3356 nan 406.57%
-0 0 6.3884 6 37.2949 6.3884 54 82.87%
-0 0 6.3884 6 37.2949 Cuts:6 59 82.87%
-0 0 6.3884 6 37.2949 Cuts:3 62 82.87%
-0 2 6.3884 7 37.2949 6.3884 62 82.87%
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 1
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 1
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 3
+0+ 0 nan nan 3694.7313 -369.4731 nan 110.00%
+0+ 0 nan nan 0.7963 -369.4731 nan ---
+0 0 -6.3757 11 0.7963 -6.3757 101 900.69%
+0 0 -6.3757 9 0.7963 LiftProj:2 108 900.69%
+0 0 -6.3757 8 0.7963 LiftProj:3 111 900.69%
+0 0 -6.3757 6 0.7963 LiftProj:1 112 900.69%
+0 2 -6.3757 6 0.7963 -6.3757 112 900.69%
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 6
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 30
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0+ 0 nan nan 514.4143 -106.7235 nan 120.75%
-0+ 0 nan nan 83.5731 -106.7235 nan 227.70%
-0 0 69.0899 2 83.5731 69.0899 47 17.33%
-0 0 69.0899 2 83.5731 LiftProj:1 49 17.33%
-0+ 0 nan nan 69.6843 69.0899 nan 0.85%
-0+ 0 nan nan 69.6843 69.0899 nan 0.85%
-0 0 69.0899 2 69.6843 69.0899 98 0.85%
-0 0 69.0899 2 69.6843 MIRcuts:1 99 0.85%
-0 0 69.0899 2 69.6843 LiftProj:1 101 0.85%
-0 1 69.0899 2 69.6843 69.0899 104 0.85%
+0+ 0 nan nan 4002.5073 -400.2507 nan 110.00%
+0+ 0 nan nan 65.9595 -400.2507 nan 706.81%
+0 0 64.4411 2 65.9595 64.4411 95 2.30%
+0+ 0 nan nan 65.3965 64.4411 nan 1.46%
+0+ 0 nan nan 64.4435 64.4411 nan 0.00%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 2
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 31
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 7.6579 2 7.6579 41
-0+ 0 nan nan 8.0780 7.6579 nan 5.20%
-0 0 7.6579 2 8.0780 Disjcuts:1 44 5.20%
-0+ 0 nan nan 8.0780 7.6579 nan 5.20%
-0 0 7.6579 2 8.0780 7.6579 87 5.20%
-0 1 7.7002 2 8.0780 7.9356 89 1.76%
+0+ 0 nan nan 4093.9107 -409.3911 nan 110.00%
+0+ 0 nan nan -16.8328 -409.3911 nan ---
+0 0 -18.3511 8 -16.8328 -18.3511 99 9.02%
+0+ 0 nan nan -17.0665 -18.3511 nan 7.53%
+0 0 -18.3511 4 -17.0665 LiftProj:6 109 7.53%
+0+ 0 nan nan -17.3956 -18.3511 nan 5.49%
+0 0 -18.3511 2 -17.3956 LiftProj:1 110 5.49%
+0+ 0 nan nan -17.3957 -18.3511 nan 5.49%
+0+ 0 nan nan -18.3487 -18.3511 nan 0.01%
+0 2 -18.3511 2 -18.3487 -18.3511 110 0.01%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 1
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 6
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 32
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 46.2013 6 46.2013 60
-0 0 46.2394 7 Disjcuts:5 71
-0 0 46.4378 7 Disjcuts:3 83
-0 0 47.0088 7 Cuts:8 92
-0 0 47.2785 7 Cuts:11 105
-0+ 0 nan nan 49.3481 47.2785 nan 4.19%
-0+ 0 nan nan 49.3481 47.2785 nan 4.19%
-0 0 47.2785 7 49.3481 47.2785 179 4.19%
-0 0 cutoff 49.3481 47.2785 179 4.19% 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 2
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 7
-33
-Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 0.8948 6 0.8948 57
-0 0 1.6642 8 Cuts:6 71
-0 0 7.3682 6 Disjcuts:2 89
-0+ 0 nan nan 11.6907 7.3682 nan 36.97%
-0 0 cutoff 11.6907 108 0.00% 0 0
+0+ 0 nan nan 2782.2146 -278.2215 nan 110.00%
+0+ 0 nan nan 51.8003 -278.2215 nan 637.10%
+0 0 40.6477 6 51.8003 40.6477 100 21.53%
+0 2 40.6477 6 51.8003 40.6477 100 21.53%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 4
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
+33
+Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
+0+ 0 nan nan 3349.6902 -334.9690 nan 110.00%
+0+ 0 nan nan -20.8683 -334.9690 nan ---
+0 0 -32.0209 8 -20.8683 -32.0209 98 53.44%
+0 0 -32.0209 6 -20.8683 LiftProj:1 99 53.44%
+0 2 -32.0209 6 -20.8683 -32.0209 99 53.44%
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 1
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 34
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 41.8656 2 41.8656 44
-0+ 0 nan nan 41.9255 41.8656 nan 0.14%
-0 0 cutoff 41.9255 41.8656 51 0.14% 0
+0+ 0 nan nan 3811.0022 -381.1002 nan 110.00%
+0+ 0 nan nan 40.8428 -381.1002 nan ---
+0 0 30.3598 2 40.8428 30.3598 97 25.67%
+0+ 0 nan nan 32.0719 30.3598 nan 5.34%
+0+ 0 nan nan 30.4857 30.3598 nan 0.41%
+0 2 30.3598 2 30.4857 30.3598 97 0.41%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 35
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 10.6421 2 10.6421 45
-0+ 0 nan nan 10.9052 10.6421 nan 2.41%
-0+ 0 nan nan 10.9052 10.6421 nan 2.41%
-0 0 10.6421 1 10.9052 10.6421 99 2.41%
-0 0 10.6455 1 10.9052 LiftProj:1 101 2.38%
-0 0 cutoff 10.9052 101 0.00% 0 0
+0+ 0 nan nan 3356.6483 -335.6648 nan 110.00%
+0+ 0 nan nan -21.7467 -335.6648 nan ---
+0 0 -32.2296 2 -21.7467 -32.2296 127 48.21%
+0+ 0 nan nan -30.5175 -32.2296 nan 5.61%
+0+ 0 nan nan -32.0295 -32.2296 nan 0.62%
+0 2 -32.2296 2 -32.0295 -32.2296 127 0.62%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 1
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 36
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 48.4886 6 48.4886 59
-0 0 48.5199 7 Disjcuts:3 68
-0 0 49.2132 5 Disjcuts:4 75
-0+ 0 nan nan 52.9256 49.2132 nan 7.01%
-0+ 0 nan nan 52.9256 49.2132 nan 7.01%
-0 0 49.2132 5 52.9256 49.2132 141 7.01%
-0 0 49.2413 7 52.9256 Cuts:3 146 6.96%
-0 0 49.5455 7 52.9256 LiftProj:2 154 6.39%
-0 0 49.6172 7 52.9256 LiftProj:1 156 6.25%
-0 0 cutoff 52.9256 49.6172 156 6.25% 0
+0+ 0 nan nan 4588.3495 -458.8350 nan 110.00%
+0+ 0 nan nan 49.9629 -458.8350 nan ---
+0 0 35.1558 9 49.9629 35.1558 105 29.64%
+0 0 35.1558 8 49.9629 LiftProj:2 107 29.64%
+0 0 35.1558 6 49.9629 LiftProj:1 108 29.64%
+0+ 0 nan nan 45.5806 35.1558 nan 22.87%
+0 2 35.1558 6 45.5806 35.1558 108 22.87%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 3
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 3
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 2
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 37
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 -6.1266 6 -6.1266 62
-0 0 -5.6413 9 Cuts:10 76
-0 0 -3.9051 8 Disjcuts:8 90
-0 0 -1.9915 8 Cuts:12 111
-0 0 -1.3443 8 Cuts:11 125
-0 0 -0.2175 8 Cuts:11 141
-0 0 -0.1289 8 LiftProj:4 149
-0 0 0.1485 8 Cuts:6 157
-0 0 0.3195 8 Cuts:9 168
-0 0 0.4038 8 Cuts:6 174
-0 0 0.4325 8 LiftProj:6 176
-0 0 0.4435 8 Cuts:7 177
-0 0 0.5666 8 Cuts:7 184
-0 0 0.8824 8 Cuts:10 191
-0 0 1.1438 8 Cuts:16 201
-0 0 1.5328 7 Cuts:8 215
-0 0 1.6976 8 Cuts:11 225
-0 0 1.9179 8 Cuts:5 235
-0 0 2.4057 7 LiftProj:7 248
-0 0 2.4229 8 Cuts:5 250
-0 0 2.5529 8 LiftProj:4 255
-0 0 2.6668 8 Cuts:5 264
-0 0 2.6774 8 LiftProj:4 266
-0 0 2.7436 8 Cuts:5 274
-0 0 2.8810 8 Cuts:5 279
-0 0 3.0070 8 LiftProj:4 288
-0 0 3.0518 8 LiftProj:5 289
-0 0 3.6141 8 LiftProj:5 303
-0 0 3.9935 8 Cuts:14 314
-0+ 0 nan nan 10.0443 3.9935 nan 60.24%
-0 0 4.2677 8 10.0443 Cuts:6 324 57.51%
-0 0 4.5769 8 10.0443 LiftProj:11 338 54.43%
-0 0 4.6059 8 10.0443 LiftProj:5 345 54.14%
-0 0 4.6933 8 10.0443 LiftProj:5 348 53.27%
-0 0 4.7723 8 10.0443 LiftProj:5 355 52.49%
-0 0 5.0086 8 10.0443 LiftProj:5 363 50.13%
-0 0 5.6765 8 10.0443 Cuts:17 373 43.48%
-0 0 5.7437 8 10.0443 Cuts:9 378 42.82%
-0 0 5.8197 8 10.0443 LiftProj:19 388 42.06%
-0 0 5.9436 8 10.0443 LiftProj:5 399 40.83%
-0 0 6.0454 8 10.0443 Cuts:7 404 39.81%
-0 0 6.2920 8 10.0443 LiftProj:4 409 37.36%
-0 0 6.3322 8 10.0443 LiftProj:3 411 36.96%
-0 0 6.4436 7 10.0443 LiftProj:2 418 35.85%
-0 0 6.7478 7 10.0443 LiftProj:1 424 32.82%
-0 0 6.9918 7 10.0443 LiftProj:9 430 30.39%
-0 0 7.7035 7 10.0443 LiftProj:9 441 23.30%
-0+ 0 nan nan 10.0443 7.7035 nan 23.30%
-0 0 7.7035 7 10.0443 7.7035 516 23.30%
-0 0 8.2885 7 10.0443 Cuts:11 528 17.48%
-0 0 9.3779 5 10.0443 Cuts:3 542 6.63%
-0 0 9.6855 5 10.0443 LiftProj:14 556 3.57%
-0 0 cutoff 10.0443 587 0.00% 0 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 1
+0+ 0 nan nan 4450.7541 -445.0754 nan 110.00%
+0+ 0 nan nan -37.6763 -445.0754 nan ---
+0 0 -52.4834 11 -37.6763 -52.4834 108 39.30%
+0 0 -52.4834 9 -37.6763 LiftProj:4 114 39.30%
+0 0 -52.4834 8 -37.6763 LiftProj:2 116 39.30%
+0 2 -52.4834 8 -37.6763 -52.4834 116 39.30%
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 6
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 1
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 4
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0
 38
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 47.4773 2 47.4773 45
-0+ 0 nan nan 47.5785 47.4773 nan 0.21%
-0+ 0 nan nan 47.5785 47.4773 nan 0.21%
-0 0 47.4773 2 47.5785 47.4773 93 0.21%
-0 0 47.4773 2 47.5785 Disjcuts:1 97 0.21%
-0 0 cutoff 47.5785 101 0.00% 0 0
+0+ 0 nan nan 3824.8352 -382.4835 nan 110.00%
+0 0 42.7909 4 3824.8352 42.7909 97 98.88%
+0+ 0 nan nan 45.2604 42.7909 nan 5.46%
+0 0 42.7909 2 45.2604 Cuts:5 102 5.46%
+0 0 42.7909 2 45.2604 Disjcuts:1 104 5.46%
+0+ 0 nan nan 44.4764 42.7909 nan 3.79%
+0 0 42.7909 2 44.4764 Disjcuts:1 106 3.79%
+0 2 42.7909 2 44.4764 42.7909 106 3.79%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 1
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 1
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 6
 39
 Node Left Objective IInf Best_Integer Best_Bound ItCnt Gap
-0 0 7.0905 2 7.0905 43
-0 0 7.0905 2 Disjcuts:1 46
-0+ 0 nan nan 7.1260 7.0905 nan 0.50%
-0+ 0 nan nan 7.1260 7.0905 nan 0.50%
-0 0 7.0905 1 7.1260 7.0905 89 0.50%
-0 0 cutoff 7.1260 92 0.00% 0 0
+0+ 0 nan nan 4523.6595 -452.3660 nan 110.00%
+0+ 0 nan nan -52.2183 -452.3660 nan 766.30%
+0 0 -54.6705 7 -52.2183 -54.6705 107 4.70%
+0 0 -54.6705 4 -52.2183 LiftProj:5 115 4.70%
+0 0 -54.6705 2 -52.2183 LiftProj:1 116 4.70%
+0+ 0 nan nan -52.4430 -54.6705 nan 4.25%
+0 2 -54.6705 2 -52.4430 -54.6705 116 4.25%
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:Disjunctive 0
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:LiftProj 0
-CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 0
+CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:MIRCut 5
 CPXPARAM_MIP_Cuts_Disjunctive-LiftProj-MIRCut-FlowCovers:FlowCovers 0

@@ -14,21 +14,24 @@ int main(int argc, char **argv){
 	IloEnv env;
 	if(argc < 4){
 		cout << "Wrong number of parameters"<<endl;
-		cout << "./stronger_model instance_number d k cardinality*"<<endl;
+		cout << "./stronger_model instance_number d k cardinality* dimensionality*, scale_factor*"<<endl;
 		cout << "d is the amount of features that are at most NOT considered"<<endl;
 		cout << "k is the number of points that are at least considered as outliers" <<endl;
 		cout << "instance_number is the toy_instance considered" <<endl;
 		cout << "cardinality is optional. and it will lead to handle the generated instances" <<endl;
+		cout << "dimensionality is optional. and it will lead to handle the generated instances" <<endl;
+		cout << "scale_factor is optional. and it will lead to handle the generated instances" <<endl;
 		return 1;
 	}
 	
 	bool generated_instances = false;
-	int cardinality;
+	int cardinality, dimensionality, scale_factor;
 	
-	if(argc == 5){
+	if(argc == 7){
 		cardinality = stoi(argv[4]);
+		dimensionality = stoi(argv[5]);
+		scale_factor = stoi(argv[6]);
 		generated_instances = true;
-		
 	}
 	
 	string instance = argv[1];
@@ -39,7 +42,7 @@ int main(int argc, char **argv){
 	string filename;
 	if(generated_instances){
 		path = "../src/instance_set/generated_instances/";
-		filename  = path + "toy_" + to_string(cardinality) + "_10_-" + instance + ".dat";
+		filename  = path + "toy_" + to_string(cardinality) + "_" + to_string(dimensionality) + "_-" + instance + ".dat";
 	}
 	else{
 		path = "../src/instance_set/";
@@ -75,7 +78,8 @@ int main(int argc, char **argv){
 					 "00000Result.dat";
 	}
 	else{
-		sol = path + "hyperplane.dat";
+		solution_n = dimensionality;
+		sol = path + "hyperplane" + to_string(dimensionality) + ".dat";
 	}
 	
 	ifstream sfile(sol);
@@ -101,17 +105,25 @@ int main(int argc, char **argv){
 	IloNumArray wl(env, d);
 	IloNumArray wu(env, d);
 	
-	compute_W(solution, wl, wu, 10);
+	// SCALE FACTOR 10
+	if(generated_instances){
+		compute_W_optimal_hyperplane(solution, wl, wu, scale_factor);
+	}
+	else{
+		compute_W(solution, wl, wu, 100);
+	}
 	
 	int k = x.getSize();
 	IloNumArray r(env, k, -IloInfinity, IloInfinity);
-	
 	compute_R(solution, x, y, r);
+	
+	/*
 	if(generated_instances){
 		for(int i = 0; i<k; i++){
 			r[i] *= 2;
 		} 
-	}
+	}*/
+	
 	
 	//~ END OF PREPROCESSING
 	
@@ -195,6 +207,7 @@ int main(int argc, char **argv){
 	//Suppress the outpt
 	//std::cout.setstate(std::ios::failbit);
 	// Resolution time
+	cplex.setParam(IloCplex::Param::TimeLimit, 500);
 	chrono::steady_clock sc;  
 	auto start = sc.now();     // start timer
 
@@ -247,6 +260,7 @@ int main(int argc, char **argv){
 	
 	//~ Saving results
 	
+	
 	string res_name;
 	if(generated_instances){
 		res_name = "../src/data/SFSOD/generated_results/stronger_results.csv";
@@ -262,7 +276,7 @@ int main(int argc, char **argv){
 	if(!myfile) {
 		//cout<<"file not exists"<<endl;
 		if(generated_instances){
-			line = "Instance;d_0;k;Time;OurObj;intercept;slopes\n";
+			line = "Instance;d;k;w_bound;Time;OurObj;intercept;slopes\n";
 		}
 		else{
 			line = "Instance;d_0;k_0;MismatchedOutliers;OurObj;intercept;slopes\n";
@@ -273,16 +287,30 @@ int main(int argc, char **argv){
 	
 	
 	if(generated_instances){
-		line += filename + ";" + to_string(d_0) + ";" + to_string(k) + ";" + to_string(time_span) + ";" + to_string(cplex.getObjValue()) + ";" + to_string(cplex.getValue(z)) + ";";
+		if(st!=2){
+			line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";None;None;";
+		}
+		else{
+			line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";" + to_string(cplex.getObjValue()) + ";" + to_string(cplex.getValue(z)) + ";";
+		}
 	}
 	else{
-		line += filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(errors) + ";" + to_string(cplex.getValue(obj)) + ";" + to_string(cplex.getValue(z)) + ";";
+		line += filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(errors) + ";" + to_string(cplex.getObjValue()) + ";" + to_string(cplex.getValue(z)) + ";";
 	}
+	//cout << "KEBskhkjhB" <<endl;
 	for(int i=0; i<d; i++){
-		if(i != d-1)
-			line += to_string(cplex.getValue(a[i])) + "~";
-		else
-			line += to_string(cplex.getValue(a[i]));
+		if(st != 2){
+			if(i != d-1)
+				line += "None~";
+			else
+				line += "None";
+		}
+		else{
+			if(i != d-1)
+				line += to_string(cplex.getValue(a[i])) + "~";
+			else
+				line += to_string(cplex.getValue(a[i]));
+		}
 	}
 	
 	dest_file<<line<<endl;
