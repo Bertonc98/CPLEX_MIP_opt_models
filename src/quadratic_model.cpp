@@ -148,16 +148,20 @@ int main(int argc, char **argv){
 	// Resolution time
 	cplex.setParam(IloCplex::Param::TimeLimit, 500);
 	chrono::steady_clock sc;  
+	cout << "========================START SOLVING========================" <<endl;
 	auto start = sc.now();     // start timer
 
 	cplex.solve();
 
 	auto end = sc.now();       // end timer 
-	auto time_span = static_cast<chrono::duration<double>>(end - start).count();   // measure time span between start & end
+	auto time_span = chrono::duration_cast<chrono::milliseconds>(end - start).count();   // measure time span between start & end
+	cout << "========================END SOLVING========================" <<endl;
+	cout << "========================TIME " << time_span << " ========================" <<endl;
+	IloAlgorithm::Status st = cplex.getStatus();
+	cout <<"Status: " <<  st <<endl;
 	
 	//std::cout.clear();
 	
-	IloAlgorithm::Status st = cplex.getStatus();
 	cout <<"Status: " <<  st <<endl;
 	if(st != 2)
 		print_conflicts(env, model, cplex);
@@ -191,12 +195,12 @@ int main(int argc, char **argv){
 	} 
 	
 	dest_file.open(res_name, fstream::app);
-	
+	bool solvable = true;
 	if(generated_instances){
-		if(st!=2){
+		try{
 			line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";None;None;";
 		}
-		else{
+		catch(IloException e){
 			line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";" + to_string(cplex.getObjValue()) + ";" + to_string(cplex.getValue(z)) + ";";
 		}
 		
@@ -205,7 +209,7 @@ int main(int argc, char **argv){
 		line += filename + ";" + to_string(d_0) + ";" + to_string(percentage) + ";" + to_string(cplex.getObjValue()) + ";" + to_string(cplex.getValue(z)) + ";";
 	}
 	for(int i=0; i<d; i++){
-		if(st != 2){
+		if(!solvable){
 			if(i != d-1)
 				line += "None~";
 			else
