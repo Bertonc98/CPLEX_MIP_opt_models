@@ -20,4 +20,17 @@ void debug(int i);
 
 void print_conflicts(IloEnv env, IloModel model, IloCplex cplex);
 
+std::ifstream input(int argc, char **argv, bool& generated_instances, int& cardinality, 
+		   int& dimensionality, int& scale_factor, std::string& instance, IloInt& d_0, IloInt& k_0,
+		   std::string& path, std::string& filename);
+		   
+std::ifstream read_solutions(int& solution_n, int& percentage, std::string& sol, bool generated_instances, 
+					std::string filename, std::string path, int k_0, int d_0, IloNumArray2 x, std::string instance, int dimensionality);
+
+std::string save_results(std::fstream& sdest_file, bool generated_instances, int dimensionality, int k, int d, int scale_factor, 
+					int time_span, IloCplex cplex, IloNumVar z, int d_0, int percentage, int errors, 
+					IloNumVarArray a, IloAlgorithm::Status st, std::string filename);
+
+void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, std::string path, std::string instance, int percentage, IloNumVarArray s);
+
 #endif

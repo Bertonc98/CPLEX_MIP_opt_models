@@ -112,3 +112,175 @@ void print_conflicts(IloEnv env, IloModel model, IloCplex cplex){
 		 }
 	 }
 }
+
+std::ifstream input(int argc, char **argv, bool& generated_instances, int& cardinality, 
+		   int& dimensionality, int& scale_factor, std::string& instance, IloInt& d_0, IloInt& k_0,
+		   std::string& path, std::string& filename){			   
+	std::cout << "Creating environment..." << std::endl;
+	std::string model = argv[0];
+	if(argc < 4){
+		std::cout << "Wrong number of parameters"<<std::endl;
+		std::cout << "./" + model + " instance_number d k cardinality* dimensionality*, scale_factor*"<<std::endl;
+		std::cout << "d is the amount of features that are at most NOT considered"<<std::endl;
+		std::cout << "k is the number of points that are at least considered as outliers" <<std::endl;
+		std::cout << "instance_number is the toy_instance considered" <<std::endl;
+		std::cout << "cardinality is optional. and it will lead to handle the generated instances" <<std::endl;
+		std::cout << "dimensionality is optional. and it will lead to handle the generated instances" <<std::endl;
+		std::cout << "scale_factor is optional. and it will lead to handle the generated instances" <<std::endl;
+		exit(1);
+	}
+	
+	if(argc == 7){
+		cardinality = std::stoi(argv[4]);
+		dimensionality = std::stoi(argv[5]);
+		scale_factor = std::stoi(argv[6]);
+		generated_instances = true;
+	}
+	
+	instance = argv[1];
+	d_0 = std::stoi(argv[2]);
+	k_0 = std::stoi(argv[3]);
+	
+	if(generated_instances){
+		path = "../src/instance_set/generated_instances/";
+		filename  = path + "toy_" + std::to_string(cardinality) + "_" + std::to_string(dimensionality) + "_-" + instance + ".dat";
+	}
+	else{
+		path = "../src/instance_set/";
+		filename  = path + "toy_30_10_02_2_0_5_-10_" + instance + ".dat";
+	}
+	
+	std::ifstream ifile(filename);
+	if (!ifile) {
+		std::cerr << "ERROR: could not open instance file '" << filename << std::endl;
+		std::cout << "./" + model + " instance_number d k cardinality*"<<std::endl;
+		std::cout << "d is the amount of features that are at most NOT considered"<<std::endl;
+		std::cout << "k is the number of points that are at least considered as outliers" <<std::endl;
+		std::cout << "instance_number is the toy_instance considered" <<std::endl;
+		std::cout << "cardinality is optional. and it will lead to handle the generated instances" <<std::endl;
+		exit(1);
+	}
+	
+	return ifile;
+}
+
+std::ifstream read_solutions(int& solution_n, int& percentage, std::string& sol, bool generated_instances, 
+					std::string filename, std::string path, int k_0, int d_0, IloNumArray2 x, std::string instance, int dimensionality){
+	//~ Read solutions
+	solution_n = 10;
+	
+	if(!generated_instances){	
+		percentage = ((float_t)k_0 / (float_t)x.getSize())*10.0;
+		sol = path + "optimal_solutions/minError_toy_30_10_02_2_0_5_-10_" + instance + 
+					 "_l1_LinMgr_indicator_L0Mgr_sos1_" + std::to_string(d_0) +
+					 ".000000_0." + std::to_string(percentage) + 
+					 "00000Result.dat";
+	}
+	else{
+		solution_n = dimensionality;
+		sol = path + "hyperplane" + std::to_string(dimensionality) + ".dat";
+	}
+	
+	std::ifstream sfile(sol);
+	if (!sfile) {
+		std::cerr << "ERROR: could not open solution file '" << sol << std::endl;
+		std::cout << "./model instance_number d k"<<std::endl;
+		std::cout << "d is the amount of features that are at most NOT considered"<<std::endl;
+		std::cout << "k is the number of points that are at least considered as outliers" <<std::endl;
+		std::cout << "instance_number is the toy_instance considered" <<std::endl;
+		exit(1);
+	}
+	
+	std::cout << "+++Working with: " << sol << std::endl;
+	std::cout << "+++Instance: " << filename << std::endl;
+	return  sfile;
+	}
+
+std::string save_results(std::fstream& dest_file, bool generated_instances, int dimensionality, int k, int d, int scale_factor, 
+					int time_span, IloCplex cplex, IloNumVar z, int d_0, int percentage, int errors, 
+					IloNumVarArray a, IloAlgorithm::Status st, std::string filename){
+	
+	std::string res_name;
+	if(generated_instances){
+		res_name = "../src/data/SFSOD/generated_results/basic_results.csv";
+	}
+	else{
+		res_name = "../src/data/SFSOD/basic_results.csv";
+	}
+	
+	
+	std::string line = "";
+	
+	std::ifstream myfile;
+	myfile.open(res_name);
+	if(!myfile) {
+		//cout<<"file not exists"<<std::endl;
+		if(generated_instances){
+			line = "Instance;d;k;w_bound;Time;OurObj;intercept;slopes\n";
+		}
+		else{
+			line = "Instance;d_0;k_0;MismatchedOutliers;OurObj;intercept;slopes\n";
+		}
+	} 
+	
+	dest_file.open(res_name, std::fstream::app);
+	if(generated_instances){
+		if(st!=2){
+			line += filename + ";" + std::to_string(dimensionality) + ";" + std::to_string(k) + ";" + std::to_string(scale_factor) + ";" + std::to_string(time_span) + ";None;None;";
+		}
+		else{
+			line += filename + ";" + std::to_string(dimensionality) + ";" + std::to_string(k) + ";" + std::to_string(scale_factor) + ";" + std::to_string(time_span) + ";" + std::to_string(cplex.getObjValue() ) + ";" + std::to_string(cplex.getValue(z)) + ";";
+		}
+	}
+	else{
+		line += filename + ";" + std::to_string(d_0) + ";" + std::to_string(percentage) + ";" + std::to_string(errors) + ";" + std::to_string(cplex.getObjValue()) + ";" + std::to_string(cplex.getValue(z)) + ";";
+	}
+	for(int i=0; i<d; i++){
+		if(st != 2){
+			if(i != d-1)
+				line += "None~";
+			else
+				line += "None";
+		}
+		else{
+			if(i != d-1)
+				line += std::to_string(cplex.getValue(a[i])) + "~";
+			else
+				line += std::to_string(cplex.getValue(a[i]));
+		}
+	}
+	return line;	
+}
+
+void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, std::string path, std::string instance, int percentage, IloNumVarArray s){
+		//~ Output result 
+		for( int i = 0; i < 50 ; i++) std::cout << "=";
+		std::cout << std::endl << "k_0 : " << k_0 << std::endl;
+		
+		std::string compare = path + "optimal_solutions/minError_toy_30_10_02_2_0_5_-10_" + instance + 
+					 "_l1_LinMgr_indicator_L0Mgr_sos1_" + std::to_string(d_0) +
+					 ".000000_0." + std::to_string(percentage) + 
+					 "00000Outlier.csv";
+		std::ifstream cfile;
+		cfile.open(compare);
+		if (!cfile) {
+			std::cerr << "ERROR: could not open comparison file '" << compare << std::endl;
+			std::cout << "./basic_model instance_number d k"<< std::endl;
+			exit(1);
+		}
+		
+		
+		//~ cout << "Pnt, Out | Out model " << endl;
+		std::string tmp;
+		int result, pos;
+		for (int i = 0; i < k ; i++){
+			std::getline(cfile, tmp);
+			result = 1-int(abs(cplex.getValue(s[i])));
+			pos = tmp.find(",");
+			if( result != std::stoi(tmp.substr(pos+1, 1)) ){
+				//~ cout << tmp << " | " << 1-int(abs(cplex.getValue(s[i]))) << endl;
+				errors++;
+			}
+		}
+		std::cout << "MISMATCHED RESULTS: " << errors << std::endl << std::endl;
+}

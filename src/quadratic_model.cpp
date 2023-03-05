@@ -217,7 +217,8 @@ int main(int argc, char **argv){
 		print_conflicts(env, model, cplex);
 	
 	int errors = 0;
-	if(!generated_instances){
+	/*
+	 * if(!generated_instances){
 		//~ Output result 
 		for( int i = 0; i < 50 ; i++) cout << "=";
 		cout << endl << "k_0 : " << k_0 << endl;
@@ -235,6 +236,7 @@ int main(int argc, char **argv){
 		}
 		
 	}
+	*/
 	
 	
 	//~ Saving results
