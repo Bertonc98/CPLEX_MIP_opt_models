@@ -57,15 +57,7 @@ int main(int argc, char **argv){
 	int k = x.getSize();
 	IloNumArray r(env, k, -IloInfinity, IloInfinity);
 	compute_R(solution, x, y, r);
-	
-	/*
-	if(generated_instances){
-		for(int i = 0; i<k; i++){
-			r[i] *= 2;
-		} 
-	}*/
-	
-	
+		
 	//~ END OF PREPROCESSING
 	
 	//~ MODEL DEFINITION

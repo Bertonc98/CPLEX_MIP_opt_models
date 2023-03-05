@@ -10,54 +10,20 @@
 ILOSTLBEGIN
 
 int main(int argc, char **argv){
-	cout << "Creating envirnment..." << endl;
 	IloEnv env;
-	if(argc < 4){
-		cout << "Wrong number of parameters"<<endl;
-		cout << "./quadratic_model instance_number d k cardinality* dimensionality*, scale_factor*"<<endl;
-		cout << "d is the amount of features that are at most NOT considered"<<endl;
-		cout << "k is the number of points that are at least considered as outliers" <<endl;
-		cout << "instance_number is the toy_instance considered" <<endl;
-		cout << "cardinality is optional. and it will lead to handle the generated instances" <<endl;
-		cout << "dimensionality is optional. and it will lead to handle the generated instances" <<endl;
-		cout << "scale_factor is optional. and it will lead to handle the generated instances" <<endl;
-		return 1;
-	}
 	
 	bool generated_instances = false;
 	int cardinality, dimensionality, scale_factor;
 	
-	if(argc == 7){
-		cardinality = stoi(argv[4]);
-		dimensionality = stoi(argv[5]);
-		scale_factor = stoi(argv[6]);
-		generated_instances = true;
-	}
-	
-	string instance = argv[1];
-	IloInt d_0 = stoi(argv[2]);
-	IloInt k_0 = stoi(argv[3]);
+	string instance;
+	IloInt d_0;
+	IloInt k_0;
 	
 	string path;
 	string filename;
-	if(generated_instances){
-		path = "../src/instance_set/generated_instances/";
-		filename  = path + "toy_" + to_string(cardinality) + "_" + to_string(dimensionality) + "_-" + instance + ".dat";
-	}
-	else{
-		path = "../src/instance_set/";
-		filename  = path + "toy_30_10_02_2_0_5_-10_" + instance + ".dat";
-	}
-	ifstream ifile(filename);
-	if (!ifile) {
-		cerr << "ERROR: could not open instance file '" << filename << endl;
-		cout << "./quadratic_model instance_number d k cardinality*"<<endl;
-		cout << "d is the amount of features that are at most NOT considered"<<endl;
-		cout << "k is the number of points that are at least considered as outliers" <<endl;
-		cout << "instance_number is the toy_instance considered" <<endl;
-		cout << "cardinality is optional. and it will lead to handle the generated instances" <<endl;
-		return 1;
-	}
+	
+	ifstream ifile = input(argc, argv, generated_instances, cardinality, dimensionality, scale_factor, instance, d_0, k_0, path, filename);
+	
 	
 	//~ Read instances
 	IloNumArray2 x(env);
@@ -69,28 +35,8 @@ int main(int argc, char **argv){
 	int percentage;
 	string sol;
 	
-	if(!generated_instances){	
-		percentage = ((float_t)k_0 / (float_t)x.getSize())*10.0;
-			
-		sol = path + "optimal_solutions/minError_toy_30_10_02_2_0_5_-10_" + instance + 
-					 "_l1_LinMgr_indicator_L0Mgr_sos1_" + to_string(d_0) +
-					 ".000000_0." + to_string(percentage) + 
-					 "00000Result.dat";
-	}
-	else{
-		solution_n = dimensionality;
-		sol = path + "hyperplane.dat";
-	}
+	ifstream sfile = read_solutions(solution_n, percentage, sol, generated_instances, filename, path, k_0, d_0, x, instance, dimensionality);
 	
-	ifstream sfile(sol);
-	if (!sfile) {
-		cerr << "ERROR: could not open solution file '" << sol << endl;
-		cout << "./basic_model instance_number d k"<<endl;
-		return 1;
-	}
-	
-	cout << "+++Working with: " << sol << endl;
-	cout << "+++Instance: " << filename << endl;
 
 	//~ Read solutions
 	IloNumArray solution(env, solution_n);
@@ -217,27 +163,6 @@ int main(int argc, char **argv){
 		print_conflicts(env, model, cplex);
 	
 	int errors = 0;
-	/*
-	 * if(!generated_instances){
-		//~ Output result 
-		for( int i = 0; i < 50 ; i++) cout << "=";
-		cout << endl << "k_0 : " << k_0 << endl;
-		
-		string compare = path + "optimal_solutions/minError_toy_30_10_02_2_0_5_-10_" + instance + 
-					 "_l1_LinMgr_indicator_L0Mgr_sos1_" + to_string(d_0) +
-					 ".000000_0." + to_string(percentage) + 
-					 "00000Outlier.csv";
-		ifstream cfile;
-		cfile.open(compare);
-		if (!cfile) {
-			cerr << "ERROR: could not open comparison file '" << compare << endl;
-			cout << "./quadratic_model instance_number d k"<<endl;
-			return 1;
-		}
-		
-	}
-	*/
-	
 	
 	//~ Saving results
 	

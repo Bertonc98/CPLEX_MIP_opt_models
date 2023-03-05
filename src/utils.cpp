@@ -63,7 +63,8 @@ void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray 
 		if(error > max)
 			max = error;
 	}
-	
+	// SCALING OF THE BOUND 5 or 10
+	max *= 5;
 	for( int i = 0; i < solution_size; i++ ){
 		r[i] = max;
 	}
