@@ -64,7 +64,7 @@ void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray 
 			max = error;
 	}
 	// SCALING OF THE BOUND 5 or 10
-	max *= 5;
+	max *= 10;
 	for( int i = 0; i < solution_size; i++ ){
 		r[i] = max;
 	}
@@ -199,14 +199,14 @@ std::ifstream read_solutions(int& solution_n, int& percentage, std::string& sol,
 
 std::string save_results(std::fstream& dest_file, bool generated_instances, int dimensionality, int k, int d, int scale_factor, 
 					int time_span, IloCplex cplex, IloNumVar z, int d_0, int percentage, int errors, 
-					IloNumVarArray a, IloAlgorithm::Status st, std::string filename){
+					IloNumVarArray a, IloAlgorithm::Status st, std::string filename, std::string model){
 	
 	std::string res_name;
 	if(generated_instances){
-		res_name = "../src/data/SFSOD/generated_results/basic_results.csv";
+		res_name = "../src/data/SFSOD/generated_results/" + model + "_results.csv";
 	}
 	else{
-		res_name = "../src/data/SFSOD/basic_results.csv";
+		res_name = "../src/data/SFSOD/" + model + "_results.csv";
 	}
 	
 	

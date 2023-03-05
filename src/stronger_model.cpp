@@ -142,15 +142,15 @@ int main(int argc, char **argv){
 	// Resolution time
 	cplex.setParam(IloCplex::Param::TimeLimit, 500);
 	chrono::steady_clock sc;  
+	cout << "========================START SOLVING========================" <<endl;
 	auto start = sc.now();     // start timer
 
 	cplex.solve();
 
 	auto end = sc.now();       // end timer 
-	auto time_span = static_cast<chrono::duration<double>>(end - start).count();   // measure time span between start & end
-	
-	//std::cout.clear();
-	
+	auto time_span = chrono::duration_cast<chrono::milliseconds>(end - start).count();   // measure time span between start & end
+	cout << "========================END SOLVING========================" <<endl;
+	cout << "========================TIME " << time_span << " ========================" <<endl;
 	IloAlgorithm::Status st = cplex.getStatus();
 	cout <<"Status: " <<  st <<endl;
 	if(st != 2)
@@ -164,8 +164,9 @@ int main(int argc, char **argv){
 	
 	//~ Saving results
 	fstream dest_file;
-	string line = save_results(dest_file, generated_instances, dimensionality, k, d, scale_factor, time_span, cplex, z, d_0, percentage, errors, a, st, filename);
-		
+	string model_name = argv[0];
+	model_name = model_name.substr(0, model_name.find("_"));
+	string line = save_results(dest_file, generated_instances, dimensionality, k, d, scale_factor, time_span, cplex, z, d_0, percentage, errors, a, st, filename, model_name);	
 	dest_file<<line<<endl;
 	
 	

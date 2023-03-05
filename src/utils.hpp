@@ -29,7 +29,7 @@ std::ifstream read_solutions(int& solution_n, int& percentage, std::string& sol,
 
 std::string save_results(std::fstream& sdest_file, bool generated_instances, int dimensionality, int k, int d, int scale_factor, 
 					int time_span, IloCplex cplex, IloNumVar z, int d_0, int percentage, int errors, 
-					IloNumVarArray a, IloAlgorithm::Status st, std::string filename);
+					IloNumVarArray a, IloAlgorithm::Status st, std::string filename, std::string model);
 
 void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, std::string path, std::string instance, int percentage, IloNumVarArray s);
 
