@@ -140,7 +140,7 @@ int main(int argc, char **argv){
 	//Suppress the outpt
 	//std::cout.setstate(std::ios::failbit);
 	// Resolution time
-	cplex.setParam(IloCplex::Param::TimeLimit, 500);
+	cplex.setParam(IloCplex::Param::TimeLimit, 300);
 	chrono::steady_clock sc;  
 	cout << "========================START SOLVING========================" <<endl;
 	auto start = sc.now();     // start timer
@@ -166,6 +166,7 @@ int main(int argc, char **argv){
 	fstream dest_file;
 	string model_name = argv[0];
 	model_name = model_name.substr(0, model_name.find("_"));
+	
 	string line = save_results(dest_file, generated_instances, dimensionality, k, d, scale_factor, time_span, cplex, z, d_0, percentage, errors, a, st, filename, model_name);	
 	dest_file<<line<<endl;
 	

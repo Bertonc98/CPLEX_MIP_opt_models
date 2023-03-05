@@ -64,7 +64,7 @@ void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray 
 			max = error;
 	}
 	// SCALING OF THE BOUND 5 or 10
-	max *= 10;
+	max *= 5;
 	for( int i = 0; i < solution_size; i++ ){
 		r[i] = max;
 	}
@@ -225,19 +225,22 @@ std::string save_results(std::fstream& dest_file, bool generated_instances, int 
 	} 
 	
 	dest_file.open(res_name, std::fstream::app);
+	bool solvable = true;
 	if(generated_instances){
-		if(st!=2){
-			line += filename + ";" + std::to_string(dimensionality) + ";" + std::to_string(k) + ";" + std::to_string(scale_factor) + ";" + std::to_string(time_span) + ";None;None;";
-		}
-		else{
+		try{
 			line += filename + ";" + std::to_string(dimensionality) + ";" + std::to_string(k) + ";" + std::to_string(scale_factor) + ";" + std::to_string(time_span) + ";" + std::to_string(cplex.getObjValue() ) + ";" + std::to_string(cplex.getValue(z)) + ";";
+		}
+		catch(IloException e){
+			solvable = false;
+			line += filename + ";" + std::to_string(dimensionality) + ";" + std::to_string(k) + ";" + std::to_string(scale_factor) + ";" + std::to_string(time_span) + ";None;None;";
 		}
 	}
 	else{
 		line += filename + ";" + std::to_string(d_0) + ";" + std::to_string(percentage) + ";" + std::to_string(errors) + ";" + std::to_string(cplex.getObjValue()) + ";" + std::to_string(cplex.getValue(z)) + ";";
 	}
+	
 	for(int i=0; i<d; i++){
-		if(st != 2){
+		if(!solvable){
 			if(i != d-1)
 				line += "None~";
 			else
