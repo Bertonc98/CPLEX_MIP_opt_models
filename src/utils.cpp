@@ -53,7 +53,7 @@ float_t dot_product(IloNumArray x, IloNumArray solution){
 	return res;
 }
 
-void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r){
+void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r, int scale_factor = 5){
 	int solution_size =  x.getSize();
 	float max = 0;
 	float error;
@@ -64,7 +64,7 @@ void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray 
 			max = error;
 	}
 	// SCALING OF THE BOUND 5 or 10
-	max *= 5;
+	max *= scale_factor;
 	for( int i = 0; i < solution_size; i++ ){
 		r[i] = max;
 	}

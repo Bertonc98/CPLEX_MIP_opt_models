@@ -60,7 +60,12 @@ int main(int argc, char **argv){
 	int k = x.getSize();
 	IloNumArray r(env, k);
 	
-	compute_R(solution, x, y, r);
+	if(generated_instances){
+		compute_R(solution, x, y, r);
+	}
+	else{
+		compute_R(solution, x, y, r, 1);
+	}
 	
 	/*
 	float sum = 0;
