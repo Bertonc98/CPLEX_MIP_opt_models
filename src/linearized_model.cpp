@@ -61,7 +61,7 @@ int main(int argc, char **argv){
 		compute_W_optimal_hyperplane(solution, wl, wu, scale_factor);
 	}
 	else{
-		compute_W(solution, wl, wu, 1000);
+		compute_W(solution, wl, wu, 1);
 	}
 	
 	//K = I, amount of instances
@@ -69,7 +69,12 @@ int main(int argc, char **argv){
 	IloNumArray Rp(env, k, -IloInfinity, IloInfinity);
 	IloNumArray Rm(env, k, -IloInfinity, IloInfinity);
 	
-	compute_RpRm(solution, x, y, Rp, Rm, 10);
+	compute_RpRm(solution, x, y, Rp, Rm, 5);
+	
+	/*for(int i = 0; i<k; i++){
+		Rp[i] *= 1000000;
+		Rm[i] *= 1000000;
+	} */
 	
 	//~ END OF PREPROCESSING
 	
