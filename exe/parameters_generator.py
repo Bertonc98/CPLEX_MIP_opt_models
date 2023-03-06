@@ -7,12 +7,12 @@ if len(sys.argv) != 2:
 	exit()
 
 model_name = sys.argv[1]
-# basic = ["Gomory", "Disjunctive", "LiftProj"]
-# stronger = ["FlowCovers", "Gomory", "Disjunctive", "LiftProj", "MIRCut"]
-# quadratic = ["Gomory", "Disjunctive", "LiftProj"]
-# linearized = ["Gomory", "Disjunctive", "LiftProj", "MIRCut"]
-# mccormick = ["Gomory", "FlowCovers", "Disjunctive", "LiftProj", "MIRCut"]
-stuff = ["CPXPARAM_MIP_Cuts_"+cut for cut in ["FlowCovers", "Gomory", "Disjunctive", "LiftProj", "MIRCut"]]
+basic = ["Gomory", "Disjunctive", "LiftProj"]
+stronger = ["FlowCovers", "Gomory", "Disjunctive", "LiftProj", "MIRCut"]
+quadratic = ["Gomory", "Disjunctive", "LiftProj"]
+linearized = ["Gomory", "Disjunctive", "LiftProj", "MIRCut"]
+mccormick = ["Gomory", "FlowCovers", "Disjunctive", "LiftProj", "MIRCut"]
+stuff = ["CPXPARAM_MIP_Cuts_"+cut for cut in linearized]
 subsets = []
 for L in range(1, len(stuff) + 1):
     for subset in itertools.combinations(stuff, L):
@@ -51,8 +51,8 @@ for sub in subsets:
 	
 	name = "-".join([c.split("_")[-1] for c in active_params])
 	
-	if model_name == "linearized_model" or model_name == "mccormick_model":
-		text += dumb_parameters
+	#if model_name == "linearized_model" or model_name == "mccormick_model":
+	#	text += dumb_parameters
 	
 	with open(f"../src/parameters/{model_name}/CPXPARAM_MIP_Cuts_{name}.txt", "w+") as f:
 		f.writelines(text)
