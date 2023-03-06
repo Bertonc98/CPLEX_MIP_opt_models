@@ -61,7 +61,7 @@ int main(int argc, char **argv){
 		compute_W_optimal_hyperplane(solution, wl, wu, scale_factor);
 	}
 	else{
-		compute_W(solution, wl, wu, 1);
+		compute_W(solution, wl, wu, 100);
 	}
 	
 	//K = I, amount of instances

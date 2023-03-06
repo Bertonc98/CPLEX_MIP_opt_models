@@ -3,970 +3,45 @@ Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Tried aggregator 1 time.
-MIQP Presolve eliminated 64 rows and 0 columns.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
 Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
 Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.22 ticks)
 Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.04 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
 
 Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.75 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    27                      0.0000       11
-*     0+    0                         2429.3757        0.0000           100.00%
-*     0+    0                         1026.5391        0.0000           100.00%
-0     0        0.0000    27     1026.5391  Impl Bds: 27       78  100.00%
-0     0        0.0000    27     1026.5391   Impl Bds: 2       82  100.00%
-*     0+    0                          756.5897        0.0000           100.00%
-0     2        0.0000    27      756.5897        0.0000       82  100.00%                        0             0
-Elapsed time = 0.05 sec. (38.89 ticks, tree = 0.01 MB, solutions = 3)
-
-Implied bound cuts applied:  27
-
-Root node processing (before b&c):
-Real time             =    0.05 sec. (38.90 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.05 sec. (38.92 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 79 rows and 9 columns.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.19 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.23 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    14                      0.0000       13
-*     0+    0                         3272.4485        0.0000           100.00%
-*     0+    0                          430.4440        0.0000           100.00%
-0     0        0.0000    13      430.4440  Impl Bds: 13       63  100.00%
-*     0+    0                          404.6196        0.0000           100.00%
-0     0        0.0000    15      404.6196   Impl Bds: 6       79  100.00%
-*     0+    0                          279.1033        0.0000           100.00%
-0     0        0.0000    15      279.1033   Impl Bds: 1       81  100.00%
-*     0+    0                          228.9896        0.0000           100.00%
-0     2        0.0000    15      228.9896        0.0000       81  100.00%                        0             0
-Elapsed time = 0.03 sec. (17.96 ticks, tree = 0.01 MB, solutions = 5)
-
-Implied bound cuts applied:  15
-
-Root node processing (before b&c):
-Real time             =    0.03 sec. (17.98 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.03 sec. (17.99 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 68 rows and 0 columns.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.21 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.70 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    28                      0.0000       12
-*     0+    0                         3959.4042        0.0000           100.00%
-*     0+    0                         1173.5814        0.0000           100.00%
-0     0        0.0000    28     1173.5814  Impl Bds: 27      141  100.00%
-0     0        0.0000    28     1173.5814   Impl Bds: 6      159  100.00%
-*     0+    0                          856.5165        0.0000           100.00%
-0     2        0.0000    28      856.5165        0.0000      159  100.00%                        0             0
-Elapsed time = 0.06 sec. (41.34 ticks, tree = 0.01 MB, solutions = 3)
-
-Implied bound cuts applied:  29
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (41.35 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (41.37 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 79 rows and 9 columns.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.19 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.23 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    14                      0.0000       13
-*     0+    0                         3005.4159        0.0000           100.00%
-*     0+    0                          395.3366        0.0000           100.00%
-0     0        0.0000    12      395.3366  Impl Bds: 13       89  100.00%
-*     0+    0                          385.2649        0.0000           100.00%
-0     0        0.0000    13      385.2649   Impl Bds: 5      102  100.00%
-*     0+    0                          358.6133        0.0000           100.00%
-0     0        0.0000    14      358.6133   Impl Bds: 2      109  100.00%
-*     0+    0                          286.8046        0.0000           100.00%
-0     2        0.0000    14      286.8046        0.0000      109  100.00%                        0             0
-Elapsed time = 0.04 sec. (20.54 ticks, tree = 0.01 MB, solutions = 5)
-
-Implied bound cuts applied:  13
-
-Root node processing (before b&c):
-Real time             =    0.04 sec. (20.55 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.04 sec. (20.56 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 64 rows and 0 columns.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Cover probing fixed 0 vars, tightened 1 bounds.
-Tried aggregator 1 time.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.22 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.59 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       -0.0000    17                     -0.0000       12
-*     0+    0                         3261.8186       -0.0000           100.00%
-*     0+    0                          766.7996       -0.0000           100.00%
-0     0       -0.0000    16      766.7996  Impl Bds: 17       46  100.00%
-*     0+    0                          275.3348       -0.0000           100.00%
-0     2       -0.0000    16      275.3348       -0.0000       46  100.00%                        0             0
-Elapsed time = 0.03 sec. (17.28 ticks, tree = 0.01 MB, solutions = 3)
-
-Implied bound cuts applied:  17
-
-Root node processing (before b&c):
-Real time             =    0.03 sec. (17.29 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.03 sec. (17.30 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 79 rows and 9 columns.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.19 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.21 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    14                      0.0000       13
-*     0+    0                         2397.4108        0.0000           100.00%
-*     0+    0                          409.3649        0.0000           100.00%
-0     0        0.0000    15      409.3649  Impl Bds: 14       45  100.00%
-*     0+    0                          149.4203        0.0000           100.00%
-0     0        0.0000    15      149.4203   Impl Bds: 1       47  100.00%
-0     2        0.0000    15      149.4203        0.0000       47  100.00%                        0             0
-Elapsed time = 0.03 sec. (16.82 ticks, tree = 0.01 MB, solutions = 3)
-
-Implied bound cuts applied:  15
-
-Root node processing (before b&c):
-Real time             =    0.03 sec. (16.83 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.03 sec. (16.85 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 68 rows and 0 columns.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.21 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.73 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       -0.0000    27                     -0.0000       13
-*     0+    0                         5035.3548       -0.0000           100.00%
-*     0+    0                         1010.8538       -0.0000           100.00%
-0     0       -0.0000    26     1010.8538  Impl Bds: 27       79  100.00%
-*     0+    0                          302.0857       -0.0000           100.00%
-0     2       -0.0000    26      302.0857       -0.0000       79  100.00%                        0             0
-Elapsed time = 0.04 sec. (27.62 ticks, tree = 0.01 MB, solutions = 3)
-
-Implied bound cuts applied:  26
-
-Root node processing (before b&c):
-Real time             =    0.04 sec. (27.63 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.04 sec. (27.65 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 79 rows and 9 columns.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.19 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.39 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       -0.0000    28                     -0.0000       12
-*     0+    0                         5418.5961       -0.0000           100.00%
-*     0+    0                          832.2752       -0.0000           100.00%
-0     0       -0.0000    27      832.2752  Impl Bds: 28       77  100.00%
-*     0+    0                          223.3156       -0.0000           100.00%
-0     2       -0.0000    27      223.3156       -0.0000       77  100.00%                        0             0
-Elapsed time = 0.04 sec. (26.05 ticks, tree = 0.01 MB, solutions = 3)
-
-Implied bound cuts applied:  27
-
-Root node processing (before b&c):
-Real time             =    0.04 sec. (26.06 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.04 sec. (26.08 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 64 rows and 0 columns.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.22 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.87 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    28                      0.0000       12
-*     0+    0                         4409.9311        0.0000           100.00%
-*     0+    0                         1278.9463        0.0000           100.00%
-0     0        0.0000    28     1278.9463  Impl Bds: 27       73  100.00%
-0     0        0.0000    28     1278.9463   Impl Bds: 5       83  100.00%
-*     0+    0                         1059.0962        0.0000           100.00%
-0     2        0.0000    28     1059.0962        0.0000       83  100.00%                        0             0
-Elapsed time = 0.06 sec. (43.08 ticks, tree = 0.01 MB, solutions = 3)
-
-Implied bound cuts applied:  29
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (43.09 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (43.11 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 79 rows and 9 columns.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.19 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.30 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    24                      0.0000       12
-*     0+    0                         2620.5706        0.0000           100.00%
-*     0+    0                          838.6332        0.0000           100.00%
-0     0        0.0000    24      838.6332  Impl Bds: 17       46  100.00%
-*     0+    0                          386.2118        0.0000           100.00%
-0     2        0.0000    24      386.2118        0.0000       46  100.00%                        0             0
-Elapsed time = 0.04 sec. (26.29 ticks, tree = 0.01 MB, solutions = 3)
-
-Implied bound cuts applied:  17
-
-Root node processing (before b&c):
-Real time             =    0.04 sec. (26.30 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.04 sec. (26.32 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 68 rows and 0 columns.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.21 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.71 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       -0.0000    29                     -0.0000       12
-*     0+    0                         5078.2432       -0.0000           100.00%
-*     0+    0                         1205.4897       -0.0000           100.00%
-0     0       -0.0000    29     1205.4897  Impl Bds: 28       85  100.00%
-0     0       -0.0000    29     1205.4897   Impl Bds: 4       94  100.00%
-0     2       -0.0000    29     1205.4897       -0.0000       94  100.00%                        0             0
-Elapsed time = 0.06 sec. (46.34 ticks, tree = 0.01 MB, solutions = 2)
-
-Implied bound cuts applied:  30
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (46.35 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (46.37 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 79 rows and 9 columns.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.19 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.41 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    28                      0.0000       12
-*     0+    0                         5061.8884        0.0000           100.00%
-*     0+    0                          995.6573        0.0000           100.00%
-0     0        0.0000    28      995.6573  Impl Bds: 27       80  100.00%
-*     0+    0                          914.7607        0.0000           100.00%
-0     0        0.0000    28      914.7607   Impl Bds: 4       90  100.00%
-*     0+    0                          549.6483        0.0000           100.00%
-0     2        0.0000    28      549.6483        0.0000       90  100.00%                        0             0
-Elapsed time = 0.06 sec. (39.96 ticks, tree = 0.01 MB, solutions = 4)
-
-Implied bound cuts applied:  29
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (39.97 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (39.99 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 64 rows and 0 columns.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.22 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.85 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       -0.0000    29                     -0.0000       12
-*     0+    0                         3347.8338       -0.0000           100.00%
-*     0+    0                         1103.5671       -0.0000           100.00%
-0     0       -0.0000    29     1103.5671  Impl Bds: 28      103  100.00%
-0     0       -0.0000    29     1103.5671   Impl Bds: 2      107  100.00%
-*     0+    0                         1067.6527       -0.0000           100.00%
-0     2       -0.0000    29     1067.6527       -0.0000      107  100.00%                        0             0
-Elapsed time = 0.06 sec. (48.41 ticks, tree = 0.01 MB, solutions = 3)
-
-Implied bound cuts applied:  30
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (48.42 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.07 sec. (48.44 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 79 rows and 9 columns.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.19 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.44 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       -0.0000    29                     -0.0000       12
-*     0+    0                         2891.3767       -0.0000           100.00%
-*     0+    0                          885.9934       -0.0000           100.00%
-0     0       -0.0000    29      885.9934  Impl Bds: 26       74  100.00%
-*     0+    0                          834.6631       -0.0000           100.00%
-*     0+    0                          263.8090       -0.0000           100.00%
-0     2       -0.0000    29      263.8090       -0.0000       74  100.00%                        0             0
-Elapsed time = 0.05 sec. (33.61 ticks, tree = 0.01 MB, solutions = 4)
-
-Implied bound cuts applied:  26
-
-Root node processing (before b&c):
-Real time             =    0.05 sec. (33.61 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.05 sec. (33.63 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 68 rows and 0 columns.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.21 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.72 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       -0.0000    29                     -0.0000       12
-*     0+    0                         2605.7473       -0.0000           100.00%
-*     0+    0                         1103.5570       -0.0000           100.00%
-0     0       -0.0000    29     1103.5570  Impl Bds: 27      100  100.00%
-0     0       -0.0000    29     1103.5570   Impl Bds: 2      113  100.00%
-0     2       -0.0000    29     1103.5570       -0.0000      113  100.00%                        0             0
-Elapsed time = 0.07 sec. (48.34 ticks, tree = 0.01 MB, solutions = 2)
-
-Implied bound cuts applied:  27
-
-Root node processing (before b&c):
-Real time             =    0.07 sec. (48.35 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.07 sec. (48.36 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 79 rows and 9 columns.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.19 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.47 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       -0.0000    29                     -0.0000       13
-*     0+    0                         2702.1327       -0.0000           100.00%
-*     0+    0                          904.1924       -0.0000           100.00%
-0     0       -0.0000    29      904.1924  Impl Bds: 22       61  100.00%
-0     0       -0.0000    29      904.1924   Impl Bds: 1       63  100.00%
-*     0+    0                          478.7292       -0.0000           100.00%
-*     0+    0                          198.4047       -0.0000           100.00%
-0     2       -0.0000    29      198.4047       -0.0000       63  100.00%                        0             0
-Elapsed time = 0.07 sec. (38.16 ticks, tree = 0.01 MB, solutions = 4)
-
-Implied bound cuts applied:  22
-
-Root node processing (before b&c):
-Real time             =    0.07 sec. (38.17 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.07 sec. (38.19 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 64 rows and 0 columns.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.22 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.02 sec. (2.76 ticks)
+Root relaxation solution time = 0.01 sec. (2.43 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 0     0        0.0000    29                      0.0000       11
-*     0+    0                         3576.8670        0.0000           100.00%
-*     0+    0                         1089.1526        0.0000           100.00%
-0     0        0.0000    29     1089.1526  Impl Bds: 28      115  100.00%
-0     0       -0.0000    29     1089.1526   Impl Bds: 7      130  100.00%
-*     0+    0                          968.6870        0.0000           100.00%
-0     2       -0.0000    29      968.6870        0.0000      130  100.00%                        0             0
-Elapsed time = 0.12 sec. (58.65 ticks, tree = 0.01 MB, solutions = 3)
+*     0+    0                         3639.0614        0.0000           100.00%
+*     0+    0                         1030.0134        0.0000           100.00%
+*     0+    0                          150.7464        0.0000           100.00%
+0     2        0.0000    29      150.7464        0.0000       11  100.00%                        0             0
+Elapsed time = 0.05 sec. (36.91 ticks, tree = 0.01 MB, solutions = 3)
 
-Implied bound cuts applied:  30
+Implied bound cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.12 sec. (58.66 ticks)
+Real time             =    0.05 sec. (36.92 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.13 sec. (58.68 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 79 rows and 9 columns.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.19 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.44 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    29                      0.0000       12
-*     0+    0                         2805.8693        0.0000           100.00%
-*     0+    0                         1072.7036        0.0000           100.00%
-0     0        0.0000    29     1072.7036  Impl Bds: 28       79  100.00%
-*     0+    0                          471.4607        0.0000           100.00%
-*     0+    0                          393.1419        0.0000           100.00%
-0     2        0.0000    29      393.1419        0.0000       79  100.00%                        0             0
-Elapsed time = 0.05 sec. (31.16 ticks, tree = 0.01 MB, solutions = 4)
-
-Implied bound cuts applied:  28
-
-Root node processing (before b&c):
-Real time             =    0.05 sec. (31.16 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.05 sec. (31.18 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 68 rows and 0 columns.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.21 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.72 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    29                      0.0000       12
-*     0+    0                         3636.3062        0.0000           100.00%
-*     0+    0                         1085.0621        0.0000           100.00%
-0     0        0.0000    29     1085.0621  Impl Bds: 28      115  100.00%
-*     0+    0                         1046.8190        0.0000           100.00%
-0     0        0.0000    29     1046.8190   Impl Bds: 6      127  100.00%
-0     2        0.0000    29     1046.8190        0.0000      127  100.00%                        0             0
-Elapsed time = 0.07 sec. (49.67 ticks, tree = 0.01 MB, solutions = 3)
-
-Implied bound cuts applied:  30
-
-Root node processing (before b&c):
-Real time             =    0.07 sec. (49.68 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.07 sec. (49.70 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 79 rows and 9 columns.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.19 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.41 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       -0.0000    29                     -0.0000       12
-*     0+    0                         2751.8816       -0.0000           100.00%
-*     0+    0                          957.8379       -0.0000           100.00%
-0     0       -0.0000    29      957.8379  Impl Bds: 20       54  100.00%
-*     0+    0                          567.5334       -0.0000           100.00%
-*     0+    0                          316.2047       -0.0000           100.00%
-0     2       -0.0000    29      316.2047       -0.0000       54  100.00%                        0             0
-Elapsed time = 0.05 sec. (32.02 ticks, tree = 0.01 MB, solutions = 4)
-
-Implied bound cuts applied:  20
-
-Root node processing (before b&c):
-Real time             =    0.05 sec. (32.03 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.05 sec. (32.05 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 64 rows and 0 columns.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Cover probing fixed 0 vars, tightened 1 bounds.
-Tried aggregator 1 time.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.22 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.95 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    28                      0.0000       13
-*     0+    0                         4442.0625        0.0000           100.00%
-*     0+    0                         1314.2586        0.0000           100.00%
-0     0        0.0000    28     1314.2586  Impl Bds: 28       91  100.00%
-*     0+    0                          712.2527        0.0000           100.00%
-*     0+    0                          332.2684        0.0000           100.00%
-0     2        0.0000    28      332.2684        0.0000       91  100.00%                        0             0
-Elapsed time = 0.05 sec. (33.50 ticks, tree = 0.01 MB, solutions = 4)
-
-Implied bound cuts applied:  28
-
-Root node processing (before b&c):
-Real time             =    0.05 sec. (33.51 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.05 sec. (33.53 ticks)
+Total (root+branch&cut) =    0.05 sec. (36.94 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -978,217 +53,85 @@ Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
 Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
 Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
 Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.19 ticks)
 Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.49 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    29                      0.0000       13
-*     0+    0                         4519.4390        0.0000           100.00%
-*     0+    0                          606.4076        0.0000           100.00%
-0     0        0.0000    28      606.4076  Impl Bds: 28       75  100.00%
-*     0+    0                          381.8798        0.0000           100.00%
-*     0+    0                          211.5816        0.0000           100.00%
-0     2        0.0000    28      211.5816        0.0000       75  100.00%                        0             0
-Elapsed time = 0.05 sec. (31.91 ticks, tree = 0.01 MB, solutions = 4)
-
-Implied bound cuts applied:  28
-
-Root node processing (before b&c):
-Real time             =    0.05 sec. (31.92 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.05 sec. (31.94 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 74 rows and 3 columns.
-MIQP Presolve modified 3 coefficients.
-Reduced MIQP has 126 rows, 106 columns, and 800 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.06 ticks)
-Cover probing fixed 0 vars, tightened 20 bounds.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 12 rows and 6 columns.
-MIQP Presolve modified 11 coefficients.
-Reduced MIQP has 114 rows, 100 columns, and 722 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.20 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing fixed 0 vars, tightened 3 bounds.
-Probing time = 0.00 sec. (0.05 ticks)
-Cover probing fixed 0 vars, tightened 12 bounds.
-Tightened 4 constraints.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.27 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       -0.0000    19                     -0.0000       15
-*     0+    0                         2758.5282       -0.0000           100.00%
-*     0+    0                         1061.9824       -0.0000           100.00%
-0     0       -0.0000    18     1061.9824  Impl Bds: 19       53  100.00%
-*     0+    0                           29.9325       -0.0000           100.00%
-*     0+    0                            2.4199       -0.0000           100.00%
-0     0  -1.00000e+75     0        2.4199       -0.0000       53  100.00%
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 76 rows and 61 columns.
-MIQP Presolve modified 1 coefficients.
-Reduced MIQP has 38 rows, 39 columns, and 205 nonzeros.
-Reduced MIQP has 16 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.12 ticks)
-Probing time = 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 38 rows, 39 columns, and 205 nonzeros.
-Reduced MIQP has 16 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.05 ticks)
-Represolve time = 0.00 sec. (0.29 ticks)
 Probing time = 0.00 sec. (0.01 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
 
 Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.00 sec. (0.72 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                            2.4199       -0.0000           100.00%
-0     0       -0.0000     4        2.4199       -0.0000       68  100.00%
-0     2       -0.0000     4        2.4199       -0.0000       68  100.00%                        0             0
-Elapsed time = 0.06 sec. (20.53 ticks, tree = 0.01 MB, solutions = 6)
-
-Implied bound cuts applied:  3
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (20.54 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (20.54 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 89 rows and 14 columns.
-MIQP Presolve modified 5 coefficients.
-Reduced MIQP has 111 rows, 95 columns, and 745 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 111 rows, 95 columns, and 745 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.18 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.25 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    25                      0.0000       15
-*     0+    0                         3761.2048        0.0000           100.00%
-*     0+    0                          633.3686        0.0000           100.00%
-0     0        0.0000    23      633.3686  Impl Bds: 25      155  100.00%
-*     0+    0                          343.3204        0.0000           100.00%
-*     0+    0                          314.5552        0.0000           100.00%
-0     2        0.0000    23      314.5552        0.0000      155  100.00%                        0             0
-Elapsed time = 0.06 sec. (29.22 ticks, tree = 0.01 MB, solutions = 4)
-
-Implied bound cuts applied:  21
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (29.23 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (29.25 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 64 rows and 0 columns.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.22 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.88 ticks)
+Root relaxation solution time = 0.01 sec. (2.40 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 0     0        0.0000    29                      0.0000       12
-*     0+    0                         3612.5558        0.0000           100.00%
-*     0+    0                          938.7500        0.0000           100.00%
-0     0        0.0000    29      938.7500  Impl Bds: 28       99  100.00%
-*     0+    0                          804.8402        0.0000           100.00%
-*     0+    0                          753.6466        0.0000           100.00%
-0     2        0.0000    29      753.6466        0.0000       99  100.00%                        0             0
-Elapsed time = 0.06 sec. (43.76 ticks, tree = 0.01 MB, solutions = 4)
+*     0+    0                         4384.8801        0.0000           100.00%
+*     0+    0                          713.7452        0.0000           100.00%
+*     0+    0                          698.6529        0.0000           100.00%
+*     0+    0                          193.8439        0.0000           100.00%
+0     2        0.0000    29      193.8439        0.0000       12  100.00%                        0             0
+Elapsed time = 0.03 sec. (25.07 ticks, tree = 0.01 MB, solutions = 4)
 
-Implied bound cuts applied:  25
+Implied bound cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (43.77 ticks)
+Real time             =    0.03 sec. (25.07 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (25.09 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.35 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       10
+*     0+    0                         4092.1648       -0.0000           100.00%
+*     0+    0                         1030.0134        0.0000           100.00%
+*     0+    0                          150.7464        0.0000           100.00%
+0     2        0.0000    29      150.7464        0.0000       10  100.00%                        0             0
+Elapsed time = 0.05 sec. (37.64 ticks, tree = 0.01 MB, solutions = 3)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.05 sec. (37.65 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (43.79 ticks)
+Total (root+branch&cut) =    0.05 sec. (37.66 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1200,14 +143,14 @@ Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
 Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
 Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
 Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.19 ticks)
 Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
@@ -1219,386 +162,67 @@ Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 0     0        0.0000    29                      0.0000       13
-*     0+    0                         3587.6238        0.0000           100.00%
-*     0+    0                          699.1337        0.0000           100.00%
-0     0        0.0000    29      699.1337  Impl Bds: 28       86  100.00%
-*     0+    0                          401.9287        0.0000           100.00%
-*     0+    0                          341.9499        0.0000           100.00%
-0     2        0.0000    29      341.9499        0.0000       86  100.00%                        0             0
-Elapsed time = 0.06 sec. (39.06 ticks, tree = 0.01 MB, solutions = 4)
+*     0+    0                         3700.3295        0.0000           100.00%
+*     0+    0                          707.7725        0.0000           100.00%
+*     0+    0                          567.5361        0.0000           100.00%
+*     0+    0                          215.4988        0.0000           100.00%
+0     2        0.0000    29      215.4988        0.0000       13  100.00%                        0             0
+Elapsed time = 0.04 sec. (25.57 ticks, tree = 0.01 MB, solutions = 4)
 
-Implied bound cuts applied:  25
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (39.07 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (39.08 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 68 rows and 0 columns.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.21 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.79 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    29                      0.0000       13
-*     0+    0                         3532.1610        0.0000           100.00%
-*     0+    0                          938.1434        0.0000           100.00%
-0     0        0.0000    29      938.1434  Impl Bds: 28       93  100.00%
-*     0+    0                          706.0396        0.0000           100.00%
-0     0        0.0000    29      706.0396   Impl Bds: 3       99  100.00%
-*     0+    0                          524.1438        0.0000           100.00%
-*     0+    0                          172.6138        0.0000           100.00%
-0     2        0.0000    29      172.6138        0.0000       99  100.00%                        0             0
-Elapsed time = 0.06 sec. (40.75 ticks, tree = 0.01 MB, solutions = 5)
-
-Implied bound cuts applied:  24
+Implied bound cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (40.76 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (40.78 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 79 rows and 9 columns.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.19 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.47 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    29                      0.0000       13
-*     0+    0                         2978.7946        0.0000           100.00%
-*     0+    0                          695.3404        0.0000           100.00%
-0     0        0.0000    29      695.3404  Impl Bds: 25       68  100.00%
-*     0+    0                          601.0885        0.0000           100.00%
-0     0        0.0000    29      601.0885   Impl Bds: 1       70  100.00%
-*     0+    0                          191.4550        0.0000           100.00%
-*     0+    0                           28.0503        0.0000           100.00%
-0     2        0.0000    29       28.0503        0.0000       70  100.00%                        0             0
-Elapsed time = 0.06 sec. (38.38 ticks, tree = 0.01 MB, solutions = 5)
-
-Implied bound cuts applied:  24
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (38.39 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (38.41 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 64 rows and 0 columns.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Cover probing fixed 0 vars, tightened 1 bounds.
-Tried aggregator 1 time.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.22 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.73 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    30                      0.0000       11
-*     0+    0                         5836.8915        0.0000           100.00%
-*     0+    0                         1316.0757        0.0000           100.00%
-0     0        0.0000    29     1316.0757  Impl Bds: 30       98  100.00%
-*     0+    0                          549.3709        0.0000           100.00%
-0     2        0.0000    29      549.3709        0.0000       98  100.00%                        0             0
-Elapsed time = 0.04 sec. (30.22 ticks, tree = 0.01 MB, solutions = 3)
-
-Implied bound cuts applied:  28
-
-Root node processing (before b&c):
-Real time             =    0.04 sec. (30.23 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.04 sec. (30.25 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 79 rows and 9 columns.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.19 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.24 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0        0.0000    21                      0.0000       12
-*     0+    0                         2949.2601        0.0000           100.00%
-*     0+    0                          927.5887        0.0000           100.00%
-0     0        0.0000    21      927.5887  Impl Bds: 13       38  100.00%
-*     0+    0                          308.9130        0.0000           100.00%
-*     0+    0                          115.6174        0.0000           100.00%
-0     2        0.0000    21      115.6174        0.0000       38  100.00%                        0             0
-Elapsed time = 0.04 sec. (20.20 ticks, tree = 0.01 MB, solutions = 4)
-
-Implied bound cuts applied:  13
-
-Root node processing (before b&c):
-Real time             =    0.04 sec. (20.21 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.04 sec. (20.23 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 68 rows and 0 columns.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Cover probing fixed 0 vars, tightened 5 bounds.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 2 rows and 1 columns.
-MIQP Presolve modified 2 coefficients.
-Reduced MIQP has 130 rows, 108 columns, and 826 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.22 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing fixed 0 vars, tightened 1 bounds.
-Probing time = 0.00 sec. (0.04 ticks)
-Cover probing fixed 0 vars, tightened 4 bounds.
-Tightened 2 constraints.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.68 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       -0.0000    27                     -0.0000       13
-*     0+    0                         3890.8939       -0.0000           100.00%
-*     0+    0                         1288.9355       -0.0000           100.00%
-0     0       -0.0000    26     1288.9355  Impl Bds: 27       88  100.00%
-*     0+    0                          322.5251       -0.0000           100.00%
-*     0+    0                            0.0935       -0.0000           100.00%
-0     0  -1.00000e+75     0        0.0935       -0.0000       88  100.00%
-
-Repeating presolve.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 70 rows and 53 columns.
-Reduced MIQP has 60 rows, 55 columns, and 353 nonzeros.
-Reduced MIQP has 21 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 60 rows, 55 columns, and 353 nonzeros.
-Reduced MIQP has 21 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.08 ticks)
-Represolve time = 0.00 sec. (0.37 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (1.03 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                            0.0935       -0.0000           100.00%
-0     0       -0.0000     7        0.0935       -0.0000      101  100.00%
-0     0       -0.0000     6        0.0935   Impl Bds: 2      105  100.00%
-0     2       -0.0000     6        0.0935       -0.0000      105  100.00%                        0             0
-Elapsed time = 0.07 sec. (35.24 ticks, tree = 0.01 MB, solutions = 6)
-
-Implied bound cuts applied:  7
-
-Root node processing (before b&c):
-Real time             =    0.07 sec. (35.25 ticks)
+Real time             =    0.04 sec. (25.58 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.07 sec. (35.25 ticks)
+Total (root+branch&cut) =    0.04 sec. (25.59 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Tried aggregator 1 time.
-MIQP Presolve eliminated 83 rows and 11 columns.
-MIQP Presolve modified 2 coefficients.
-Reduced MIQP has 117 rows, 98 columns, and 784 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 117 rows, 98 columns, and 784 nonzeros.
-Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.18 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.24 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-0     0       -0.0000    25                     -0.0000       13
-*     0+    0                         3415.1208       -0.0000           100.00%
-*     0+    0                         1100.2016       -0.0000           100.00%
-0     0       -0.0000    24     1100.2016  Impl Bds: 25       65  100.00%
-*     0+    0                          339.7137       -0.0000           100.00%
-*     0+    0                          242.0368       -0.0000           100.00%
-*     0+    0                          142.4494       -0.0000           100.00%
-0     2       -0.0000    24      142.4494       -0.0000       65  100.00%                        0             0
-Elapsed time = 0.05 sec. (24.64 ticks, tree = 0.01 MB, solutions = 5)
-
-Implied bound cuts applied:  20
-
-Root node processing (before b&c):
-Real time             =    0.05 sec. (24.65 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.01 ticks)
-------------
-Total (root+branch&cut) =    0.05 sec. (24.67 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 64 rows and 0 columns.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
 Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
 Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.22 ticks)
 Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.04 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
 
 Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.76 ticks)
+Root relaxation solution time = 0.01 sec. (2.54 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0       -0.0000    29                     -0.0000       11
-*     0+    0                         2266.6548       -0.0000           100.00%
-*     0+    0                         1030.0515       -0.0000           100.00%
-0     0       -0.0000    29     1030.0515  Impl Bds: 27       74  100.00%
-0     0       -0.0000    29     1030.0515   Impl Bds: 2       78  100.00%
-*     0+    0                          582.0495       -0.0000           100.00%
-0     2       -0.0000    29      582.0495       -0.0000       78  100.00%                        0             0
-Elapsed time = 0.06 sec. (46.23 ticks, tree = 0.01 MB, solutions = 3)
+0     0       -0.0000    29                     -0.0000       13
+*     0+    0                         3971.8503       -0.0000           100.00%
+*     0+    0                          907.4894       -0.0000           100.00%
+*     0+    0                          827.1962       -0.0000           100.00%
+*     0+    0                          363.3925       -0.0000           100.00%
+0     2       -0.0000    29      363.3925       -0.0000       13  100.00%                        0             0
+Elapsed time = 0.04 sec. (33.04 ticks, tree = 0.01 MB, solutions = 4)
 
-Implied bound cuts applied:  29
+Implied bound cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (46.24 ticks)
+Real time             =    0.04 sec. (33.05 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (46.26 ticks)
+Total (root+branch&cut) =    0.05 sec. (33.06 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1609,15 +233,61 @@ MIQP Presolve eliminated 79 rows and 9 columns.
 Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
 Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
+Presolve time = 0.00 sec. (0.26 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
 Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
 Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.19 ticks)
 Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.43 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       12
+*     0+    0                         3822.3102        0.0000           100.00%
+*     0+    0                          921.8298        0.0000           100.00%
+*     0+    0                          848.7759        0.0000           100.00%
+*     0+    0                          141.5589        0.0000           100.00%
+0     2        0.0000    29      141.5589        0.0000       12  100.00%                        0             0
+Elapsed time = 0.03 sec. (24.76 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (24.77 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (24.79 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
@@ -1628,162 +298,110 @@ Root relaxation solution time = 0.01 sec. (2.50 ticks)
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0       -0.0000    28                     -0.0000       13
-*     0+    0                         3742.9462       -0.0000           100.00%
-*     0+    0                          717.6282       -0.0000           100.00%
-0     0       -0.0000    28      717.6282  Impl Bds: 27       68  100.00%
-*     0+    0                          638.5871       -0.0000           100.00%
-*     0+    0                          518.6048       -0.0000           100.00%
-*     0+    0                          134.8752       -0.0000           100.00%
-0     2       -0.0000    28      134.8752       -0.0000       68  100.00%                        0             0
-Elapsed time = 0.05 sec. (32.77 ticks, tree = 0.01 MB, solutions = 5)
-
-Implied bound cuts applied:  24
-
-Root node processing (before b&c):
-Real time             =    0.05 sec. (32.78 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.05 sec. (32.80 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 1, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Tried aggregator 1 time.
-MIQP Presolve eliminated 68 rows and 0 columns.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Tried aggregator 1 time.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
-Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.21 ticks)
-Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.03 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-
-Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.72 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
 0     0       -0.0000    29                     -0.0000       12
-*     0+    0                         2714.7275       -0.0000           100.00%
-*     0+    0                         1021.8941       -0.0000           100.00%
-0     0       -0.0000    29     1021.8941  Impl Bds: 25       62  100.00%
-*     0+    0                          965.6714       -0.0000           100.00%
-*     0+    0                          774.6617       -0.0000           100.00%
-0     2       -0.0000    29      774.6617       -0.0000       62  100.00%                        0             0
-Elapsed time = 0.05 sec. (37.51 ticks, tree = 0.01 MB, solutions = 4)
+*     0+    0                         3318.6391       -0.0000           100.00%
+*     0+    0                         1141.1136       -0.0000           100.00%
+*     0+    0                          875.8024       -0.0000           100.00%
+0     2       -0.0000    29      875.8024       -0.0000       12  100.00%                        0             0
+Elapsed time = 0.05 sec. (37.57 ticks, tree = 0.01 MB, solutions = 3)
 
-Implied bound cuts applied:  25
+Implied bound cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.05 sec. (37.52 ticks)
+Real time             =    0.05 sec. (37.58 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.05 sec. (37.54 ticks)
+Total (root+branch&cut) =    0.05 sec. (37.59 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Tried aggregator 1 time.
-MIQP Presolve eliminated 91 rows and 15 columns.
-MIQP Presolve modified 6 coefficients.
-Reduced MIQP has 109 rows, 94 columns, and 732 nonzeros.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
 Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-Reduced MIQP has 109 rows, 94 columns, and 732 nonzeros.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
 Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.17 ticks)
+Presolve time = 0.00 sec. (0.19 ticks)
 Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
 
 Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.12 ticks)
+Root relaxation solution time = 0.01 sec. (2.51 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0       -0.0000    23                     -0.0000       14
-*     0+    0                         3120.5902       -0.0000           100.00%
-*     0+    0                          701.2883       -0.0000           100.00%
-0     0       -0.0000    22      701.2883  Impl Bds: 23       62  100.00%
-*     0+    0                          202.1919       -0.0000           100.00%
-0     2       -0.0000    22      202.1919       -0.0000       62  100.00%                        0             0
-Elapsed time = 0.04 sec. (21.04 ticks, tree = 0.01 MB, solutions = 3)
+0     0       -0.0000    29                     -0.0000       13
+*     0+    0                         4168.3936       -0.0000           100.00%
+*     0+    0                          804.5059       -0.0000           100.00%
+*     0+    0                          129.6052       -0.0000           100.00%
+0     2       -0.0000    29      129.6052       -0.0000       13  100.00%                        0             0
+Elapsed time = 0.04 sec. (29.45 ticks, tree = 0.01 MB, solutions = 3)
 
-Implied bound cuts applied:  22
+Implied bound cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.04 sec. (21.05 ticks)
+Real time             =    0.04 sec. (29.46 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.05 sec. (21.06 ticks)
+Total (root+branch&cut) =    0.04 sec. (29.47 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Tried aggregator 1 time.
-MIQP Presolve eliminated 64 rows and 0 columns.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
 Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.29 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Cover probing fixed 0 vars, tightened 1 bounds.
+Probing time = 0.00 sec. (0.08 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
-Reduced MIQP has 136 rows, 109 columns, and 847 nonzeros.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
 Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.22 ticks)
 Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.04 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
 
 Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.73 ticks)
+Root relaxation solution time = 0.01 sec. (2.52 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0       -0.0000    30                     -0.0000       11
-*     0+    0                         7135.2084       -0.0000           100.00%
-*     0+    0                         1130.5701       -0.0000           100.00%
-0     0       -0.0000    29     1130.5701  Impl Bds: 30       98  100.00%
-*     0+    0                          968.7375       -0.0000           100.00%
-0     2       -0.0000    29      968.7375       -0.0000       98  100.00%                        0             0
-Elapsed time = 0.05 sec. (37.21 ticks, tree = 0.01 MB, solutions = 3)
+0     0        0.0000    29                      0.0000       12
+*     0+    0                         3218.8519        0.0000           100.00%
+*     0+    0                         1182.1276        0.0000           100.00%
+*     0+    0                          329.5417        0.0000           100.00%
+0     2        0.0000    29      329.5417        0.0000       12  100.00%                        0             0
+Elapsed time = 0.04 sec. (30.19 ticks, tree = 0.01 MB, solutions = 3)
 
-Implied bound cuts applied:  28
+Implied bound cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.05 sec. (37.21 ticks)
+Real time             =    0.04 sec. (30.20 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.05 sec. (37.23 ticks)
+Total (root+branch&cut) =    0.04 sec. (30.21 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1795,136 +413,1396 @@ Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
 Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
 Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
 Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
 Presolve time = 0.00 sec. (0.19 ticks)
 Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
 
 Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.41 ticks)
+Root relaxation solution time = 0.01 sec. (2.43 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000    27                      0.0000       12
-*     0+    0                         3363.3122        0.0000           100.00%
-*     0+    0                          593.1735        0.0000           100.00%
-0     0        0.0000    27      593.1735  Impl Bds: 25       62  100.00%
-*     0+    0                          214.6568        0.0000           100.00%
-0     2        0.0000    27      214.6568        0.0000       62  100.00%                        0             0
-Elapsed time = 0.05 sec. (31.52 ticks, tree = 0.01 MB, solutions = 3)
+0     0        0.0000    29                      0.0000       12
+*     0+    0                         3300.1116        0.0000           100.00%
+*     0+    0                          989.3200        0.0000           100.00%
+*     0+    0                          542.2401        0.0000           100.00%
+*     0+    0                          102.5757        0.0000           100.00%
+0     2        0.0000    29      102.5757        0.0000       12  100.00%                        0             0
+Elapsed time = 0.04 sec. (26.95 ticks, tree = 0.01 MB, solutions = 4)
 
-Implied bound cuts applied:  25
+Implied bound cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.05 sec. (31.53 ticks)
+Real time             =    0.04 sec. (26.96 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.05 sec. (31.55 ticks)
+Total (root+branch&cut) =    0.04 sec. (26.97 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Tried aggregator 1 time.
-MIQP Presolve eliminated 68 rows and 0 columns.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
 Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.28 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Cover probing fixed 0 vars, tightened 3 bounds.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
 Tried aggregator 1 time.
-MIQP Presolve modified 1 coefficients.
-Reduced MIQP has 132 rows, 109 columns, and 839 nonzeros.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
 Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.21 ticks)
+Presolve time = 0.00 sec. (0.22 ticks)
 Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.04 ticks)
-Cover probing fixed 0 vars, tightened 1 bounds.
-Tightened 1 constraints.
+Probing time = 0.00 sec. (0.05 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
 
 Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.64 ticks)
+Root relaxation solution time = 0.01 sec. (2.50 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0       -0.0000    26                     -0.0000       13
-*     0+    0                         4038.1295       -0.0000           100.00%
-*     0+    0                          888.4106       -0.0000           100.00%
-0     0       -0.0000    25      888.4106  Impl Bds: 26       78  100.00%
-*     0+    0                          258.0915       -0.0000           100.00%
-*     0+    0                          115.8891       -0.0000           100.00%
-*     0+    0                            0.5569       -0.0000           100.00%
-0     0  -1.00000e+75     0        0.5569       -0.0000       78  100.00%
-0     2       -0.0000    22        0.5569       -0.0000       78  100.00%                        0             0
-Elapsed time = 0.06 sec. (28.14 ticks, tree = 0.01 MB, solutions = 5)
+0     0       -0.0000    29                     -0.0000       12
+*     0+    0                         4847.4446       -0.0000           100.00%
+*     0+    0                         1182.1276       -0.0000           100.00%
+*     0+    0                          148.2770       -0.0000           100.00%
+0     2       -0.0000    29      148.2770       -0.0000       12  100.00%                        0             0
+Elapsed time = 0.05 sec. (36.64 ticks, tree = 0.01 MB, solutions = 3)
 
-Implied bound cuts applied:  24
+Implied bound cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (28.15 ticks)
+Real time             =    0.05 sec. (36.65 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (28.17 ticks)
+Total (root+branch&cut) =    0.05 sec. (36.67 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Tried aggregator 1 time.
-MIQP Presolve eliminated 89 rows and 14 columns.
-MIQP Presolve modified 5 coefficients.
-Reduced MIQP has 111 rows, 95 columns, and 745 nonzeros.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
 Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
-Reduced MIQP has 111 rows, 95 columns, and 745 nonzeros.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
 Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 9 nonzeros.
-Presolve time = 0.00 sec. (0.18 ticks)
+Presolve time = 0.00 sec. (0.19 ticks)
 Classifier predicts products in MIQP should be linearized.
-Probing time = 0.00 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
 
 Warning:  Barrier optimality criterion affected by large objective shift.
-Root relaxation solution time = 0.01 sec. (2.09 ticks)
+Root relaxation solution time = 0.01 sec. (2.08 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-0     0        0.0000    23                      0.0000       13
-*     0+    0                         3818.6617        0.0000           100.00%
-*     0+    0                          700.8378        0.0000           100.00%
-0     0        0.0000    22      700.8378  Impl Bds: 23       61  100.00%
-*     0+    0                          244.4862        0.0000           100.00%
-0     2        0.0000    22      244.4862        0.0000       61  100.00%                        0             0
-Elapsed time = 0.05 sec. (22.05 ticks, tree = 0.01 MB, solutions = 3)
+0     0        0.0000    11                      0.0000       10
+*     0+    0                         2555.8318        0.0000           100.00%
+*     0+    0                          158.2803        0.0000           100.00%
+*     0+    0                           15.2792        0.0000           100.00%
+0     2        0.0000    11       15.2792        0.0000       10  100.00%                        0             0
+Elapsed time = 0.02 sec. (9.70 ticks, tree = 0.01 MB, solutions = 3)
 
-Implied bound cuts applied:  22
+Implied bound cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.05 sec. (22.06 ticks)
+Real time             =    0.02 sec. (9.70 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.05 sec. (22.08 ticks)
+Total (root+branch&cut) =    0.02 sec. (9.72 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.28 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.50 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       12
+*     0+    0                         2594.6902       -0.0000           100.00%
+*     0+    0                         1022.2787       -0.0000           100.00%
+*     0+    0                          129.0326       -0.0000           100.00%
+0     2       -0.0000    29      129.0326       -0.0000       12  100.00%                        0             0
+Elapsed time = 0.04 sec. (31.60 ticks, tree = 0.01 MB, solutions = 3)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (31.61 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (31.63 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.26 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.29 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       10
+*     0+    0                         2656.4873       -0.0000           100.00%
+*     0+    0                          805.3814       -0.0000           100.00%
+*     0+    0                          584.8082       -0.0000           100.00%
+*     0+    0                          102.2661       -0.0000           100.00%
+0     2       -0.0000    29      102.2661       -0.0000       10  100.00%                        0             0
+Elapsed time = 0.04 sec. (28.30 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (28.30 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (28.32 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.28 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.47 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       11
+*     0+    0                         4539.6249       -0.0000           100.00%
+*     0+    0                         1010.9787       -0.0000           100.00%
+*     0+    0                           99.8545       -0.0000           100.00%
+0     2       -0.0000    29       99.8545       -0.0000       11  100.00%                        0             0
+Elapsed time = 0.05 sec. (37.14 ticks, tree = 0.01 MB, solutions = 3)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.05 sec. (37.15 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.05 sec. (37.17 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.26 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.35 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       10
+*     0+    0                         2628.7063       -0.0000           100.00%
+*     0+    0                          805.3814       -0.0000           100.00%
+*     0+    0                          748.5879       -0.0000           100.00%
+*     0+    0                          102.2661       -0.0000           100.00%
+0     2       -0.0000    29      102.2661       -0.0000       10  100.00%                        0             0
+Elapsed time = 0.04 sec. (27.89 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (27.90 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (27.91 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.28 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.51 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       12
+*     0+    0                         2717.6512        0.0000           100.00%
+*     0+    0                          958.4069        0.0000           100.00%
+*     0+    0                           87.5045        0.0000           100.00%
+0     2       -0.0000    29       87.5045        0.0000       12  100.00%                        0             0
+Elapsed time = 0.04 sec. (30.42 ticks, tree = 0.01 MB, solutions = 3)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (30.43 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (30.45 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.26 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.50 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       13
+*     0+    0                         2710.4877        0.0000           100.00%
+*     0+    0                          988.8364        0.0000           100.00%
+*     0+    0                          930.2395        0.0000           100.00%
+*     0+    0                           71.0901        0.0000           100.00%
+0     2        0.0000    29       71.0901        0.0000       13  100.00%                        0             0
+Elapsed time = 0.03 sec. (26.23 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (26.24 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (26.26 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.28 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.51 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       12
+*     0+    0                         2596.8951        0.0000           100.00%
+*     0+    0                         1050.9216        0.0000           100.00%
+*     0+    0                          946.4803        0.0000           100.00%
+0     2        0.0000    29      946.4803        0.0000       12  100.00%                        0             0
+Elapsed time = 0.05 sec. (33.03 ticks, tree = 0.01 MB, solutions = 3)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.05 sec. (33.04 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.05 sec. (33.06 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.30 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       10
+*     0+    0                         2751.8816       -0.0000           100.00%
+*     0+    0                          876.8822       -0.0000           100.00%
+*     0+    0                          533.2362       -0.0000           100.00%
+*     0+    0                          109.7229       -0.0000           100.00%
+0     2       -0.0000    29      109.7229       -0.0000       10  100.00%                        0             0
+Elapsed time = 0.04 sec. (26.70 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (26.70 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (26.72 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.54 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       13
+*     0+    0                         4798.5207       -0.0000           100.00%
+*     0+    0                         1005.3147        0.0000           100.00%
+*     0+    0                         1003.8943        0.0000           100.00%
+*     0+    0                          414.1775        0.0000           100.00%
+0     2        0.0000    29      414.1775        0.0000       13  100.00%                        0             0
+Elapsed time = 0.05 sec. (34.46 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.05 sec. (34.47 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.05 sec. (34.48 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.45 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       12
+*     0+    0                         4820.4344        0.0000           100.00%
+*     0+    0                          586.9854        0.0000           100.00%
+*     0+    0                          578.0303        0.0000           100.00%
+*     0+    0                          241.3252        0.0000           100.00%
+0     2        0.0000    29      241.3252        0.0000       12  100.00%                        0             0
+Elapsed time = 0.04 sec. (26.00 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (26.01 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (26.02 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.53 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       13
+*     0+    0                         4484.4124       -0.0000           100.00%
+*     0+    0                         2254.1404       -0.0000           100.00%
+*     0+    0                         2056.8326       -0.0000           100.00%
+*     0+    0                         1778.0563       -0.0000           100.00%
+*     0+    0                         1375.8358       -0.0000           100.00%
+0     2       -0.0000    29     1375.8358       -0.0000       13  100.00%                        0             0
+Elapsed time = 0.05 sec. (34.45 ticks, tree = 0.01 MB, solutions = 5)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.05 sec. (34.46 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.05 sec. (34.47 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.26 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.42 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       12
+*     0+    0                         4606.5142        0.0000           100.00%
+*     0+    0                          621.5153        0.0000           100.00%
+*     0+    0                          509.8046        0.0000           100.00%
+*     0+    0                          241.9835        0.0000           100.00%
+0     2        0.0000    29      241.9835        0.0000       12  100.00%                        0             0
+Elapsed time = 0.03 sec. (24.98 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (24.99 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (25.00 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.50 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       12
+*     0+    0                         3274.5609        0.0000           100.00%
+*     0+    0                          793.8236        0.0000           100.00%
+*     0+    0                          703.5513        0.0000           100.00%
+*     0+    0                          299.4441        0.0000           100.00%
+0     2        0.0000    29      299.4441        0.0000       12  100.00%                        0             0
+Elapsed time = 0.05 sec. (35.01 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.05 sec. (35.02 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.05 sec. (35.04 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.30 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       10
+*     0+    0                         2975.3653        0.0000           100.00%
+*     0+    0                          691.3327        0.0000           100.00%
+*     0+    0                          386.6053        0.0000           100.00%
+*     0+    0                          139.9321        0.0000           100.00%
+0     2        0.0000    29      139.9321        0.0000       10  100.00%                        0             0
+Elapsed time = 0.04 sec. (28.09 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (28.10 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (28.11 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.48 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       12
+*     0+    0                         3222.3632        0.0000           100.00%
+*     0+    0                          939.6644        0.0000           100.00%
+*     0+    0                          806.0014        0.0000           100.00%
+*     0+    0                          772.4161        0.0000           100.00%
+0     2        0.0000    29      772.4161        0.0000       12  100.00%                        0             0
+Elapsed time = 0.05 sec. (38.58 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.05 sec. (38.59 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.05 sec. (38.61 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.30 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       10
+*     0+    0                         2978.7946        0.0000           100.00%
+*     0+    0                          691.3327        0.0000           100.00%
+*     0+    0                          386.6053        0.0000           100.00%
+*     0+    0                          141.6644        0.0000           100.00%
+0     2        0.0000    29      141.6644        0.0000       10  100.00%                        0             0
+Elapsed time = 0.04 sec. (28.45 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (28.45 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (28.47 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.07 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.51 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       12
+*     0+    0                         3766.2645        0.0000           100.00%
+*     0+    0                         1224.3911        0.0000           100.00%
+*     0+    0                          284.5206        0.0000           100.00%
+0     2        0.0000    29      284.5206        0.0000       12  100.00%                        0             0
+Elapsed time = 0.04 sec. (33.74 ticks, tree = 0.01 MB, solutions = 3)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (33.74 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (33.76 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.42 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       12
+*     0+    0                         3736.4444        0.0000           100.00%
+*     0+    0                         1047.8755        0.0000           100.00%
+*     0+    0                          273.2809        0.0000           100.00%
+*     0+    0                           51.0103        0.0000           100.00%
+0     2        0.0000    29       51.0103        0.0000       12  100.00%                        0             0
+Elapsed time = 0.04 sec. (28.00 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (28.01 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (28.03 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.55 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       13
+*     0+    0                         3675.5369       -0.0000           100.00%
+*     0+    0                         1298.3610       -0.0000           100.00%
+*     0+    0                          993.4505       -0.0000           100.00%
+*     0+    0                          308.4318       -0.0000           100.00%
+0     2       -0.0000    29      308.4318       -0.0000       13  100.00%                        0             0
+Elapsed time = 0.04 sec. (29.20 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (29.21 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (29.22 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.36 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       11
+*     0+    0                         3753.4490        0.0000           100.00%
+*     0+    0                         1113.6043        0.0000           100.00%
+*     0+    0                          851.2246        0.0000           100.00%
+*     0+    0                          207.2502        0.0000           100.00%
+0     2        0.0000    29      207.2502        0.0000       11  100.00%                        0             0
+Elapsed time = 0.03 sec. (24.78 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (24.79 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (24.81 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.42 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       11
+*     0+    0                         2266.8594       -0.0000           100.00%
+*     0+    0                          977.1754       -0.0000           100.00%
+*     0+    0                           99.3791       -0.0000           100.00%
+0     2       -0.0000    29       99.3791       -0.0000       11  100.00%                        0             0
+Elapsed time = 0.04 sec. (33.20 ticks, tree = 0.01 MB, solutions = 3)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (33.20 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.05 sec. (33.22 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.36 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       11
+*     0+    0                         2849.8040       -0.0000           100.00%
+*     0+    0                          690.4898       -0.0000           100.00%
+*     0+    0                          552.8149       -0.0000           100.00%
+*     0+    0                          102.4860       -0.0000           100.00%
+0     2       -0.0000    29      102.4860       -0.0000       11  100.00%                        0             0
+Elapsed time = 0.03 sec. (26.78 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (26.79 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (26.80 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.51 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       12
+*     0+    0                         2714.7275        0.0000           100.00%
+*     0+    0                          941.9069        0.0000           100.00%
+*     0+    0                          739.9422        0.0000           100.00%
+*     0+    0                          201.8082        0.0000           100.00%
+0     2       -0.0000    29      201.8082        0.0000       12  100.00%                        0             0
+Elapsed time = 0.04 sec. (31.01 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (31.02 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (31.03 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.44 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       12
+*     0+    0                         3601.7452       -0.0000           100.00%
+*     0+    0                          730.5667       -0.0000           100.00%
+*     0+    0                          557.9278       -0.0000           100.00%
+*     0+    0                          169.5326       -0.0000           100.00%
+0     2       -0.0000    29      169.5326       -0.0000       12  100.00%                        0             0
+Elapsed time = 0.03 sec. (24.40 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.03 sec. (24.40 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.03 sec. (24.42 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.46 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       12
+*     0+    0                         3336.9274       -0.0000           100.00%
+*     0+    0                          981.8426       -0.0000           100.00%
+*     0+    0                          660.7984       -0.0000           100.00%
+*     0+    0                          319.6526       -0.0000           100.00%
+0     2       -0.0000    29      319.6526       -0.0000       12  100.00%                        0             0
+Elapsed time = 0.04 sec. (34.90 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (34.91 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.05 sec. (34.93 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.37 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       11
+*     0+    0                         3439.0454        0.0000           100.00%
+*     0+    0                          813.3288        0.0000           100.00%
+*     0+    0                          543.2077        0.0000           100.00%
+*     0+    0                           97.8305        0.0000           100.00%
+0     2        0.0000    29       97.8305        0.0000       11  100.00%                        0             0
+Elapsed time = 0.04 sec. (29.06 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (29.06 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (29.08 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 60 rows and 0 columns.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIQP has 140 rows, 109 columns, and 855 nonzeros.
+Reduced MIQP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.22 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.48 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0       -0.0000    29                     -0.0000       12
+*     0+    0                         3342.0025       -0.0000           100.00%
+*     0+    0                          981.8426       -0.0000           100.00%
+*     0+    0                          685.2211       -0.0000           100.00%
+*     0+    0                          329.4544       -0.0000           100.00%
+0     2       -0.0000    29      329.4544       -0.0000       12  100.00%                        0             0
+Elapsed time = 0.05 sec. (34.66 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.05 sec. (34.66 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.05 sec. (34.68 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 1, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIQP Presolve eliminated 79 rows and 9 columns.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIQP has 121 rows, 100 columns, and 810 nonzeros.
+Reduced MIQP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 9 nonzeros.
+Presolve time = 0.00 sec. (0.19 ticks)
+Classifier predicts products in MIQP should be linearized.
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+Root relaxation solution time = 0.01 sec. (2.35 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+0     0        0.0000    29                      0.0000       11
+*     0+    0                         3367.5754        0.0000           100.00%
+*     0+    0                          860.4887        0.0000           100.00%
+*     0+    0                          586.3925        0.0000           100.00%
+*     0+    0                          179.1498        0.0000           100.00%
+0     2        0.0000    29      179.1498        0.0000       11  100.00%                        0             0
+Elapsed time = 0.04 sec. (25.45 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.04 sec. (25.46 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.01 ticks)
+------------
+Total (root+branch&cut) =    0.04 sec. (25.48 ticks)
 CPLEX Error  1006: Error during callback.

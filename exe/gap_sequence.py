@@ -58,7 +58,7 @@ for fl in filenames:
 			try:
 				n_cuts += int(n_c.split(":")[-1])
 			except:
-				n_cuts += 1
+				continue
 			out_text[-1].append(";".join([str(n_cuts), str(gap)]))
 			n_cuts = 0
 	
