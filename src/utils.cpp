@@ -53,8 +53,9 @@ float_t dot_product(IloNumArray x, IloNumArray solution){
 	return res;
 }
 
-void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r, int scale_factor = 5){
+void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r, int scale_factor){
 	int solution_size =  x.getSize();
+	std::cout << "R scale factor: " << scale_factor << std::endl;
 	float max = 0;
 	float error;
 	
