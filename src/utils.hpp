@@ -14,7 +14,8 @@ void compute_W_optimal_hyperplane(IloNumArray solution, IloNumArray wl, IloNumAr
 
 float_t dot_product(IloNumArray x, IloNumArray wu);
 
-void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r, int scale_factor = 5, bool lower = false);
+void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r, int scale_factor = 5);
+void compute_RpRm(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray rp, IloNumArray rm, int scale_factor = 5);
 
 void debug(int i);
 

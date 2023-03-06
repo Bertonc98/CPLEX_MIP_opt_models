@@ -388,7 +388,7 @@ NODERANGE *nodeswritten;
       if ( status )  goto TERMINATE;
 	
       
-      sprintf (filename, "../src/data/node_aggressive%d", 0);
+      sprintf (filename, "../src/data/node_aggressive%d", nodecount);
       //~ strcat (filename, nodeswritten->name);
       strcat (filename, ".lp");
  

@@ -11,7 +11,7 @@ for i in {1..10}
 				echo $name
 				# For non otpima is 1 1
 				sudo cp "../src/data/"$2"s/"$2$i"_"$j"_"$k".lp" "../src/data/"$2"s/"$2$i"_"$j"_"$k"_"$name".lp"
-				sudo ./$1 "../src/data/"$2"s/"$2$i"_"$j"_"$k"_"$name".lp" 0 1 $f
+				sudo ./$1 "../src/data/"$2"s/"$2$i"_"$j"_"$k"_"$name".lp" 1 1 $f
 			done;
 		done;
 	done;

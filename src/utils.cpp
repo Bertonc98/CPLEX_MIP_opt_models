@@ -54,39 +54,56 @@ float_t dot_product(IloNumArray x, IloNumArray solution){
 	return res;
 }
 
-void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r, int scale_factor, bool lower){
+void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r, int scale_factor){
 	int solution_size =  x.getSize();
 	std::cout << "R scale factor: " << scale_factor << std::endl;
-	float v;
-	if(lower){
-		v = std::numeric_limits<float>::max();
-	}
-	else{
-		v = 0;
-	}
+	float v = 0.0;
 	
 	float error;
 	
 	for( int i = 0; i < solution_size; i++ ){		
 		error = abs( y[i] - dot_product(x[i], solution) );	
-		if(lower){
-			if(error < v)
-				v = error;
-		}
-		else{	
-			if(error > v)
-				v = error;
+			
+		if(error > v){
+			v = error;
 		}
 	}
 	// SCALING OF THE BOUND 5 or 10
-	if(lower){
-		v /= scale_factor;
-	}
-	else{
-		v *= scale_factor;
-	}
+	v *= scale_factor;
+	
 	for( int i = 0; i < solution_size; i++ ){
 		r[i] = v;
+	}
+}
+
+void compute_RpRm(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray rp, IloNumArray rm, int scale_factor){
+	int solution_size =  x.getSize();
+	std::cout << "R scale factor: " << scale_factor << std::endl;
+	float p = 0.0, m = 0.0;
+	
+	float error;
+	
+	for( int i = 0; i < solution_size; i++ ){		
+		error = y[i] - dot_product(x[i], solution);	
+		if(error < 0.0){
+			error = abs(error);
+			if(error > m){
+				m = error;
+			}
+		}	
+		else{
+			if(error > p){
+				p = error;
+			}
+		}
+	}
+	// SCALING OF THE BOUND 5 or 10
+	m *= scale_factor;
+	p *= scale_factor;
+	
+	for( int i = 0; i < solution_size; i++ ){
+		rp[i] = p;
+		rm[i] = m;
 	}
 }
 

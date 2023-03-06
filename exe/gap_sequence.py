@@ -29,13 +29,17 @@ for fl in filenames:
 			first = True
 		elif ":" not in line and first and "Objective" not in line and ";" in line:
 			first = False
-			obj, bi, _ = line.split(";")
-			if "integral" in obj or "cutoff" in obj:
+			try:
+				obj, bi, _ = line.split(";")
+			except:
+				obj, bi = line.split(";")
+			if "integral" in obj or "cutoff" in obj or "infeasible" in bi:
 				continue
 			if float(bi) != 0.0:
 				initial_gap = (float(bi) - float(obj))/float(bi)
 			else:
 				initial_gap = 0
+			
 		elif ":" in line and "CPX" not in line:		
 			added = True
 			obj, bi, n_c = line.split(";")
@@ -51,7 +55,10 @@ for fl in filenames:
 				gap = (float(bi) - float(obj))/float(bi)
 				gap = (initial_gap - gap)/initial_gap
 			
-			n_cuts += int(n_c.split(":")[-1])
+			try:
+				n_cuts += int(n_c.split(":")[-1])
+			except:
+				n_cuts += 1
 			out_text[-1].append(";".join([str(n_cuts), str(gap)]))
 			n_cuts = 0
 	
