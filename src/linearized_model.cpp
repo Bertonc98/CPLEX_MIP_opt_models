@@ -15,53 +15,24 @@ ILOSTLBEGIN
  */
 
 int main(int argc, char **argv){
-	cout << "Creating envirnment..." << endl;
+	
 	IloEnv env;
-	if(argc < 5){
-		cout << "Wrong number of parameters"<<endl;
-		cout << "./linearized_model instance_number d k cardinality*"<<endl;
-		cout << "d is the amount of features that are at most NOT considered"<<endl;
-		cout << "k is the number of points that are at least considered as outliers" <<endl;
-		cout << "instance_number is the toy_instance considered" <<endl;
-		cout << "cardinality is optional. and it will lead to handle the generated instances" <<endl;
-		return 1;
-	}
 	
 	bool generated_instances = false;
-	int cardinality;
+	int cardinality, dimensionality, scale_factor;
 	
-	if(argc == 6){
-		cardinality = stoi(argv[5]);
-		generated_instances = true;
-		
-	}
-	
-	string instance = argv[1];
-	IloInt d_0 = stoi(argv[2]);
-	IloInt k_0 = stoi(argv[3]);
-	IloInt s_0 = stoi(argv[4]);
+	string instance;
+	IloInt d_0;
+	IloInt k_0;
+	IloInt s_0;
 	
 	string path;
 	string filename;
-	if(generated_instances){
-		path = "../src/instance_set/generated_instances/";
-		filename  = path + "toy_" + to_string(cardinality) + "_10_-" + instance + ".dat";
-	}
-	else{
-		path = "../src/instance_set/";
-		filename  = path + "toy_30_10_02_2_0_5_-10_" + instance + ".dat";
-	}
-	ifstream ifile(filename);
-	if (!ifile) {
-		cerr << "ERROR: could not open instance file '" << filename << endl;
-		cout << "./linearized_model instance_number d k k cardinality*"<<endl;
-		cout << "d is the amount of features that are at most NOT considered"<<endl;
-		cout << "k is the number of points that are at least considered as outliers" <<endl;
-		cout << "instance_number is the toy_instance considered" <<endl;
-		cout << "cardinality is optional. and it will lead to handle the generated instances" <<endl;
-		return 1;
-	}
 	
+	ifstream ifile = input(argc, argv, generated_instances, cardinality, dimensionality, scale_factor, instance, d_0, k_0, path, filename);
+	
+	s_0 = k_0;
+		
 	//~ Read instances
 	IloNumArray2 x(env);
 	IloNumArray y(env);

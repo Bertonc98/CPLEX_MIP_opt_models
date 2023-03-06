@@ -17,94 +17,74 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (2.23 ticks)
+Root relaxation solution time = 0.00 sec. (1.52 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0+    0                          136.4723        0.0000           100.00%
 *     0+    0                           99.1655        0.0000           100.00%
-0     0        1.0620    26       99.1655        1.0620      177   98.93%
-0     0        3.7434    27       99.1655   LiftProj: 6      196   96.23%
-0     0        7.5778    28       99.1655  LiftProj: 13      220   92.36%
-0     0        8.7077    30       99.1655  LiftProj: 11      235   91.22%
-0     0        9.2723    30       99.1655  LiftProj: 13      255   90.65%
-0     0       10.9638    30       99.1655  LiftProj: 20      280   88.94%
+0     0        0.0000    27       99.1655        0.0000      121  100.00%
+*     0+    0                           96.1103        0.0000           100.00%
 Detecting symmetries...
-0     0       12.1204    29       99.1655  LiftProj: 17      312   87.78%
-0     0       12.5587    31       99.1655  LiftProj: 15      331   87.34%
-0     0       13.4599    31       99.1655  LiftProj: 14      358   86.43%
-0     0       14.6815    33       99.1655  LiftProj: 21      389   85.19%
-0     0       15.8439    34       99.1655  LiftProj: 20      423   84.02%
-0     0       17.2433    35       99.1655  LiftProj: 20      457   82.61%
-0     0       18.3321    33       99.1655  LiftProj: 15      485   81.51%
-0     0       19.1325    35       99.1655  LiftProj: 14      508   80.71%
-0     0       19.5433    34       99.1655  LiftProj: 19      536   80.29%
-0     0       20.5089    35       99.1655  LiftProj: 17      569   79.32%
-0     0       20.9135    35       99.1655  LiftProj: 15      596   78.91%
-0     0       20.9947    33       99.1655  LiftProj: 11      618   78.83%
-0     0       21.1746    33       99.1655  LiftProj: 19      639   78.65%
-0     0       21.3038    34       99.1655  LiftProj: 11      661   78.52%
-0     0       21.4467    36       99.1655  LiftProj: 12      685   78.37%
-0     0       21.5512    35       99.1655  LiftProj: 15      702   78.27%
-0     0       21.6401    37       99.1655  LiftProj: 13      715   78.18%
-0     0       21.8551    34       99.1655  LiftProj: 10      744   77.96%
-0     0       21.9881    35       99.1655  LiftProj: 17      764   77.83%
-0     0       22.2704    35       99.1655  LiftProj: 11      796   77.54%
-0     0       22.5006    34       99.1655  LiftProj: 10      816   77.31%
-0     0       22.8884    36       99.1655  LiftProj: 15      850   76.92%
-0     0       23.0755    35       99.1655  LiftProj: 19      885   76.73%
-0     0       23.7255    36       99.1655  LiftProj: 17      925   76.07%
-0     0       23.9273    34       99.1655  LiftProj: 14      957   75.87%
-0     0       24.0116    35       99.1655  LiftProj: 14      981   75.79%
-0     0       24.0650    35       99.1655  LiftProj: 16     1001   75.73%
-0     0       24.0764    35       99.1655  LiftProj: 13     1012   75.72%
-0     0       24.1889    36       99.1655      Cuts: 12     1041   75.61%
-0     0       24.2401    35       99.1655  LiftProj: 10     1053   75.56%
-0     0       24.3114    35       99.1655  LiftProj: 13     1080   75.48%
-0     0       24.4485    37       99.1655  LiftProj: 11     1103   75.35%
-0     0       24.4939    37       99.1655   LiftProj: 8     1115   75.30%
-0     0       24.6350    36       99.1655  LiftProj: 10     1141   75.16%
-0     0       24.7398    35       99.1655   LiftProj: 7     1164   75.05%
-0     0       24.7508    36       99.1655  LiftProj: 10     1175   75.04%
-0     0       24.7888    37       99.1655   LiftProj: 8     1194   75.00%
-0     0       24.8559    37       99.1655  LiftProj: 20     1217   74.93%
-0     0       24.9212    36       99.1655  LiftProj: 12     1243   74.87%
-0     0       25.0231    38       99.1655      Cuts: 16     1277   74.77%
-*     0+    0                           97.1323       25.0231            74.24%
-0     0       25.1175    37       97.1323      Cuts: 16     1303   74.14%
-0     0       25.2434    37       97.1323   LiftProj: 8     1329   74.01%
-0     0       25.3080    37       97.1323   LiftProj: 9     1349   73.94%
-0     0       25.4190    37       97.1323  LiftProj: 12     1370   73.83%
-0     0       25.5313    37       97.1323   LiftProj: 8     1393   73.71%
-0     0       25.6276    37       97.1323   LiftProj: 8     1410   73.62%
-0     0       25.6989    37       97.1323  LiftProj: 11     1429   73.54%
-0     0       25.7529    36       97.1323  LiftProj: 11     1450   73.49%
-0     0       25.8091    37       97.1323   LiftProj: 8     1465   73.43%
-0     0       25.9044    37       97.1323  LiftProj: 11     1490   73.33%
-0     0       26.0455    37       97.1323  LiftProj: 13     1513   73.19%
-0     0       26.0918    37       97.1323   LiftProj: 9     1530   73.14%
-0     0       26.1208    37       97.1323  LiftProj: 12     1558   73.11%
-0     0       26.1621    37       97.1323  LiftProj: 10     1577   73.07%
-0     0       26.1884    37       97.1323       Cuts: 8     1590   73.04%
-0     0       26.2034    36       97.1323  LiftProj: 20     1613   73.02%
-*     0+    0                           88.1336       26.2034            70.27%
-0     0       26.2186    39       88.1336  LiftProj: 11     1627   70.25%
-*     0+    0                           67.0306       26.2186            60.89%
-*     0+    0                           57.8450       26.2186            54.67%
-Detecting symmetries...
-0     2       26.2186    38       57.8450       26.2471     1627   54.63%                        0             0
-Elapsed time = 2.32 sec. (1225.33 ticks, tree = 0.01 MB, solutions = 6)
+0     2        0.0000    24       96.1103        0.0000      121  100.00%                        0             0
+Elapsed time = 0.06 sec. (24.28 ticks, tree = 0.01 MB, solutions = 3)
 
-Mixed integer rounding cuts applied:  1
-Lift and project cuts applied:  53
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    2.32 sec. (1225.34 ticks)
+Real time             =    0.06 sec. (24.28 ticks)
 Sequential b&c:
-Real time             =    0.01 sec. (0.02 ticks)
+Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    2.33 sec. (1225.36 ticks)
+Total (root+branch&cut) =    0.06 sec. (24.30 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 136.472330 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.46 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          136.4723        0.0000           100.00%
+*     0+    0                           99.1655        0.0000           100.00%
+0     0        0.0000    27       99.1655        0.0000      118  100.00%
+*     0+    0                           78.3951        0.0000           100.00%
+0     0        0.0000    18       78.3951   LiftProj: 1      124  100.00%
+0     0        0.0000    18       78.3951   LiftProj: 1      127  100.00%
+*     0+    0                           70.9781        0.0000           100.00%
+*     0+    0                           61.3518        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    18       61.3518        0.0000      127  100.00%                        0             0
+Elapsed time = 0.09 sec. (29.30 ticks, tree = 0.01 MB, solutions = 5)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  2
+
+Root node processing (before b&c):
+Real time             =    0.09 sec. (29.31 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.09 sec. (29.32 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -131,25 +111,24 @@ Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0+    0                          136.4723        0.0000           100.00%
-*     0+    0                           99.1655        0.0000           100.00%
-0     0        0.0000    27       99.1655        0.0000      131  100.00%
-*     0+    0                           86.2827        0.0000           100.00%
-*     0+    0                           77.7223        0.0000           100.00%
-*     0+    0                           57.1939        0.0000           100.00%
-*     0+    0                           49.3057        0.0000           100.00%
+*     0+    0                           69.8576        0.0000           100.00%
+0     0        0.0000    23       69.8576        0.0000      119  100.00%
+0     0        0.0000    20       69.8576   LiftProj: 2      132  100.00%
+*     0+    0                           68.3114        0.0000           100.00%
+*     0+    0                           58.7959        0.0000           100.00%
 Detecting symmetries...
-0     2        0.0000    19       49.3057        0.0000      131  100.00%                        0             0
-Elapsed time = 0.07 sec. (24.21 ticks, tree = 0.01 MB, solutions = 6)
+0     2        0.0000    19       58.7959        0.0000      132  100.00%                        0             0
+Elapsed time = 0.08 sec. (30.61 ticks, tree = 0.01 MB, solutions = 4)
 
 Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  0
+Lift and project cuts applied:  2
 
 Root node processing (before b&c):
-Real time             =    0.07 sec. (24.21 ticks)
+Real time             =    0.08 sec. (30.62 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.07 sec. (24.23 ticks)
+Total (root+branch&cut) =    0.08 sec. (30.63 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -170,623 +149,34 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.60 ticks)
+Root relaxation solution time = 0.00 sec. (1.11 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0+    0                          136.4723        0.0000           100.00%
-*     0+    0                           69.8576        0.0000           100.00%
-0     0        0.0000    23       69.8576        0.0000      131  100.00%
-0     0        0.0000    24       69.8576   LiftProj: 4      157  100.00%
-*     0+    0                           56.6142        0.0000           100.00%
-*     0+    0                           48.0913        0.0000           100.00%
+0     0        0.0000    24      136.4723        0.0000      102  100.00%
+*     0+    0                           41.1390        0.0000           100.00%
+*     0+    0                           32.1032        0.0000           100.00%
 Detecting symmetries...
-0     2        0.0000    23       48.0913        0.0000      157  100.00%                        0             0
-Elapsed time = 0.08 sec. (36.72 ticks, tree = 0.01 MB, solutions = 4)
+0     2        0.0000    13       32.1032        0.0000      102  100.00%                        0             0
+Elapsed time = 0.06 sec. (19.45 ticks, tree = 0.01 MB, solutions = 3)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.08 sec. (36.72 ticks)
+Real time             =    0.06 sec. (19.45 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.08 sec. (36.74 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 136.472330 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.55 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          136.4723        0.0000           100.00%
-*     0+    0                           69.8576        0.0000           100.00%
-0     0        0.0000    23       69.8576        0.0000      128  100.00%
-*     0+    0                           52.6772        0.0000           100.00%
-*     0+    0                           20.2193        0.0000           100.00%
-*     0+    0                           20.1192        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    16       20.1192        0.0000      128  100.00%                        0             0
-Elapsed time = 0.06 sec. (22.43 ticks, tree = 0.01 MB, solutions = 5)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (22.43 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (22.45 ticks)
+Total (root+branch&cut) =    0.06 sec. (19.48 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 115.192441 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.91 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          115.1924        0.0000           100.00%
-*     0+    0                          108.1598        0.0000           100.00%
-*     0+    0                           98.2525        0.0000           100.00%
-0     0       10.9280    24       98.2525       10.9280      158   88.88%
-0     0       11.8968    25       98.2525   LiftProj: 8      171   87.89%
-0     0       13.0349    25       98.2525   LiftProj: 9      187   86.73%
-0     0       13.0349    25       98.2525   LiftProj: 7      188   86.73%
-0     0       13.8469    26       98.2525  LiftProj: 10      212   85.91%
-0     0       13.8469    27       98.2525  LiftProj: 12      215   85.91%
-Detecting symmetries...
-*     0+    0                           63.8538       13.8469            78.31%
-Detecting symmetries...
-0     2       13.8469    27       63.8538       13.9294      215   78.19%                        0             0
-Elapsed time = 0.15 sec. (57.74 ticks, tree = 0.01 MB, solutions = 4)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  12
-
-Root node processing (before b&c):
-Real time             =    0.15 sec. (57.74 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.15 sec. (57.76 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 115.192441 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.62 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          115.1924        0.0000           100.00%
-*     0+    0                          108.1598        0.0000           100.00%
-*     0+    0                           79.8300        0.0000           100.00%
-0     0        0.0000    27       79.8300        0.0000      129  100.00%
-*     0+    0                           77.7750        0.0000           100.00%
-*     0+    0                           68.9412        0.0000           100.00%
-*     0+    0                           42.0049        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    20       42.0049        0.0000      129  100.00%                        0             0
-Elapsed time = 0.07 sec. (22.44 ticks, tree = 0.01 MB, solutions = 6)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.07 sec. (22.44 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.07 sec. (22.46 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 115.192441 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.85 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          115.1924        0.0000           100.00%
-*     0+    0                           81.9438        0.0000           100.00%
-0     0       10.7107    19       81.9438       10.7107      153   86.93%
-*     0+    0                           80.6567       10.7107            86.72%
-0     0       11.3615    22       80.6567   LiftProj: 9      167   85.91%
-*     0+    0                           68.7487       11.3615            83.47%
-0     0       12.3795    24       68.7487   LiftProj: 7      178   81.99%
-0     0       12.6673    25       68.7487  LiftProj: 11      187   81.57%
-0     0       13.5095    25       68.7487   LiftProj: 9      199   80.35%
-*     0+    0                           68.2137       13.5095            80.20%
-0     0       14.7401    27       68.2137  LiftProj: 10      221   78.39%
-Detecting symmetries...
-0     0       17.0399    24       68.2137  LiftProj: 10      240   75.02%
-0     0       18.1754    25       68.2137   LiftProj: 9      257   73.36%
-0     0       18.5141    23       68.2137  LiftProj: 11      269   72.86%
-0     0       18.9445    25       68.2137  LiftProj: 12      278   72.23%
-0     0       19.2813    27       68.2137  LiftProj: 13      292   71.73%
-0     0       19.6637    28       68.2137   LiftProj: 9      304   71.17%
-0     0       20.6425    26       68.2137  LiftProj: 12      320   69.74%
-0     0       21.3304    26       68.2137  LiftProj: 14      336   68.73%
-0     0       22.3342    27       68.2137  LiftProj: 13      366   67.26%
-0     0       23.0183    31       68.2137  LiftProj: 12      392   66.26%
-0     0       24.4291    27       68.2137  LiftProj: 14      417   64.19%
-0     0       24.8409    30       68.2137  LiftProj: 11      436   63.58%
-0     0       25.5903    28       68.2137  LiftProj: 11      458   62.49%
-0     0       26.1221    28       68.2137  LiftProj: 10      490   61.71%
-0     0       27.1691    28       68.2137  LiftProj: 10      522   60.17%
-0     0       27.6390    30       68.2137   LiftProj: 9      546   59.48%
-0     0       28.3882    30       68.2137  LiftProj: 11      579   58.38%
-0     0       28.9627    31       68.2137  LiftProj: 12      607   57.54%
-0     0       29.2470    31       68.2137  LiftProj: 10      635   57.12%
-0     0       29.4418    30       68.2137  LiftProj: 11      661   56.84%
-0     0       29.6227    30       68.2137  LiftProj: 13      681   56.57%
-0     0       29.6841    31       68.2137  LiftProj: 12      700   56.48%
-0     0       30.0016    30       68.2137   LiftProj: 7      720   56.02%
-0     0       30.1905    29       68.2137  LiftProj: 11      742   55.74%
-0     0       30.2808    30       68.2137  LiftProj: 11      757   55.61%
-0     0       30.3646    30       68.2137   LiftProj: 7      771   55.49%
-0     0       30.4562    29       68.2137  LiftProj: 10      793   55.35%
-0     0       30.5618    31       68.2137   LiftProj: 8      809   55.20%
-0     0       30.7321    31       68.2137  LiftProj: 11      831   54.95%
-0     0       30.8091    31       68.2137   LiftProj: 9      846   54.83%
-0     0       30.8495    31       68.2137   LiftProj: 8      868   54.78%
-0     0       30.9949    30       68.2137   LiftProj: 9      894   54.56%
-0     0       31.0911    31       68.2137   LiftProj: 7      910   54.42%
-0     0       31.1728    32       68.2137   LiftProj: 7      929   54.30%
-0     0       31.3735    32       68.2137   LiftProj: 9      963   54.01%
-0     0       31.5215    30       68.2137   LiftProj: 4      981   53.79%
-0     0       31.5430    31       68.2137   LiftProj: 6      991   53.76%
-0     0       31.5631    30       68.2137  LiftProj: 10      998   53.73%
-0     0       31.5984    31       68.2137   LiftProj: 8     1011   53.68%
-0     0       31.6550    32       68.2137   LiftProj: 8     1023   53.59%
-0     0       31.7480    31       68.2137   LiftProj: 7     1039   53.46%
-0     0       31.7928    31       68.2137  LiftProj: 10     1054   53.39%
-0     0       31.8822    31       68.2137   LiftProj: 6     1079   53.26%
-0     0       31.9067    31       68.2137       Cuts: 9     1091   53.23%
-0     0       31.9840    31       68.2137   LiftProj: 5     1113   53.11%
-0     0       32.0719    30       68.2137   LiftProj: 4     1131   52.98%
-0     0       32.0850    32       68.2137   LiftProj: 7     1140   52.96%
-0     0       32.1781    31       68.2137   LiftProj: 8     1165   52.83%
-0     0       32.1938    30       68.2137   LiftProj: 9     1182   52.80%
-*     0+    0                           55.1855       32.1938            41.66%
-Detecting symmetries...
-0     2       32.1938    30       55.1855       32.1984     1182   41.65%                        0             0
-Elapsed time = 1.54 sec. (775.50 ticks, tree = 0.01 MB, solutions = 6)
-
-Mixed integer rounding cuts applied:  1
-Lift and project cuts applied:  41
-
-Root node processing (before b&c):
-Real time             =    1.54 sec. (775.50 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.03 ticks)
-------------
-Total (root+branch&cut) =    1.54 sec. (775.53 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 115.192441 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.51 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          115.1924        0.0000           100.00%
-*     0+    0                           81.9438        0.0000           100.00%
-0     0        0.0000    23       81.9438        0.0000      123  100.00%
-*     0+    0                           62.3577        0.0000           100.00%
-*     0+    0                           41.4305        0.0000           100.00%
-*     0+    0                           30.7090        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    16       30.7090        0.0000      123  100.00%                        0             0
-Elapsed time = 0.06 sec. (22.20 ticks, tree = 0.01 MB, solutions = 5)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (22.20 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.07 sec. (22.22 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 131.603741 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.87 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          131.6037        0.0000           100.00%
-*     0+    0                          111.2422        0.0000           100.00%
-*     0+    0                          109.8445        0.0000           100.00%
-0     0       16.8750    23      109.8445       16.8750      153   84.64%
-0     0       16.9752    25      109.8445   LiftProj: 9      174   84.55%
-0     0       17.9762    26      109.8445  LiftProj: 11      195   83.63%
-0     0       18.8778    28      109.8445  LiftProj: 15      211   82.81%
-0     0       20.4885    28      109.8445  LiftProj: 13      235   81.35%
-0     0       21.3822    29      109.8445  LiftProj: 13      251   80.53%
-Detecting symmetries...
-0     0       22.0044    29      109.8445  LiftProj: 16      269   79.97%
-0     0       22.0044    29      109.8445  LiftProj: 12      272   79.97%
-0     0       23.8949    32      109.8445  LiftProj: 13      291   78.25%
-0     0       25.4664    30      109.8445  LiftProj: 16      323   76.82%
-0     0       27.4448    30      109.8445  LiftProj: 17      349   75.01%
-0     0       28.2853    32      109.8445  LiftProj: 20      369   74.25%
-0     0       29.1731    33      109.8445  LiftProj: 15      399   73.44%
-0     0       29.8840    35      109.8445  LiftProj: 15      424   72.79%
-0     0       30.3875    35      109.8445  LiftProj: 13      442   72.34%
-0     0       30.5877    34      109.8445  LiftProj: 13      456   72.15%
-0     0       31.4762    34      109.8445  LiftProj: 12      477   71.34%
-0     0       32.2423    34      109.8445  LiftProj: 18      503   70.65%
-0     0       32.6980    33      109.8445  LiftProj: 16      527   70.23%
-0     0       33.1115    34      109.8445  LiftProj: 16      560   69.86%
-0     0       33.3483    36      109.8445  LiftProj: 19      582   69.64%
-0     0       33.6608    34      109.8445  LiftProj: 14      611   69.36%
-0     0       33.8439    35      109.8445   LiftProj: 9      624   69.19%
-0     0       34.0697    34      109.8445  LiftProj: 11      644   68.98%
-0     0       34.2693    34      109.8445  LiftProj: 18      667   68.80%
-0     0       34.3812    37      109.8445  LiftProj: 10      681   68.70%
-0     0       34.5314    36      109.8445   LiftProj: 6      700   68.56%
-0     0       34.7504    37      109.8445  LiftProj: 12      728   68.36%
-0     0       34.8669    36      109.8445  LiftProj: 10      744   68.26%
-0     0       35.1131    37      109.8445  LiftProj: 11      764   68.03%
-0     0       35.8499    33      109.8445  LiftProj: 13      800   67.36%
-0     0       35.8693    35      109.8445  LiftProj: 13      809   67.35%
-0     0       36.1215    34      109.8445  LiftProj: 10      833   67.12%
-0     0       36.2133    37      109.8445  LiftProj: 14      853   67.03%
-0     0       36.5365    37      109.8445  LiftProj: 15      881   66.74%
-0     0       36.9213    36      109.8445  LiftProj: 11      908   66.39%
-0     0       37.0694    36      109.8445  LiftProj: 15      926   66.25%
-0     0       37.1323    37      109.8445   LiftProj: 8      942   66.20%
-0     0       37.8478    35      109.8445  LiftProj: 12      974   65.54%
-*     0+    0                          107.9002       37.8478            64.92%
-0     0       37.9465    35      107.9002  LiftProj: 16      991   64.83%
-0     0       38.2460    35      107.9002  LiftProj: 15     1014   64.55%
-0     0       38.3548    37      107.9002  LiftProj: 11     1044   64.45%
-0     0       38.4339    37      107.9002  LiftProj: 12     1061   64.38%
-0     0       38.4928    37      107.9002  LiftProj: 14     1082   64.33%
-0     0       38.6501    36      107.9002  LiftProj: 12     1115   64.18%
-0     0       38.6683    35      107.9002  LiftProj: 12     1132   64.16%
-0     0       38.7060    37      107.9002  LiftProj: 13     1144   64.13%
-0     0       38.7785    35      107.9002   LiftProj: 8     1166   64.06%
-0     0       38.8583    37      107.9002  LiftProj: 17     1200   63.99%
-0     0       39.0579    36      107.9002  LiftProj: 13     1236   63.80%
-0     0       39.2248    36      107.9002      Cuts: 14     1264   63.65%
-0     0       39.3262    35      107.9002  LiftProj: 10     1285   63.55%
-0     0       39.3589    37      107.9002   LiftProj: 7     1300   63.52%
-0     0       39.4908    35      107.9002  LiftProj: 11     1342   63.40%
-0     0       39.5308    37      107.9002  LiftProj: 17     1369   63.36%
-0     0       39.5437    35      107.9002   LiftProj: 9     1390   63.35%
-*     0+    0                           82.9860       39.5437            52.35%
-Detecting symmetries...
-0     2       39.5437    35       82.9860       39.5462     1390   52.35%                        0             0
-Elapsed time = 1.95 sec. (1014.48 ticks, tree = 0.01 MB, solutions = 5)
-
-Mixed integer rounding cuts applied:  1
-Lift and project cuts applied:  47
-
-Root node processing (before b&c):
-Real time             =    1.95 sec. (1014.48 ticks)
-Sequential b&c:
-Real time             =    0.01 sec. (0.03 ticks)
-------------
-Total (root+branch&cut) =    1.96 sec. (1014.51 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 131.603741 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.61 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          131.6037        0.0000           100.00%
-*     0+    0                          111.2422        0.0000           100.00%
-0     0        0.0000    27      111.2422        0.0000      128  100.00%
-*     0+    0                           94.5662        0.0000           100.00%
-*     0+    0                           93.5553        0.0000           100.00%
-*     0+    0                           72.8280        0.0000           100.00%
-*     0+    0                           72.3954        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    21       72.3954        0.0000      128  100.00%                        0             0
-Elapsed time = 0.07 sec. (22.32 ticks, tree = 0.01 MB, solutions = 6)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.07 sec. (22.32 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.07 sec. (22.34 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 131.603741 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.72 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          131.6037        0.0000           100.00%
-*     0+    0                           99.6733        0.0000           100.00%
-0     0        0.0000    23       99.6733        0.0000      139  100.00%
-0     0        0.0000    24       99.6733   LiftProj: 3      157  100.00%
-*     0+    0                           73.4422        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    23       73.4422        0.0000      157  100.00%                        0             0
-Elapsed time = 0.09 sec. (37.09 ticks, tree = 0.01 MB, solutions = 3)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  1
-
-Root node processing (before b&c):
-Real time             =    0.09 sec. (37.10 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.09 sec. (37.11 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 131.603741 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.67 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          131.6037        0.0000           100.00%
-*     0+    0                           99.6733        0.0000           100.00%
-0     0        0.0000    23       99.6733        0.0000      134  100.00%
-*     0+    0                           80.1830        0.0000           100.00%
-0     0        0.0000    17       80.1830   LiftProj: 1      136  100.00%
-0     0        0.0000    16       80.1830   LiftProj: 7      158  100.00%
-0     0        0.0000    18       80.1830  LiftProj: 11      178  100.00%
-*     0+    0                           44.3017        0.0000           100.00%
-*     0+    0                           35.5179        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    17       35.5179        0.0000      178  100.00%                        0             0
-Elapsed time = 0.11 sec. (39.34 ticks, tree = 0.01 MB, solutions = 5)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  1
-
-Root node processing (before b&c):
-Real time             =    0.11 sec. (39.34 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.11 sec. (39.36 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 110.356714 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.80 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          110.3567        0.0000           100.00%
-*     0+    0                           96.6816        0.0000           100.00%
-0     0        0.0000    27       96.6816        0.0000      148  100.00%
-0     0        0.0000    29       96.6816   LiftProj: 7      168  100.00%
-0     0        3.3932    28       96.6816   LiftProj: 6      192   96.49%
-0     0        4.4279    30       96.6816  LiftProj: 11      203   95.42%
-0     0        6.0115    28       96.6816  LiftProj: 12      227   93.78%
-0     0        6.1124    30       96.6816   LiftProj: 8      235   93.68%
-Detecting symmetries...
-0     0        6.5533    32       96.6816  LiftProj: 12      246   93.22%
-0     0        7.6850    31       96.6816  LiftProj: 12      280   92.05%
-0     0        8.8499    30       96.6816  LiftProj: 14      302   90.85%
-0     0       10.5829    32       96.6816  LiftProj: 16      331   89.05%
-0     0       11.3417    33       96.6816  LiftProj: 11      343   88.27%
-0     0       12.6482    31       96.6816  LiftProj: 14      365   86.92%
-0     0       13.3731    34       96.6816  LiftProj: 17      385   86.17%
-0     0       15.1637    32       96.6816  LiftProj: 14      410   84.32%
-0     0       16.4085    34       96.6816  LiftProj: 13      435   83.03%
-0     0       18.1583    32       96.6816      Cuts: 18      460   81.22%
-0     0       18.3032    36       96.6816  LiftProj: 18      472   81.07%
-0     0       19.3128    33       96.6816  LiftProj: 16      490   80.02%
-*     0+    0                           94.3483       19.3128            79.53%
-0     0       20.0931    33       94.3483  LiftProj: 20      517   78.70%
-0     0       20.9499    34       94.3483  LiftProj: 21      544   77.80%
-0     0       21.2176    35       94.3483  LiftProj: 16      566   77.51%
-0     0       21.6724    32       94.3483      Cuts: 21      594   77.03%
-0     0       21.7702    33       94.3483  LiftProj: 18      612   76.93%
-0     0       22.2505    37       94.3483  LiftProj: 16      643   76.42%
-0     0       22.7608    36       94.3483  LiftProj: 15      677   75.88%
-0     0       22.7608    36       94.3483  LiftProj: 11      679   75.88%
-*     0+    0                           88.4526       22.7608            74.27%
-*     0+    0                           76.3354       22.7608            70.18%
-Detecting symmetries...
-0     2       22.7608    36       76.3354       22.7675      679   70.17%                        0             0
-Elapsed time = 0.76 sec. (365.19 ticks, tree = 0.01 MB, solutions = 5)
-
-Mixed integer rounding cuts applied:  1
-Lift and project cuts applied:  34
-
-Root node processing (before b&c):
-Real time             =    0.76 sec. (365.19 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.76 sec. (365.22 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 110.356714 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
 Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
@@ -806,77 +196,35 @@ Root relaxation solution time = 0.00 sec. (1.59 ticks)
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          110.3567        0.0000           100.00%
-*     0+    0                           96.6816        0.0000           100.00%
-0     0        0.0000    27       96.6816        0.0000      129  100.00%
-*     0+    0                           73.2319        0.0000           100.00%
-0     0        0.0000    21       73.2319   LiftProj: 1      131  100.00%
-0     0        0.0000    21       73.2319   LiftProj: 9      141  100.00%
-*     0+    0                           45.0899        0.0000           100.00%
+*     0+    0                          115.1924        0.0000           100.00%
+*     0+    0                          108.1598        0.0000           100.00%
+*     0+    0                           98.2525        0.0000           100.00%
+0     0        0.0000    27       98.2525        0.0000      128  100.00%
+0     0        0.0000    24       98.2525   LiftProj: 1      130  100.00%
+*     0+    0                           89.4083        0.0000           100.00%
+0     0        0.0000    25       89.4083       Cuts: 3      147  100.00%
+0     0        0.0000    24       89.4083       Cuts: 2      152  100.00%
+*     0+    0                           75.6176        0.0000           100.00%
+*     0+    0                           69.7547        0.0000           100.00%
 Detecting symmetries...
-0     2        0.0000    20       45.0899        0.0000      141  100.00%                        0             0
-Elapsed time = 0.10 sec. (35.60 ticks, tree = 0.01 MB, solutions = 4)
+0     2        0.0000    24       69.7547        0.0000      152  100.00%                        0             0
+Elapsed time = 0.12 sec. (49.92 ticks, tree = 0.01 MB, solutions = 6)
 
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.10 sec. (35.60 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.10 sec. (35.62 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 110.356714 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.61 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          110.3567        0.0000           100.00%
-*     0+    0                           82.1268        0.0000           100.00%
-0     0        0.0000    23       82.1268        0.0000      134  100.00%
-0     0        0.0000    25       82.1268   LiftProj: 3      164  100.00%
-0     0        0.0000    25       82.1268   LiftProj: 1      166  100.00%
-*     0+    0                           66.8374        0.0000           100.00%
-*     0+    0                           56.0673        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    24       56.0673        0.0000      166  100.00%                        0             0
-Elapsed time = 0.10 sec. (40.97 ticks, tree = 0.01 MB, solutions = 4)
-
-Mixed integer rounding cuts applied:  0
+Mixed integer rounding cuts applied:  1
 Lift and project cuts applied:  2
 
 Root node processing (before b&c):
-Real time             =    0.10 sec. (40.97 ticks)
+Real time             =    0.12 sec. (49.92 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.10 sec. (40.98 ticks)
+Total (root+branch&cut) =    0.12 sec. (49.94 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 110.356714 after 0.00 sec. (0.01 ticks)
+Found incumbent of value 115.192441 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
 Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
@@ -891,662 +239,37 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.60 ticks)
+Root relaxation solution time = 0.01 sec. (1.51 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          110.3567        0.0000           100.00%
-*     0+    0                           82.1268        0.0000           100.00%
-0     0        0.0000    23       82.1268        0.0000      126  100.00%
-*     0+    0                           37.4097        0.0000           100.00%
-0     0        0.0000    16       37.4097   LiftProj: 1      131  100.00%
-0     0        0.0000    18       37.4097   LiftProj: 8      164  100.00%
-0     0        0.0000    17       37.4097   LiftProj: 8      178  100.00%
-*     0+    0                           32.0413        0.0000           100.00%
-*     0+    0                           23.7029        0.0000           100.00%
+*     0+    0                          115.1924        0.0000           100.00%
+*     0+    0                          108.1598        0.0000           100.00%
+*     0+    0                           79.8300        0.0000           100.00%
+0     0        0.0000    27       79.8300        0.0000      120  100.00%
+*     0+    0                           74.4608        0.0000           100.00%
+*     0+    0                           65.3033        0.0000           100.00%
+*     0+    0                           49.2242        0.0000           100.00%
 Detecting symmetries...
-0     2        0.0000    15       23.7029        0.0000      178  100.00%                        0             0
-Elapsed time = 0.10 sec. (35.39 ticks, tree = 0.01 MB, solutions = 5)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  1
-
-Root node processing (before b&c):
-Real time             =    0.10 sec. (35.39 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.10 sec. (35.41 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 109.298415 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.89 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          109.2984        0.0000           100.00%
-*     0+    0                           97.6971        0.0000           100.00%
-0     0        0.0000    27       97.6971        0.0000      150  100.00%
-0     0        1.5960    28       97.6971   LiftProj: 4      185   98.37%
-0     0        6.6863    27       97.6971   LiftProj: 6      203   93.16%
-0     0        7.7752    31       97.6971  LiftProj: 10      225   92.04%
-0     0        9.4405    28       97.6971  LiftProj: 10      241   90.34%
-0     0        9.5116    29       97.6971  LiftProj: 11      246   90.26%
-Detecting symmetries...
-0     0        9.8465    30       97.6971  LiftProj: 16      256   89.92%
-0     0       11.6927    30       97.6971  LiftProj: 14      283   88.03%
-0     0       12.7552    32       97.6971  LiftProj: 14      310   86.94%
-0     0       14.1716    32       97.6971  LiftProj: 12      338   85.49%
-0     0       14.8827    32       97.6971  LiftProj: 14      361   84.77%
-0     0       15.2007    31       97.6971  LiftProj: 16      379   84.44%
-0     0       15.3289    34       97.6971  LiftProj: 14      390   84.31%
-0     0       15.8304    33       97.6971  LiftProj: 18      420   83.80%
-0     0       16.7112    34       97.6971      Cuts: 16      442   82.89%
-0     0       17.0580    35       97.6971  LiftProj: 17      458   82.54%
-0     0       17.7414    33       97.6971  LiftProj: 17      482   81.84%
-*     0+    0                           96.4633       17.7414            81.61%
-0     0       18.0432    34       96.4633  LiftProj: 19      512   81.30%
-0     0       18.1242    33       96.4633  LiftProj: 16      531   81.21%
-0     0       18.1474    35       96.4633  LiftProj: 14      537   81.19%
-0     0       19.5749    31       96.4633  LiftProj: 15      575   79.71%
-0     0       20.6033    36       96.4633  LiftProj: 22      609   78.64%
-0     0       21.6361    35       96.4633  LiftProj: 15      631   77.57%
-*     0+    0                           94.9926       21.6361            77.22%
-0     0       21.9172    33       94.9926  LiftProj: 17      646   76.93%
-0     0       22.2369    34       94.9926  LiftProj: 15      663   76.59%
-0     0       22.4687    35       94.9926  LiftProj: 15      680   76.35%
-0     0       22.4687    35       94.9926  LiftProj: 10      681   76.35%
-0     0       23.0807    34       94.9926  LiftProj: 10      707   75.70%
-0     0       23.3654    34       94.9926  LiftProj: 14      723   75.40%
-0     0       23.6740    36       94.9926  LiftProj: 14      739   75.08%
-0     0       24.0088    36       94.9926  LiftProj: 12      760   74.73%
-0     0       24.3087    36       94.9926  LiftProj: 12      782   74.41%
-0     0       24.6996    35       94.9926  LiftProj: 13      806   74.00%
-*     0+    0                           86.0161       24.6996            71.28%
-0     0       25.1557    35       86.0161  LiftProj: 14      831   70.75%
-0     0       25.3824    36       86.0161  LiftProj: 22      850   70.49%
-0     0       25.5668    34       86.0161  LiftProj: 15      876   70.28%
-0     0       26.1007    35       86.0161  LiftProj: 21      903   69.66%
-0     0       26.3793    36       86.0161  LiftProj: 19      923   69.33%
-0     0       26.6397    35       86.0161  LiftProj: 11      940   69.03%
-0     0       26.9023    35       86.0161  LiftProj: 11      959   68.72%
-0     0       27.0660    37       86.0161  LiftProj: 10      973   68.53%
-0     0       27.2666    36       86.0161  LiftProj: 12      993   68.30%
-0     0       27.4172    36       86.0161  LiftProj: 12     1016   68.13%
-0     0       27.5394    37       86.0161  LiftProj: 14     1034   67.98%
-0     0       27.5944    37       86.0161  LiftProj: 11     1060   67.92%
-0     0       27.8866    35       86.0161  LiftProj: 11     1108   67.58%
-0     0       28.1771    35       86.0161  LiftProj: 13     1134   67.24%
-0     0       28.4051    36       86.0161  LiftProj: 18     1165   66.98%
-0     0       28.5709    37       86.0161   LiftProj: 9     1183   66.78%
-0     0       28.6597    37       86.0161   LiftProj: 9     1203   66.68%
-0     0       28.9045    36       86.0161  LiftProj: 11     1227   66.40%
-0     0       29.0543    37       86.0161   LiftProj: 8     1253   66.22%
-0     0       29.0741    37       86.0161  LiftProj: 17     1273   66.20%
-0     0       29.1164    37       86.0161  LiftProj: 15     1289   66.15%
-0     0       29.2197    36       86.0161  LiftProj: 12     1325   66.03%
-0     0       29.3098    37       86.0161  LiftProj: 12     1345   65.93%
-0     0       29.3228    37       86.0161  LiftProj: 14     1353   65.91%
-*     0+    0                           71.5186       29.3228            59.00%
-Detecting symmetries...
-0     2       29.3228    36       71.5186       29.3306     1353   58.99%                        0             0
-Elapsed time = 1.92 sec. (982.04 ticks, tree = 0.01 MB, solutions = 6)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  45
-
-Root node processing (before b&c):
-Real time             =    1.92 sec. (982.05 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    1.93 sec. (982.07 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 109.298415 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.54 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          109.2984        0.0000           100.00%
-*     0+    0                           97.6971        0.0000           100.00%
-0     0        0.0000    27       97.6971        0.0000      125  100.00%
-*     0+    0                           71.0845        0.0000           100.00%
-*     0+    0                           59.5187        0.0000           100.00%
-*     0+    0                           51.7724        0.0000           100.00%
-*     0+    0                           39.2475        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    20       39.2475        0.0000      125  100.00%                        0             0
-Elapsed time = 0.07 sec. (22.81 ticks, tree = 0.01 MB, solutions = 6)
+0     2        0.0000    18       49.2242        0.0000      120  100.00%                        0             0
+Elapsed time = 0.07 sec. (21.22 ticks, tree = 0.01 MB, solutions = 6)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.07 sec. (22.81 ticks)
+Real time             =    0.07 sec. (21.22 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.07 sec. (22.83 ticks)
+Total (root+branch&cut) =    0.07 sec. (21.24 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 109.298415 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.77 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          109.2984        0.0000           100.00%
-*     0+    0                           86.6088        0.0000           100.00%
-0     0       11.3010    19       86.6088       11.3010      155   86.95%
-0     0       12.1587    21       86.6088   LiftProj: 9      169   85.96%
-0     0       14.5448    22       86.6088  LiftProj: 12      185   83.21%
-0     0       16.0645    22       86.6088  LiftProj: 14      208   81.45%
-0     0       17.1711    22       86.6088  LiftProj: 16      224   80.17%
-*     0+    0                           79.9034       17.1711            78.51%
-0     0       18.1645    24       79.9034  LiftProj: 14      239   77.27%
-Detecting symmetries...
-0     0       21.4058    26       79.9034  LiftProj: 13      268   73.21%
-0     0       23.1422    25       79.9034  LiftProj: 13      306   71.04%
-0     0       25.0572    29       79.9034  LiftProj: 17      342   68.64%
-0     0       26.2615    28       79.9034  LiftProj: 14      371   67.13%
-0     0       26.6708    29       79.9034  LiftProj: 12      389   66.62%
-0     0       27.1305    30       79.9034  LiftProj: 12      407   66.05%
-0     0       28.3407    31       79.9034  LiftProj: 13      435   64.53%
-0     0       28.9822    29       79.9034  LiftProj: 14      467   63.73%
-0     0       29.4593    30       79.9034  LiftProj: 13      490   63.13%
-0     0       30.1315    31       79.9034  LiftProj: 16      511   62.29%
-0     0       30.7522    30       79.9034  LiftProj: 15      541   61.51%
-0     0       31.2205    31       79.9034  LiftProj: 15      574   60.93%
-0     0       32.4514    32       79.9034  LiftProj: 15      600   59.39%
-0     0       32.7985    32       79.9034  LiftProj: 12      623   58.95%
-0     0       33.0931    31       79.9034  LiftProj: 12      645   58.58%
-0     0       33.5083    30       79.9034   LiftProj: 9      671   58.06%
-0     0       33.6128    30       79.9034  LiftProj: 12      696   57.93%
-0     0       33.7374    32       79.9034  LiftProj: 11      720   57.78%
-0     0       33.8917    32       79.9034  LiftProj: 13      743   57.58%
-0     0       34.0605    31       79.9034  LiftProj: 11      767   57.37%
-0     0       34.1598    32       79.9034   LiftProj: 9      787   57.25%
-0     0       34.5067    30       79.9034      Cuts: 10      824   56.81%
-0     0       34.5913    32       79.9034   LiftProj: 9      843   56.71%
-0     0       34.6863    31       79.9034   LiftProj: 9      863   56.59%
-0     0       34.7660    32       79.9034  LiftProj: 11      883   56.49%
-0     0       34.9198    32       79.9034  LiftProj: 10      906   56.30%
-0     0       34.9583    31       79.9034   LiftProj: 8      919   56.25%
-0     0       35.0775    32       79.9034  LiftProj: 12      938   56.10%
-0     0       35.1989    32       79.9034   LiftProj: 7      959   55.95%
-0     0       35.4272    32       79.9034   LiftProj: 8      985   55.66%
-0     0       35.4815    32       79.9034  LiftProj: 11     1000   55.59%
-0     0       35.5247    32       79.9034   LiftProj: 7     1016   55.54%
-0     0       35.5675    32       79.9034   LiftProj: 6     1029   55.49%
-0     0       35.6281    32       79.9034   LiftProj: 6     1051   55.41%
-0     0       35.7191    32       79.9034   LiftProj: 7     1075   55.30%
-0     0       35.7810    32       79.9034       Cuts: 8     1097   55.22%
-0     0       35.8138    32       79.9034   LiftProj: 4     1110   55.18%
-0     0       35.8526    32       79.9034   LiftProj: 6     1124   55.13%
-0     0       35.8751    32       79.9034   LiftProj: 5     1135   55.10%
-0     0       35.8893    32       79.9034   LiftProj: 7     1147   55.08%
-0     0       35.9159    32       79.9034   LiftProj: 4     1163   55.05%
-0     0       35.9525    32       79.9034   LiftProj: 5     1177   55.01%
-0     0       36.0657    32       79.9034   LiftProj: 5     1196   54.86%
-0     0       36.1111    32       79.9034   LiftProj: 7     1213   54.81%
-*     0+    0                           76.2078       36.1111            52.61%
-0     0       36.1594    32       76.2078  LiftProj: 10     1227   52.55%
-0     0       36.2106    32       76.2078   LiftProj: 8     1244   52.48%
-0     0       36.2828    32       76.2078   LiftProj: 8     1263   52.39%
-0     0       36.2926    32       76.2078   LiftProj: 4     1274   52.38%
-*     0+    0                           59.7277       36.2926            39.24%
-*     0+    0                           59.4769       36.2926            38.98%
-Detecting symmetries...
-0     2       36.2926    32       59.4769       36.3000     1274   38.97%                        0             0
-Elapsed time = 1.85 sec. (967.37 ticks, tree = 0.01 MB, solutions = 6)
-
-Mixed integer rounding cuts applied:  2
-Lift and project cuts applied:  49
-
-Root node processing (before b&c):
-Real time             =    1.85 sec. (967.38 ticks)
-Sequential b&c:
-Real time             =    0.01 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    1.86 sec. (967.40 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 109.298415 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.52 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          109.2984        0.0000           100.00%
-*     0+    0                           86.6088        0.0000           100.00%
-0     0        0.0000    23       86.6088        0.0000      119  100.00%
-*     0+    0                           49.5540        0.0000           100.00%
-0     0        0.0000    17       49.5540   LiftProj: 4      123  100.00%
-0     0        0.0000    17       49.5540   LiftProj: 6      142  100.00%
-0     0        0.0000    18       49.5540   LiftProj: 5      164  100.00%
-*     0+    0                           46.5397        0.0000           100.00%
-*     0+    0                           25.8942        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    16       25.8942        0.0000      164  100.00%                        0             0
-Elapsed time = 0.11 sec. (39.38 ticks, tree = 0.01 MB, solutions = 5)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  1
-
-Root node processing (before b&c):
-Real time             =    0.11 sec. (39.38 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.11 sec. (39.40 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 93.379247 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.53 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           93.3792        0.0000           100.00%
-*     0+    0                           84.6822        0.0000           100.00%
-0     0        0.0000    27       84.6822        0.0000      133  100.00%
-*     0+    0                           52.3615        0.0000           100.00%
-0     0        0.3892    27       52.3615   LiftProj: 3      184   99.26%
-0     0        3.6001    26       52.3615   LiftProj: 6      208   93.12%
-0     0        5.9242    29       52.3615   LiftProj: 9      231   88.69%
-0     0        5.9242    29       52.3615   LiftProj: 5      232   88.69%
-0     0        5.9242    29       52.3615   LiftProj: 7      233   88.69%
-Detecting symmetries...
-*     0+    0                           40.5743        5.9242            85.40%
-Detecting symmetries...
-0     2        5.9242    29       40.5743        5.9443      233   85.35%                        0             0
-Elapsed time = 0.15 sec. (55.58 ticks, tree = 0.01 MB, solutions = 4)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  10
-
-Root node processing (before b&c):
-Real time             =    0.15 sec. (55.58 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.15 sec. (55.60 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 93.379247 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.50 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           93.3792        0.0000           100.00%
-*     0+    0                           84.6822        0.0000           100.00%
-0     0        0.0000    27       84.6822        0.0000      121  100.00%
-*     0+    0                           33.7589        0.0000           100.00%
-*     0+    0                           27.3513        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    19       27.3513        0.0000      121  100.00%                        0             0
-Elapsed time = 0.07 sec. (23.57 ticks, tree = 0.01 MB, solutions = 4)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.07 sec. (23.57 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.07 sec. (23.59 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 93.379247 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.61 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           93.3792        0.0000           100.00%
-*     0+    0                           77.4137        0.0000           100.00%
-0     0        0.0000    23       77.4137        0.0000      135  100.00%
-*     0+    0                           51.5425        0.0000           100.00%
-0     0        0.0000    24       51.5425   LiftProj: 4      177  100.00%
-0     0        2.1189    24       51.5425   LiftProj: 4      225   95.89%
-0     0        3.2810    25       51.5425   LiftProj: 8      237   93.63%
-*     0+    0                           51.0854        3.2810            93.58%
-0     0        4.8852    25       51.0854   LiftProj: 8      262   90.44%
-0     0        5.6433    25       51.0854   LiftProj: 6      282   88.95%
-Detecting symmetries...
-0     0        5.9665    25       51.0854  LiftProj: 10      287   88.32%
-0     0        6.7414    28       51.0854   LiftProj: 8      304   86.80%
-0     0        7.2486    25       51.0854   LiftProj: 7      321   85.81%
-0     0        7.5420    30       51.0854   LiftProj: 9      334   85.24%
-0     0        8.3504    26       51.0854   LiftProj: 7      367   83.65%
-0     0        9.5435    25       51.0854  LiftProj: 10      382   81.32%
-0     0        9.9692    27       51.0854  LiftProj: 10      404   80.49%
-0     0       10.2062    29       51.0854   LiftProj: 7      416   80.02%
-0     0       10.2813    30       51.0854  LiftProj: 10      424   79.87%
-0     0       11.6174    28       51.0854   LiftProj: 9      445   77.26%
-0     0       12.2300    28       51.0854  LiftProj: 11      466   76.06%
-0     0       12.7957    29       51.0854  LiftProj: 10      487   74.95%
-0     0       13.8122    28       51.0854  LiftProj: 11      517   72.96%
-0     0       14.1784    27       51.0854  LiftProj: 10      539   72.25%
-0     0       14.2670    28       51.0854  LiftProj: 10      548   72.07%
-0     0       14.4681    28       51.0854  LiftProj: 12      569   71.68%
-0     0       14.6990    26       51.0854  LiftProj: 12      595   71.23%
-0     0       15.0573    29       51.0854  LiftProj: 15      617   70.53%
-0     0       15.1874    30       51.0854  LiftProj: 10      633   70.27%
-0     0       15.5842    30       51.0854  LiftProj: 11      650   69.49%
-0     0       15.9164    30       51.0854  LiftProj: 17      668   68.84%
-0     0       16.1071    29       51.0854  LiftProj: 11      680   68.47%
-0     0       16.5459    28       51.0854   LiftProj: 8      708   67.61%
-0     0       17.1261    29       51.0854  LiftProj: 10      732   66.48%
-0     0       17.4565    29       51.0854  LiftProj: 15      752   65.83%
-0     0       17.9115    30       51.0854  LiftProj: 10      777   64.94%
-0     0       18.2824    32       51.0854   LiftProj: 9      797   64.21%
-0     0       18.5907    29       51.0854   LiftProj: 8      823   63.61%
-0     0       18.8630    29       51.0854  LiftProj: 11      846   63.08%
-0     0       19.2009    27       51.0854   LiftProj: 9      880   62.41%
-0     0       19.3026    31       51.0854   LiftProj: 9      897   62.21%
-0     0       19.4061    29       51.0854   LiftProj: 7      925   62.01%
-0     0       19.6435    28       51.0854  LiftProj: 11      944   61.55%
-0     0       19.7919    31       51.0854   LiftProj: 9      966   61.26%
-0     0       20.0594    30       51.0854  LiftProj: 13      989   60.73%
-0     0       20.2276    31       51.0854  LiftProj: 10     1013   60.40%
-0     0       20.3642    32       51.0854   LiftProj: 9     1031   60.14%
-0     0       20.4358    31       51.0854  LiftProj: 10     1062   60.00%
-0     0       20.5179    29       51.0854   LiftProj: 8     1089   59.84%
-0     0       20.6435    32       51.0854   LiftProj: 8     1116   59.59%
-0     0       20.8274    32       51.0854   LiftProj: 7     1161   59.23%
-0     0       21.0086    32       51.0854   LiftProj: 9     1192   58.88%
-0     0       21.0938    32       51.0854   LiftProj: 7     1214   58.71%
-*     0+    0                           49.0076       21.0938            56.96%
-0     0       21.1883    29       49.0076   LiftProj: 8     1237   56.77%
-0     0       21.2729    29       49.0076   LiftProj: 4     1256   56.59%
-0     0       21.3202    30       49.0076   LiftProj: 9     1268   56.50%
-0     0       21.3958    31       49.0076  LiftProj: 10     1290   56.34%
-0     0       21.4486    30       49.0076   LiftProj: 6     1309   56.23%
-*     0+    0                           48.7727       21.4486            56.02%
-0     0       21.4732    31       48.7727   LiftProj: 7     1320   55.97%
-0     0       21.4791    32       48.7727   LiftProj: 7     1329   55.96%
-*     0+    0                           29.1014       21.4791            26.19%
-Detecting symmetries...
-0     2       21.5330    27       29.1014       21.5487     1329   25.95%                        0             0
-Elapsed time = 1.45 sec. (713.40 ticks, tree = 0.01 MB, solutions = 7)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  44
-
-Root node processing (before b&c):
-Real time             =    1.45 sec. (713.40 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.03 ticks)
-------------
-Total (root+branch&cut) =    1.45 sec. (713.43 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 93.379247 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.60 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           93.3792        0.0000           100.00%
-*     0+    0                           77.4137        0.0000           100.00%
-0     0        0.0000    22       77.4137        0.0000      123  100.00%
-*     0+    0                           44.2766        0.0000           100.00%
-*     0+    0                           39.2549        0.0000           100.00%
-*     0+    0                           29.4715        0.0000           100.00%
-*     0+    0                           24.9683        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    16       24.9683        0.0000      123  100.00%                        0             0
-Elapsed time = 0.06 sec. (21.13 ticks, tree = 0.01 MB, solutions = 6)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.06 sec. (21.13 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.06 sec. (21.15 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 94.504503 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.72 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           94.5045        0.0000           100.00%
-*     0+    0                           83.7373        0.0000           100.00%
-0     0        0.0000    27       83.7373        0.0000      149  100.00%
-*     0+    0                           83.3613        0.0000           100.00%
-0     0        0.0000    27       83.3613   LiftProj: 3      166  100.00%
-0     0        2.3627    28       83.3613   LiftProj: 7      245   97.17%
-0     0        2.3627    28       83.3613  LiftProj: 10      247   97.17%
-*     0+    0                           64.2134        2.3627            96.32%
-*     0+    0                           52.2165        2.3627            95.48%
-Detecting symmetries...
-0     2        2.3627    28       52.2165        2.5164      247   95.18%                        0             0
-Elapsed time = 0.12 sec. (45.56 ticks, tree = 0.01 MB, solutions = 5)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  5
-
-Root node processing (before b&c):
-Real time             =    0.12 sec. (45.56 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.12 sec. (45.58 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 94.504503 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.36 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.57 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                           94.5045        0.0000           100.00%
-*     0+    0                           83.7373        0.0000           100.00%
-0     0        0.0000    27       83.7373        0.0000      131  100.00%
-*     0+    0                           37.6521        0.0000           100.00%
-*     0+    0                           33.2517        0.0000           100.00%
-*     0+    0                           20.0970        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    19       20.0970        0.0000      131  100.00%                        0             0
-Elapsed time = 0.07 sec. (22.34 ticks, tree = 0.01 MB, solutions = 5)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.07 sec. (22.35 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.07 sec. (22.36 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 94.504503 after 0.00 sec. (0.01 ticks)
+Found incumbent of value 115.192441 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
 Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
@@ -1566,82 +289,792 @@ Root relaxation solution time = 0.00 sec. (1.46 ticks)
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                           94.5045        0.0000           100.00%
-*     0+    0                           77.4984        0.0000           100.00%
-0     0        0.0000    23       77.4984        0.0000      128  100.00%
-*     0+    0                           57.4577        0.0000           100.00%
-0     0        2.3202    24       57.4577   LiftProj: 3      173   95.96%
-0     0        4.8395    25       57.4577   LiftProj: 7      191   91.58%
-0     0        6.7679    27       57.4577  LiftProj: 11      212   88.22%
-0     0        7.7906    29       57.4577   LiftProj: 8      225   86.44%
-0     0        9.3436    25       57.4577   LiftProj: 9      241   83.74%
+*     0+    0                          115.1924        0.0000           100.00%
+*     0+    0                           81.9438        0.0000           100.00%
+0     0        0.0000    23       81.9438        0.0000      119  100.00%
+*     0+    0                           80.6567        0.0000           100.00%
+*     0+    0                           72.5973        0.0000           100.00%
+*     0+    0                           64.2641        0.0000           100.00%
+*     0+    0                           52.9380        0.0000           100.00%
 Detecting symmetries...
-0     0       10.2957    27       57.4577  LiftProj: 11      259   82.08%
-0     0       10.9870    31       57.4577   LiftProj: 8      274   80.88%
-0     0       12.6871    24       57.4577  LiftProj: 11      310   77.92%
-0     0       13.3491    26       57.4577   LiftProj: 7      321   76.77%
-0     0       14.0005    29       57.4577  LiftProj: 10      340   75.63%
-0     0       15.1185    27       57.4577  LiftProj: 10      365   73.69%
-0     0       15.6150    29       57.4577  LiftProj: 14      387   72.82%
-0     0       16.0481    29       57.4577  LiftProj: 14      414   72.07%
-0     0       17.6646    29       57.4577  LiftProj: 15      444   69.26%
-0     0       18.9328    26       57.4577  LiftProj: 12      477   67.05%
-0     0       19.1580    29       57.4577  LiftProj: 10      489   66.66%
-0     0       19.4716    32       57.4577  LiftProj: 10      515   66.11%
-0     0       20.1387    28       57.4577  LiftProj: 11      538   64.95%
-0     0       20.4607    30       57.4577  LiftProj: 14      558   64.39%
-0     0       21.3068    31       57.4577  LiftProj: 12      590   62.92%
-0     0       21.7606    29       57.4577   LiftProj: 7      607   62.13%
-0     0       22.1673    32       57.4577   LiftProj: 7      640   61.42%
-0     0       22.6055    30       57.4577   LiftProj: 8      667   60.66%
-0     0       22.7680    30       57.4577   LiftProj: 6      686   60.37%
-0     0       23.0796    31       57.4577   LiftProj: 9      723   59.83%
-0     0       23.6027    29       57.4577   LiftProj: 9      753   58.92%
-0     0       23.9886    29       57.4577  LiftProj: 11      779   58.25%
-0     0       24.0152    31       57.4577   LiftProj: 7      790   58.20%
-0     0       24.1842    31       57.4577   LiftProj: 8      807   57.91%
-0     0       24.2689    32       57.4577   LiftProj: 7      822   57.76%
-0     0       24.4666    31       57.4577   LiftProj: 7      854   57.42%
-0     0       24.5800    31       57.4577  LiftProj: 10      870   57.22%
-0     0       24.6443    31       57.4577   LiftProj: 6      881   57.11%
-0     0       24.6729    31       57.4577   LiftProj: 7      892   57.06%
-0     0       25.4680    31       57.4577   LiftProj: 6      932   55.68%
-0     0       25.6727    30       57.4577       Cuts: 8      955   55.32%
-0     0       25.8207    32       57.4577   LiftProj: 8      972   55.06%
-0     0       25.9235    30       57.4577   LiftProj: 9      991   54.88%
-0     0       26.0141    32       57.4577  LiftProj: 10     1007   54.72%
-0     0       26.0838    32       57.4577   LiftProj: 7     1026   54.60%
-0     0       26.1844    31       57.4577   LiftProj: 8     1047   54.43%
-0     0       26.3178    32       57.4577   LiftProj: 6     1060   54.20%
-0     0       26.5527    31       57.4577   LiftProj: 6     1078   53.79%
-0     0       26.6037    31       57.4577   LiftProj: 8     1092   53.70%
-0     0       26.6428    30       57.4577   LiftProj: 6     1102   53.63%
-0     0       26.6812    32       57.4577   LiftProj: 8     1113   53.56%
-0     0       26.7003    32       57.4577   LiftProj: 4     1125   53.53%
-0     0       26.7300    30       57.4577   LiftProj: 5     1137   53.48%
-0     0       26.7806    32       57.4577  LiftProj: 10     1159   53.39%
-0     0       26.8393    30       57.4577       Cuts: 7     1181   53.29%
-0     0       26.8627    32       57.4577   LiftProj: 5     1190   53.25%
-0     0       26.9337    30       57.4577   LiftProj: 4     1209   53.12%
-0     0       26.9771    30       57.4577   LiftProj: 6     1225   53.05%
-0     0       26.9903    32       57.4577   LiftProj: 5     1236   53.03%
-0     0       27.0470    31       57.4577   LiftProj: 6     1254   52.93%
-0     0       27.0616    32       57.4577   LiftProj: 6     1263   52.90%
-*     0+    0                           52.4680       27.0616            48.42%
-*     0+    0                           43.2639       27.0616            37.45%
-Detecting symmetries...
-0     2       27.0616    32       43.2639       27.0676     1263   37.44%                        0             0
-Elapsed time = 1.55 sec. (773.77 ticks, tree = 0.01 MB, solutions = 5)
+0     2        0.0000    21       52.9380        0.0000      119  100.00%                        0             0
+Elapsed time = 0.06 sec. (23.74 ticks, tree = 0.01 MB, solutions = 6)
 
-Mixed integer rounding cuts applied:  1
-Lift and project cuts applied:  41
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    1.55 sec. (773.77 ticks)
+Real time             =    0.06 sec. (23.75 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    1.55 sec. (773.79 ticks)
+Total (root+branch&cut) =    0.06 sec. (23.76 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 115.192441 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.26 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          115.1924        0.0000           100.00%
+*     0+    0                           81.9438        0.0000           100.00%
+0     0        0.0000    23       81.9438        0.0000      110  100.00%
+*     0+    0                           71.2025        0.0000           100.00%
+*     0+    0                           70.3682        0.0000           100.00%
+*     0+    0                           60.6180        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    13       60.6180        0.0000      110  100.00%                        0             0
+Elapsed time = 0.06 sec. (18.79 ticks, tree = 0.01 MB, solutions = 5)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.06 sec. (18.79 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.06 sec. (18.81 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 131.603741 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.32 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          131.6037        0.0000           100.00%
+*     0+    0                          111.2422        0.0000           100.00%
+0     0        0.0000    27      111.2422        0.0000      112  100.00%
+0     0        0.0000    25      111.2422   LiftProj: 1      113  100.00%
+*     0+    0                          110.4315        0.0000           100.00%
+0     0        0.0000    26      110.4315   LiftProj: 6      135  100.00%
+0     0        0.0000    24      110.4315   LiftProj: 3      150  100.00%
+*     0+    0                          108.0369        0.0000           100.00%
+*     0+    0                           94.5560        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    24       94.5560        0.0000      150  100.00%                        0             0
+Elapsed time = 0.11 sec. (44.14 ticks, tree = 0.01 MB, solutions = 5)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  2
+
+Root node processing (before b&c):
+Real time             =    0.11 sec. (44.14 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.11 sec. (44.16 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 131.603741 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.50 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          131.6037        0.0000           100.00%
+*     0+    0                          111.2422        0.0000           100.00%
+0     0        0.0000    27      111.2422        0.0000      126  100.00%
+*     0+    0                           81.5623        0.0000           100.00%
+*     0+    0                           81.1793        0.0000           100.00%
+*     0+    0                           72.4663        0.0000           100.00%
+*     0+    0                           67.1615        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    18       67.1615        0.0000      126  100.00%                        0             0
+Elapsed time = 0.07 sec. (19.41 ticks, tree = 0.01 MB, solutions = 6)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.07 sec. (19.42 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.07 sec. (19.44 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 131.603741 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.51 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          131.6037        0.0000           100.00%
+*     0+    0                           99.6733        0.0000           100.00%
+0     0        0.0000    23       99.6733        0.0000      121  100.00%
+0     0        0.0000    20       99.6733   LiftProj: 1      130  100.00%
+*     0+    0                           97.3619        0.0000           100.00%
+0     0        0.0000    21       97.3619   LiftProj: 2      137  100.00%
+*     0+    0                           97.2750        0.0000           100.00%
+*     0+    0                           78.4052        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    20       78.4052        0.0000      137  100.00%                        0             0
+Elapsed time = 0.10 sec. (34.77 ticks, tree = 0.01 MB, solutions = 5)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.10 sec. (34.77 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.10 sec. (34.79 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 131.603741 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.55 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          131.6037        0.0000           100.00%
+*     0+    0                           99.6733        0.0000           100.00%
+0     0        0.0000    23       99.6733        0.0000      127  100.00%
+*     0+    0                           63.9599        0.0000           100.00%
+*     0+    0                           62.6718        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    13       62.6718        0.0000      127  100.00%                        0             0
+Elapsed time = 0.06 sec. (19.06 ticks, tree = 0.01 MB, solutions = 4)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.06 sec. (19.06 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.06 sec. (19.08 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 110.356714 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.50 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          110.3567        0.0000           100.00%
+*     0+    0                           96.6816        0.0000           100.00%
+0     0        0.0000    27       96.6816        0.0000      120  100.00%
+*     0+    0                           91.3689        0.0000           100.00%
+*     0+    0                           76.0951        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    24       76.0951        0.0000      120  100.00%                        0             0
+Elapsed time = 0.07 sec. (26.71 ticks, tree = 0.01 MB, solutions = 4)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.07 sec. (26.71 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.07 sec. (26.73 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 110.356714 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.53 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          110.3567        0.0000           100.00%
+*     0+    0                           96.6816        0.0000           100.00%
+0     0        0.0000    27       96.6816        0.0000      117  100.00%
+*     0+    0                           78.4067        0.0000           100.00%
+*     0+    0                           77.0292        0.0000           100.00%
+*     0+    0                           61.4553        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    18       61.4553        0.0000      117  100.00%                        0             0
+Elapsed time = 0.07 sec. (21.34 ticks, tree = 0.01 MB, solutions = 5)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.07 sec. (21.35 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.07 sec. (21.36 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 110.356714 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.47 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          110.3567        0.0000           100.00%
+*     0+    0                           82.1268        0.0000           100.00%
+0     0        0.0000    23       82.1268        0.0000      114  100.00%
+*     0+    0                           74.7672        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    19       74.7672        0.0000      114  100.00%                        0             0
+Elapsed time = 0.06 sec. (23.03 ticks, tree = 0.01 MB, solutions = 3)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.06 sec. (23.03 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.06 sec. (23.05 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 110.356714 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.35 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          110.3567        0.0000           100.00%
+*     0+    0                           82.1268        0.0000           100.00%
+0     0        0.0000    23       82.1268        0.0000      111  100.00%
+*     0+    0                           53.3052        0.0000           100.00%
+*     0+    0                           50.7826        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    13       50.7826        0.0000      111  100.00%                        0             0
+Elapsed time = 0.06 sec. (18.49 ticks, tree = 0.01 MB, solutions = 4)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.06 sec. (18.49 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.06 sec. (18.51 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 109.298415 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.49 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          109.2984        0.0000           100.00%
+*     0+    0                           97.6971        0.0000           100.00%
+0     0        0.0000    27       97.6971        0.0000      122  100.00%
+*     0+    0                           97.4587        0.0000           100.00%
+*     0+    0                           96.9730        0.0000           100.00%
+*     0+    0                           91.7514        0.0000           100.00%
+*     0+    0                           87.2211        0.0000           100.00%
+*     0+    0                           84.6796        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    24       84.6796        0.0000      122  100.00%                        0             0
+Elapsed time = 0.08 sec. (27.65 ticks, tree = 0.01 MB, solutions = 7)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.08 sec. (27.65 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.08 sec. (27.67 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 109.298415 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.44 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          109.2984        0.0000           100.00%
+*     0+    0                           97.6971        0.0000           100.00%
+0     0        0.0000    27       97.6971        0.0000      113  100.00%
+*     0+    0                           69.1781        0.0000           100.00%
+*     0+    0                           66.1806        0.0000           100.00%
+*     0+    0                           51.0931        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    18       51.0931        0.0000      113  100.00%                        0             0
+Elapsed time = 0.07 sec. (22.25 ticks, tree = 0.01 MB, solutions = 5)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.07 sec. (22.25 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.07 sec. (22.27 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 109.298415 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.50 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          109.2984        0.0000           100.00%
+*     0+    0                           86.6088        0.0000           100.00%
+0     0        0.0000    23       86.6088        0.0000      119  100.00%
+0     0        0.0000    19       86.6088   LiftProj: 1      121  100.00%
+*     0+    0                           80.8124        0.0000           100.00%
+0     0        0.0000    20       80.8124   LiftProj: 1      125  100.00%
+0     0        0.0000    20       80.8124   LiftProj: 1      132  100.00%
+*     0+    0                           68.3350        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    20       68.3350        0.0000      132  100.00%                        0             0
+Elapsed time = 0.10 sec. (42.70 ticks, tree = 0.01 MB, solutions = 4)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  3
+
+Root node processing (before b&c):
+Real time             =    0.10 sec. (42.70 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.10 sec. (42.72 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 109.298415 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.27 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          109.2984        0.0000           100.00%
+*     0+    0                           86.6088        0.0000           100.00%
+0     0        0.0000    25       86.6088        0.0000      112  100.00%
+*     0+    0                           58.2160        0.0000           100.00%
+0     0        0.0000    14       58.2160   LiftProj: 1      118  100.00%
+*     0+    0                           51.4760        0.0000           100.00%
+0     0        0.0000    14       51.4760   LiftProj: 1      128  100.00%
+*     0+    0                           34.5790        0.0000           100.00%
+0     0        0.0000    15       34.5790   LiftProj: 1      141  100.00%
+*     0+    0                           23.2353        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    14       23.2353        0.0000      141  100.00%                        0             0
+Elapsed time = 0.09 sec. (30.17 ticks, tree = 0.01 MB, solutions = 6)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.09 sec. (30.17 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.09 sec. (30.19 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 93.379247 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.52 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                           93.3792        0.0000           100.00%
+*     0+    0                           84.6822        0.0000           100.00%
+0     0        0.0000    27       84.6822        0.0000      123  100.00%
+*     0+    0                           70.9667        0.0000           100.00%
+0     0        0.0000    24       70.9667   LiftProj: 3      128  100.00%
+*     0+    0                           69.4584        0.0000           100.00%
+0     0        0.0000    25       69.4584   LiftProj: 2      156  100.00%
+0     0        0.0000    24       69.4584   LiftProj: 1      161  100.00%
+*     0+    0                           68.9269        0.0000           100.00%
+*     0+    0                           66.7128        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    24       66.7128        0.0000      161  100.00%                        0             0
+Elapsed time = 0.12 sec. (47.11 ticks, tree = 0.01 MB, solutions = 6)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  3
+
+Root node processing (before b&c):
+Real time             =    0.12 sec. (47.11 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.12 sec. (47.13 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 93.379247 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.54 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                           93.3792        0.0000           100.00%
+*     0+    0                           84.6822        0.0000           100.00%
+0     0        0.0000    27       84.6822        0.0000      129  100.00%
+*     0+    0                           53.3525        0.0000           100.00%
+0     0        0.0000    18       53.3525   LiftProj: 1      134  100.00%
+0     0        0.0000    18       53.3525   LiftProj: 3      152  100.00%
+0     0        0.0000    20       53.3525   LiftProj: 3      159  100.00%
+*     0+    0                           43.1556        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    18       43.1556        0.0000      159  100.00%                        0             0
+Elapsed time = 0.10 sec. (35.14 ticks, tree = 0.01 MB, solutions = 4)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.10 sec. (35.14 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.10 sec. (35.16 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 93.379247 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.52 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                           93.3792        0.0000           100.00%
+*     0+    0                           77.4137        0.0000           100.00%
+0     0        0.0000    23       77.4137        0.0000      122  100.00%
+*     0+    0                           61.3589        0.0000           100.00%
+0     0        0.0000    19       61.3589   LiftProj: 2      127  100.00%
+*     0+    0                           58.3501        0.0000           100.00%
+0     0        0.0000    19       58.3501   LiftProj: 3      156  100.00%
+0     0        0.0000    20       58.3501   LiftProj: 3      175  100.00%
+*     0+    0                           48.6622        0.0000           100.00%
+*     0+    0                           48.4870        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    20       48.4870        0.0000      175  100.00%                        0             0
+Elapsed time = 0.11 sec. (46.83 ticks, tree = 0.01 MB, solutions = 6)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  4
+
+Root node processing (before b&c):
+Real time             =    0.11 sec. (46.83 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.11 sec. (46.85 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 93.379247 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.31 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                           93.3792        0.0000           100.00%
+*     0+    0                           77.4137        0.0000           100.00%
+0     0        0.0000    23       77.4137        0.0000      112  100.00%
+*     0+    0                           50.0593        0.0000           100.00%
+*     0+    0                           37.3427        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    13       37.3427        0.0000      112  100.00%                        0             0
+Elapsed time = 0.06 sec. (17.69 ticks, tree = 0.01 MB, solutions = 4)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.06 sec. (17.69 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.06 sec. (17.71 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1662,31 +1095,165 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.43 ticks)
+Root relaxation solution time = 0.00 sec. (1.59 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                           94.5045        0.0000           100.00%
+*     0+    0                           83.7373        0.0000           100.00%
+0     0        0.0000    27       83.7373        0.0000      126  100.00%
+*     0+    0                           81.1267        0.0000           100.00%
+0     0        0.0000    24       81.1267   LiftProj: 2      135  100.00%
+*     0+    0                           79.0526        0.0000           100.00%
+0     0        0.0000    24       79.0526   LiftProj: 1      146  100.00%
+0     0        0.0000    25       79.0526   LiftProj: 1      161  100.00%
+*     0+    0                           78.9137        0.0000           100.00%
+*     0+    0                           66.7264        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    24       66.7264        0.0000      161  100.00%                        0             0
+Elapsed time = 0.11 sec. (44.93 ticks, tree = 0.01 MB, solutions = 6)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.11 sec. (44.93 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.11 sec. (44.95 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 94.504503 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.33 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                           94.5045        0.0000           100.00%
+*     0+    0                           83.7373        0.0000           100.00%
+0     0        0.0000    27       83.7373        0.0000      113  100.00%
+*     0+    0                           57.0887        0.0000           100.00%
+*     0+    0                           44.4023        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    18       44.4023        0.0000      113  100.00%                        0             0
+Elapsed time = 0.07 sec. (23.01 ticks, tree = 0.01 MB, solutions = 4)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.07 sec. (23.01 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.07 sec. (23.03 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 94.504503 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.22 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0+    0                           94.5045        0.0000           100.00%
 *     0+    0                           77.4984        0.0000           100.00%
-0     0        0.0000    23       77.4984        0.0000      115  100.00%
-*     0+    0                           29.2294        0.0000           100.00%
-*     0+    0                           18.5243        0.0000           100.00%
-*     0+    0                           18.3372        0.0000           100.00%
-*     0+    0                           10.2788        0.0000           100.00%
+0     0        0.0000    22       77.4984        0.0000      104  100.00%
+*     0+    0                           68.7941        0.0000           100.00%
+0     0        0.0000    19       68.7941   LiftProj: 1      110  100.00%
+*     0+    0                           68.7770        0.0000           100.00%
+0     0        0.0000    20       68.7770   LiftProj: 1      123  100.00%
+0     0        0.0000    21       68.7770   LiftProj: 2      143  100.00%
+*     0+    0                           66.6135        0.0000           100.00%
 Detecting symmetries...
-0     2        0.0000    14       10.2788        0.0000      115  100.00%                        0             0
-Elapsed time = 0.06 sec. (20.21 ticks, tree = 0.01 MB, solutions = 6)
+0     2        0.0000    19       66.6135        0.0000      143  100.00%                        0             0
+Elapsed time = 0.10 sec. (40.78 ticks, tree = 0.01 MB, solutions = 5)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  1
+
+Root node processing (before b&c):
+Real time             =    0.10 sec. (40.78 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.10 sec. (40.80 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 94.504503 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.16 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                           94.5045        0.0000           100.00%
+0     0        0.0000    23       94.5045        0.0000      105  100.00%
+*     0+    0                           26.1158        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    13       26.1158        0.0000      105  100.00%                        0             0
+Elapsed time = 0.06 sec. (18.21 ticks, tree = 0.01 MB, solutions = 2)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (20.22 ticks)
+Real time             =    0.06 sec. (18.21 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (20.23 ticks)
+Total (root+branch&cut) =    0.06 sec. (18.23 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1707,7 +1274,7 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.88 ticks)
+Root relaxation solution time = 0.00 sec. (1.46 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -1715,48 +1282,25 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 *     0+    0                          133.7092        0.0000           100.00%
 *     0+    0                          129.6212        0.0000           100.00%
 *     0+    0                          108.6480        0.0000           100.00%
-0     0       11.6826    21      108.6480       11.6826      155   89.25%
-0     0       14.1607    27      108.6480   LiftProj: 8      178   86.97%
-0     0       14.5574    27      108.6480   LiftProj: 9      187   86.60%
-0     0       15.4710    28      108.6480   LiftProj: 9      199   85.76%
-0     0       15.9347    29      108.6480  LiftProj: 11      213   85.33%
-0     0       15.9347    29      108.6480   LiftProj: 7      216   85.33%
+0     0        0.0000    27      108.6480        0.0000      115  100.00%
+0     0        0.0000    25      108.6480   LiftProj: 1      126  100.00%
+*     0+    0                          104.2364        0.0000           100.00%
+0     0        0.0000    26      104.2364   LiftProj: 2      146  100.00%
+*     0+    0                          104.1474        0.0000           100.00%
+*     0+    0                          103.2715        0.0000           100.00%
 Detecting symmetries...
-0     0       17.3995    31      108.6480  LiftProj: 11      238   83.99%
-0     0       20.4999    27      108.6480  LiftProj: 12      265   81.13%
-0     0       20.9899    28      108.6480  LiftProj: 11      276   80.68%
-0     0       21.8826    27      108.6480  LiftProj: 14      288   79.86%
-0     0       22.1647    30      108.6480  LiftProj: 18      306   79.60%
-0     0       23.6541    32      108.6480  LiftProj: 14      324   78.23%
-0     0       25.6954    31      108.6480  LiftProj: 14      340   76.35%
-0     0       27.2694    31      108.6480  LiftProj: 14      360   74.90%
-0     0       27.9508    32      108.6480  LiftProj: 13      371   74.27%
-0     0       30.0454    35      108.6480  LiftProj: 24      406   72.35%
-0     0       31.2168    34      108.6480      Cuts: 17      442   71.27%
-0     0       31.7070    33      108.6480      Cuts: 17      461   70.82%
-0     0       32.4927    33      108.6480  LiftProj: 14      483   70.09%
-0     0       33.3553    35      108.6480  LiftProj: 16      496   69.30%
-0     0       33.5672    35      108.6480  LiftProj: 14      506   69.10%
-0     0       33.9705    36      108.6480  LiftProj: 16      529   68.73%
-0     0       34.4896    32      108.6480  LiftProj: 16      552   68.26%
-0     0       34.9304    33      108.6480  LiftProj: 20      575   67.85%
-0     0       35.6996    35      108.6480  LiftProj: 22      602   67.14%
-0     0       36.2519    36      108.6480  LiftProj: 18      633   66.63%
-0     0       36.2592    36      108.6480  LiftProj: 17      639   66.63%
-*     0+    0                           99.2847       36.2592            63.48%
-Detecting symmetries...
-0     2       36.2592    36       99.2847       36.2749      639   63.46%                        0             0
-Elapsed time = 0.72 sec. (340.33 ticks, tree = 0.01 MB, solutions = 4)
+0     2        0.0000    25      103.2715        0.0000      146  100.00%                        0             0
+Elapsed time = 0.10 sec. (37.13 ticks, tree = 0.01 MB, solutions = 6)
 
 Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  31
+Lift and project cuts applied:  2
 
 Root node processing (before b&c):
-Real time             =    0.72 sec. (340.34 ticks)
+Real time             =    0.10 sec. (37.13 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.73 sec. (340.36 ticks)
+Total (root+branch&cut) =    0.10 sec. (37.15 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1777,31 +1321,34 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.59 ticks)
+Root relaxation solution time = 0.00 sec. (1.40 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0+    0                          133.7092        0.0000           100.00%
 *     0+    0                          129.6212        0.0000           100.00%
-0     0        0.0000    27      129.6212        0.0000      131  100.00%
-*     0+    0                           72.3650        0.0000           100.00%
-*     0+    0                           64.1539        0.0000           100.00%
-*     0+    0                           53.0370        0.0000           100.00%
-*     0+    0                           41.9504        0.0000           100.00%
+0     0        0.0000    27      129.6212        0.0000      114  100.00%
+*     0+    0                           97.5918        0.0000           100.00%
+0     0        0.0000    18       97.5918   LiftProj: 2      116  100.00%
+*     0+    0                           84.6484        0.0000           100.00%
+0     0        0.0000    19       84.6484   LiftProj: 2      124  100.00%
+0     0        0.0000    18       84.6484   LiftProj: 1      131  100.00%
+*     0+    0                           80.6136        0.0000           100.00%
+*     0+    0                           77.0136        0.0000           100.00%
 Detecting symmetries...
-0     2        0.0000    23       41.9504        0.0000      131  100.00%                        0             0
-Elapsed time = 0.07 sec. (25.89 ticks, tree = 0.01 MB, solutions = 6)
+0     2        0.0000    18       77.0136        0.0000      131  100.00%                        0             0
+Elapsed time = 0.10 sec. (33.63 ticks, tree = 0.01 MB, solutions = 6)
 
 Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  0
+Lift and project cuts applied:  1
 
 Root node processing (before b&c):
-Real time             =    0.07 sec. (25.89 ticks)
+Real time             =    0.10 sec. (33.64 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.08 sec. (25.91 ticks)
+Total (root+branch&cut) =    0.10 sec. (33.65 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1822,89 +1369,30 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.88 ticks)
+Root relaxation solution time = 0.00 sec. (1.42 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0+    0                          133.7092        0.0000           100.00%
 *     0+    0                          114.7297        0.0000           100.00%
-0     0       24.4161    16      114.7297       24.4161      157   78.72%
-*     0+    0                          105.4216       24.4161            76.84%
-0     0       25.8207    23      105.4216   LiftProj: 6      180   75.51%
-0     0       26.0771    23      105.4216  LiftProj: 10      184   75.26%
-0     0       27.0952    23      105.4216   LiftProj: 8      195   74.30%
-0     0       28.2295    25      105.4216   LiftProj: 9      217   73.22%
-0     0       28.4534    26      105.4216   LiftProj: 8      223   73.01%
+0     0        0.0000    22      114.7297        0.0000      117  100.00%
+*     0+    0                          105.5743        0.0000           100.00%
+*     0+    0                           94.2191        0.0000           100.00%
+*     0+    0                           83.8364        0.0000           100.00%
 Detecting symmetries...
-0     0       29.7531    25      105.4216   LiftProj: 9      240   71.78%
-0     0       29.7531    25      105.4216   LiftProj: 8      243   71.78%
-0     0       31.0767    25      105.4216   LiftProj: 8      258   70.52%
-0     0       31.3401    27      105.4216  LiftProj: 12      268   70.27%
-0     0       31.7698    25      105.4216  LiftProj: 14      287   69.86%
-0     0       32.0895    26      105.4216  LiftProj: 12      301   69.56%
-*     0+    0                          104.4686       32.0895            69.28%
-0     0       32.5949    29      104.4686  LiftProj: 15      314   68.80%
-0     0       34.5060    26      104.4686  LiftProj: 14      343   66.97%
-0     0       35.8276    29      104.4686  LiftProj: 16      371   65.70%
-0     0       36.7464    27      104.4686  LiftProj: 15      391   64.83%
-0     0       37.5437    26      104.4686  LiftProj: 16      406   64.06%
-*     0+    0                           93.6291       37.5437            59.90%
-0     0       38.1203    29       93.6291  LiftProj: 16      423   59.29%
-0     0       38.5537    28       93.6291  LiftProj: 13      435   58.82%
-0     0       39.4542    29       93.6291  LiftProj: 13      461   57.86%
-0     0       40.5997    31       93.6291  LiftProj: 14      485   56.64%
-0     0       40.9195    30       93.6291   LiftProj: 9      501   56.30%
-0     0       41.3316    30       93.6291  LiftProj: 10      519   55.86%
-0     0       41.4586    29       93.6291  LiftProj: 11      536   55.72%
-0     0       41.9016    32       93.6291  LiftProj: 13      562   55.25%
-0     0       42.0843    29       93.6291  LiftProj: 13      582   55.05%
-0     0       42.1860    30       93.6291  LiftProj: 11      598   54.94%
-0     0       42.3409    31       93.6291   LiftProj: 9      618   54.78%
-0     0       42.5416    30       93.6291  LiftProj: 13      634   54.56%
-0     0       42.9841    32       93.6291  LiftProj: 10      657   54.09%
-0     0       43.1441    32       93.6291  LiftProj: 16      671   53.92%
-0     0       43.3882    30       93.6291  LiftProj: 17      693   53.66%
-0     0       43.5227    32       93.6291  LiftProj: 11      708   53.52%
-0     0       43.6528    32       93.6291  LiftProj: 14      726   53.38%
-0     0       43.8683    31       93.6291      Cuts: 12      742   53.15%
-0     0       44.3881    31       93.6291  LiftProj: 10      768   52.59%
-0     0       44.5515    30       93.6291   LiftProj: 9      782   52.42%
-0     0       44.6700    29       93.6291  LiftProj: 11      801   52.29%
-0     0       44.8007    31       93.6291  LiftProj: 13      816   52.15%
-0     0       44.9580    32       93.6291  LiftProj: 11      832   51.98%
-0     0       45.0412    31       93.6291  LiftProj: 12      848   51.89%
-0     0       45.2182    31       93.6291   LiftProj: 9      866   51.70%
-0     0       45.3532    31       93.6291   LiftProj: 9      884   51.56%
-0     0       45.5476    32       93.6291  LiftProj: 12      902   51.35%
-0     0       45.5892    31       93.6291  LiftProj: 10      915   51.31%
-0     0       45.6820    31       93.6291  LiftProj: 12      929   51.21%
-0     0       45.7965    32       93.6291  LiftProj: 12      945   51.09%
-0     0       46.0171    31       93.6291  LiftProj: 10      960   50.85%
-0     0       46.2355    31       93.6291   LiftProj: 8      977   50.62%
-0     0       46.3086    31       93.6291   LiftProj: 8      994   50.54%
-0     0       46.4200    30       93.6291   LiftProj: 9     1021   50.42%
-0     0       46.5070    31       93.6291  LiftProj: 10     1032   50.33%
-0     0       46.6972    32       93.6291   LiftProj: 7     1048   50.13%
-0     0       47.0415    29       93.6291  LiftProj: 13     1083   49.76%
-0     0       47.0902    31       93.6291  LiftProj: 13     1095   49.71%
-0     0       47.2600    32       93.6291  LiftProj: 10     1118   49.52%
-0     0       47.3989    31       93.6291  LiftProj: 12     1132   49.38%
-0     0       47.4220    32       93.6291  LiftProj: 11     1141   49.35%
-*     0+    0                           72.5755       47.4220            34.66%
-Detecting symmetries...
-0     2       47.4220    32       72.5755       47.4410     1141   34.63%                        0             0
-Elapsed time = 1.56 sec. (772.91 ticks, tree = 0.01 MB, solutions = 6)
+0     2        0.0000    19       83.8364        0.0000      117  100.00%                        0             0
+Elapsed time = 0.06 sec. (23.20 ticks, tree = 0.01 MB, solutions = 5)
 
 Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  44
+Lift and project cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    1.56 sec. (772.91 ticks)
+Real time             =    0.06 sec. (23.20 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    1.56 sec. (772.93 ticks)
+Total (root+branch&cut) =    0.06 sec. (23.22 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1925,31 +1413,30 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.55 ticks)
+Root relaxation solution time = 0.00 sec. (1.39 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0+    0                          133.7092        0.0000           100.00%
 *     0+    0                          114.7297        0.0000           100.00%
-0     0        0.0000    23      114.7297        0.0000      118  100.00%
-*     0+    0                           56.4594        0.0000           100.00%
-*     0+    0                           55.7068        0.0000           100.00%
-*     0+    0                           38.3245        0.0000           100.00%
-*     0+    0                           35.9797        0.0000           100.00%
+0     0        0.0000    22      114.7297        0.0000      119  100.00%
+*     0+    0                           72.7936        0.0000           100.00%
+*     0+    0                           67.0189        0.0000           100.00%
+*     0+    0                           50.7271        0.0000           100.00%
 Detecting symmetries...
-0     2        0.0000    15       35.9797        0.0000      118  100.00%                        0             0
-Elapsed time = 0.07 sec. (23.83 ticks, tree = 0.01 MB, solutions = 6)
+0     2        0.0000    13       50.7271        0.0000      119  100.00%                        0             0
+Elapsed time = 0.06 sec. (19.99 ticks, tree = 0.01 MB, solutions = 5)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.07 sec. (23.84 ticks)
+Real time             =    0.06 sec. (19.99 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.07 sec. (23.85 ticks)
+Total (root+branch&cut) =    0.06 sec. (20.01 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1970,7 +1457,7 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.97 ticks)
+Root relaxation solution time = 0.00 sec. (1.57 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -1978,75 +1465,24 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 *     0+    0                          110.7059        0.0000           100.00%
 *     0+    0                           93.8685        0.0000           100.00%
 *     0+    0                           88.1652        0.0000           100.00%
-0     0       12.8255    21       88.1652       12.8255      166   85.45%
-0     0       13.5532    25       88.1652   LiftProj: 9      186   84.63%
-0     0       13.6179    25       88.1652   LiftProj: 6      189   84.55%
-0     0       14.0758    24       88.1652   LiftProj: 6      202   84.03%
-0     0       14.5867    28       88.1652  LiftProj: 14      221   83.46%
-0     0       16.3250    24       88.1652  LiftProj: 13      251   81.48%
+0     0        0.0000    27       88.1652        0.0000      130  100.00%
+0     0        0.0000    26       88.1652   LiftProj: 2      142  100.00%
+0     0        0.0000    26       88.1652   LiftProj: 5      151  100.00%
+*     0+    0                           83.1256        0.0000           100.00%
+*     0+    0                           69.4112        0.0000           100.00%
 Detecting symmetries...
-0     0       17.2021    25       88.1652  LiftProj: 14      267   80.49%
-0     0       17.7308    28       88.1652  LiftProj: 12      283   79.89%
-0     0       18.3696    27       88.1652  LiftProj: 16      298   79.16%
-0     0       20.4973    28       88.1652  LiftProj: 16      319   76.75%
-0     0       20.9972    30       88.1652  LiftProj: 15      343   76.18%
-0     0       21.2501    30       88.1652  LiftProj: 18      362   75.90%
-0     0       21.8532    30       88.1652  LiftProj: 17      384   75.21%
-0     0       22.0219    31       88.1652  LiftProj: 14      393   75.02%
-0     0       22.4125    30       88.1652  LiftProj: 15      414   74.58%
-0     0       22.6860    34       88.1652  LiftProj: 19      431   74.27%
-0     0       23.3655    33       88.1652  LiftProj: 15      463   73.50%
-0     0       23.7212    30       88.1652  LiftProj: 15      486   73.09%
-0     0       24.2328    32       88.1652  LiftProj: 17      509   72.51%
-0     0       24.9747    35       88.1652  LiftProj: 13      544   71.67%
-0     0       25.1734    36       88.1652  LiftProj: 23      567   71.45%
-0     0       25.3791    34       88.1652  LiftProj: 12      586   71.21%
-0     0       25.8282    34       88.1652  LiftProj: 15      606   70.70%
-0     0       26.2124    34       88.1652  LiftProj: 18      638   70.27%
-0     0       26.5355    35       88.1652  LiftProj: 12      656   69.90%
-0     0       26.9081    35       88.1652  LiftProj: 15      687   69.48%
-0     0       27.8692    33       88.1652   LiftProj: 7      721   68.39%
-0     0       27.9766    32       88.1652  LiftProj: 12      734   68.27%
-*     0+    0                           83.4405       27.9766            66.47%
-0     0       28.1139    34       83.4405  LiftProj: 13      750   66.31%
-0     0       28.2822    35       83.4405  LiftProj: 13      774   66.10%
-0     0       28.4692    35       83.4405  LiftProj: 13      804   65.88%
-0     0       28.5308    36       83.4405  LiftProj: 14      813   65.81%
-0     0       28.7397    35       83.4405  LiftProj: 14      840   65.56%
-*     0+    0                           81.9626       28.7397            64.94%
-0     0       28.8512    35       81.9626  LiftProj: 13      860   64.80%
-0     0       28.9345    35       81.9626  LiftProj: 12      884   64.70%
-0     0       28.9761    36       81.9626   LiftProj: 9      898   64.65%
-0     0       29.0367    37       81.9626   LiftProj: 7      909   64.57%
-0     0       29.3711    34       81.9626   LiftProj: 9      937   64.17%
-0     0       29.7958    35       81.9626  LiftProj: 10      969   63.65%
-0     0       29.9210    35       81.9626  LiftProj: 19      981   63.49%
-0     0       29.9210    35       81.9626   LiftProj: 9      983   63.49%
-0     0       30.1061    36       81.9626  LiftProj: 14     1003   63.27%
-*     0+    0                           81.4166       30.1061            63.02%
-0     0       30.1619    37       81.4166  LiftProj: 13     1017   62.95%
-0     0       30.2554    36       81.4166  LiftProj: 10     1039   62.84%
-0     0       30.3535    36       81.4166  LiftProj: 14     1055   62.72%
-0     0       30.4251    36       81.4166  LiftProj: 12     1067   62.63%
-0     0       30.4659    37       81.4166  LiftProj: 13     1089   62.58%
-0     0       30.5924    36       81.4166  LiftProj: 11     1113   62.42%
-0     0       30.7877    37       81.4166  LiftProj: 18     1142   62.18%
-0     0       30.9540    34       81.4166   LiftProj: 9     1172   61.98%
-0     0       30.9671    34       81.4166   LiftProj: 5     1184   61.96%
-*     0+    0                           64.6012       30.9671            52.06%
-Detecting symmetries...
-0     2       30.9671    34       64.6012       31.0180     1184   51.99%                        0             0
-Elapsed time = 1.59 sec. (797.31 ticks, tree = 0.01 MB, solutions = 7)
+0     2        0.0000    25       69.4112        0.0000      151  100.00%                        0             0
+Elapsed time = 0.10 sec. (38.63 ticks, tree = 0.01 MB, solutions = 5)
 
 Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  46
+Lift and project cuts applied:  2
 
 Root node processing (before b&c):
-Real time             =    1.59 sec. (797.31 ticks)
+Real time             =    0.10 sec. (38.63 ticks)
 Sequential b&c:
-Real time             =    0.00 sec. (0.03 ticks)
+Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    1.60 sec. (797.34 ticks)
+Total (root+branch&cut) =    0.10 sec. (38.65 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2075,26 +1511,25 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 *     0+    0                          110.7059        0.0000           100.00%
 *     0+    0                           93.8685        0.0000           100.00%
 0     0        0.0000    27       93.8685        0.0000      120  100.00%
-*     0+    0                           49.9720        0.0000           100.00%
-0     0        0.0000    20       49.9720   LiftProj: 1      123  100.00%
-0     0        0.0000    21       49.9720   LiftProj: 7      135  100.00%
-0     0        0.0000    22       49.9720   LiftProj: 9      151  100.00%
-*     0+    0                           45.7001        0.0000           100.00%
-*     0+    0                           38.0789        0.0000           100.00%
-*     0+    0                           35.1392        0.0000           100.00%
+*     0+    0                           67.8253        0.0000           100.00%
+0     0        0.0000    18       67.8253   LiftProj: 2      129  100.00%
+0     0        0.0000    19       67.8253   LiftProj: 2      147  100.00%
+*     0+    0                           65.1311        0.0000           100.00%
+*     0+    0                           63.6114        0.0000           100.00%
+*     0+    0                           56.8020        0.0000           100.00%
 Detecting symmetries...
-0     2        0.0000    19       35.1392        0.0000      151  100.00%                        0             0
-Elapsed time = 0.12 sec. (44.38 ticks, tree = 0.01 MB, solutions = 6)
+0     2        0.0000    18       56.8020        0.0000      147  100.00%                        0             0
+Elapsed time = 0.09 sec. (34.57 ticks, tree = 0.01 MB, solutions = 6)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.12 sec. (44.38 ticks)
+Real time             =    0.09 sec. (34.57 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.12 sec. (44.40 ticks)
+Total (root+branch&cut) =    0.09 sec. (34.59 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2115,38 +1550,126 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.85 ticks)
+Root relaxation solution time = 0.00 sec. (1.50 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0+    0                          110.7059        0.0000           100.00%
 *     0+    0                           74.9711        0.0000           100.00%
-0     0        0.0000    23       74.9711        0.0000      152  100.00%
+0     0        0.0000    23       74.9711        0.0000      119  100.00%
 *     0+    0                           70.1819        0.0000           100.00%
-0     0        0.0000    25       70.1819   LiftProj: 5      160  100.00%
-0     0        0.0000    24       70.1819  LiftProj: 12      224  100.00%
-*     0+    0                           55.4957        0.0000           100.00%
-*     0+    0                           46.4560        0.0000           100.00%
+0     0        0.0000    19       70.1819   LiftProj: 1      125  100.00%
+*     0+    0                           67.4782        0.0000           100.00%
+*     0+    0                           61.3096        0.0000           100.00%
 Detecting symmetries...
-0     2        0.0000    24       46.4560        0.0000      224  100.00%                        0             0
-Elapsed time = 0.10 sec. (42.92 ticks, tree = 0.01 MB, solutions = 5)
+0     2        0.0000    19       61.3096        0.0000      125  100.00%                        0             0
+Elapsed time = 0.07 sec. (27.83 ticks, tree = 0.01 MB, solutions = 5)
 
 Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  2
+Lift and project cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.10 sec. (42.93 ticks)
+Real time             =    0.07 sec. (27.83 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.10 sec. (42.94 ticks)
+Total (root+branch&cut) =    0.07 sec. (27.85 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
 Legacy callback                                  S
 Warning: Control callbacks may disable some MIP features.
 Found incumbent of value 110.705872 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.37 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.42 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          110.7059        0.0000           100.00%
+*     0+    0                           74.9711        0.0000           100.00%
+0     0        0.0000    24       74.9711        0.0000      114  100.00%
+*     0+    0                           57.9339        0.0000           100.00%
+*     0+    0                           55.7899        0.0000           100.00%
+*     0+    0                           43.3086        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    14       43.3086        0.0000      114  100.00%                        0             0
+Elapsed time = 0.06 sec. (19.39 ticks, tree = 0.01 MB, solutions = 5)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.06 sec. (19.39 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.06 sec. (19.41 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 123.713464 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.37 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (1.48 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0+    0                          123.7135        0.0000           100.00%
+*     0+    0                          108.6148        0.0000           100.00%
+0     0        0.0000    27      108.6148        0.0000      117  100.00%
+*     0+    0                           98.7082        0.0000           100.00%
+0     0        0.0000    24       98.7082   LiftProj: 3      126  100.00%
+*     0+    0                           87.0253        0.0000           100.00%
+*     0+    0                           65.8991        0.0000           100.00%
+Detecting symmetries...
+0     2        0.0000    24       65.8991        0.0000      126  100.00%                        0             0
+Elapsed time = 0.08 sec. (32.27 ticks, tree = 0.01 MB, solutions = 5)
+
+Mixed integer rounding cuts applied:  0
+Lift and project cuts applied:  0
+
+Root node processing (before b&c):
+Real time             =    0.08 sec. (32.27 ticks)
+Sequential b&c:
+Real time             =    0.00 sec. (0.02 ticks)
+------------
+Total (root+branch&cut) =    0.08 sec. (32.29 ticks)
+CPLEX Error  1006: Error during callback.
+Node files written starting with node 0, ending with node 1
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Legacy callback                                  S
+Warning: Control callbacks may disable some MIP features.
+Found incumbent of value 123.713464 after 0.00 sec. (0.01 ticks)
 Tried aggregator 1 time.
 Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
 Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
@@ -2166,24 +1689,25 @@ Root relaxation solution time = 0.00 sec. (1.48 ticks)
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
-*     0+    0                          110.7059        0.0000           100.00%
-*     0+    0                           74.9711        0.0000           100.00%
-0     0        0.0000    23       74.9711        0.0000      115  100.00%
-*     0+    0                           29.6008        0.0000           100.00%
-*     0+    0                           27.6995        0.0000           100.00%
+*     0+    0                          123.7135        0.0000           100.00%
+*     0+    0                          108.6148        0.0000           100.00%
+0     0        0.0000    27      108.6148        0.0000      118  100.00%
+*     0+    0                           74.7826        0.0000           100.00%
+*     0+    0                           74.5456        0.0000           100.00%
+*     0+    0                           61.3888        0.0000           100.00%
 Detecting symmetries...
-0     2        0.0000    15       27.6995        0.0000      115  100.00%                        0             0
-Elapsed time = 0.06 sec. (21.80 ticks, tree = 0.01 MB, solutions = 4)
+0     2        0.0000    18       61.3888        0.0000      118  100.00%                        0             0
+Elapsed time = 0.07 sec. (21.52 ticks, tree = 0.01 MB, solutions = 5)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (21.81 ticks)
+Real time             =    0.07 sec. (21.52 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (21.82 ticks)
+Total (root+branch&cut) =    0.07 sec. (21.55 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2204,196 +1728,31 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.73 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          123.7135        0.0000           100.00%
-*     0+    0                          108.6148        0.0000           100.00%
-*     0+    0                           99.0366        0.0000           100.00%
-0     0        0.0000    27       99.0366        0.0000      139  100.00%
-*     0+    0                           98.7082        0.0000           100.00%
-0     0        0.0000    27       98.7082   LiftProj: 5      167  100.00%
-0     0        0.0000    27       98.7082  LiftProj: 10      201  100.00%
-*     0+    0                           79.9962        0.0000           100.00%
-*     0+    0                           62.7112        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    27       62.7112        0.0000      201  100.00%                        0             0
-Elapsed time = 0.11 sec. (46.37 ticks, tree = 0.01 MB, solutions = 6)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  3
-
-Root node processing (before b&c):
-Real time             =    0.11 sec. (46.37 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.11 sec. (46.39 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 123.713464 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.37 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.58 ticks)
-
-Nodes                                         Cuts/
-Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
-
-*     0+    0                          123.7135        0.0000           100.00%
-*     0+    0                          108.6148        0.0000           100.00%
-0     0        0.0000    27      108.6148        0.0000      124  100.00%
-*     0+    0                           71.2777        0.0000           100.00%
-*     0+    0                           58.7503        0.0000           100.00%
-*     0+    0                           39.8361        0.0000           100.00%
-*     0+    0                           33.7803        0.0000           100.00%
-Detecting symmetries...
-0     2        0.0000    19       33.7803        0.0000      124  100.00%                        0             0
-Elapsed time = 0.08 sec. (26.67 ticks, tree = 0.01 MB, solutions = 6)
-
-Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  0
-
-Root node processing (before b&c):
-Real time             =    0.08 sec. (26.67 ticks)
-Sequential b&c:
-Real time             =    0.00 sec. (0.02 ticks)
-------------
-Total (root+branch&cut) =    0.08 sec. (26.69 ticks)
-CPLEX Error  1006: Error during callback.
-Node files written starting with node 0, ending with node 1
-Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
-Legacy callback                                  S
-Warning: Control callbacks may disable some MIP features.
-Found incumbent of value 123.713464 after 0.00 sec. (0.01 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Detecting symmetries...
-Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
-Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.37 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-MIP emphasis: balance optimality and feasibility.
-MIP search method: traditional branch-and-cut.
-Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.00 sec. (1.87 ticks)
+Root relaxation solution time = 0.00 sec. (1.47 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0+    0                          123.7135        0.0000           100.00%
 *     0+    0                           89.1896        0.0000           100.00%
-0     0        4.5425    20       89.1896        4.5425      153   94.91%
-*     0+    0                           83.5087        4.5425            94.56%
-0     0        6.6987    24       83.5087   LiftProj: 8      172   91.98%
-0     0        6.8490    25       83.5087  LiftProj: 11      183   91.80%
-0     0        9.3520    24       83.5087  LiftProj: 10      211   88.80%
-0     0       11.6909    22       83.5087   LiftProj: 9      225   86.00%
-0     0       12.4823    25       83.5087  LiftProj: 11      237   85.05%
-*     0+    0                           72.8455       12.4823            82.86%
+0     0        0.0000    23       89.1896        0.0000      119  100.00%
+*     0+    0                           83.5087        0.0000           100.00%
+*     0+    0                           64.2486        0.0000           100.00%
+*     0+    0                           60.8203        0.0000           100.00%
+*     0+    0                           50.1209        0.0000           100.00%
 Detecting symmetries...
-0     0       13.0098    27       72.8455  LiftProj: 10      250   82.14%
-0     0       13.8484    26       72.8455  LiftProj: 12      270   80.99%
-0     0       14.7424    27       72.8455  LiftProj: 13      284   79.76%
-0     0       16.2948    27       72.8455  LiftProj: 12      313   77.63%
-0     0       17.6130    28       72.8455  LiftProj: 15      339   75.82%
-0     0       18.3048    29       72.8455  LiftProj: 13      354   74.87%
-0     0       18.9262    29       72.8455  LiftProj: 13      371   74.02%
-0     0       19.4205    29       72.8455  LiftProj: 13      390   73.34%
-0     0       20.7166    31       72.8455  LiftProj: 13      407   71.56%
-0     0       21.9696    29       72.8455  LiftProj: 12      434   69.84%
-0     0       22.9845    29       72.8455  LiftProj: 14      456   68.45%
-0     0       23.4207    30       72.8455  LiftProj: 12      476   67.85%
-0     0       23.6473    29       72.8455  LiftProj: 13      488   67.54%
-0     0       23.7696    31       72.8455  LiftProj: 13      494   67.37%
-0     0       24.5662    29       72.8455  LiftProj: 14      519   66.28%
-0     0       24.9836    30       72.8455   LiftProj: 9      535   65.70%
-0     0       26.2344    29       72.8455  LiftProj: 13      567   63.99%
-0     0       26.4813    30       72.8455  LiftProj: 10      582   63.65%
-0     0       26.9955    30       72.8455  LiftProj: 10      609   62.94%
-0     0       27.2114    31       72.8455   LiftProj: 8      622   62.65%
-0     0       27.7369    30       72.8455  LiftProj: 11      655   61.92%
-0     0       27.9066    32       72.8455  LiftProj: 10      677   61.69%
-0     0       28.1038    32       72.8455  LiftProj: 10      700   61.42%
-0     0       28.7730    30       72.8455  LiftProj: 12      735   60.50%
-*     0+    0                           69.6713       28.7730            58.70%
-0     0       29.0796    29       69.6713  LiftProj: 11      758   58.26%
-0     0       29.3453    32       69.6713  LiftProj: 14      781   57.88%
-0     0       29.6226    31       69.6713   LiftProj: 7      803   57.48%
-0     0       29.7232    30       69.6713  LiftProj: 11      815   57.34%
-0     0       29.8545    31       69.6713  LiftProj: 10      830   57.15%
-0     0       29.9618    31       69.6713  LiftProj: 10      846   57.00%
-0     0       30.0976    32       69.6713   LiftProj: 9      868   56.80%
-0     0       30.2216    32       69.6713   LiftProj: 7      887   56.62%
-0     0       30.4238    29       69.6713  LiftProj: 11      909   56.33%
-0     0       30.5489    31       69.6713   LiftProj: 9      929   56.15%
-0     0       30.6486    32       69.6713   LiftProj: 9      951   56.01%
-0     0       30.8424    30       69.6713  LiftProj: 10      982   55.73%
-0     0       30.9366    30       69.6713  LiftProj: 14      996   55.60%
-0     0       30.9898    31       69.6713  LiftProj: 13     1015   55.52%
-0     0       31.0259    31       69.6713   LiftProj: 9     1029   55.47%
-0     0       31.0638    29       69.6713   LiftProj: 9     1050   55.41%
-0     0       31.0982    31       69.6713  LiftProj: 11     1066   55.36%
-0     0       31.1716    32       69.6713  LiftProj: 10     1090   55.26%
-0     0       31.2565    32       69.6713  LiftProj: 10     1114   55.14%
-0     0       31.3109    32       69.6713   LiftProj: 9     1126   55.06%
-0     0       31.4684    30       69.6713   LiftProj: 7     1161   54.83%
-0     0       31.5452    31       69.6713   LiftProj: 6     1179   54.72%
-0     0       31.6405    32       69.6713  LiftProj: 11     1200   54.59%
-0     0       31.6922    32       69.6713   LiftProj: 8     1219   54.51%
-0     0       31.7281    32       69.6713   LiftProj: 9     1235   54.46%
-0     0       31.8106    32       69.6713   LiftProj: 5     1255   54.34%
-0     0       31.8428    32       69.6713   LiftProj: 8     1268   54.30%
-0     0       31.8736    30       69.6713   LiftProj: 6     1285   54.25%
-0     0       31.9077    32       69.6713   LiftProj: 8     1307   54.20%
-0     0       32.0242    30       69.6713   LiftProj: 8     1333   54.04%
-0     0       32.0750    30       69.6713  LiftProj: 10     1349   53.96%
-0     0       32.1706    30       69.6713   LiftProj: 9     1370   53.83%
-0     0       32.2139    32       69.6713   LiftProj: 8     1392   53.76%
-0     0       32.3077    31       69.6713  LiftProj: 10     1414   53.63%
-0     0       32.3481    30       69.6713   LiftProj: 7     1435   53.57%
-0     0       32.4039    32       69.6713   LiftProj: 9     1456   53.49%
-0     0       32.5098    32       69.6713   LiftProj: 9     1477   53.34%
-0     0       32.5525    32       69.6713   LiftProj: 8     1491   53.28%
-0     0       32.6036    32       69.6713   LiftProj: 7     1509   53.20%
-0     0       32.6529    32       69.6713   LiftProj: 7     1527   53.13%
-0     0       32.6871    31       69.6713   LiftProj: 9     1542   53.08%
-0     0       32.7099    30       69.6713   LiftProj: 5     1557   53.05%
-0     0       32.7195    32       69.6713   LiftProj: 7     1568   53.04%
-*     0+    0                           48.3396       32.7195            32.31%
-Detecting symmetries...
-0     2       32.7195    32       48.3396       32.7208     1568   32.31%                        0             0
-Elapsed time = 2.11 sec. (1077.57 ticks, tree = 0.01 MB, solutions = 6)
+0     2        0.0000    19       50.1209        0.0000      119  100.00%                        0             0
+Elapsed time = 0.07 sec. (27.24 ticks, tree = 0.01 MB, solutions = 6)
 
 Mixed integer rounding cuts applied:  0
-Lift and project cuts applied:  50
+Lift and project cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    2.11 sec. (1077.56 ticks)
+Real time             =    0.07 sec. (27.24 ticks)
 Sequential b&c:
-Real time             =    0.00 sec. (0.03 ticks)
+Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    2.11 sec. (1077.60 ticks)
+Total (root+branch&cut) =    0.07 sec. (27.26 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 0, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -2414,28 +1773,27 @@ Probing time = 0.00 sec. (0.04 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (1.47 ticks)
+Root relaxation solution time = 0.00 sec. (1.43 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
 
 *     0+    0                          123.7135        0.0000           100.00%
 *     0+    0                           89.1896        0.0000           100.00%
-0     0        0.0000    23       89.1896        0.0000      129  100.00%
-*     0+    0                           59.4311        0.0000           100.00%
-*     0+    0                           35.2998        0.0000           100.00%
-*     0+    0                           25.4616        0.0000           100.00%
+0     0        0.0000    24       89.1896        0.0000      117  100.00%
+*     0+    0                           50.1463        0.0000           100.00%
+*     0+    0                           44.8477        0.0000           100.00%
 Detecting symmetries...
-0     2        0.0000    15       25.4616        0.0000      129  100.00%                        0             0
-Elapsed time = 0.06 sec. (18.80 ticks, tree = 0.01 MB, solutions = 5)
+0     2        0.0000    13       44.8477        0.0000      117  100.00%                        0             0
+Elapsed time = 0.06 sec. (19.66 ticks, tree = 0.01 MB, solutions = 4)
 
 Mixed integer rounding cuts applied:  0
 Lift and project cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.06 sec. (18.80 ticks)
+Real time             =    0.06 sec. (19.66 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.06 sec. (18.82 ticks)
+Total (root+branch&cut) =    0.06 sec. (19.68 ticks)
 CPLEX Error  1006: Error during callback.

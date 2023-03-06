@@ -119,6 +119,7 @@ std::ifstream input(int argc, char **argv, bool& generated_instances, int& cardi
 		   std::string& path, std::string& filename){			   
 	std::cout << "Creating environment..." << std::endl;
 	std::string model = argv[0];
+	
 	if(argc < 4){
 		std::cout << "Wrong number of parameters"<<std::endl;
 		std::cout << "./" + model + " instance_number d k cardinality* dimensionality*, scale_factor*"<<std::endl;
@@ -140,7 +141,7 @@ std::ifstream input(int argc, char **argv, bool& generated_instances, int& cardi
 	
 	instance = argv[1];
 	d_0 = std::stoi(argv[2]);
-	k_0 = std::stoi(argv[3]);
+	k_0 = std::stoi(argv[3]);	
 	
 	if(generated_instances){
 		path = "../src/instance_set/generated_instances/";
