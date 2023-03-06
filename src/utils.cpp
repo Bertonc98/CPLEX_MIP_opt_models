@@ -5,6 +5,7 @@
 #include <string>
 #include <cstdlib>
 #include <ilcplex/ilocplex.h>
+#include <limits>
 
 void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_factor){
 	int len = solution.getSize();
@@ -53,21 +54,39 @@ float_t dot_product(IloNumArray x, IloNumArray solution){
 	return res;
 }
 
-void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r, int scale_factor){
+void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r, int scale_factor, bool lower){
 	int solution_size =  x.getSize();
 	std::cout << "R scale factor: " << scale_factor << std::endl;
-	float max = 0;
+	float v;
+	if(lower){
+		v = std::numeric_limits<float>::max();
+	}
+	else{
+		v = 0;
+	}
+	
 	float error;
 	
 	for( int i = 0; i < solution_size; i++ ){		
-		error = abs( y[i] - dot_product(x[i], solution) );		
-		if(error > max)
-			max = error;
+		error = abs( y[i] - dot_product(x[i], solution) );	
+		if(lower){
+			if(error < v)
+				v = error;
+		}
+		else{	
+			if(error > v)
+				v = error;
+		}
 	}
 	// SCALING OF THE BOUND 5 or 10
-	max *= scale_factor;
+	if(lower){
+		v /= scale_factor;
+	}
+	else{
+		v *= scale_factor;
+	}
 	for( int i = 0; i < solution_size; i++ ){
-		r[i] = max;
+		r[i] = v;
 	}
 }
 
@@ -276,11 +295,12 @@ void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, st
 		}
 		
 		
-		//~ cout << "Pnt, Out | Out model " << endl;
+		// std::cout << "Pnt, Out | Out model " << std::endl;
 		std::string tmp;
 		int result, pos;
 		for (int i = 0; i < k ; i++){
 			std::getline(cfile, tmp);
+			//std::cout<<i<<std::endl;
 			result = 1-int(abs(cplex.getValue(s[i])));
 			pos = tmp.find(",");
 			if( result != std::stoi(tmp.substr(pos+1, 1)) ){
