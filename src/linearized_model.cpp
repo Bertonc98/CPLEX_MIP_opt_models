@@ -69,8 +69,8 @@ int main(int argc, char **argv){
 	IloNumArray Rp(env, k, -IloInfinity, IloInfinity);
 	IloNumArray Rm(env, k, -IloInfinity, IloInfinity);
 	
-	compute_R(solution, x, y, Rp, 10);
-	compute_R(solution, x, y, Rm, 10, true);
+	compute_R(solution, x, y, Rp, 2);
+	compute_R(solution, x, y, Rm, 2, true);
 	
 	/*for(int i = 0; i<k; i++){
 		Rp[i] *= 1000000;
