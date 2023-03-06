@@ -48,17 +48,22 @@ int main(int argc, char **argv){
 	IloNumArray wl(env, d);
 	IloNumArray wu(env, d);
 	
-	compute_W(solution, wl, wu, 10);
+	if(generated_instances){
+		compute_W_optimal_hyperplane(solution, wl, wu, scale_factor);
+	}
+	else{
+		compute_W(solution, wl, wu, 1);
+	}
 	
 	int k = x.getSize();
 	IloNumArray r(env, k, -IloInfinity, IloInfinity);
 	
 	compute_R(solution, x, y, r);
-	if(generated_instances){
+	/*if(generated_instances){
 		for(int i = 0; i<k; i++){
 			r[i] *= 2;
 		} 
-	}
+	}*/
 		
 	//~ END OF PREPROCESSING
 	
