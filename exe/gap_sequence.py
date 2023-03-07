@@ -33,7 +33,7 @@ for fl in filenames:
 				obj, bi, _ = line.split(";")
 			except:
 				obj, bi = line.split(";")
-			if "integral" in obj or "cutoff" in obj or "infeasible" in bi:
+			if "integral" in obj or "cutoff" in obj or "infeasible" in bi or bi == "":
 				continue
 			if float(bi) != 0.0:
 				initial_gap = (float(bi) - float(obj))/float(bi)
