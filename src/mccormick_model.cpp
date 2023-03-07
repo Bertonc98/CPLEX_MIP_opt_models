@@ -71,7 +71,7 @@ int main(int argc, char **argv){
 	IloNumArray Rp(env, k, -IloInfinity, IloInfinity);
 	IloNumArray Rm(env, k, -IloInfinity, IloInfinity);
 	
-	compute_RpRm(solution, x, y, Rp, Rm, 1);
+	compute_RpRm(solution, x, y, Rp, Rm, 10);
 	
 	/*
 	for(int i = 0; i<k; i++){
