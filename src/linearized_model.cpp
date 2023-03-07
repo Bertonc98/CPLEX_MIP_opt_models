@@ -215,7 +215,6 @@ int main(int argc, char **argv){
 	cout << endl;
 	
 	//~ Saving results
-	//~ Saving results
 	fstream dest_file;
 	string model_name = argv[0];
 	model_name = model_name.substr(0, model_name.find("_"));
