@@ -7,12 +7,15 @@ if len(sys.argv) != 2:
 	exit()
 
 model_name = sys.argv[1]
-basic = ["Gomory", "Disjunctive", "LiftProj"]
-stronger = ["FlowCovers", "Gomory", "Disjunctive", "LiftProj", "MIRCut"]
-quadratic = ["Gomory", "Disjunctive", "LiftProj"]
-linearized = ["FlowCovers", "MIRCut"]
-mccormick = ["Gomory", "FlowCovers", "MIRCut"]
-stuff = ["CPXPARAM_MIP_Cuts_"+cut for cut in linearized]
+
+d = {
+	"basic_model" : ["Gomory", "Disjunctive", "LiftProj"],
+	"stronger_model" : ["FlowCovers", "Gomory", "Disjunctive", "LiftProj", "MIRCut"],
+	"quadratic_model" : ["Gomory", "Disjunctive", "LiftProj"],
+	"linearized_model" : ["FlowCovers", "MIRCut"],
+	"mccormick_model" : ["FlowCovers", "MIRCut"]
+}
+stuff = ["CPXPARAM_MIP_Cuts_" + cut for cut in d[model_name]]
 subsets = []
 for L in range(1, len(stuff) + 1):
     for subset in itertools.combinations(stuff, L):
