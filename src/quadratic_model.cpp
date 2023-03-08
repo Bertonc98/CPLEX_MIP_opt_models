@@ -151,7 +151,7 @@ int main(int argc, char **argv){
 	//Suppress the outpt
 	//std::cout.setstate(std::ios::failbit);
 	// Resolution time
-	cplex.setParam(IloCplex::Param::TimeLimit, 500);
+	cplex.setParam(IloCplex::Param::TimeLimit, 300);
 	chrono::steady_clock sc;  
 	cout << "========================START SOLVING========================" <<endl;
 	auto start = sc.now();     // start timer
@@ -203,10 +203,11 @@ int main(int argc, char **argv){
 	bool solvable = true;
 	if(generated_instances){
 		try{
-			line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";None;None;";
+			line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";" + to_string(cplex.getObjValue()) + ";" + to_string(cplex.getValue(z)) + ";";
 		}
 		catch(IloException e){
-			line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";" + to_string(cplex.getObjValue()) + ";" + to_string(cplex.getValue(z)) + ";";
+			solvable = false;
+			line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";None;None;";
 		}
 		
 	}
