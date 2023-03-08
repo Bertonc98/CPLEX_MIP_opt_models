@@ -1064,7 +1064,7 @@ Probing time = 0.00 sec. (0.02 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: traditional branch-and-cut.
 Parallel mode: none, using 1 thread.
-Root relaxation solution time = 0.01 sec. (1.56 ticks)
+Root relaxation solution time = 0.02 sec. (1.56 ticks)
 
 Nodes                                         Cuts/
 Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
@@ -1073,16 +1073,16 @@ Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap     
 0     0      735.4462     5      945.0450      735.4462       14   22.18%
 *     0+    0                          767.0483      735.4462             4.12%
 0     2      741.9778     2      767.0483      742.6233       14    3.18%                        0             0
-Elapsed time = 0.02 sec. (6.37 ticks, tree = 0.01 MB, solutions = 2)
+Elapsed time = 0.03 sec. (6.37 ticks, tree = 0.01 MB, solutions = 2)
 
 Flow path cuts applied:  0
 
 Root node processing (before b&c):
-Real time             =    0.02 sec. (6.37 ticks)
+Real time             =    0.03 sec. (6.37 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.02 ticks)
 ------------
-Total (root+branch&cut) =    0.02 sec. (6.39 ticks)
+Total (root+branch&cut) =    0.03 sec. (6.39 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
@@ -1162,7 +1162,7 @@ Real time             =    0.02 sec. (8.14 ticks)
 Sequential b&c:
 Real time             =    0.00 sec. (0.01 ticks)
 ------------
-Total (root+branch&cut) =    0.02 sec. (8.15 ticks)
+Total (root+branch&cut) =    0.03 sec. (8.15 ticks)
 CPLEX Error  1006: Error during callback.
 Node files written starting with node 1, ending with node 1
 Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
