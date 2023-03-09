@@ -32,6 +32,8 @@ std::string save_results(std::fstream& sdest_file, bool generated_instances, int
 					int time_span, IloCplex cplex, IloNumVar z, int d_0, int percentage, int errors, 
 					IloNumVarArray a, IloAlgorithm::Status st, std::string filename, std::string model);
 
-void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, std::string path, std::string instance, int percentage, IloNumVarArray s);
+void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, std::string path, std::string instance, 
+						int percentage, IloNumVarArray s, IloNumVarArray f, std::string model_name, 
+						bool generated_instances = false, int d = 10);
 
 #endif

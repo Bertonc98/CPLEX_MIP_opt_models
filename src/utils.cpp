@@ -294,15 +294,25 @@ std::string save_results(std::fstream& dest_file, bool generated_instances, int 
 	return line;	
 }
 
-void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, std::string path, std::string instance, int percentage, IloNumVarArray s){
+void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, std::string path, std::string instance, int percentage, IloNumVarArray s, IloNumVarArray f, std::string model_name, bool generated_instances, int d){
 		//~ Output result 
 		for( int i = 0; i < 50 ; i++) std::cout << "=";
 		std::cout << std::endl << "k_0 : " << k_0 << std::endl;
 		
-		std::string compare = path + "optimal_solutions/minError_toy_30_10_02_2_0_5_-10_" + instance + 
-					 "_l1_LinMgr_indicator_L0Mgr_sos1_" + std::to_string(d_0) +
-					 ".000000_0." + std::to_string(percentage) + 
-					 "00000Outlier.csv";
+		std::string compare;
+		if(generated_instances){
+			compare = path + "toy_" + std::to_string(k) + 
+						 "_" + std::to_string(d+1) +
+						 "_-" + instance + 
+						 "Outliers.dat";
+		}
+		else{
+			compare = path + "generated_instances/" + instance + 
+						 "_l1_LinMgr_indicator_L0Mgr_sos1_" + std::to_string(d_0) +
+						 ".000000_0." + std::to_string(percentage) + 
+						 "00000Outlier.csv";
+		}
+		
 		std::ifstream cfile;
 		cfile.open(compare);
 		if (!cfile) {
@@ -313,6 +323,17 @@ void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, st
 		
 		
 		// std::cout << "Pnt, Out | Out model " << std::endl;
+		std::string gen = "";
+		if(!generated_instances)
+			gen = "optimal_solutions/";
+		std::string res_file = path + gen + "results/toy_" + std::to_string(k) + 
+						 "_" + std::to_string(d) +
+						 "_-" + instance + "-" +
+						 model_name + "-" + 
+						 "OutliersPrediction.dat";
+		std::cout << res_file << std::endl;
+		std::ofstream mf(res_file);
+		
 		std::string tmp;
 		int result, pos;
 		for (int i = 0; i < k ; i++){
@@ -321,9 +342,31 @@ void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, st
 			result = 1-int(abs(cplex.getValue(s[i])));
 			pos = tmp.find(",");
 			if( result != std::stoi(tmp.substr(pos+1, 1)) ){
-				//~ cout << tmp << " | " << 1-int(abs(cplex.getValue(s[i]))) << endl;
+				if(generated_instances){
+					mf << tmp << " | " << 1-int(abs(cplex.getValue(s[i]))) << std::endl;
+				}
 				errors++;
 			}
 		}
+		
+		res_file = path + gen + "results/toy_" + std::to_string(k) + 
+						 "_" + std::to_string(d) +
+						 "_-" + instance + "-" +
+						 model_name + "-" +
+						 "FeaturesPrediction.dat";
+					
+		std::ofstream ffile(res_file);
+		for (int i = 0; i < d ; i++){
+			//std::cout<<i<<std::endl;
+			result = 1-int(abs(cplex.getValue(f[i])));
+			if( result != std::stoi(tmp.substr(pos+1, 1)) ){
+				if(generated_instances){
+					ffile << 1-int(abs(cplex.getValue(s[i]))) << std::endl;
+				}
+			}
+		}
+		
+		
 		std::cout << "MISMATCHED RESULTS: " << errors << std::endl << std::endl;
+		
 }

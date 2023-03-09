@@ -67,15 +67,6 @@ int main(int argc, char **argv){
 		compute_R(solution, x, y, r, 1);
 	}
 	
-	/*
-	float sum = 0;
-	for(int i =0; i<k; i++){
-		sum+=r[i];
-	}
-	cout << "##############" << sum/(float)k<<endl<<endl;
-	return 0;
-	* */
-	
 	//~ END OF PREPROCESSING
 	
 	//~ MODEL DEFINITION
@@ -161,16 +152,17 @@ int main(int argc, char **argv){
 	
 	//std::cout.clear();
 	int errors = 0;
-	if(!generated_instances){
-		mismatching_points(errors, cplex, k_0, d_0, k, path, instance, percentage, s);	
-	}
+	
+	string model_name = argv[0];	
+	string md = model_name.substr(2, model_name.find("_"));
+
+	mismatching_points(errors, cplex, k_0, d_0, k, path, instance, percentage, s, f, md, generated_instances, d);	
 	
 	fstream dest_file;
-	string model_name = argv[0];
 	model_name = model_name.substr(0, model_name.find("_"));
 	
 	string line = save_results(dest_file, generated_instances, dimensionality, k, d, scale_factor, time_span, cplex, z, d_0, percentage, errors, a, st, filename, model_name);
-	dest_file<<line<<endl;
+	//dest_file<<line<<endl;
 	
 	cout << "Obj value: " << cplex.getValue(obj) << endl;
 	

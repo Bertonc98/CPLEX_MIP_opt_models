@@ -157,18 +157,18 @@ int main(int argc, char **argv){
 		print_conflicts(env, model, cplex);
 	
 	int errors = 0;
-	if(!generated_instances){
-		mismatching_points(errors, cplex, k_0, d_0, k, path, instance, percentage, s);	
-	}
+	string model_name = argv[0];	
+	string md = model_name.substr(2, model_name.find("_"));
+
+	mismatching_points(errors, cplex, k_0, d_0, k, path, instance, percentage, s, f, md, generated_instances, d);
 	
 	
 	//~ Saving results
 	fstream dest_file;
-	string model_name = argv[0];
 	model_name = model_name.substr(0, model_name.find("_"));
 	
 	string line = save_results(dest_file, generated_instances, dimensionality, k, d, scale_factor, time_span, cplex, z, d_0, percentage, errors, a, st, filename, model_name);	
-	dest_file<<line<<endl;
+	//dest_file<<line<<endl;
 	
 	
 	cout << "Obj value: " << cplex.getObjValue() << endl;
