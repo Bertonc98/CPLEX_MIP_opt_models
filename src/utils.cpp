@@ -358,11 +358,8 @@ void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, st
 		std::ofstream ffile(res_file);
 		for (int i = 0; i < d ; i++){
 			//std::cout<<i<<std::endl;
-			result = 1-int(abs(cplex.getValue(f[i])));
-			if( result != std::stoi(tmp.substr(pos+1, 1)) ){
-				if(generated_instances){
-					ffile << 1-int(abs(cplex.getValue(s[i]))) << std::endl;
-				}
+			if(generated_instances){
+				ffile << int(abs(cplex.getValue(f[i]))) << std::endl;
 			}
 		}
 		
