@@ -1,0 +1,5 @@
+bash run_generated_model.sh basic_model
+bash run_generated_model.sh stronger_model
+bash run_generated_model.sh quadratic_model
+bash run_generated_model.sh linearized_model
+bash run_generated_model.sh mccormick_model

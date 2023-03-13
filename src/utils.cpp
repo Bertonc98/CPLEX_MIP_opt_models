@@ -180,6 +180,9 @@ std::ifstream input(int argc, char **argv, bool& generated_instances, int& cardi
 	instance = argv[1];
 	d_0 = std::stoi(argv[2]);
 	k_0 = std::stoi(argv[3]);	
+	std::cout << "d_0/s_0: " << d_0 << std::endl;
+	std::cout << "k_0: " << k_0 << std::endl;
+	
 	
 	if(generated_instances){
 		//remove bigmtune to toy after tuning of w

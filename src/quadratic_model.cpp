@@ -22,7 +22,7 @@ int main(int argc, char **argv){
 	string path;
 	string filename;
 	
-	ifstream ifile = input(argc, argv, generated_instances, cardinality, dimensionality, scale_factor, instance, d_0, k_0, path, filename);
+	ifstream ifile = input(argc, argv, generated_instances, cardinality, dimensionality, scale_factor, instance, k_0, d_0, path, filename);
 	
 	
 	//~ Read instances
@@ -230,6 +230,14 @@ int main(int argc, char **argv){
 	}
 	
 	dest_file<<line<<endl;
+	
+	//Output s and f values	
+	cout << endl << "f: \t";
+	for(int i =0; i<d; i++){
+		cout << cplex.getValue(f[i]) << " ";
+	}
+	cout << "limit: < " << k_0 << endl;
+	cout << endl;
 	
 	
 	cout << "Obj value: " << cplex.getObjValue() << endl;

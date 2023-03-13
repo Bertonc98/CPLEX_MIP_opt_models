@@ -29,9 +29,9 @@ int main(int argc, char **argv){
 	string path;
 	string filename;
 	
-	ifstream ifile = input(argc, argv, generated_instances, cardinality, dimensionality, scale_factor, instance, d_0, k_0, path, filename);
+	ifstream ifile = input(argc, argv, generated_instances, cardinality, dimensionality, scale_factor, instance, k_0, s_0, path, filename);
 	
-	s_0 = k_0;
+	d_0 = s_0;
 		
 	//~ Read instances
 	IloNumArray2 x(env);
@@ -154,7 +154,7 @@ int main(int argc, char **argv){
 	//Limit the number of points to k_0
 	model.add(IloSum(f) <= k_0); // (43)
 	//Ensure a certain amount of selected outliers
-	model.add(IloSum(s) >= s_0); // (44)
+	model.add(IloSum(s) >= k - s_0); // (44)
 		
 	IloCplex cplex(env);
 	//~ cplex.add(obj_expr);
@@ -209,11 +209,13 @@ int main(int argc, char **argv){
 	for(int i =0; i<k; i++){
 		cout << cplex.getValue(s[i]) << " ";
 	}
+	cout << "limit: >" << k - s_0 << endl;
 	
 	cout << endl << "f: \t";
 	for(int i =0; i<d; i++){
 		cout << cplex.getValue(f[i]) << " ";
 	}
+	cout << "limit: < " << k_0 << endl;
 	cout << endl;
 	
 	//~ Saving results

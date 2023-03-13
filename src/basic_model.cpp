@@ -156,6 +156,20 @@ int main(int argc, char **argv){
 	
 	string model_name = argv[0];	
 	string md = model_name.substr(2, model_name.find("_"));
+	
+	//Output s and f values
+	cout << endl << "s: \t";
+	for(int i =0; i<k; i++){
+		cout << cplex.getValue(s[i]) << " ";
+	}
+	cout << "limit: >" << k - k_0 << endl;
+	
+	cout << endl << "f: \t";
+	for(int i =0; i<d; i++){
+		cout << cplex.getValue(f[i]) << " ";
+	}
+	cout << "limit: < " << d_0 << endl;
+	cout << endl;
 
 	//mismatching_points(errors, cplex, k_0, d_0, k, path, instance, percentage, s, f, md, generated_instances, d);	
 	
