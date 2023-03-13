@@ -141,7 +141,7 @@ int main(int argc, char **argv){
 	//std::cout.setstate(std::ios::failbit);
 	// Resolution time
 	cplex.setParam(IloCplex::Param::TimeLimit, 300);
-	cplex.setParam(IloCplex::Param::MIP::Limits::Nodes, 1);
+	//cplex.setParam(IloCplex::Param::MIP::Limits::Nodes, 1);
 	chrono::steady_clock sc;  
 	cout << "========================START SOLVING========================" <<endl;
 	auto start = sc.now();     // start timer
@@ -161,7 +161,7 @@ int main(int argc, char **argv){
 	string model_name = argv[0];	
 	string md = model_name.substr(2, model_name.find("_"));
 
-	mismatching_points(errors, cplex, k_0, d_0, k, path, instance, percentage, s, f, md, generated_instances, d);
+	//mismatching_points(errors, cplex, k_0, d_0, k, path, instance, percentage, s, f, md, generated_instances, d);
 	
 	
 	//~ Saving results
@@ -169,7 +169,7 @@ int main(int argc, char **argv){
 	model_name = model_name.substr(0, model_name.find("_"));
 	
 	string line = save_results(dest_file, generated_instances, dimensionality, k, d, scale_factor, time_span, cplex, z, d_0, percentage, errors, a, st, filename, model_name);	
-	//dest_file<<line<<endl;
+	dest_file<<line<<endl;
 	
 	
 	cout << "Obj value: " << cplex.getObjValue() << endl;

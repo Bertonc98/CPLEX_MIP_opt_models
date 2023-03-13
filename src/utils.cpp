@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include <ilcplex/ilocplex.h>
 #include <limits>
+#include <math.h>
 
 void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_factor){
 	int len = solution.getSize();
@@ -36,8 +37,8 @@ void compute_W_optimal_hyperplane(IloNumArray solution, IloNumArray wl, IloNumAr
 	int len = solution.getSize();
 	//~ Computing bounds
 	for( int i = 1; i < len; i++ ){
-		wl[i-1] = ((float_t)solution[i] + 2) * scale_factor;
-		wu[i-1] = ((float_t)solution[i] - 2) * scale_factor;
+		wl[i-1] = ((float_t)solution[i] - 2) * scale_factor;
+		wu[i-1] = ((float_t)solution[i] + 2) * scale_factor;
 	}
 	
 }
@@ -72,7 +73,7 @@ void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray 
 	v *= scale_factor;
 	
 	for( int i = 0; i < solution_size; i++ ){
-		r[i] = v;
+		r[i] = std::ceil(v);
 	}
 }
 
@@ -102,8 +103,8 @@ void compute_RpRm(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArr
 	p *= scale_factor;
 	
 	for( int i = 0; i < solution_size; i++ ){
-		rp[i] = p;
-		rm[i] = m;
+		rp[i] = std::ceil(p);
+		rm[i] = std::ceil(m);
 	}
 }
 
@@ -181,8 +182,9 @@ std::ifstream input(int argc, char **argv, bool& generated_instances, int& cardi
 	k_0 = std::stoi(argv[3]);	
 	
 	if(generated_instances){
-		path = "../src/instance_set/generated_instances/";
-		filename  = path + "toy_" + std::to_string(cardinality) + "_" + std::to_string(dimensionality) + "_-" + instance + ".dat";
+		//remove bigmtune to toy after tuning of w
+		path = "../src/instance_set/generated_instances/bigm_tune/";
+		filename  = path + "bigmtune_" + std::to_string(cardinality) + "_" + std::to_string(dimensionality) + "_-" + instance + ".dat";
 	}
 	else{
 		path = "../src/instance_set/";
@@ -359,7 +361,8 @@ void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, st
 		for (int i = 0; i < d ; i++){
 			//std::cout<<i<<std::endl;
 			if(generated_instances){
-				ffile << int(abs(cplex.getValue(f[i]))) << std::endl;
+				//ffile << int(abs(cplex.getValue(f[i]))) << std::endl;
+				ffile << cplex.getValue(f[i]) << std::endl;
 			}
 		}
 		

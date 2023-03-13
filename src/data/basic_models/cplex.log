@@ -1,0 +1,89 @@
+
+Log started (V22.1.0.0) Mon Mar 13 10:47:08 2023
+
+
+Problem 'basic_model1_4_3.lp' read.
+Read time = 0.02 sec. (0.02 ticks)
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Found incumbent of value 136.472330 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.36 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.01 sec. (2.23 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          136.4723        0.0000           100.00%
+*     0+    0                           99.1655        0.0000           100.00%
+      0     0        1.0620    26       99.1655        1.0620      177   98.93%
+      0     0        7.1762    28       99.1655     Fract: 21      204   92.76%
+      0     0        8.5576    29       99.1655      Cuts: 12      220   91.37%
+      0     0        8.5576    30       99.1655      Fract: 1      222   91.37%
+*     0+    0                           76.9232        8.5576            88.88%
+*     0+    0                           76.5540        8.5576            88.82%
+*     0+    0                           63.5546        8.5576            86.54%
+Detecting symmetries...
+      0     2        8.5576    30       63.5546       11.7185      222   81.56%
+Elapsed time = 0.24 sec. (36.10 ticks, tree = 0.02 MB, solutions = 5)
+*   333+  136                           59.1863       19.7798            66.58%
+*   400+  133                           56.0174       19.9075            64.46%
+*   400+  131                           54.8834       19.9075            63.73%
+*  1486   789      integral     0       53.8273       24.3717    15767   54.72%
+*  1922+  877                           52.9813       26.1021            50.73%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.25 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 140 rows, 109 columns, and 915 nonzeros.
+Reduced MIP has 39 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.37 ticks)
+Represolve time = 0.01 sec. (1.31 ticks)
+   4191     0       10.6176    30       52.9813       Cuts: 4    50909   42.75%
+   4191     0       11.1589    29       52.9813      Fract: 6    50928   42.75%
+   4191     0       11.4822    29       52.9813      Fract: 6    50955   42.75%
+   4191     0       11.5869    33       52.9813      Fract: 6    50971   42.75%
+   4191     2       11.5869    33       52.9813       30.3307    50971   42.75%
+   6524  1426       44.3379    17       52.9813       30.3307    75895   42.75%
+   9570  2696       52.1669    14       52.9813       34.2242   112736   35.40%
+  12659  3404       39.3528    17       52.9813       36.8280   154624   30.49%
+  16383  3954        cutoff             52.9813       39.9489   202429   24.60%
+  20293  4030        cutoff             52.9813       43.2107   248056   18.44%
+  24444  3376        cutoff             52.9813       46.8130   292101   11.64%
+  28810  1720        cutoff             52.9813       50.2504   324495    5.15%
+
+Lift and project cuts applied:  15
+Gomory fractional cuts applied:  24
+
+Root node processing (before b&c):
+  Real time             =    0.23 sec. (35.97 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    9.71 sec. (2194.11 ticks)
+  Sync time (average)   =    2.18 sec.
+  Wait time (average)   =    0.01 sec.
+                          ------------
+Total (root+branch&cut) =    9.94 sec. (2230.09 ticks)
+
+Solution pool: 10 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  5.2981260723e+01
+Current MIP best bound =  5.2980122652e+01 (gap = 0.00113807, 0.00%)
+Solution time =    9.94 sec.  Iterations = 335673  Nodes = 31149 (1)
+Deterministic time = 2230.09 ticks  (224.26 ticks/sec)
+
