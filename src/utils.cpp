@@ -8,7 +8,7 @@
 #include <limits>
 #include <math.h>
 
-void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_factor){
+void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, double_t scale_factor){
 	int len = solution.getSize();
 	//~ Computing bounds
 	for( int i = 1; i < len; i++ ){
@@ -30,7 +30,7 @@ void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_f
 	
 }
 
-void compute_W_optimal_hyperplane(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_factor){
+void compute_W_optimal_hyperplane(IloNumArray solution, IloNumArray wl, IloNumArray wu, double_t scale_factor){
 	//~ The optimal hyperplane is composed by the first 5 features set to 1, the others to 0
 	//~ No bound for the last coefficient, the intercept
 	std::cout << "Scale factor: " << scale_factor <<std::endl;
@@ -55,7 +55,7 @@ float_t dot_product(IloNumArray x, IloNumArray solution){
 	return res;
 }
 
-void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r, int scale_factor){
+void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r, double_t scale_factor){
 	int solution_size =  x.getSize();
 	std::cout << "R scale factor: " << scale_factor << std::endl;
 	float v = 0.0;
@@ -77,7 +77,7 @@ void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray 
 	}
 }
 
-void compute_RpRm(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray rp, IloNumArray rm, int scale_factor){
+void compute_RpRm(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray rp, IloNumArray rm, double_t scale_factor){
 	int solution_size =  x.getSize();
 	std::cout << "R scale factor: " << scale_factor << std::endl;
 	float p = 0.0, m = 0.0;
@@ -153,7 +153,7 @@ void print_conflicts(IloEnv env, IloModel model, IloCplex cplex){
 }
 
 std::ifstream input(int argc, char **argv, bool& generated_instances, int& cardinality, 
-		   int& dimensionality, int& scale_factor, std::string& instance, IloInt& d_0, IloInt& k_0,
+		   int& dimensionality, double_t& scale_factor, std::string& instance, IloInt& d_0, IloInt& k_0,
 		   std::string& path, std::string& filename){			   
 	std::cout << "Creating environment..." << std::endl;
 	std::string model = argv[0];
@@ -240,7 +240,7 @@ std::ifstream read_solutions(int& solution_n, int& percentage, std::string& sol,
 	return  sfile;
 	}
 
-std::string save_results(std::fstream& dest_file, bool generated_instances, int dimensionality, int k, int d, int scale_factor, 
+std::string save_results(std::fstream& dest_file, bool generated_instances, int dimensionality, int k, int d, double_t scale_factor, 
 					int time_span, IloCplex cplex, IloNumVar z, int d_0, int percentage, int errors, 
 					IloNumVarArray a, IloAlgorithm::Status st, std::string filename, std::string model){
 	
@@ -299,7 +299,8 @@ std::string save_results(std::fstream& dest_file, bool generated_instances, int 
 	return line;	
 }
 
-void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, std::string path, std::string instance, int percentage, IloNumVarArray s, IloNumVarArray f, std::string model_name, bool generated_instances, int d){
+void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, std::string path, std::string instance, 
+						int percentage, IloNumVarArray s, IloNumVarArray f, std::string model_name, bool generated_instances, int d){
 		//~ Output result 
 		for( int i = 0; i < 50 ; i++) std::cout << "=";
 		std::cout << std::endl << "k_0 : " << k_0 << std::endl;

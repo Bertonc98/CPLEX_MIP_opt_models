@@ -19,7 +19,8 @@ int main(int argc, char **argv){
 	IloEnv env;
 	
 	bool generated_instances = false;
-	int cardinality, dimensionality, scale_factor = -1;
+	int cardinality, dimensionality;
+	double_t scale_factor = -1.0;
 	
 	string instance;
 	IloInt d_0;
@@ -61,7 +62,7 @@ int main(int argc, char **argv){
 		compute_W_optimal_hyperplane(solution, wl, wu, scale_factor);
 	}
 	else{
-		compute_W(solution, wl, wu, 1);
+		compute_W(solution, wl, wu, 10.0);
 	}
 	
 	//K = I, amount of instances
@@ -69,7 +70,7 @@ int main(int argc, char **argv){
 	IloNumArray Rp(env, k, -IloInfinity, IloInfinity);
 	IloNumArray Rm(env, k, -IloInfinity, IloInfinity);
 	
-	compute_RpRm(solution, x, y, Rp, Rm, 5);
+	compute_RpRm(solution, x, y, Rp, Rm, 5.0);
 	
 	/*for(int i = 0; i<k; i++){
 		Rp[i] *= 1000000;
@@ -87,7 +88,7 @@ int main(int argc, char **argv){
 	w.setNames("w");
 	//Violation cost
 	//IloNumVar C(env, 100);
-	int C = 10;
+	double_t C = 10.0;
 	//Measurement error on point i
 	IloNumVarArray pp(env, k, 0, IloInfinity); //(45)
 	pp.setNames("pp");
@@ -95,7 +96,7 @@ int main(int argc, char **argv){
 	pm.setNames("pm");
 	//Confidence region parameter
 	//IloNumVar eps(env, 0);
-	int eps = 0.2;
+	double_t eps = 0.2;
 	//Intercept
 	IloNumVar z(env, -IloInfinity, IloInfinity); 
 	z.setName("z");
@@ -120,10 +121,10 @@ int main(int argc, char **argv){
 		obj_expr += (0.5)*(w[j]*w[j]);
 	}
 	for( int i = 0; i < k ; i++){
-		obj_expr += C*(pp[i] - (1-s[i])*Rp[i]);
+		obj_expr += C*(pp[i] - (1.0-s[i])*Rp[i]);
 	}
 	for( int i = 0; i < k ; i++){
-		obj_expr += C*(pm[i] - (1-s[i])*Rm[i]);
+		obj_expr += C*(pm[i] - (1.0-s[i])*Rm[i]);
 	}
 	
 	obj.setExpr(obj_expr);
@@ -137,9 +138,9 @@ int main(int argc, char **argv){
 		//~ Referring to the pdf description of the problem
 		model.add( (IloScalProd(w, x[i]) + z - y[i]) <= (eps + pp[i]) ); // (37)
 		model.add( (-IloScalProd(w, x[i]) - z + y[i]) <= (eps + pm[i]) );// (38)
-		model.add( (Rp[i]*(1-s[i])) <= pp[i] );				 // (39)
+		model.add( (Rp[i]*(1.0-s[i])) <= pp[i] );				 // (39)
 		model.add( pp[i] <= Rp[i] );	 				 // (39)
-		model.add( (Rm[i]*(1-s[i])) <= pm[i] );				 // (40)
+		model.add( (Rm[i]*(1.0-s[i])) <= pm[i] );				 // (40)
 		model.add( pm[i] <= Rm[i] );	 				 // (40)
 	}
 	

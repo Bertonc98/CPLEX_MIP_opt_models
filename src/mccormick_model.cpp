@@ -20,7 +20,8 @@ int main(int argc, char **argv){
 	IloEnv env;
 	
 	bool generated_instances = false;
-	int cardinality, dimensionality, scale_factor = -1;
+	int cardinality, dimensionality;
+	double_t scale_factor = -1.0;
 	
 	string instance;
 	IloInt d_0;
@@ -62,7 +63,7 @@ int main(int argc, char **argv){
 		compute_W_optimal_hyperplane(solution, wl, wu, scale_factor);
 	}
 	else{
-		compute_W(solution, wl, wu, 1);
+		compute_W(solution, wl, wu, 10.0);
 	}
 	
 	
@@ -71,7 +72,7 @@ int main(int argc, char **argv){
 	IloNumArray Rp(env, k, -IloInfinity, IloInfinity);
 	IloNumArray Rm(env, k, -IloInfinity, IloInfinity);
 	
-	compute_RpRm(solution, x, y, Rp, Rm, 10);
+	compute_RpRm(solution, x, y, Rp, Rm, 5.0);
 	
 	/*
 	for(int i = 0; i<k; i++){
@@ -91,7 +92,7 @@ int main(int argc, char **argv){
 	w.setNames("w");
 	//Violation cost
 	//IloNumVar C(env, 100);
-	int C = 10;
+	double_t C = 10.0;
 	//Measurement error on point i
 	IloNumVarArray pp(env, k, 0, IloInfinity); //(66)
 	pp.setNames("pp");
@@ -99,7 +100,7 @@ int main(int argc, char **argv){
 	pm.setNames("pm");
 	//Confidence region parameter
 	//IloNumVar eps(env, 0);
-	int eps = 0.2;
+	double_t eps = 0.2;
 	//Intercept
 	IloNumVar z(env, -IloInfinity, IloInfinity); 
 	z.setName("z");
@@ -144,10 +145,10 @@ int main(int argc, char **argv){
 		model.add( (-IloScalProd(w, x[i]) - z + y[i]) <= (eps + pm[i]) );// (55)
 		model.add( tp[i] <= pp[i] );				 // (56)
 		model.add( tp[i] <= s[i] * Rp[i] );	 				 // (57)
-		model.add( tp[i] >= pp[i] - ((1 - s[i]) * Rp[i]) );				 // (58)
+		model.add( tp[i] >= pp[i] - ((1.0 - s[i]) * Rp[i]) );				 // (58)
 		model.add( tm[i] <= pm[i] );				 // (59)
 		model.add( tm[i] <= s[i] * Rm[i] );	 				 // (60)
-		model.add( tm[i] >= pm[i] - ((1 - s[i]) * Rm[i]) );				 // (61)
+		model.add( tm[i] >= pm[i] - ((1.0 - s[i]) * Rm[i]) );				 // (61)
 	}
 	
 	//~ Constraint over d (J) (number of features)

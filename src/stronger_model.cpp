@@ -13,7 +13,8 @@ int main(int argc, char **argv){
 	IloEnv env;
 	
 	bool generated_instances = false;
-	int cardinality, dimensionality, scale_factor = -1;
+	int cardinality, dimensionality;
+	double_t scale_factor = -1.0;
 	
 	string instance;
 	IloInt d_0;
@@ -87,7 +88,7 @@ int main(int argc, char **argv){
 	IloExpr obj_expr(env);
 	
 	for( int i = 0; i < k ; i++){
-		obj_expr += p[i] - ( (1-s[i])*r[i] );
+		obj_expr += p[i] - ( (1.0-s[i])*r[i] );
 	}
 	obj.setExpr(obj_expr);
 	obj_expr.end();
@@ -99,11 +100,11 @@ int main(int argc, char **argv){
 	//~ Constraints over k
 	for( int i = 0; i < k; i++){
 		//~ Referring to the pdf description of the problem
-		model.add(p[i] >= ((1-s[i]) * (r[i]/10) )); // (17)
-		model.add(p[i] <= r[i]*10); // (18) Increased bound from r[i]
+		model.add(p[i] >= ((1.0-s[i]) * (r[i]) )); // (17)
+		model.add(p[i] <= r[i]); // (18) Increased bound from r[i]
 		
-		model.add((p[i] + y[i] - IloScalProd(a, x[i]) - z) >= 0); // (19)
-		model.add((-p[i] + y[i] - IloScalProd(a, x[i]) - z) <= 0); // (20)
+		model.add((p[i] + y[i] - IloScalProd(a, x[i]) - z) >= 0.0); // (19)
+		model.add((-p[i] + y[i] - IloScalProd(a, x[i]) - z) <= 0.0); // (20)
 
 	}
 	

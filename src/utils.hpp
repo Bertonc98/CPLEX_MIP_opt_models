@@ -8,27 +8,27 @@
 #include <cstdlib>
 #include <ilcplex/ilocplex.h>
 
-void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_factor);
+void compute_W(IloNumArray solution, IloNumArray wl, IloNumArray wu, double_t scale_factor);
 
-void compute_W_optimal_hyperplane(IloNumArray solution, IloNumArray wl, IloNumArray wu, int scale_factor);
+void compute_W_optimal_hyperplane(IloNumArray solution, IloNumArray wl, IloNumArray wu, double_t scale_factor);
 
 float_t dot_product(IloNumArray x, IloNumArray wu);
 
-void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r, int scale_factor = 5);
-void compute_RpRm(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray rp, IloNumArray rm, int scale_factor = 5);
+void compute_R(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray r, double_t scale_factor = 5.0);
+void compute_RpRm(IloNumArray solution, IloNumArray2 x, IloNumArray y, IloNumArray rp, IloNumArray rm, double_t scale_factor = 5.0);
 
 void debug(int i);
 
 void print_conflicts(IloEnv env, IloModel model, IloCplex cplex);
 
 std::ifstream input(int argc, char **argv, bool& generated_instances, int& cardinality, 
-		   int& dimensionality, int& scale_factor, std::string& instance, IloInt& d_0, IloInt& k_0,
+		   int& dimensionality, double_t& scale_factor, std::string& instance, IloInt& d_0, IloInt& k_0,
 		   std::string& path, std::string& filename);
 		   
 std::ifstream read_solutions(int& solution_n, int& percentage, std::string& sol, bool generated_instances, 
 					std::string filename, std::string path, int k_0, int d_0, IloNumArray2 x, std::string instance, int dimensionality);
 
-std::string save_results(std::fstream& sdest_file, bool generated_instances, int dimensionality, int k, int d, int scale_factor, 
+std::string save_results(std::fstream& sdest_file, bool generated_instances, int dimensionality, int k, int d, double_t scale_factor, 
 					int time_span, IloCplex cplex, IloNumVar z, int d_0, int percentage, int errors, 
 					IloNumVarArray a, IloAlgorithm::Status st, std::string filename, std::string model);
 
