@@ -20,7 +20,7 @@ int main(int argc, char **argv){
 	IloEnv env;
 	
 	bool generated_instances = false;
-	int cardinality, dimensionality, scale_factor;
+	int cardinality, dimensionality, scale_factor = -1;
 	
 	string instance;
 	IloInt d_0;

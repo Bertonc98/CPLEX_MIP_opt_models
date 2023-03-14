@@ -13,7 +13,7 @@ int main(int argc, char **argv){
 	IloEnv env;
 	
 	bool generated_instances = false;
-	int cardinality, dimensionality, scale_factor;
+	int cardinality, dimensionality, scale_factor = -1;
 	
 	string instance;
 	IloInt d_0;
@@ -192,7 +192,7 @@ int main(int argc, char **argv){
 	if(!myfile) {
 		//cout<<"file not exists"<<endl;
 		if(generated_instances){
-			line = "Instance;d;k;w_bound;Time;OurObj;intercept;slopes\n";
+			line = "Instance;d;k;w_bound;Time;OurObj;BestBound;intercept;slopes\n";
 		}
 		else{
 			line = "Instance;d_0;k_0;OurObj;intercept;slopes\n";
@@ -203,7 +203,7 @@ int main(int argc, char **argv){
 	bool solvable = true;
 	if(generated_instances){
 		try{
-			line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";" + to_string(cplex.getObjValue()) + ";" + to_string(cplex.getValue(z)) + ";";
+			line += filename + ";" + to_string(dimensionality) + ";" + to_string(k) + ";" + to_string(scale_factor) + ";" + to_string(time_span) + ";" + to_string(cplex.getObjValue()) + ";" + std::to_string(cplex.getBestObjValue() ) + ";" + to_string(cplex.getValue(z)) + ";";
 		}
 		catch(IloException e){
 			solvable = false;

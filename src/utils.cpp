@@ -260,7 +260,7 @@ std::string save_results(std::fstream& dest_file, bool generated_instances, int 
 	if(!myfile) {
 		//cout<<"file not exists"<<std::endl;
 		if(generated_instances){
-			line = "Instance;d;k;w_bound;Time;OurObj;intercept;slopes\n";
+			line = "Instance;d;k;w_bound;Time;OurObj;BestBound;intercept;slopes\n";
 		}
 		else{
 			line = "Instance;d_0;k_0;MismatchedOutliers;OurObj;intercept;slopes\n";
@@ -271,11 +271,11 @@ std::string save_results(std::fstream& dest_file, bool generated_instances, int 
 	bool solvable = true;
 	if(generated_instances){
 		try{
-			line += filename + ";" + std::to_string(dimensionality) + ";" + std::to_string(k) + ";" + std::to_string(scale_factor) + ";" + std::to_string(time_span) + ";" + std::to_string(cplex.getObjValue() ) + ";" + std::to_string(cplex.getValue(z)) + ";";
+			line += filename + ";" + std::to_string(dimensionality) + ";" + std::to_string(k) + ";" + std::to_string(scale_factor) + ";" + std::to_string(time_span) + ";" + std::to_string(cplex.getObjValue() ) + ";" + std::to_string(cplex.getBestObjValue() ) + ";" + std::to_string(cplex.getValue(z)) + ";";
 		}
 		catch(IloException e){
 			solvable = false;
-			line += filename + ";" + std::to_string(dimensionality) + ";" + std::to_string(k) + ";" + std::to_string(scale_factor) + ";" + std::to_string(time_span) + ";None;None;";
+			line += filename + ";" + std::to_string(dimensionality) + ";" + std::to_string(k) + ";" + std::to_string(scale_factor) + ";" + std::to_string(time_span) + "None;None;None;";
 		}
 	}
 	else{
@@ -371,5 +371,4 @@ void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, st
 		
 		
 		std::cout << "MISMATCHED RESULTS: " << errors << std::endl << std::endl;
-		
 }
