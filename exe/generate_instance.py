@@ -87,7 +87,7 @@ def save_instance(name, x, y):
     f.write(np.array2string(y, separator = ",").replace("\n", "").replace(" ", ""))
 
 ds = [10, 20, 30]
-ks = [50, 100, 150]
+ks = [50]
 alpha = 5
 mu_r = -10
 mu_a = 10
@@ -95,12 +95,12 @@ pi = 0.1
 
 for k in ks:
 	for d in ds:
-		for i in range(2):
+		for i in range(5):
 			x = generate_points(k, d)
 			y = compute_y(x, alpha)
 
 			# y = corrupt_response(y, mu_r)
 			x, y = corrupt_bad_leverage(x, y, mu_r, mu_a, pi)
-			path = "../src/instance_set/generated_instances/bigm_tune/"
-			save_instance(path + "_".join(["bigmtune", str(k), str(d), "-"+str(i+1)]) + ".dat", x, y)
+			path = "../src/instance_set/generated_instances/"
+			save_instance(path + "_".join(["toy", str(k), str(d), "-"+str(i+1)]) + ".dat", x, y)
 

@@ -186,8 +186,8 @@ std::ifstream input(int argc, char **argv, bool& generated_instances, int& cardi
 	
 	if(generated_instances){
 		//remove bigmtune to toy after tuning of w
-		path = "../src/instance_set/generated_instances/bigm_tune/";
-		filename  = path + "bigmtune_" + std::to_string(cardinality) + "_" + std::to_string(dimensionality) + "_-" + instance + ".dat";
+		path = "../src/instance_set/generated_instances/";
+		filename  = path + "toy_" + std::to_string(cardinality) + "_" + std::to_string(dimensionality) + "_-" + instance + ".dat";
 	}
 	else{
 		path = "../src/instance_set/";
@@ -245,8 +245,9 @@ std::string save_results(std::fstream& dest_file, bool generated_instances, int 
 					IloNumVarArray a, IloAlgorithm::Status st, std::string filename, std::string model){
 	
 	std::string res_name;
+	// TODO remove the "root"
 	if(generated_instances){
-		res_name = "../src/data/SFSOD/generated_results/" + model + "_results.csv";
+		res_name = "../src/data/SFSOD/generated_results/root_" + model + "_results.csv";
 	}
 	else{
 		res_name = "../src/data/SFSOD/" + model + "_results.csv";
@@ -266,7 +267,7 @@ std::string save_results(std::fstream& dest_file, bool generated_instances, int 
 			line = "Instance;d_0;k_0;MismatchedOutliers;OurObj;intercept;slopes\n";
 		}
 	} 
-	
+	std::cout << res_name << std::endl;
 	dest_file.open(res_name, std::fstream::app);
 	bool solvable = true;
 	if(generated_instances){
@@ -332,7 +333,7 @@ void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, st
 		std::string gen = "";
 		if(!generated_instances)
 			gen = "optimal_solutions/";
-		std::string res_file = path + gen + "results/toy_" + std::to_string(k) + 
+		std::string res_file = path + gen + "results/root_toy_" + std::to_string(k) + 
 						 "_" + std::to_string(d) +
 						 "_-" + instance + "-" +
 						 model_name + "-" + 
@@ -355,7 +356,7 @@ void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, st
 			}
 		}
 		
-		res_file = path + gen + "results/toy_" + std::to_string(k) + 
+		res_file = path + gen + "results/root_toy_" + std::to_string(k) + 
 						 "_" + std::to_string(d) +
 						 "_-" + instance + "-" +
 						 model_name + "-" +
