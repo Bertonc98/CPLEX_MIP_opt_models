@@ -12,7 +12,7 @@ d = {
 	"basic_model" : ["Gomory", "Disjunctive", "LiftProj"],
 	"stronger_model" : ["Gomory", "LiftProj", "MIRCut"],
 	"quadratic_model" : ["Gomory", "FlowCovers", "MIRCut"],
-	"linearized_model" : ["FlowCovers", "MIRCut"],
+	"linearized_model" : ["Gomory", "FlowCovers", "MIRCut"],
 	"mccormick_model" : ["FlowCovers", "MIRCut"]
 }
 stuff = ["CPXPARAM_MIP_Cuts_" + cut for cut in d[model_name]]
