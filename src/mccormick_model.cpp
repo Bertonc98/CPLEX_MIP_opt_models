@@ -76,7 +76,7 @@ int main(int argc, char **argv){
 		compute_RpRm(solution, x, y, Rp, Rm, 5.0);
 	}
 	else{
-		compute_RpRm(solution, x, y, Rp, Rm, 1.0);
+		compute_RpRm(solution, x, y, Rp, Rm, 5.0);
 	}
 	
 	/*
