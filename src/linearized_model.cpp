@@ -70,7 +70,14 @@ int main(int argc, char **argv){
 	IloNumArray Rp(env, k, -IloInfinity, IloInfinity);
 	IloNumArray Rm(env, k, -IloInfinity, IloInfinity);
 	
-	compute_RpRm(solution, x, y, Rp, Rm, 5.0);
+	if(generated_instances){
+		compute_RpRm(solution, x, y, Rp, Rm, 5.0);
+	}
+	else{
+		compute_RpRm(solution, x, y, Rp, Rm, 1.0);
+	}
+	
+	
 	
 	/*for(int i = 0; i<k; i++){
 		Rp[i] *= 1000000;
@@ -171,7 +178,7 @@ int main(int argc, char **argv){
 	}
 	
 	cplex.exportModel(export_file.c_str());
-	
+	exit(0);
 	// Save d and k values
 	ofstream fw("../src/data/feature_point.txt", ofstream::out);
 	fw << d << "\n";

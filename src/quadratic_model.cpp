@@ -59,7 +59,12 @@ int main(int argc, char **argv){
 	int k = x.getSize();
 	IloNumArray r(env, k, -IloInfinity, IloInfinity);
 	
-	compute_R(solution, x, y, r);
+	if(generated_instances){
+		compute_R(solution, x, y, r);
+	}
+	else{
+		compute_R(solution, x, y, r, 1.0);
+	}
 	/*if(generated_instances){
 		for(int i = 0; i<k; i++){
 			r[i] *= 2;
@@ -148,7 +153,7 @@ int main(int argc, char **argv){
 	
 	cplex.exportModel(export_file.c_str());
 	cout <<"EPSILON" << eps << endl;
-	
+	exit(0);
 	//Suppress the outpt
 	//std::cout.setstate(std::ios::failbit);
 	// Resolution time

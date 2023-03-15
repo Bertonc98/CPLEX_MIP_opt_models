@@ -52,12 +52,17 @@ int main(int argc, char **argv){
 		compute_W_optimal_hyperplane(solution, wl, wu, scale_factor);
 	}
 	else{
-		compute_W(solution, wl, wu, 1);
+		compute_W(solution, wl, wu, 10.0);
 	}
 	
 	int k = x.getSize();
 	IloNumArray r(env, k, -IloInfinity, IloInfinity);
-	compute_R(solution, x, y, r);
+	if(generated_instances){
+		compute_R(solution, x, y, r);
+	}
+	else{
+		compute_R(solution, x, y, r, 1.0);
+	}
 		
 	//~ END OF PREPROCESSING
 	
@@ -137,7 +142,7 @@ int main(int argc, char **argv){
 	
 	cplex.exportModel(export_file.c_str());
 	
-	
+	exit(0);
 	//Suppress the outpt
 	//std::cout.setstate(std::ios::failbit);
 	// Resolution time
