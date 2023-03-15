@@ -61,7 +61,7 @@ int main(int argc, char **argv){
 		compute_R(solution, x, y, r);
 	}
 	else{
-		compute_R(solution, x, y, r, 1.0);
+		compute_R(solution, x, y, r, 5.0);
 	}
 		
 	//~ END OF PREPROCESSING

@@ -242,6 +242,24 @@ int main(int argc, char **argv){
 	for(int i =0; i<d; i++){
 		cout << cplex.getValue(f[i]) << " ";
 	}
+	string model_name = argv[0];	
+	model_name = model_name.substr(2, model_name.find("_"));
+	
+	string res_file = path + "results/toy_" + to_string(k) + 
+						 "_" + to_string(d) +
+						 "_-" + instance + "-" +
+						 model_name + "-" +
+						 "FeaturesPrediction.dat";
+					
+	std::ofstream ffile(res_file);
+	for (int i = 0; i < d ; i++){
+		//std::cout<<i<<std::endl;
+		if(generated_instances){
+			//ffile << int(abs(cplex.getValue(f[i]))) << std::endl;
+			ffile << cplex.getValue(f[i]) << std::endl;
+		}
+	}
+		
 	cout << "limit: < " << k_0 << endl;
 	cout << endl;
 	

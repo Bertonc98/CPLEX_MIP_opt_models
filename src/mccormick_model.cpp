@@ -31,7 +31,7 @@ int main(int argc, char **argv){
 	string path;
 	string filename;
 	
-	ifstream ifile = input(argc, argv, generated_instances, cardinality, dimensionality, scale_factor, instance, s_0, k_0, path, filename);
+	ifstream ifile = input(argc, argv, generated_instances, cardinality, dimensionality, scale_factor, instance, k_0, s_0, path, filename);
 	
 	d_0 = s_0;
 
@@ -184,8 +184,6 @@ int main(int argc, char **argv){
 	}
 	
 	cplex.exportModel(export_file.c_str());
-	
-	exit(0);
 	
 	// Save d and k values
 	ofstream fw("../src/data/feature_point.txt", ofstream::out);
