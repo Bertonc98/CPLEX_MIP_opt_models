@@ -91,11 +91,11 @@ ks = [50]
 alpha = 5
 mu_r = -10
 mu_a = 10
-pi = 0.1
+pi = 0.0
 
 for k in ks:
 	for d in ds:
-		for i in range(5):
+		for i in range(10):
 			x = generate_points(k, d)
 			y = compute_y(x, alpha)
 
