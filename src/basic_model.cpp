@@ -55,7 +55,7 @@ int main(int argc, char **argv){
 		compute_W_optimal_hyperplane(solution, wl, wu, scale_factor);
 	}
 	else{
-		compute_W(solution, wl, wu, 10);
+		compute_W(solution, wl, wu, 1.0);
 	}
 	
 	int k = x.getSize();
@@ -65,7 +65,7 @@ int main(int argc, char **argv){
 		compute_R(solution, x, y, r);
 	}
 	else{
-		compute_R(solution, x, y, r, 5.0);
+		compute_R(solution, x, y, r, 1.0);
 	}
 	
 	//~ END OF PREPROCESSING
