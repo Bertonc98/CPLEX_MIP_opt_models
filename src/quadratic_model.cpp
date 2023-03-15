@@ -23,7 +23,7 @@ int main(int argc, char **argv){
 	string path;
 	string filename;
 	
-	ifstream ifile = input(argc, argv, generated_instances, cardinality, dimensionality, scale_factor, instance, d_0, k_0, path, filename);
+	ifstream ifile = input(argc, argv, generated_instances, cardinality, dimensionality, scale_factor, instance, k_0, d_0, path, filename);
 	
 	
 	//~ Read instances
@@ -63,7 +63,7 @@ int main(int argc, char **argv){
 		compute_R(solution, x, y, r);
 	}
 	else{
-		compute_R(solution, x, y, r, 1.0);
+		compute_R(solution, x, y, r, 5.0);
 	}
 	/*if(generated_instances){
 		for(int i = 0; i<k; i++){
@@ -153,7 +153,7 @@ int main(int argc, char **argv){
 	
 	cplex.exportModel(export_file.c_str());
 	cout <<"EPSILON" << eps << endl;
-	exit(0);
+	
 	//Suppress the outpt
 	//std::cout.setstate(std::ios::failbit);
 	// Resolution time

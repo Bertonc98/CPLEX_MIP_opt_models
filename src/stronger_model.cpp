@@ -142,7 +142,6 @@ int main(int argc, char **argv){
 	
 	cplex.exportModel(export_file.c_str());
 	
-	exit(0);
 	//Suppress the outpt
 	//std::cout.setstate(std::ios::failbit);
 	// Resolution time
