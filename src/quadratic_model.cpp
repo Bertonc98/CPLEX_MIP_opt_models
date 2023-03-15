@@ -23,7 +23,7 @@ int main(int argc, char **argv){
 	string path;
 	string filename;
 	
-	ifstream ifile = input(argc, argv, generated_instances, cardinality, dimensionality, scale_factor, instance, k_0, d_0, path, filename);
+	ifstream ifile = input(argc, argv, generated_instances, cardinality, dimensionality, scale_factor, instance, d_0, k_0, path, filename);
 	
 	
 	//~ Read instances

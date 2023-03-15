@@ -10,7 +10,7 @@ model_name = sys.argv[1]
 
 d = {
 	"basic_model" : ["Gomory", "Disjunctive", "LiftProj"],
-	"stronger_model" : ["FlowCovers", "Gomory", "Disjunctive", "LiftProj", "MIRCut"],
+	"stronger_model" : ["Gomory", "LiftProj", "MIRCut"],
 	"quadratic_model" : ["Gomory", "FlowCovers", "MIRCut"],
 	"linearized_model" : ["FlowCovers", "MIRCut"],
 	"mccormick_model" : ["FlowCovers", "MIRCut"]
