@@ -136,7 +136,7 @@ int main(int argc, char **argv){
 	//std::cout.setstate(std::ios::failbit);
 	// Resolution time
 	cplex.setParam(IloCplex::Param::TimeLimit, 300);
-	cplex.setParam(IloCplex::Param::MIP::Limits::Nodes, 1);
+	//cplex.setParam(IloCplex::Param::MIP::Limits::Nodes, 1);
 	chrono::steady_clock sc;  
 	cout << "========================START SOLVING========================" <<endl;
 	auto start = sc.now();     // start timer
@@ -172,7 +172,7 @@ int main(int argc, char **argv){
 	cout << "limit: < " << d_0 << endl;
 	cout << endl;
 
-	mismatching_points(errors, cplex, k_0, d_0, k, path, instance, percentage, s, f, md, generated_instances, d);	
+	//mismatching_points(errors, cplex, k_0, d_0, k, path, instance, percentage, s, f, md, generated_instances, d);	
 	
 	fstream dest_file;
 	cout << model_name <<endl;
