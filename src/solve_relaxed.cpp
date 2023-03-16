@@ -29,7 +29,7 @@ int main(int argc, char **argv){
 	IloRangeArray cuts;
 	
 	string path = "../src/data/" + m +"s/generated_results/";
-	string instance =  path + m + i + "_50_" + d.lp";
+	string instance =  path + m + i + "_50_" + d + ".lp";
 	
 	cout << instance <<endl;
 	cplex.importModel(model, instance.c_str(), obj, vars, rngs, sos1, sos2, lazy, cuts);
