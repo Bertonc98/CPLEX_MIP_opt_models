@@ -134,7 +134,7 @@ int main(int argc, char **argv){
 	string export_file;
 	
 	if(generated_instances){
-		export_file = "../src/data/stronger_models/generated_results/stronger_model"+ instance + "_" + to_string(cardinality) + ".lp"; 
+		export_file = "../src/data/stronger_models/generated_results/stronger_model"+ instance + "_" + to_string(cardinality) + "_" + to_string(d+1) + ".lp";
 	}
 	else{
 		export_file = "../src/data/stronger_models/stronger_model"+ instance + "_" + to_string(d_0) + "_" + to_string(k_0) + ".lp"; 
@@ -142,6 +142,7 @@ int main(int argc, char **argv){
 	
 	cplex.exportModel(export_file.c_str());
 	
+	exit(1);
 	//Suppress the outpt
 	//std::cout.setstate(std::ios::failbit);
 	// Resolution time

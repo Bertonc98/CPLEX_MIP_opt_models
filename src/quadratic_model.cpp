@@ -145,13 +145,16 @@ int main(int argc, char **argv){
 	string export_file;
 	
 	if(generated_instances){
-		export_file = "../src/data/quadratic_models/generated_results/quadratic_model"+ instance + "_" + to_string(cardinality) + ".lp"; 
+		export_file = "../src/data/quadratic_models/generated_results/quadratic_model"+ instance + "_" + to_string(cardinality) + "_" + to_string(d+1) + ".lp";
 	}
 	else{
 		export_file = "../src/data/quadratic_models/quadratic_model"+ instance + "_" + to_string(d_0) + "_" + to_string(k_0) + ".lp"; 
 	}
 	
 	cplex.exportModel(export_file.c_str());
+	
+	exit(1);
+	
 	cout <<"EPSILON" << eps << endl;
 	
 	//Suppress the outpt
