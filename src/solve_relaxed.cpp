@@ -32,7 +32,8 @@ int main(int argc, char **argv){
 	string instance =  path + m + i + "_50_" + d + ".lp";
 	
 	cout << instance <<endl;
-	cplex.importModel(model, instance.c_str(), obj, vars, rngs, sos1, sos2, lazy, cuts);
+	//cplex.importModel(model, instance.c_str(), obj, vars, rngs, sos1, sos2, lazy, cuts);
+	cplex.importModel(model, "../src/data/node_aggressive0.lp", obj, vars, rngs, sos1, sos2, lazy, cuts);
 	cplex.extract(model);	
 	
 	int n = cplex.getNcols();
@@ -48,7 +49,8 @@ int main(int argc, char **argv){
 	
 	//cout << "RESULTS:" << endl;
 	
-	string res_file = path + "hyperplane_" + m + "_" + i + "_" + d + ".dat";
+	//string res_file = path + "nocut_hyperplane_" + m + "_" + i + "_" + d + ".dat";
+	string res_file = path + "uncut_hyperplane_" + m + "_" + i + "_" + d + ".dat";
 	ofstream mf(res_file);
 	
 	string name;
