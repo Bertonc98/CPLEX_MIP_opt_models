@@ -4,7 +4,6 @@ for i in {1..5}
 		do for d in 10 20 30
 				do
 				echo "RUNNING: i: " $i " k: 100" " d: " $d " w: 10"	
-				p=$((k/10))
-				./$1 $2 $i $d
+				./solve_relaxed $1 $i $d
 			done;
 		done;
