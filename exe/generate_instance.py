@@ -86,6 +86,7 @@ def save_instance(name, x, y):
 
     f.write(np.array2string(y, separator = ",").replace("\n", "").replace(" ", ""))
 
+# Params to generate test set
 ds = [10, 20, 30]
 ks = [50]
 alpha = 5
@@ -101,6 +102,6 @@ for k in ks:
 
 			# y = corrupt_response(y, mu_r)
 			x, y = corrupt_bad_leverage(x, y, mu_r, mu_a, pi)
-			path = "../src/instance_set/generated_instances/test_set"
+			path = "../src/instance_set/generated_instances/test_set/"
 			save_instance(path + "_".join(["toy", str(k), str(d), "-"+str(i+1)]) + ".dat", x, y)
 
