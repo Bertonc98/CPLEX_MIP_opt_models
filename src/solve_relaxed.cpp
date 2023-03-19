@@ -49,16 +49,17 @@ int main(int argc, char **argv){
 	
 	//cout << "RESULTS:" << endl;
 	
-	//string res_file = path + "nocut_hyperplane_" + m + "_" + i + "_" + d + ".dat";
+	// string res_file = path + "hyperplane_" + m + "_" + i + "_" + d + ".dat";
 	string res_file = path + "uncut_hyperplane_" + m + "_" + i + "_" + d + ".dat";
 	ofstream mf(res_file);
 	
 	string name;
 	for(int i = 0; i<n; i++){
 		name = string(vars[i].getName(), 0, 1);
-		if (name.compare("a") == 0 || name.compare("z") == 0)
-			//cout << vars[i].getName() << " : " << cplex.getValue(vars[i]) << endl;
+		if (name.compare("a") == 0 || name.compare("z") == 0 || name.compare("w") == 0){
+			cout << vars[i].getName() << " : " << cplex.getValue(vars[i]) << endl;
 			mf << name + "~" + to_string(cplex.getValue(vars[i])) + ";";
+		}
 	}
 	
 	cout << "Hyperplane saved" << endl;
