@@ -49,9 +49,21 @@ int main(int argc, char **argv){
 	
 	//cout << "RESULTS:" << endl;
 	
-	// string res_file = path + "hyperplane_" + m + "_" + i + "_" + d + ".dat";
-	string res_file = path + "uncut_hyperplane_" + m + "_" + i + "_" + d + ".dat";
+	string res_file = path + "hyperplane_" + m + "_" + i + "_" + d + ".dat";
+	//~ string res_file = path + "uncut_hyperplane_" + m + "_" + i + "_" + d + ".dat";
+	
+	// Save features
+	string f_file = path + "feature_" + m + "_" + i + "_" + d + ".dat";
+	//~ string f_file = path + "uncut_feature_" + m + "_" + i + "_" + d + ".dat";
+	
+	// Save outliers
+	string o_file = path + "outlier_" + m + "_" + i + "_" + d + ".dat";
+	//~ string o_file = path + "uncut_outlier_" + m + "_" + i + "_" + d + ".dat";
+	
+	
 	ofstream mf(res_file);
+	ofstream ff(f_file);
+	ofstream of(o_file);
 	
 	string name;
 	for(int i = 0; i<n; i++){
@@ -60,8 +72,17 @@ int main(int argc, char **argv){
 			cout << vars[i].getName() << " : " << cplex.getValue(vars[i]) << endl;
 			mf << name + "~" + to_string(cplex.getValue(vars[i])) + ";";
 		}
+		if (name.compare("f") == 0){
+			cout << vars[i].getName() << " : " << cplex.getValue(vars[i]) << endl;
+			ff << name + "~" + to_string(cplex.getValue(vars[i])) + ";";
+		}
+		if (name.compare("s") == 0){
+			cout << vars[i].getName() << " : " << cplex.getValue(vars[i]) << endl;
+			of << name + "~" + to_string(cplex.getValue(vars[i])) + ";";
+		}
+		
 	}
-	
+		
 	cout << "Hyperplane saved" << endl;
 	return 0;
 }
