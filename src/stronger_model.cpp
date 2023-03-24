@@ -150,21 +150,21 @@ int main(int argc, char **argv){
 	cplex.setParam(IloCplex::Param::TimeLimit, 300);
 	cplex.setParam(IloCplex::Param::MIP::Limits::Nodes, 1);
 	
-	cplex.setParam(IloCplex::Param::MIP::Cuts::Gomory, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::Disjunctive, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::FlowCovers, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::GUBCovers, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::LocalImplied, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::Cliques, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::Covers, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::LiftProj, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::Implied, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::BQP, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::PathCut, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::MIRCut, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::RLT, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::ZeroHalfCut, -1);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::MCFCut, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Gomory, 2);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Disjunctive, 3);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::FlowCovers, 2);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::GUBCovers, 2);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::LocalImplied, 3);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Cliques, 3);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Covers, 3);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::LiftProj, 3);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Implied, 2);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::BQP, 2);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::PathCut, 2);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::MIRCut, 2);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::RLT, 2);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::ZeroHalfCut, 2);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::MCFCut, 2);
 	
 	chrono::steady_clock sc;  
 	cout << "========================START SOLVING========================" <<endl;
