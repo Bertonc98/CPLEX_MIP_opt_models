@@ -332,7 +332,7 @@ void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, st
 		
 		// std::cout << "Pnt, Out | Out model " << std::endl;
 		std::string gen = "";
-		std::string version = "uncut_";
+		std::string version = "uncut_root_";
 		if(!generated_instances)
 			gen = "optimal_solutions/";
 		std::string res_file = path + gen + "results/" + version + "toy_" + std::to_string(k) + 
