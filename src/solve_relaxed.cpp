@@ -33,7 +33,7 @@ int main(int argc, char **argv){
 	
 	cout << instance <<endl;
 	//cplex.importModel(model, instance.c_str(), obj, vars, rngs, sos1, sos2, lazy, cuts);
-	cplex.importModel(model, "../src/data/node_aggressive0.lp", obj, vars, rngs, sos1, sos2, lazy, cuts);
+	//~ cplex.importModel(model, "../src/data/node_aggressive0.lp", obj, vars, rngs, sos1, sos2, lazy, cuts);
 	cplex.extract(model);	
 	
 	int n = cplex.getNcols();
@@ -49,16 +49,19 @@ int main(int argc, char **argv){
 	
 	//cout << "RESULTS:" << endl;
 	
-	string res_file = path + "hyperplane_" + m + "_" + i + "_" + d + ".dat";
+	//~ string res_file = path + "hyperplane_" + m + "_" + i + "_" + d + ".dat";
 	//~ string res_file = path + "uncut_hyperplane_" + m + "_" + i + "_" + d + ".dat";
+	string res_file = path + "aggressive_hyperplane_" + m + "_" + i + "_" + d + ".dat";
 	
 	// Save features
-	string f_file = path + "feature_" + m + "_" + i + "_" + d + ".dat";
+	//~ string f_file = path + "feature_" + m + "_" + i + "_" + d + ".dat";
 	//~ string f_file = path + "uncut_feature_" + m + "_" + i + "_" + d + ".dat";
+	string f_file = path + "aggressive_feature_" + m + "_" + i + "_" + d + ".dat";
 	
 	// Save outliers
-	string o_file = path + "outlier_" + m + "_" + i + "_" + d + ".dat";
+	//~ string o_file = path + "outlier_" + m + "_" + i + "_" + d + ".dat";
 	//~ string o_file = path + "uncut_outlier_" + m + "_" + i + "_" + d + ".dat";
+	string o_file = path + "aggressive_outlier_" + m + "_" + i + "_" + d + ".dat";
 	
 	
 	ofstream mf(res_file);
