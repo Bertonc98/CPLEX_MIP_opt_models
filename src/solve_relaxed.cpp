@@ -33,7 +33,7 @@ int main(int argc, char **argv){
 	
 	cout << instance <<endl;
 	//cplex.importModel(model, instance.c_str(), obj, vars, rngs, sos1, sos2, lazy, cuts);
-	//~ cplex.importModel(model, "../src/data/node_aggressive0.lp", obj, vars, rngs, sos1, sos2, lazy, cuts);
+	cplex.importModel(model, "../src/data/node_aggressive0.lp", obj, vars, rngs, sos1, sos2, lazy, cuts);
 	cplex.extract(model);	
 	
 	int n = cplex.getNcols();
