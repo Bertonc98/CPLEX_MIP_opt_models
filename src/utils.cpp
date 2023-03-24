@@ -246,8 +246,9 @@ std::string save_results(std::fstream& dest_file, bool generated_instances, int 
 	
 	std::string res_name;
 	// TODO remove the "root"
+	std::string version = "uncut_root_";
 	if(generated_instances){
-		res_name = "../src/data/SFSOD/generated_results/" + model + "_results.csv";
+		res_name = "../src/data/SFSOD/generated_results/" + version + model + "_results.csv";
 	}
 	else{
 		res_name = "../src/data/SFSOD/" + model + "_results.csv";
@@ -331,9 +332,10 @@ void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, st
 		
 		// std::cout << "Pnt, Out | Out model " << std::endl;
 		std::string gen = "";
+		std::string version = "uncut_";
 		if(!generated_instances)
 			gen = "optimal_solutions/";
-		std::string res_file = path + gen + "results/toy_" + std::to_string(k) + 
+		std::string res_file = path + gen + "results/" + version + "toy_" + std::to_string(k) + 
 						 "_" + std::to_string(d) +
 						 "_-" + instance + "-" +
 						 model_name + "-" + 
@@ -356,7 +358,7 @@ void mismatching_points(int& errors, IloCplex cplex, int k_0, int d_0, int k, st
 			}
 		}
 		
-		res_file = path + gen + "results/toy_" + std::to_string(k) + 
+		res_file = path + gen + "results/" + version + "toy_" + std::to_string(k) + 
 						 "_" + std::to_string(d) +
 						 "_-" + instance + "-" +
 						 model_name + "-" +

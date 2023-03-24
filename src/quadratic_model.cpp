@@ -141,7 +141,7 @@ int main(int argc, char **argv){
 	//~ cplex.add(obj_expr);
 	
 	cplex.extract(model);
-	
+	/*
 	string export_file;
 	
 	if(generated_instances){
@@ -154,13 +154,31 @@ int main(int argc, char **argv){
 	cplex.exportModel(export_file.c_str());
 	
 	exit(1);
-	
+	*/
 	cout <<"EPSILON" << eps << endl;
 	
 	//Suppress the outpt
 	//std::cout.setstate(std::ios::failbit);
 	// Resolution time
 	cplex.setParam(IloCplex::Param::TimeLimit, 300);
+	cplex.setParam(IloCplex::Param::MIP::Limits::Nodes, 1);
+	
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Gomory, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Disjunctive, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::FlowCovers, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::GUBCovers, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::LocalImplied, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Cliques, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Covers, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::LiftProj, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Implied, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::BQP, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::PathCut, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::MIRCut, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::RLT, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::ZeroHalfCut, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::MCFCut, -1);
+	
 	chrono::steady_clock sc;  
 	cout << "========================START SOLVING========================" <<endl;
 	auto start = sc.now();     // start timer
@@ -187,7 +205,7 @@ int main(int argc, char **argv){
 	string res_name;
 	
 	if(generated_instances){
-		res_name = "../src/data/SFSOD/generated_results/quadratic_results.csv";
+		res_name = "../src/data/SFSOD/generated_results/uncut_root_quadratic_results.csv";
 	}
 	else{
 		res_name = "../src/data/SFSOD/quadratic_results.csv";
@@ -248,7 +266,7 @@ int main(int argc, char **argv){
 	string model_name = argv[0];	
 	model_name = model_name.substr(2, model_name.find("_"));
 	
-	string res_file = path + "results/toy_" + to_string(k) + 
+	string res_file = path + "results/uncut_root_toy_" + to_string(k) + 
 						 "_" + to_string(d) +
 						 "_-" + instance + "-" +
 						 model_name + "-" +

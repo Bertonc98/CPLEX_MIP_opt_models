@@ -121,6 +121,7 @@ int main(int argc, char **argv){
 	IloCplex cplex(env);
 	cplex.extract(model);
 	
+	/*
 	string export_file;
 	
 	if(generated_instances){
@@ -132,12 +133,29 @@ int main(int argc, char **argv){
 	
 	cplex.exportModel(export_file.c_str());
 	
-	exit(1);
+	*/
 
 	//std::cout.setstate(std::ios::failbit);
 	// Resolution time
 	cplex.setParam(IloCplex::Param::TimeLimit, 300);
-	//cplex.setParam(IloCplex::Param::MIP::Limits::Nodes, 1);
+	cplex.setParam(IloCplex::Param::MIP::Limits::Nodes, 1);
+	
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Gomory, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Disjunctive, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::FlowCovers, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::GUBCovers, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::LocalImplied, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Cliques, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Covers, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::LiftProj, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::Implied, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::BQP, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::PathCut, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::MIRCut, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::RLT, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::ZeroHalfCut, -1);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::MCFCut, -1);
+	
 	chrono::steady_clock sc;  
 	cout << "========================START SOLVING========================" <<endl;
 	auto start = sc.now();     // start timer
@@ -172,8 +190,8 @@ int main(int argc, char **argv){
 	}
 	cout << "limit: < " << d_0 << endl;
 	cout << endl;
-
-	//mismatching_points(errors, cplex, k_0, d_0, k, path, instance, percentage, s, f, md, generated_instances, d);	
+	
+	mismatching_points(errors, cplex, k_0, d_0, k, path, instance, percentage, s, f, md, generated_instances, d);	
 	
 	fstream dest_file;
 	cout << model_name <<endl;
