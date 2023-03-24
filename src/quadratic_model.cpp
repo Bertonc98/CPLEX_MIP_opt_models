@@ -162,7 +162,7 @@ int main(int argc, char **argv){
 	// Resolution time
 	cplex.setParam(IloCplex::Param::TimeLimit, 300);
 	cplex.setParam(IloCplex::Param::MIP::Limits::Nodes, 1);
-	
+	/*
 	cplex.setParam(IloCplex::Param::MIP::Cuts::Gomory, 2);
 	cplex.setParam(IloCplex::Param::MIP::Cuts::Disjunctive, 3);
 	cplex.setParam(IloCplex::Param::MIP::Cuts::FlowCovers, 2);
@@ -177,7 +177,7 @@ int main(int argc, char **argv){
 	cplex.setParam(IloCplex::Param::MIP::Cuts::MIRCut, 2);
 	cplex.setParam(IloCplex::Param::MIP::Cuts::RLT, 2);
 	cplex.setParam(IloCplex::Param::MIP::Cuts::ZeroHalfCut, 2);
-	cplex.setParam(IloCplex::Param::MIP::Cuts::MCFCut, 2);
+	cplex.setParam(IloCplex::Param::MIP::Cuts::MCFCut, 2);*/
 	
 	chrono::steady_clock sc;  
 	cout << "========================START SOLVING========================" <<endl;
@@ -205,7 +205,7 @@ int main(int argc, char **argv){
 	string res_name;
 	
 	if(generated_instances){
-		res_name = "../src/data/SFSOD/generated_results/aggressive_root_quadratic_results.csv";
+		res_name = "../src/data/SFSOD/generated_results/root_quadratic_results.csv";
 	}
 	else{
 		res_name = "../src/data/SFSOD/quadratic_results.csv";
@@ -266,7 +266,7 @@ int main(int argc, char **argv){
 	string model_name = argv[0];	
 	model_name = model_name.substr(2, model_name.find("_"));
 	
-	string res_file = path + "results/aggressive_root_toy_" + to_string(k) + 
+	string res_file = path + "results/root_toy_" + to_string(k) + 
 						 "_" + to_string(d) +
 						 "_-" + instance + "-" +
 						 model_name + "-" +
